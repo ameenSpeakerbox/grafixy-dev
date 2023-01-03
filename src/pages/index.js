@@ -1,16 +1,16 @@
-import * as React from "react"
-import '../style/global.css'
+import * as React from "react";
+import { Header, Footer } from "../components";
+import Layout from "../components/layout/layout";
+import "../style/global.css";
 
-const IndexPage = ({children}) => {
+const IndexPage = ({ children }) => {
   return (
-    <main >
-      Heder
-      {children}
-      Footer
+    <main className="mx-[147px]">
+      <Layout>{children}</Layout>
     </main>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Home Page</title>;
