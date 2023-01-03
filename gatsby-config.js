@@ -6,5 +6,5 @@ module.exports = {
     title: `grafixy-dev`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: ['gatsby-plugin-postcss',],
 }

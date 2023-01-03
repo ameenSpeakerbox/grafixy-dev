@@ -1,8 +1,9 @@
 import * as React from "react"
+import '../style/global.css'
 
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
+    <main >
       <h1>
         kooi
       </h1>
