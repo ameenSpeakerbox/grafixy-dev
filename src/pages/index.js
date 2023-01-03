@@ -1,12 +1,12 @@
 import * as React from "react"
 import '../style/global.css'
 
-const IndexPage = () => {
+const IndexPage = ({children}) => {
   return (
     <main >
-      <h1>
-        kooi
-      </h1>
+      Heder
+      {children}
+      Footer
     </main>
   )
 }
