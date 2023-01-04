@@ -1,5 +1,11 @@
 import * as React from "react";
-import { Header, Footer, HeroSection, WorkSession, Why_grafixy } from "../components";
+import {
+  Header,
+  Footer,
+  HeroSection,
+  WorkSession,
+  Why_grafixy,
+} from "../components";
 import Layout from "../components/layout/layout";
 import "../style/global.css";
 
