@@ -1,12 +1,15 @@
 import * as React from "react";
 import { Header, Footer } from "../components";
+import HeroSection from "../components/home/HeroSection";
 import Layout from "../components/layout/layout";
 import "../style/global.css";
 
 const IndexPage = ({ children }) => {
   return (
-    <main className="mx-[147px]">
-      <Layout>{children}</Layout>
+    <main className="">
+      <Layout>
+        <HeroSection />
+      </Layout>
     </main>
   );
 };

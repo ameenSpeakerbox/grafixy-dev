@@ -6,11 +6,11 @@ import { Link } from "gatsby";
 
 const Footer = () => {
   return (
-    <footer className="grid -mx-[147px]">
+    <footer className="grid ">
       <div className="bg-[#E0CCFF] pt-[73px] pb-[50px] flex items-center justify-between">
         <div className=" grid place-content-center place-items-center flex-1">
           <StaticImage
-            src="../images/logo-dark.png"
+            src="../../images/logo-dark.png"
             layout="fixed"
             height={75}
             alt="logo"
