@@ -5,6 +5,8 @@ import {
   HeroSection,
   WorkSession,
   Why_grafixy,
+  Collaboration,
+  Free_trail,
 } from "../components";
 import Layout from "../components/layout/layout";
 import "../style/global.css";
@@ -16,6 +18,8 @@ const IndexPage = ({ children }) => {
         <HeroSection />
         <WorkSession />
         <Why_grafixy />
+        <Collaboration />
+        <Free_trail/>
       </Layout>
     </main>
   );

@@ -11,6 +11,8 @@ import instagram_5 from "../images/home/work_session/insta_post -5.png";
 import instagram_6 from "../images/home/work_session/insta_post -6.png";
 
 import instagram_7 from "../images/home/work_session/insta_post -7.png";
+import toy_car from "../images/home/collaboration/Toy car.png"
+import toy_bus from "../images/home/collaboration/Toy bus.png"
 
 export const footerLinks = [
   {
@@ -153,5 +155,60 @@ export const Work_Session_InstagramPost = [
     subtitle: "Booklets",
     post: instagram_7,
     color: "#EBCA11",
+  },
+];
+
+export const trialPlan = [
+  {
+    id: 1,
+    title: "Rise",
+    price: 209,
+    subtitle: "For Individuals, Small Businesses & Freelancers",
+    buttonName: "Start your free trial!",
+    picture: toy_car,
+    point: [
+      {
+        id: 1,
+        title: "1 Active Requests",
+      },
+      {
+        id: 2,
+        title: "Unlimited Requests",
+      },
+      {
+        id: 3,
+        title: "12 Hour Turnaround",
+      },
+      {
+        id: 4,
+        title: "Unlimited Brands",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Grow",
+    price: 279,
+    subtitle: "For businesses and agencies",
+    buttonName: "Start your free trial!",
+    picture: toy_bus,
+    point: [
+      {
+        id: 1,
+        title: "2 Active Requests",
+      },
+      {
+        id: 2,
+        title: "Unlimited Requests",
+      },
+      {
+        id: 3,
+        title: "4-12 Hour Turnaround",
+      },
+      {
+        id: 4,
+        title: "Unlimited Brands",
+      },
+    ],
   },
 ];
