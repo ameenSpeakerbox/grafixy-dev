@@ -66,3 +66,26 @@ export const footerLinks = [
     ],
   },
 ]
+export const heroSection_features = [
+  {
+    id: 1,
+    title : 'SIMPLE PRICING, NO HIDDEN COSTS',
+    subtitle :'It’s simple as that. Once you start your subscription, you get a team of dedicated designers at your disposal!',
+    bgColor : '#BF9AFB'
+
+  },
+  {
+    id: 2,
+    title : 'NO STRESS OF HIRING A DESIGNER',
+    subtitle :'It’s simple as that. Once you start your subscription, you get a team of dedicated designers at your disposal!',
+    bgColor : '#A770FF'
+
+  },
+  {
+    id: 3,
+    title : 'UNSURE? GET 7 DAY FREE TRIAL!',
+    subtitle :"Try out Grafixy Rise for 7 days for free! You may cancel if it’s not the fit for your business.",
+    bgColor : '#6019CE'
+
+  },
+]

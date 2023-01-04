@@ -30,3 +30,8 @@ export const LocationIcon = (props) => (
     />
   </svg>
 );
+export const MessageIcon = (props) => (
+  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+  <path d="M24 22V22.02M32 22V22.02M16 22V22.02M40 42V16C40 14.4087 39.3679 12.8826 38.2426 11.7574C37.1174 10.6321 35.5913 10 34 10H14C12.4087 10 10.8826 10.6321 9.75736 11.7574C8.63214 12.8826 8 14.4087 8 16V28C8 29.5913 8.63214 31.1174 9.75736 32.2426C10.8826 33.3679 12.4087 34 14 34H32L40 42Z" stroke="white" stroke-width="3.58333" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+);
