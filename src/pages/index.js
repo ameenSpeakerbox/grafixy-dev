@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Header, Footer } from "../components";
 import HeroSection from "../components/home/HeroSection";
+import WorkSession from "../components/home/WorkSession";
 import Layout from "../components/layout/layout";
 import "../style/global.css";
 
@@ -9,6 +10,8 @@ const IndexPage = ({ children }) => {
     <main className="">
       <Layout>
         <HeroSection />
+        <WorkSession />
+
       </Layout>
     </main>
   );

@@ -9,22 +9,22 @@ const navLink = [
     name: "why grafixy?",
   },
   {
-    id: 1,
+    id: 2,
     name: "how it's works",
   },
   {
-    id: 1,
+    id: 3,
     name: "pricing",
   },
   {
-    id: 1,
+    id: 4,
     name: "our work",
   },
 ];
 
 const Header = () => {
   return (
-    <nav className="relative h-[1px] flex items-center  w-full ">
+    <nav className="relative h-[.1px] flex items-center  w-full ">
       <div className="px-[147px] flex absolute z-50 h-[67px] items-center justify-between w-full left-0 top-0 mt-[90px]">
         <StaticImage
           src="../../images/logo.png"
@@ -33,7 +33,7 @@ const Header = () => {
           height={48}
         />
         <div className="flex items-center justify-center">
-          <div className="flex items-center justify-center gap-[10px] mr-[35px] ">
+          <div className="flex items-center justify-center gap-[50px] mr-[35px] ">
             {navLink.map((nav) => (
               <Link key={nav.id} to="" className="text-white font-bold text-lg">
                 {nav.name}
