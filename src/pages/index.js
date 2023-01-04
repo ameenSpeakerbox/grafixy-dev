@@ -1,7 +1,5 @@
 import * as React from "react";
-import { Header, Footer } from "../components";
-import HeroSection from "../components/home/HeroSection";
-import WorkSession from "../components/home/WorkSession";
+import { Header, Footer, HeroSection, WorkSession, Why_grafixy } from "../components";
 import Layout from "../components/layout/layout";
 import "../style/global.css";
 
@@ -11,7 +9,7 @@ const IndexPage = ({ children }) => {
       <Layout>
         <HeroSection />
         <WorkSession />
-
+        <Why_grafixy />
       </Layout>
     </main>
   );

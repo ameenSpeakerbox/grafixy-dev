@@ -1,6 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { Work_Session_InstagramPost } from "../../lib/dummyData";
+import { Button } from "../../ui/Button";
 import { BookmarkIcon, CommentIcon, LikeIcon, ShareIcon } from "../../ui/Icon";
 
 const WorkSession = () => {
@@ -10,11 +11,17 @@ const WorkSession = () => {
   );
   return (
     <div className="grid grid-cols-2 w-full h-full">
-      <div className="bg-gradient-to-l to-[#100028] from-[#220058]  py-[93px] px-[160px] ">
+      <div className="bg-gradient-to-l to-[#100028] from-[#220058]  pt-[93px] pb-14 px-[160px] pl-[147px] items-center justify-center flex flex-col">
         {filter.map((item) => (
           <>
-            <span className="flex flex-col items-center justify-center">
-              <img src={item.post} alt={item.subtitle} loading="lazy" height={525} width={525}/>
+            <span className="flex flex-col items-center justify-center max-w-[525px]">
+              <img
+                src={item.post}
+                alt={item.subtitle}
+                loading="lazy"
+                height={525}
+                width={525}
+              />
               <span
                 className={` ${
                   item.id === postId ? "flex" : "hidden"
@@ -39,9 +46,43 @@ const WorkSession = () => {
             </h2>
           </>
         ))}
-        <div></div>
       </div>
-      <div></div>
+      <div className="px-[82px] py-[102px] flex flex-col justify-between gap-4">
+        <div>
+          <h2 className="font-medium text-[#1D0149] text-[65px] leading-none">
+            A perfect fit for <span className="text-[#6019CE]">agencies</span> &{" "}
+            <span className="text-[#6019CE]">brands</span>
+          </h2>
+          <p className="font-nunito text-2xl text-[#1E014C] leading-none mt-7">
+            Grafixy makes it incredibly easy to set up or scale your design
+            team. Stress-free outsourcing. Create unlimited projects for just a
+            flat monthly rate.
+          </p>
+        </div>
+        <div>
+          <h2 className="font-medium text-[#1D0149] text-[65px] leading-none">
+            {" "}
+            <span className="text-[#6019CE]">Easy collaboration</span> with your
+            team.
+          </h2>
+          <p className="font-nunito text-2xl text-[#1E014C] leading-none mt-7">
+            Grafixy makes it incredibly easy to set up or scale your design
+            team. Stress-free outsourcing. Create unlimited projects for just a
+            flat monthly rate.
+          </p>
+          <div className="gap-3 flex  mt-7 ">
+            <Button
+              name="SEE OUR WORK"
+              className="bg-[#6019CE] rounded-full text-white h-16"
+            />
+            <Button
+              name="SEE PRICING"
+              className="bg-[#19013F] rounded-full px-8 py-[10px] text-white h-16"
+            />
+            `
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
