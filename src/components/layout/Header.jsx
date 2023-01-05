@@ -56,11 +56,3 @@ const Header = () => {
 };
 
 export default Header;
-
-export const data = graphql`
-  query logo {
-    file(relativePath: { eq: "icon.png" }) {
-      relativePath
-    }
-  }
-`;
