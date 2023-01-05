@@ -13,3 +13,22 @@
 .font-nunito {
   font-family: 'Nunito Sans', sans-serif;
 }
+.swiper-pagination-bullet {
+ height: 5px;
+ width: 5px; 
+ opacity: 1;
+ background-color: #884CE6;
+}
+.swiper-pagination-bullet-active  {
+ height: 8px;
+ width: 8px; 
+ opacity: 1;
+ background-color: white;
+}
+.swiper-pagination {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  position: relative;
+  margin-bottom: 24px;
+}

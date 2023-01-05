@@ -1,13 +1,12 @@
 import * as React from "react";
 import {
-  Header,
-  Footer,
   HeroSection,
   WorkSession,
   Why_grafixy,
   Collaboration,
   Free_trail,
   HomeFAQ,
+  Testimonial ,
 } from "../components";
 import Layout from "../components/layout/layout";
 import "../style/global.css";
@@ -22,6 +21,7 @@ const IndexPage = ({ children }) => {
         <Collaboration />
         <Free_trail/>
         <HomeFAQ />
+        <Testimonial />
       </Layout>
     </main>
   );

@@ -24,7 +24,8 @@ const Footer = () => {
               </h3>
               <li className="grid gap-[10px]">
                 {link.subtitle.map((text) => (
-                  <Link
+                  <Link 
+                  to={`/${text.slug}`}
                     key={text.id}
                     className="font-semibold text-xl text-[#6E3CBC] cursor-pointer font-nunito"
                   >

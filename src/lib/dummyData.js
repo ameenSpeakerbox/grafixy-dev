@@ -7,6 +7,7 @@ import instagram_6 from "../images/home/work_session/insta_post -6.png";
 import instagram_7 from "../images/home/work_session/insta_post -7.png";
 import toy_car from "../images/home/Toy car.png";
 import toy_bus from "../images/home/Toy bus.png";
+import avatar from "../images/home/avatar.png";
 
 export const footerLinks = [
   {
@@ -16,18 +17,22 @@ export const footerLinks = [
       {
         id: 1,
         title: "Pricing",
+        slug :''
       },
       {
         id: 2,
         title: "Our Work",
+        slug :''
       },
       {
         id: 3,
         title: "FAQ",
+        slug :'faq'
       },
       {
         id: 4,
         title: "Blog",
+        slug :'faq'
       },
     ],
   },
@@ -231,5 +236,34 @@ export const faq_home = [
     question: "How to access your files?",
     answer:
       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.",
+  },
+];
+export const testimonial = [
+  {
+    id: 1,
+    text: "Lectus morbi sollicitudin ligula orci lorem feugiat. Pellentesque consectetur sodales libero urna nunc dictumst accumsan. Aliquet a in integer volutpa.",
+    textWite: "lorem,feugiat.,sodales,libero",
+    userName: "BOBBY STEMPER",
+    position: "Director of Marketing",
+    company: "AdHawk",
+    image: avatar,
+  },
+  {
+    id: 2,
+    text: "Lectus morbi sollicitudin ligula orci lorem feugiat. Pellentesque consectetur sodales libero urna nunc dictumst accumsan. Aliquet a in integer volutpa.",
+    textWite: "lorem,feugiat.,sodales,libero",
+    userName: "BOBBY STEMPER",
+    position: "Director of Marketing",
+    company: "AdHawk",
+    image: avatar,
+  },
+  {
+    id: 3,
+    text: "Lectus morbi sollicitudin ligula orci lorem feugiat. Pellentesque consectetur sodales libero urna nunc dictumst accumsan. Aliquet a in integer volutpa.",
+    textWite: "lorem,feugiat.,sodales,libero",
+    userName: "BOBBY STEMPER",
+    position: "Director of Marketing",
+    company: "AdHawk",
+    image: avatar,
   },
 ];

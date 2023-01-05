@@ -29,8 +29,9 @@ const Header = () => {
         <StaticImage
           src="../../images/logo.png"
           alt="logo"
-          layout="fixed"
-          height={48}
+          layout="fullWidth"
+          objectFit="contain"
+          className="w-[205px]"
         />
         <div className="flex items-center justify-center">
           <div className="flex items-center justify-center gap-[50px] mr-[35px] ">

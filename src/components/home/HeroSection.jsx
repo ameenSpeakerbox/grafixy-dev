@@ -39,7 +39,7 @@ const HeroSection = () => {
         <div className="h-full relative grid w-full">
           <StaticImage
             alt="hero-pic"
-            src="../../images/home/hero/hero-section.webp"
+            src="../../images/home/hero-section.webp"
             objectFit="cover"
             className="w-full hight900:h-[1117px]   hightUt900:h-screen absolute right-0 "
           />
@@ -79,7 +79,7 @@ const HeroSection = () => {
           </h2>
           <div className="flex justify-end">
             <StaticImage
-              src="../../images/home/hero/AJID.png"
+              src="../../images/home/AJID.png"
               layout="fixed"
               width={145}
               height={145}
