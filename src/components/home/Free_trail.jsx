@@ -8,7 +8,7 @@ const Free_trail = () => {
       <div className="bg-white pl-[100px] flex flex-col items-end  justify-end w-[35%] relative shrink-0">
         <img
           src={manThinking}
-          className="-mr-14 z-30  object-contain h-[120%] absolute right-0 bottom-0"
+          className="-mr-14 z-30  object-contain h-[120%] absolute right-0 bottom-0 object-bottom"
           alt="manThinking"
         />
       </div>

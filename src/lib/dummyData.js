@@ -11,8 +11,8 @@ import instagram_5 from "../images/home/work_session/insta_post -5.png";
 import instagram_6 from "../images/home/work_session/insta_post -6.png";
 
 import instagram_7 from "../images/home/work_session/insta_post -7.png";
-import toy_car from "../images/home/collaboration/Toy car.png"
-import toy_bus from "../images/home/collaboration/Toy bus.png"
+import toy_car from "../images/home/collaboration/Toy car.png";
+import toy_bus from "../images/home/collaboration/Toy bus.png";
 
 export const footerLinks = [
   {
@@ -210,5 +210,48 @@ export const trialPlan = [
         title: "Unlimited Brands",
       },
     ],
+  },
+];
+
+export const faq_home = [
+  {
+    id: 1,
+    question: "How does it works?",
+    answer: {
+      id: 1,
+      title: "Can I use TailGrids Pro for my clients projects?",
+      subtitle:
+        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.",
+    },
+  },
+  {
+    id: 2,
+    question: "Will there be any hidden fees?",
+    answer: {
+      id: 1,
+      title: "Can I use TailGrids Pro for my clients projects?",
+      subtitle:
+        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.",
+    },
+  },
+  {
+    id: 3,
+    question: "Do you use design templates?",
+    answer: {
+      id: 1,
+      title: "Can I use TailGrids Pro for my clients projects?",
+      subtitle:
+        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.",
+    },
+  },
+  {
+    id: 4,
+    question: "How to access your files?",
+    answer: {
+      id: 1,
+      title: "Can I use TailGrids Pro for my clients projects?",
+      subtitle:
+        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.",
+    },
   },
 ];

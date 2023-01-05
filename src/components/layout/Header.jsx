@@ -26,7 +26,6 @@ const Header = () => {
   return (
     <nav className="relative h-[.1px] flex items-center  w-full ">
       <div className="px-[147px] flex absolute z-50 h-[67px] items-center justify-between w-full left-0 top-0 mt-[90px]">
-        <img src={data} alt="" />
         <StaticImage
           src="../../images/logo.png"
           alt="logo"
