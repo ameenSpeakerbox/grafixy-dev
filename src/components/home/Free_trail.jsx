@@ -1,19 +1,16 @@
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import manThinking from "../../images/home/Free_trail/manThinking.png";
 
 const Free_trail = () => {
   return (
     <div className="flex h-full">
       <div className="bg-white pl-[100px] flex flex-col items-end  justify-end w-[35%] relative shrink-0">
-        <div className="absolute bottom-0 right-0  flex items-end justify-end ">
-
-        <StaticImage
-          src="../../images/home/Free_trail/manThinking.png"
-          className="-mr-24 w-full h-full "
-          objectFit="cover "
-          layout="constrained"
-          />
-          </div>
+        <img
+          src={manThinking}
+          className="-mr-14 z-30  object-contain h-[120%] absolute right-0 bottom-0"
+          alt="manThinking"
+        />
       </div>
       <div className="py-24 bg-[#6019CE] flex px-20 flex-col">
         <h1 className="font-semibold text-7xl text-white ">

@@ -43,7 +43,7 @@ const Collaboration = () => {
             >
               <div className="flex items-center justify-center">
                 <MainImage
-                  alt="toy car"
+                  alt="toy_car"
                   src={item.picture}
                   loading="lazy"
                   className="object-cover w-[195px]"

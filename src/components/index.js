@@ -5,3 +5,4 @@ export { default as Why_grafixy } from "../components/home/Why_grafixy";
 export { default as WorkSession } from "../components/home/WorkSession";
 export { default as Collaboration } from "../components/home/Collaboration";
 export { default as Free_trail } from "../components/home/Free_trail";
+export { default as HomeFAQ } from "../components/home/HomeFAQ";

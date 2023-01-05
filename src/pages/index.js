@@ -7,6 +7,7 @@ import {
   Why_grafixy,
   Collaboration,
   Free_trail,
+  HomeFAQ,
 } from "../components";
 import Layout from "../components/layout/layout";
 import "../style/global.css";
@@ -20,6 +21,7 @@ const IndexPage = ({ children }) => {
         <Why_grafixy />
         <Collaboration />
         <Free_trail/>
+        <HomeFAQ />
       </Layout>
     </main>
   );

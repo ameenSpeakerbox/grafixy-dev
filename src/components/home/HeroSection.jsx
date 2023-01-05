@@ -14,6 +14,7 @@ const HeroSection = () => {
           <span className="inline-flex items-center">
             Team{" "}
             <img
+            alt="textImage"
               src={hero_textImage}
               className="object-contain ml-2 -mb-4 h-[42px]"
             />
@@ -83,6 +84,7 @@ const HeroSection = () => {
               width={145}
               height={145}
               objectFit="cover"
+              alt="ajid"
             />
           </div>
         </div>

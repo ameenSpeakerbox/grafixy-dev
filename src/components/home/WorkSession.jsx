@@ -13,8 +13,8 @@ const WorkSession = () => {
     <div className="grid grid-cols-2 w-full h-full">
       <div className="bg-gradient-to-l to-[#100028] from-[#220058]  pt-[93px] pb-14 px-[160px] pl-[147px] items-center justify-center flex flex-col">
         {filter.map((item) => (
-          <>
-            <span className="flex flex-col items-center justify-center max-w-[525px]">
+          <React.Fragment key={item.id}>
+            <span  className="flex flex-col items-center justify-center max-w-[525px]">
               <img
                 src={item.post}
                 alt={item.subtitle}
@@ -44,7 +44,7 @@ const WorkSession = () => {
             >
               {item.subtitle}
             </h2>
-          </>
+          </React.Fragment>
         ))}
       </div>
       <div className="px-[82px] py-[102px] flex flex-col justify-between gap-4">
