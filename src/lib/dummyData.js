@@ -217,41 +217,25 @@ export const faq_home = [
   {
     id: 1,
     question: "How does it works?",
-    answer: {
-      id: 1,
-      title: "Can I use TailGrids Pro for my clients projects?",
-      subtitle:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.",
-    },
+    answer:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.",
   },
   {
     id: 2,
     question: "Will there be any hidden fees?",
-    answer: {
-      id: 1,
-      title: "Can I use TailGrids Pro for my clients projects?",
-      subtitle:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.",
-    },
+    answer:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.",
   },
   {
     id: 3,
     question: "Do you use design templates?",
-    answer: {
-      id: 1,
-      title: "Can I use TailGrids Pro for my clients projects?",
-      subtitle:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.",
-    },
+    answer:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.",
   },
   {
     id: 4,
     question: "How to access your files?",
-    answer: {
-      id: 1,
-      title: "Can I use TailGrids Pro for my clients projects?",
-      subtitle:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.",
-    },
+    answer:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.",
   },
 ];
