@@ -1,6 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
-import hero_textImage from "../../images/home/hero/hero-section_text.png";
+import hero_textImage from "../../images/home/hero-section_text.png";
 import { heroSection_features } from "../../lib/dummyData";
 import { MessageIcon } from "../../ui/Icon";
 
