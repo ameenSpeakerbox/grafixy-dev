@@ -2,12 +2,15 @@ import { GatsbyImage, MainImage, StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { gallery } from "../../lib/dummyData";
 
-const PhotoGrid = ({ setIsGalleryOpen }) => {
+const PhotoGrid = ({ setIsGalleryOpen, data, setSwiperPosition }) => {
   return (
     <div className="px-[122px] mt-20 grid grid-cols-3 gap-12 ">
-      {gallery.map((item) => (
+      {data.map((item, idx) => (
         <div
-          onClick={() => setIsGalleryOpen(true)}
+          onClick={() => {
+            setIsGalleryOpen(true);
+            setSwiperPosition(idx);
+          }}
           key={item.id}
           className="max-h-[440px] max-w-[440px] rounded-[20px] overflow-hidden cursor-pointer w-full h-full"
         >

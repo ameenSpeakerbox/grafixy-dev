@@ -1,4 +1,6 @@
-import React from "react";
+import { interpolateAs } from "next/dist/shared/lib/router/router";
+import React, { useMemo } from "react";
+import { gallery } from "../../lib/dummyData";
 import MainParts_head from "./MainParts_head";
 import PhotoGrid from "./PhotoGrid";
 import PictureChanger from "./PictureChanger";
@@ -13,9 +15,17 @@ const category = [
 ];
 const MainParts = () => {
   const [isGalleryOpen, setIsGalleryOpen] = React.useState(false);
+  const [swiperPosition, setSwiperPosition] = React.useState(0);
 
-  const [isCategory, setIsCategory] = React.useState('Featured"');
+  const [isCategory, setIsCategory] = React.useState("Featured");
 
+  const galleryFiltered = () => {
+    if (isCategory === "Featured") return gallery;
+    else if (isCategory !== "Featured") {
+      return gallery.filter((item) => item.category === isCategory && item);
+    }
+  };
+  
   return (
     <div className="mt-20">
       <MainParts_head
@@ -23,10 +33,11 @@ const MainParts = () => {
         isCategory={isCategory}
         setIsCategory={setIsCategory}
       />
-      <PhotoGrid setIsGalleryOpen={setIsGalleryOpen} />
+      <PhotoGrid setIsGalleryOpen={setIsGalleryOpen} data={galleryFiltered()} setSwiperPosition={setSwiperPosition}/>
       <PictureChanger
         isGalleryOpen={isGalleryOpen}
         setIsGalleryOpen={setIsGalleryOpen}
+        swiperPosition={swiperPosition}
       />
     </div>
   );

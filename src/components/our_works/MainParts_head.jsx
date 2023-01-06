@@ -9,9 +9,8 @@ const MainParts_head = ({ category, isCategory, setIsCategory }) => {
           onClick={() => setIsCategory(item.title)}
           key={item.id}
           className={`font-medium text-4xl 
-        text-[#6E3CBC] cursor-pointer hover:text-[#210153]  px-[15px] py-[10px] rounded-[10px] duration-300 ${
-          isCategory === item.title && "bg-[#874ce618]"
-        }`}
+        text-[#6E3CBC] cursor-pointer hover:text-[#210153]  px-[15px] py-[10px] rounded-[10px] duration-300 ${isCategory === item.title && "bg-[#874ce618]"
+            }`}
         >
           {item.title}
         </p>

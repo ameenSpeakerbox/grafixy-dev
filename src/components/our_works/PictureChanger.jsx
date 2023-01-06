@@ -1,13 +1,10 @@
 import { MainImage } from "gatsby-plugin-image";
 import React, { useRef } from "react";
-import { gallery1 } from "../../images/our_works/gallery";
-import { ArrowLeftIcon, CloseIcon } from "../../ui/Icon";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-
+import { ArrowLeftIcon, CloseIcon } from "../../ui/Icon"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { gallery } from "../../lib/dummyData";
 
-const PictureChanger = ({ isGalleryOpen, setIsGalleryOpen }) => {
+const PictureChanger = ({ isGalleryOpen, setIsGalleryOpen, swiperPosition }) => {
   const swiperRef = useRef();
   return (
     <div
@@ -33,6 +30,7 @@ const PictureChanger = ({ isGalleryOpen, setIsGalleryOpen }) => {
               swiperRef.current = swiper;
             }}
             loop={true}
+            initialSlide={swiperPosition}
             className="w-full h-full flex items-center justify-center"
           >
             {gallery.map((item) => (
