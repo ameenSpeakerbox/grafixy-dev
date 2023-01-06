@@ -18,7 +18,7 @@ const index = () => {
             A perfect fit for <br /> <span>agencies</span> &{" "}
             <span className="text-white">brands</span>
           </h1>
-          <p className="text-white text-2xl leading-[125%] w-[50%] mt-5">
+          <p className="text-white text-2xl leading-[125%] w-[50%] mt-5 ">
             Invite team members and clients to help you make and manage designs
             at no extra cost. Easy integration into slack and microsoft teams.
           </p>
