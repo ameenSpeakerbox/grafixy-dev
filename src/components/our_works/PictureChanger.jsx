@@ -12,7 +12,7 @@ const PictureChanger = ({ isGalleryOpen, setIsGalleryOpen }) => {
   return (
     <div
       className={`bg-black bg-opacity-50  fixed   inset-0  place-content-center w-full h-full flex items-center justify-center  ${
-        !isGalleryOpen ? "opacity-100 z-[100]" : "opacity-0 -z-[500]"
+        isGalleryOpen ? "opacity-100 z-[100]" : "opacity-0 -z-[500]"
       } duration-500`}
     >
       <div className="w-full h-full relative flex items-center justify-center">
@@ -29,8 +29,10 @@ const PictureChanger = ({ isGalleryOpen, setIsGalleryOpen }) => {
         <div className=" w-[60%] flex items-center justify-center px-[74px] py-[74px] h-full relative">
           <Swiper
             slidesPerView={1}
-            onBeforeInit={(swiper) => swiperRef.current === swiper
-            }
+            onBeforeInit={(swiper) => {
+              swiperRef.current = swiper;
+            }}
+            loop={true}
             className="w-full h-full flex items-center justify-center"
           >
             {gallery.map((item) => (
