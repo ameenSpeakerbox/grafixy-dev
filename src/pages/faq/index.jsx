@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../../components/layout/layout";
 import { faq } from "../../lib/dummyData";
+import "../../style/global.css";
 
 const index = () => {
   return (
@@ -18,15 +19,20 @@ const index = () => {
         <div className="grid w-full gap-24">
           {faq.map((item) => (
             <div key={item.id} className="">
-              <h2 className="font-bold text-[40px] leading-none text-white mb-[30px] uppercase">{item.question}</h2>
+              <h2 className="font-bold text-[40px] leading-none text-white mb-[30px] uppercase">
+                {item.question}
+              </h2>
               <div className="grid gap-12">
-
-              {item.answer.map((ans) => (
-                <span key={ans.id} className=''>
-                  <h4 className="font-nunito text-[30px] font-bold text-white leading-10 mb-[10px]">{ans.subQuestion}</h4>
-                  <p className="text-2xl font-semibold font-nunito text-[rgba(255,255,255,0.7)] w-[60%]">{ans.answer}</p>
-                </span>
-              ))}
+                {item.answer.map((ans) => (
+                  <span key={ans.id} className="">
+                    <h4 className="font-nunito text-[30px] font-bold text-white leading-10 mb-[10px]">
+                      {ans.subQuestion}
+                    </h4>
+                    <p className="text-2xl font-semibold font-nunito text-[rgba(255,255,255,0.7)] w-[60%]">
+                      {ans.answer}
+                    </p>
+                  </span>
+                ))}
               </div>
             </div>
           ))}

@@ -8,33 +8,40 @@ import instagram_7 from "../images/home/work_session/insta_post -7.png";
 import toy_car from "../images/home/Toy car.png";
 import toy_bus from "../images/home/Toy bus.png";
 import avatar from "../images/home/avatar.png";
-
+import {
+  gallery1,
+  gallery2,
+  gallery3,
+  gallery4,
+  gallery5,
+  gallery6,
+  gallery7,
+  gallery8,
+  gallery9,
+} from "../images/our_works/gallery";
 
 export const navLink = [
   {
     id: 1,
     name: "why grafixy?",
-    slug : ''
-    
+    slug: "",
   },
   {
     id: 2,
     name: "how it's works",
-    slug : ''
-
+    slug: "",
   },
   {
     id: 3,
     name: "pricing",
-    slug : ''
+    slug: "",
   },
   {
     id: 4,
     name: "our work",
-    slug : 'our_works'
+    slug: "our_works",
   },
 ];
-
 
 export const footerLinks = [
   {
@@ -445,5 +452,80 @@ export const faq = [
           "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
       },
     ],
+  },
+];
+
+export const gallery = [
+  {
+    id: 1,
+    title: "",
+    category: "",
+    picture: gallery1,
+  },
+  {
+    id: 2,
+    title: "",
+    category: "",
+    picture: gallery2,
+  },
+  {
+    id: 3,
+    title: "",
+    category: "",
+    picture: gallery3,
+  },
+  {
+    id: 4,
+    title: "",
+    category: "",
+    picture: gallery4,
+  },
+  {
+    id: 5,
+    title: "",
+    category: "",
+    picture: gallery5,
+  },
+  {
+    id: 6,
+    title: "",
+    category: "",
+    picture: gallery6,
+  },
+  {
+    id: 7,
+    title: "",
+    category: "",
+    picture: gallery7,
+  },
+  {
+    id: 8,
+    title: "",
+    category: "",
+    picture: gallery8,
+  },
+  {
+    id: 9,
+    title: "",
+    category: "",
+    picture: gallery9,
+  },
+  {
+    id: 1,
+    title: "",
+    category: "",
+    picture: gallery1,
+  },
+  {
+    id: 1,
+    title: "",
+    category: "",
+    picture: gallery1,
+  },
+  {
+    id: 1,
+    title: "",
+    category: "",
+    picture: gallery1,
   },
 ];

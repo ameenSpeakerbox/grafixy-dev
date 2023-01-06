@@ -283,3 +283,36 @@ export const ApostropheIcon = (props) => (
     />
   </svg>
 );
+export const ArrowLeftIcon = (props) => (
+  <svg
+    width="151"
+    height="153"
+    viewBox="0 0 151 153"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M89.1614 118L97 110.101L60.6773 73.5L97 36.8988L89.1614 29L45 73.5L89.1614 118Z"
+      fill="white"
+      fill-opacity="0.8"
+    />
+  </svg>
+);
+export const CloseIcon = (props) => (
+  <svg
+    width="151"
+    height="153"
+    viewBox="0 0 151 153"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M101 102L50 51M101 51L50 102"
+      stroke="white"
+      stroke-width="3"
+      stroke-linecap="round"
+    />
+  </svg>
+);

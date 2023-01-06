@@ -1,7 +1,8 @@
-import { GatsbyImage, MainImage } from "gatsby-plugin-image";
+import {  MainImage } from "gatsby-plugin-image";
 import React from "react";
 import Layout from "../../components/layout/layout";
-import GetDemo from "../../images/our_works/GetDemo";
+import GetDemo from "../../components/our_works/GetDemo";
+import MainParts from "../../components/our_works/MainParts";
 import headerImg from "../../images/our_works/ourWorks_heder.png";
 
 const index = () => {
@@ -23,7 +24,7 @@ const index = () => {
             at no extra cost. Easy integration into slack and microsoft teams.
           </p>
         </div>
-
+        <MainParts />
         <GetDemo />
       </Layout>
     </div>
