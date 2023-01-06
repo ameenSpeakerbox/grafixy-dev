@@ -1,11 +1,16 @@
 import { MainImage } from "gatsby-plugin-image";
 import React, { useRef } from "react";
-import { ArrowLeftIcon, CloseIcon } from "../../ui/Icon"
+import { ArrowLeftIcon, CloseIcon } from "../../ui/Icon";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { gallery } from "../../lib/dummyData";
 
-const PictureChanger = ({ isGalleryOpen, setIsGalleryOpen, swiperPosition }) => {
+const PictureChanger = ({
+  isGalleryOpen,
+  setIsGalleryOpen,
+  data
+}) => {
   const swiperRef = useRef();
+  
   return (
     <div
       className={`bg-black bg-opacity-50  fixed   inset-0  place-content-center w-full h-full flex items-center justify-center  ${
@@ -17,23 +22,24 @@ const PictureChanger = ({ isGalleryOpen, setIsGalleryOpen, swiperPosition }) => 
           onClick={() => setIsGalleryOpen(false)}
           className="absolute right-16 top-16 cursor-pointer hover:rotate-90 duration-300 "
         />
-        <div onClick={() => swiperRef.current?.slidePrev()} className="w-[20%] cursor-pointer flex items-center justify-center hover:bg-[#0000004f] h-full">
-          <ArrowLeftIcon
-           
-            className="cursor-pointer "
-          />
+        <div
+          onClick={() => swiperRef.current?.slidePrev()}
+          className="w-[20%] cursor-pointer flex items-center justify-center hover:bg-[#0000004f] h-full"
+        >
+          <ArrowLeftIcon className="cursor-pointer " />
         </div>
         <div className=" w-[60%] flex items-center justify-center px-[74px] py-[74px] h-full relative">
           <Swiper
             slidesPerView={1}
             onBeforeInit={(swiper) => {
               swiperRef.current = swiper;
+
             }}
+            
             loop={true}
-            initialSlide={swiperPosition}
             className="w-full h-full flex items-center justify-center"
           >
-            {gallery.map((item) => (
+            {data.map((item) => (
               <SwiperSlide
                 key={item.id}
                 className="w-full h-full flex items-center justify-center"
@@ -46,8 +52,11 @@ const PictureChanger = ({ isGalleryOpen, setIsGalleryOpen, swiperPosition }) => 
             ))}
           </Swiper>
         </div>
-        <div onClick={() => swiperRef.current?.slideNext()} className="w-[20%] cursor-pointer flex items-center justify-center hover:bg-[#0000004f] h-full">
-          <ArrowLeftIcon  className="rotate-180 cursor-pointer" />
+        <div
+          onClick={() => swiperRef.current?.slideNext()}
+          className="w-[20%] cursor-pointer flex items-center justify-center hover:bg-[#0000004f] h-full"
+        >
+          <ArrowLeftIcon className="rotate-180 cursor-pointer" />
         </div>
       </div>
     </div>

@@ -25,7 +25,14 @@ const MainParts = () => {
       return gallery.filter((item) => item.category === isCategory && item);
     }
   };
-  
+
+  const swiperData = galleryFiltered().sort((a) => {
+    if (a.id > swiperPosition) return -1;
+    else if (a.id < swiperPosition) return +1;
+    return 1;
+  });
+
+  console.log(swiperData);
   return (
     <div className="mt-20">
       <MainParts_head
@@ -33,11 +40,15 @@ const MainParts = () => {
         isCategory={isCategory}
         setIsCategory={setIsCategory}
       />
-      <PhotoGrid setIsGalleryOpen={setIsGalleryOpen} data={galleryFiltered()} setSwiperPosition={setSwiperPosition}/>
+      <PhotoGrid
+        setIsGalleryOpen={setIsGalleryOpen}
+        data={galleryFiltered()}
+        setSwiperPosition={setSwiperPosition}
+      />
       <PictureChanger
         isGalleryOpen={isGalleryOpen}
         setIsGalleryOpen={setIsGalleryOpen}
-        swiperPosition={swiperPosition}
+        data={swiperData}
       />
     </div>
   );
