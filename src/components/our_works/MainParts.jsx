@@ -1,5 +1,4 @@
-import { interpolateAs } from "next/dist/shared/lib/router/router";
-import React, { useMemo } from "react";
+import React, { useEffect } from "react";
 import { gallery } from "../../lib/dummyData";
 import MainParts_head from "./MainParts_head";
 import PhotoGrid from "./PhotoGrid";
@@ -16,6 +15,7 @@ const category = [
 const MainParts = () => {
   const [isGalleryOpen, setIsGalleryOpen] = React.useState(false);
   const [swiperPosition, setSwiperPosition] = React.useState(0);
+  const [swiperData, setSwiperData] = React.useState([]);
 
   const [isCategory, setIsCategory] = React.useState("Featured");
 
@@ -26,11 +26,15 @@ const MainParts = () => {
     }
   };
 
-  const swiperData = galleryFiltered().sort((a) => {
-    if (a.id > swiperPosition) return -1;
-    else if (a.id < swiperPosition) return +1;
-    return 1;
-  });
+  useEffect(() => {
+    const data = galleryFiltered().sort((a) => {
+      if (a.id >= swiperPosition) return 1;
+      else if (a.id < swiperPosition) return -1;
+
+
+    } );
+      setSwiperData(data);
+  }, [swiperPosition]);
 
   console.log(swiperData);
   return (

@@ -39,7 +39,7 @@ const PictureChanger = ({
             loop={true}
             className="w-full h-full flex items-center justify-center"
           >
-            {data.map((item) => (
+            {data?.map((item) => (
               <SwiperSlide
                 key={item.id}
                 className="w-full h-full flex items-center justify-center"

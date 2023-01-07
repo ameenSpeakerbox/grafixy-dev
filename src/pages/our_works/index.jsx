@@ -1,4 +1,4 @@
-import {  MainImage } from "gatsby-plugin-image";
+import { MainImage } from "gatsby-plugin-image";
 import React from "react";
 import Layout from "../../components/layout/layout";
 import GetDemo from "../../components/our_works/GetDemo";
@@ -7,7 +7,7 @@ import headerImg from "../../images/our_works/ourWorks_heder.png";
 
 const index = () => {
   return (
-    <div className="bg-[#1A0143]">
+    <div className="bg-[#1A0143] max-w-[2560px] mx-auto grid w-full ">
       <Layout>
         <div className="h-[632px] flex w-full relative items-center justify-center flex-col text-center z-10">
           <MainImage

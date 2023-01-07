@@ -13,7 +13,7 @@ import "../style/global.css";
 
 const IndexPage = ({ children }) => {
   return (
-    <main className="">
+    <main className=" max-w-[2560px] mx-auto grid w-full">
       <Layout>
         <HeroSection />
         <WorkSession />

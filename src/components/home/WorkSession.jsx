@@ -5,7 +5,7 @@ import { Button } from "../../ui/Button";
 import { BookmarkIcon, CommentIcon, LikeIcon, ShareIcon } from "../../ui/Icon";
 
 const WorkSession = () => {
-  const postId = 4;
+  const postId = 5;
   const filter = Work_Session_InstagramPost.filter(
     (item) => item.id === postId && item,
   );
@@ -19,8 +19,7 @@ const WorkSession = () => {
                 src={item.post}
                 alt={item.subtitle}
                 loading="lazy"
-                height={525}
-                width={525}
+                className="object-cover"
               />
               <span
                 className={` ${
@@ -50,10 +49,10 @@ const WorkSession = () => {
       <div className="px-[82px] py-[102px] flex flex-col justify-between gap-4">
         <div>
           <h2 className="font-medium text-[#1D0149] text-[65px] leading-none">
-            A perfect fit for <span className="text-[#6019CE]">agencies</span> &{" "}
+            A perfect fit for <br /> <span className="text-[#6019CE]">agencies</span> &{" "}
             <span className="text-[#6019CE]">brands</span>
           </h2>
-          <p className="font-nunito text-2xl text-[#1E014C] leading-none mt-7">
+          <p className="font-nunito text-2xl text-[#1E014C] leading-none mt-7 w-[70%]">
             Grafixy makes it incredibly easy to set up or scale your design
             team. Stress-free outsourcing. Create unlimited projects for just a
             flat monthly rate.
@@ -62,10 +61,10 @@ const WorkSession = () => {
         <div>
           <h2 className="font-medium text-[#1D0149] text-[65px] leading-none">
             {" "}
-            <span className="text-[#6019CE]">Easy collaboration</span> with your
+            <span className="text-[#6019CE]">Easy collaboration <br /></span> with your
             team.
           </h2>
-          <p className="font-nunito text-2xl text-[#1E014C] leading-none mt-7">
+          <p className="font-nunito text-2xl text-[#1E014C] leading-none mt-7 w-[70%]">
             Grafixy makes it incredibly easy to set up or scale your design
             team. Stress-free outsourcing. Create unlimited projects for just a
             flat monthly rate.
