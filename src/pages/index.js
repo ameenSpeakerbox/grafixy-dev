@@ -11,7 +11,7 @@ import {
 import Layout from "../components/layout/layout";
 import "../style/global.css";
 
-const IndexPage = ({ children }) => {
+const IndexPage = () => {
   return (
     <main className=" max-w-[2560px] mx-auto grid w-full">
       <Layout>

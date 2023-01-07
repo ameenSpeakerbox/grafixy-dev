@@ -23,14 +23,6 @@ const HomeFAQ = () => {
         </h2>
         <div className="w-full grid gap-10 duration-300">
           {faq_home.map((item) => (
-            // <QuotationOpener
-            //   key={item.id}
-            //   questionToggle={questionToggle}
-            //   setQuestionToggle={setQuestionToggle}
-            //   answer={item.answer}
-            //   question={item.question}
-            // />
-
             <div
               key={item.id}
               onClick={() => handleToggle(item.question)}
@@ -49,9 +41,9 @@ const HomeFAQ = () => {
               <p
                 className={`${
                   questionToggle === item.question
-                    ? "opacity-100 h-auto "
+                    ? "opacity-100 h-20 "
                     : "-translate-y-9 opacity-0 h-0"
-                } duration-300 transition-all mt-[10px] text-base font-nunito text-white cursor-default -z-10`}
+                } duration-300 transition-all mt-[10px] text-base font-nunito text-white cursor-default -z-10 w-[90%]`}
               >
                 {item.answer}
               </p>
@@ -65,8 +57,8 @@ const HomeFAQ = () => {
           More from <span className="text-[#E0CCFF] underline">FAQs</span>{" "}
         </Link>
       </div>
-      <div className="bg-[#6019CE] flex flex-col items-end  justify-end w-[35%] shrink-0  relative">
-        <img  src={faqPic} alt="homeFaq" className="h-full  absolute object-cover  object-left-bottom right-0 w-[1355px]" />
+      <div className="bg-[#6019CE] flex flex-col items-end  justify-end w-[35%] shrink-0  relative overflow-hidden">
+        <img  src={faqPic} alt="homeFaq" className="h-max  absolute object-fill top-0  object-left-bottom left-0 min-w-[1055px]" />
       </div>
     </div>
   );

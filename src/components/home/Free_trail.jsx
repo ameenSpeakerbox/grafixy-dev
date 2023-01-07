@@ -20,7 +20,7 @@ const Free_trail = () => {
           <h2 className="text-[#FFE600] font-semibold text-[55px]">
             7 Day Free Trial
           </h2>
-          <p className="font-nunito text-lg text-white">
+          <p className="font-nunito text-lg text-white w-[60%]">
             If you feel like our services are not the right fit for your
             business, you can cancel within first 7 days. You get billed only
             after day 7 and you don’t have to sign any contracts to continue

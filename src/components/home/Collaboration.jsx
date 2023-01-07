@@ -8,9 +8,9 @@ import { TickIcon } from "../../ui/Icon";
 const Collaboration = () => {
   return (
     <div className="flex  w-full ">
-      <div className="bg-[#210153] pl-[100px] flex flex-col items-start justify-center w-[35%] pr-16">
+      <div className="bg-[#210153] pl-[100px] flex flex-col items-start justify-center w-[35%] pr-16 shrink-0">
         <h2 className="font-medium  leading-[110%] text-6xl text-white ">
-          Easy collaboration{" "}
+          Easy collaboration <br />
           <span className="text-[#D4BFF4]">with your team.</span>{" "}
         </h2>
         <p className="text-[22px] leading-[35px] text-white tracking-[1px] mt-[15px] w-3/4">
@@ -33,13 +33,13 @@ const Collaboration = () => {
         </div>
 
         <div
-          className="grid grid-cols-2 gap-11 w-full mt-[63px]
+          className="flex items-center justify-center gap-11 w-full mt-[63px]
         "
         >
           {trialPlan.map((item) => (
             <div
               key={item.id}
-              className="w-full bg-[#E0CCFF] rounded-[15px] px-[62px] py-12 items-center justify-center"
+              className="w-full bg-[#E0CCFF] rounded-[15px] px-[62px] py-12 items-center justify-center max-w-[458px]"
             >
               <div className="flex items-center justify-center">
                 <MainImage
@@ -50,7 +50,7 @@ const Collaboration = () => {
                 />
               </div>
               <h2 className="w-full  flex items-center justify-between text-5xl font-bold text-[#210153] ">
-                <span>{item.title}</span>{" "}
+                <span>{item.title}</span>
                 <span className="flex items-center gap-1 font-semibold">
                   <small className="text-2xl font-extrabold">$</small>
                   {item.price}
@@ -80,31 +80,6 @@ const Collaboration = () => {
               </div>
             </div>
           ))}
-        </div>
-        <div className="mt-8 flex flex-col items-center justify-center">
-          <h1 className="font-semibold text-4xl text-[#210153]">
-            Add on Services
-          </h1>
-          <span className=" px-24 py-[14px] bg-[#E0CCFF] rounded-lg flex justify-between gap-[35px] mt-6">
-            <p className="inline-flex items-center justify-center font-nunito text-sm  font-medium text-[#210153] ">
-              <TickIcon />
-              &nbsp;1 Active Requests
-            </p>
-            <p className="inline-flex items-center justify-center font-nunito text-sm  font-medium text-[#210153] ">
-              <TickIcon />
-              &nbsp;1 Unlimited Requests
-            </p>
-          </span>
-          <span className=" px-24 py-[14px] bg-[#E0CCFF] rounded-lg flex justify-between gap-[35px] mt-3">
-            <p className="inline-flex items-center justify-center font-nunito text-sm  font-medium text-[#210153] ">
-              <TickIcon />
-              &nbsp;1 Active Requests
-            </p>
-            <p className="inline-flex items-center justify-center font-nunito text-sm  font-medium text-[#210153] ">
-              <TickIcon />
-              &nbsp;1 Unlimited Requests
-            </p>
-          </span>
         </div>
       </div>
     </div>

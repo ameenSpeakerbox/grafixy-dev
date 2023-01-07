@@ -18,7 +18,7 @@ const Why_grafixy = () => {
           <GrafixyWhiteIcon />
         </div>
         <h3>
-          MAKE <span className="text-[#FFE600]">UNLIMITED</span> DESIGN REQUESTS
+          MAKE <span className="text-[#FFE600]">UNLIMITED <br /></span> DESIGN REQUESTS <br />
           & REVISIONS
         </h3>
       </span>
@@ -27,7 +27,7 @@ const Why_grafixy = () => {
           <GrafixyWhiteIcon />
         </div>
         <h3>
-          NO STRESS OF <span className="text-[#FFE600]">HIRING </span>A DESIGNER
+          NO STRESS OF <br /> <span className="text-[#FFE600]">HIRING </span>A <br /> DESIGNER
         </h3>
       </span>
       <span className="flex items-start justify-center text-[34px] leading-[110%] font-bold text-white  -rotate-6">
@@ -35,7 +35,7 @@ const Why_grafixy = () => {
           <GrafixyWhiteIcon />
         </div>
         <h3>
-          INCREDIBLY <span className="text-[#FFE600]">FAST</span> TURNAROUNDS
+          INCREDIBLY <span className="text-[#FFE600]">FAST <br /></span> TURNAROUNDS
         </h3>
       </span>
       <span className="flex items-start justify-center text-[34px] leading-[110%] font-bold text-white  -rotate-6">
@@ -43,7 +43,7 @@ const Why_grafixy = () => {
           <GrafixyWhiteIcon />
         </div>
         <h3>
-          <span className="text-[#FFE600]">DEDICATED</span> PROJECT MANAGER &
+          <span className="text-[#FFE600]">DEDICATED <br /></span> PROJECT MANAGER <br /> &
           TEAM
         </h3>
       </span>
@@ -52,7 +52,7 @@ const Why_grafixy = () => {
           <GrafixyWhiteIcon />
         </div>
         <h3>
-          NO <span className="text-[#FFE600]"> CONTRACTS,</span> CANCEL ANYTIME.
+          NO <span className="text-[#FFE600]"> CONTRACTS, <br /></span> CANCEL ANYTIME.
         </h3>
       </span>
     </div>

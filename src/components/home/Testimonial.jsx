@@ -11,11 +11,11 @@ import { Autoplay, Pagination } from "swiper";
 
 const Testimonial = () => {
   return (
-    <div className="grid grid-cols-2 w-full">
+    <div className="grid grid-cols-2 w-full ">
       <div className="w-full bg-white pl-24 py-44 pr-20">
         <h1 className="text-[#1D0149] font-medium text-[65px] leading-none">
-          Trusted by the worlds <span className="text-[#6019CE]">largest </span>
-          & <span className="text-[#6019CE]">fastest growing</span> companies
+          Trusted by the worlds <br /><span className="text-[#6019CE]">largest </span>
+          & <span className="text-[#6019CE]">fastest growing <br /></span> companies
         </h1>
         <p className="text-2xl font-semibold font-nunito leading-[130%] text-[#1E014C] mt-6 w-3/4">
           Grafixy makes it incredibly easy Grafixy makes it incredibly easy

@@ -14,7 +14,7 @@ const WorkSession = () => {
       <div className="bg-gradient-to-l to-[#100028] from-[#220058]  pt-[93px] pb-14 px-[160px] pl-[147px] items-center justify-center flex flex-col">
         {filter.map((item) => (
           <React.Fragment key={item.id}>
-            <span  className="flex flex-col items-center justify-center max-w-[525px]">
+            <span className="flex flex-col items-center justify-center max-w-[525px]">
               <img
                 src={item.post}
                 alt={item.subtitle}
@@ -46,10 +46,11 @@ const WorkSession = () => {
           </React.Fragment>
         ))}
       </div>
-      <div className="px-[82px] py-[102px] flex flex-col justify-between gap-4">
+      <div className="px-[82px] py-[102px] flex flex-col justify-between gap-[74px]">
         <div>
           <h2 className="font-medium text-[#1D0149] text-[65px] leading-none">
-            A perfect fit for <br /> <span className="text-[#6019CE]">agencies</span> &{" "}
+            A perfect fit for <br />{" "}
+            <span className="text-[#6019CE]">agencies</span> &{" "}
             <span className="text-[#6019CE]">brands</span>
           </h2>
           <p className="font-nunito text-2xl text-[#1E014C] leading-none mt-7 w-[70%]">
@@ -61,8 +62,10 @@ const WorkSession = () => {
         <div>
           <h2 className="font-medium text-[#1D0149] text-[65px] leading-none">
             {" "}
-            <span className="text-[#6019CE]">Easy collaboration <br /></span> with your
-            team.
+            <span className="text-[#6019CE]">
+              Easy collaboration <br />
+            </span>{" "}
+            with your team.
           </h2>
           <p className="font-nunito text-2xl text-[#1E014C] leading-none mt-7 w-[70%]">
             Grafixy makes it incredibly easy to set up or scale your design

@@ -56,14 +56,14 @@ const HeroSection = () => {
             >
               <h2
                 className={`font-bold text-2xl ${
-                  item.id === 3 ? "text-white" : "text-[#160137]"
+                  item.id === 3 ? "text-white" : "text-[#160137] w-[80%]"
                 }  `}
               >
                 {item.title}
               </h2>
               <p
                 className={`font-nunito font-light leading-[110%] ${
-                  item.id === 3 ? "text-white" : "text-[#160137]"
+                  item.id === 3 ? "text-white" : "text-[#160137] w-[70%]"
                 }`}
               >
                 {item.subtitle}
