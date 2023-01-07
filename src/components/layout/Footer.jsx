@@ -6,7 +6,7 @@ import { Link } from "gatsby";
 
 const Footer = () => {
   return (
-    <footer className="grid ">
+    <footer className="grid w-full overflow-hidden">
       <div className="bg-[#E0CCFF] pt-[73px] pb-[50px] flex items-center justify-between">
         <div className=" grid place-content-center place-items-center flex-1">
           <StaticImage

@@ -17,8 +17,8 @@ const IndexPage = () => {
       <Layout>
         <HeroSection />
         <WorkSession />
-        {/* <Why_grafixy /> */}
-        {/* <Collaboration /> */}
+        <Why_grafixy />
+        <Collaboration />
         {/* <Free_trail/> */}
         {/* <HomeFAQ /> */}
         {/* <Testimonial /> */}
