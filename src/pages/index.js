@@ -13,15 +13,15 @@ import "../style/global.css";
 
 const IndexPage = () => {
   return (
-    <main className=" max-w-[2560px] mx-auto grid w-full overflow-hidden">
+    <main className=" max-w-[2560px] mx-auto grid w-full ">
       <Layout>
         <HeroSection />
         <WorkSession />
-        <Why_grafixy />
-        <Collaboration />
-        <Free_trail/>
-        <HomeFAQ />
-        <Testimonial />
+        {/* <Why_grafixy /> */}
+        {/* <Collaboration /> */}
+        {/* <Free_trail/> */}
+        {/* <HomeFAQ /> */}
+        {/* <Testimonial /> */}
       </Layout>
     </main>
   );

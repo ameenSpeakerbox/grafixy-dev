@@ -7,9 +7,9 @@ import heroPic from "../../images/home/hero-section.webp";
 
 const HeroSection = () => {
   return (
-    <div className="hight900:h-[1117px]  hightUt900:h-screen overflow-hidden bg-gradient-to-r from-[#100028] to-[#220058] flex flex-col items-center justify-center w-full ">
+    <div className="hight900:h-[1117px]  hightUt900:h-screen overflow-hidden bg-gradient-to-r from-[#100028] to-[#220058] flex flex-col items-center justify-center w-full relative">
       {/* main section */}
-      <div className="grid grid-cols-2 h-full w-full">
+      <div className="grid grid-cols-2 h-full w-full ">
         <div className="2xl:text-[65px] text-5xl leading-[110%] font-medium text-white flex flex-col items-start justify-center w-full 2xl:px-[147px] px-[100px] 2xl:pt-60 pt-40">
           Your Design <br />
           <span className="inline-flex items-center">
@@ -57,7 +57,7 @@ const HeroSection = () => {
               className="flex flex-col  gap-[2px] 2xl:py-[51px]  2xl:px-[76px] py-[30px] px-[45px]  border-l border-black  border-t h-full"
             >
               <h2
-                className={`font-bold 2xl:text-2xl text-xl leading-[110%] ${
+                className={`font-bold 2xl:text-2xl lg:text-xl text-sm leading-[110%] ${
                   item.id === 3
                     ? "text-white"
                     : "text-[#160137] 2xl:w-[80%] w-[90%] h-full"
@@ -66,7 +66,7 @@ const HeroSection = () => {
                 {item.title}
               </h2>
               <p
-                className={`font-nunito font-light text-lg leading-[110%] ${
+                className={`font-nunito font-light lg:text-lg text-[10px] leading-[110%] ${
                   item.id === 3
                     ? "text-white"
                     : "text-[#160137] 2xl:w-[80%] w-[90%]"
@@ -78,19 +78,21 @@ const HeroSection = () => {
           ))}
         </div>
 
-        <div className="bg-[#1D014A] 2xl:py-[51px]  2xl:px-[76px] py-[30px] px-[45px] border-t border-l border-black 2xl:pb-[35px] pb-[20px] relative">
-          <h2 className="text-white 2xl:text-2xl text-xl font-bold inline-flex">
+        <div className="bg-[#1D014A] 2xl:py-[51px]  2xl:px-[76px] py-[30px] px-[45px] border-t border-l border-black 2xl:pb-[35px] pb-[20px] relative h-[110%]">
+          <h2 className="text-white 2xl:text-2xl lg:text-xl text-sm font-bold flex shrink-0 w-max">
             <MessageIcon className="absolute 2xl:left-[24px] left-[14px] 2xl:top-[51px] top-[30px] 2xl:w-[48px] 2xl:h-[48px] w-[28px] h-[28px]" />
-            NEED TO KNOW MORE? LET’S HAVE A CHAT
+            NEED TO KNOW MORE? <br />
+            LET’S HAVE A CHAT
           </h2>
           <div className="flex justify-end">
             <StaticImage
               src="../../images/home/AJID.png"
-              layout="fixed"
-              width={145}
-              height={145}
+              layout="fullWidth"
+              width={135}
+              height={135}
               objectFit="cover"
               alt="ajid"
+              className="lg:w-[135px] lg:h-[135px] w-[80px] h-[80px]"
             />
           </div>
         </div>

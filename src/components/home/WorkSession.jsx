@@ -20,7 +20,7 @@ const WorkSession = () => {
 
   return (
     <div className="grid grid-cols-2 w-full h-full">
-      <div className="bg-gradient-to-l to-[#100028] from-[#220058]  pt-[93px] pb-14 px-[160px] pl-[147px] items-center justify-center flex flex-col">
+      <div className="bg-gradient-to-l to-[#100028] from-[#220058]  pt-[93px] pb-14 2xl:px-[160px] 2xl:pl-[147px] px-[100px] py-[140px] items-center justify-center flex flex-col">
         {Work_Session_InstagramPost.map((item) => (
           <React.Fragment key={item.id}>
             <span className={`${item.id === autoCount ? "flex" : 'hidden'} flex-col items-center justify-center max-w-[525px] animateInst`}>

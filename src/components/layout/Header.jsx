@@ -7,8 +7,8 @@ import logo from "../../images/logo.png";
 
 const Header = () => {
   return (
-    <nav className="relative h-[.1px] flex items-center  w-full ">
-      <div className="2xl:px-[147px] px-[100px]  flex absolute z-50 h-[67px] items-center justify-between w-full left-0 top-0 2xl:mt-[90px] mt-16">
+    <nav className="relative h-[.1px] flex items-center  w-full">
+      <div className="2xl:px-[147px] px-[100px]  flex absolute z-50 h-[67px] items-center justify-between w-full left-0 top-0 2xl:mt-[90px] mt-16 overflow-hidden">
         <Link to="/">
           <img
             src={logo}
