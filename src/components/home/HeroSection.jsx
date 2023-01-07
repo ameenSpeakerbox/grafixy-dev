@@ -1,22 +1,23 @@
-import { StaticImage } from "gatsby-plugin-image";
+import { MainImage, StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import hero_textImage from "../../images/home/hero-section_text.png";
 import { heroSection_features } from "../../lib/dummyData";
 import { MessageIcon } from "../../ui/Icon";
+import heroPic from "../../images/home/hero-section.webp";
 
 const HeroSection = () => {
   return (
     <div className="hight900:h-[1117px]  hightUt900:h-screen overflow-hidden bg-gradient-to-r from-[#100028] to-[#220058] flex flex-col items-center justify-center w-full ">
       {/* main section */}
       <div className="grid grid-cols-2 h-full w-full">
-        <div className="text-[65px] leading-[110%] font-medium text-white flex flex-col items-start justify-center w-full px-[147px] mt-40">
+        <div className="2xl:text-[65px] text-5xl leading-[110%] font-medium text-white flex flex-col items-start justify-center w-full 2xl:px-[147px] px-[100px] 2xl:pt-60 pt-40">
           Your Design <br />
           <span className="inline-flex items-center">
             Team{" "}
             <img
-            alt="textImage"
+              alt="textImage"
               src={hero_textImage}
-              className="object-contain ml-2 -mb-4 h-[42px]"
+              className="object-contain ml-2 -mb-4 2xl:h-[42px] h-[36px]"
             />
           </span>
           <span className="text-[#E0CCFF]">
@@ -37,33 +38,38 @@ const HeroSection = () => {
         </div>
 
         <div className="h-full relative grid w-full">
-          <StaticImage
+          <MainImage
             alt="hero-pic"
-            src="../../images/home/hero-section.webp"
-            objectFit="cover"
-            className="w-full hight900:h-[1117px]   hightUt900:h-screen absolute right-0 "
+            src={heroPic}
+            className="w-full hight900:h-[1117px]   hightUt900:h-screen absolute right-0 object-cover"
           />
         </div>
       </div>
+
       {/* heroSection feature */}
-      <div className="flex w-full  items-end justify-center z-10">
-        <div className="flex">
+
+      <div className="flex  w-full  items-end justify-center z-10">
+        <div className="grid grid-flow-col w-full">
           {heroSection_features.map((item) => (
             <div
               style={{ backgroundColor: item.bgColor }}
               key={item.id}
-              className="grid gap-[2px] py-[51px] px-[76px] border-l border-black  border-t"
+              className="flex flex-col  gap-[2px] 2xl:py-[51px]  2xl:px-[76px] py-[30px] px-[45px]  border-l border-black  border-t h-full"
             >
               <h2
-                className={`font-bold text-2xl ${
-                  item.id === 3 ? "text-white" : "text-[#160137] w-[80%]"
+                className={`font-bold 2xl:text-2xl text-xl leading-[110%] ${
+                  item.id === 3
+                    ? "text-white"
+                    : "text-[#160137] 2xl:w-[80%] w-[90%] h-full"
                 }  `}
               >
                 {item.title}
               </h2>
               <p
-                className={`font-nunito font-light leading-[110%] ${
-                  item.id === 3 ? "text-white" : "text-[#160137] w-[70%]"
+                className={`font-nunito font-light text-lg leading-[110%] ${
+                  item.id === 3
+                    ? "text-white"
+                    : "text-[#160137] 2xl:w-[80%] w-[90%]"
                 }`}
               >
                 {item.subtitle}
@@ -72,9 +78,9 @@ const HeroSection = () => {
           ))}
         </div>
 
-        <div className="bg-[#1D014A] py-[51px] px-[76px] border-t border-l border-black pb-[35px]">
-          <h2 className="text-white text-2xl font-bold inline-flex relative ">
-            <MessageIcon className="absolute -left-14 -top-4" />
+        <div className="bg-[#1D014A] 2xl:py-[51px]  2xl:px-[76px] py-[30px] px-[45px] border-t border-l border-black 2xl:pb-[35px] pb-[20px] relative">
+          <h2 className="text-white 2xl:text-2xl text-xl font-bold inline-flex">
+            <MessageIcon className="absolute 2xl:left-[24px] left-[14px] 2xl:top-[51px] top-[30px] 2xl:w-[48px] 2xl:h-[48px] w-[28px] h-[28px]" />
             NEED TO KNOW MORE? LET’S HAVE A CHAT
           </h2>
           <div className="flex justify-end">

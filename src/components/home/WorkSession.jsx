@@ -1,31 +1,36 @@
-import { StaticImage } from "gatsby-plugin-image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Work_Session_InstagramPost } from "../../lib/dummyData";
 import { Button } from "../../ui/Button";
 import { BookmarkIcon, CommentIcon, LikeIcon, ShareIcon } from "../../ui/Icon";
 
 const WorkSession = () => {
-  const postId = 5;
-  const filter = Work_Session_InstagramPost.filter(
-    (item) => item.id === postId && item,
-  );
+  const [autoCount, setAutoCount] = useState(1);
+
+  useEffect(() => {
+    if (autoCount > 0 && autoCount < Work_Session_InstagramPost.length) {
+      setTimeout(() => {
+        setAutoCount(autoCount + 1);
+      }, 5000);
+    } else {
+      setTimeout(() => {
+        setAutoCount(1);
+      }, 5000);
+    }
+  }, [autoCount]);
+
   return (
     <div className="grid grid-cols-2 w-full h-full">
       <div className="bg-gradient-to-l to-[#100028] from-[#220058]  pt-[93px] pb-14 px-[160px] pl-[147px] items-center justify-center flex flex-col">
-        {filter.map((item) => (
+        {Work_Session_InstagramPost.map((item) => (
           <React.Fragment key={item.id}>
-            <span className="flex flex-col items-center justify-center max-w-[525px]">
+            <span className={`${item.id === autoCount ? "flex" : 'hidden'} flex-col items-center justify-center max-w-[525px] animateInst`}>
               <img
                 src={item.post}
                 alt={item.subtitle}
                 loading="lazy"
                 className="object-cover"
               />
-              <span
-                className={` ${
-                  item.id === postId ? "flex" : "hidden"
-                } justify-between w-full mt-5 `}
-              >
+              <span className={`${item.id === autoCount ? "flex" : 'hidden'} justify-between w-full mt-5 `}>
                 <div className="flex gap-6 items-center justify-center">
                   <LikeIcon style={{ fill: `${item.color}` }} />
                   <CommentIcon />
@@ -34,12 +39,12 @@ const WorkSession = () => {
                 <BookmarkIcon style={{ fill: `${item.color}` }} />
               </span>
             </span>
-            <h2 className="font-semibold text-5xl text-center text-white mt-8 leading-none">
+            <h2 className={`${item.id === autoCount ? "block" : 'hidden'} font-semibold text-5xl text-center text-white mt-8 leading-none `}>
               {item.title}
             </h2>
             <h2
               style={{ color: `${item.color}` }}
-              className={`font-medium text-5xl text-center leading-none `}
+              className={`${item.id === autoCount ? "block" : 'hidden'} font-medium text-5xl text-center leading-none animateInst`}
             >
               {item.subtitle}
             </h2>
