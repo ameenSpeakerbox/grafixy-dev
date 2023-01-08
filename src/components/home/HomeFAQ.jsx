@@ -6,7 +6,6 @@ import { TickIn_circleIcon } from "../../ui/Icon";
 import QuotationOpener from "../../ui/QuotationOpener";
 import faqPic from "../../images/home/homeFaq.png";
 
-
 const HomeFAQ = () => {
   const [questionToggle, setQuestionToggle] = useState("");
 
@@ -16,20 +15,20 @@ const HomeFAQ = () => {
   };
   return (
     <div className="flex w-full ">
-      <div className="bg-[#1A0143] flex flex-col items-start justify-center w-full px-32 place-content-center gap-9 py-52">
-        <h2 className="font-semibold text-6xl text-[#6E3CBC]">
+      <div className="bg-[#1A0143] flex flex-col items-start justify-center w-full 2xl:px-32 px-24 place-content-center gap-9 2xl:py-52 py-40">
+        <h2 className="font-semibold 2xl:text-6xl lg:text-5xl text-4xl text-[#6E3CBC]">
           Frequently Asked <br />
           <span className="text-[#E0CCFF]">Questions</span>
         </h2>
-        <div className="w-full grid gap-10 duration-300">
+        <div className="w-full grid lg:gap-10 gap-6 duration-300">
           {faq_home.map((item) => (
             <div
               key={item.id}
               onClick={() => handleToggle(item.question)}
-              className="px-10 py-6 bg-[#1D004E] rounded-[10px] w-full duration-300 ease-in transition-all z-10"
+              className="px-10 lg:py-6 py-4 bg-[#1D004E] rounded-[10px] w-full duration-300 ease-in transition-all z-10"
             >
               <span className=" inline-flex justify-between items-center w-full cursor-pointer">
-                <h4 className="font-nunito font-semibold text-2xl text-[#E0CCFF]">
+                <h4 className="font-nunito font-semibold 2xl:text-2xl lg:text-xl text-sm text-[#E0CCFF]">
                   {item.question}
                 </h4>
                 <TickIn_circleIcon
@@ -43,7 +42,7 @@ const HomeFAQ = () => {
                   questionToggle === item.question
                     ? "opacity-100 h-20 "
                     : "-translate-y-9 opacity-0 h-0"
-                } duration-300 transition-all mt-[10px] text-base font-nunito text-white cursor-default -z-10 w-[90%]`}
+                } duration-300 transition-all mt-[10px] lg:text-base text-xs font-nunito text-white cursor-default -z-10 w-[90%]`}
               >
                 {item.answer}
               </p>
@@ -52,13 +51,17 @@ const HomeFAQ = () => {
         </div>
         <Link
           to=""
-          className="font-semibold text-[35px] text-[#6E3CBC] underline"
+          className="font-semibold 2xl:text-[35px] lg:text-[32px] text-base text-[#6E3CBC] underline"
         >
           More from <span className="text-[#E0CCFF] underline">FAQs</span>{" "}
         </Link>
       </div>
       <div className="bg-[#6019CE] flex flex-col items-end  justify-end w-[35%] shrink-0  relative overflow-hidden">
-        <img  src={faqPic} alt="homeFaq" className="h-max  absolute object-fill top-0  object-left-bottom left-0 min-w-[1055px]" />
+        <img
+          src={faqPic}
+          alt="homeFaq"
+          className="h-max  absolute object-cover top-0  object-left-bottom left-0 2xl:min-w-[1055px] min-w-[900px]"
+        />
       </div>
     </div>
   );

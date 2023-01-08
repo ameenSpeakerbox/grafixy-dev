@@ -7,8 +7,8 @@ import { TickIcon } from "../../ui/Icon";
 
 const Collaboration = () => {
   return (
-    <div className="flex  w-full sm:flex-row flex-col">
-      <div className="bg-[#210153] xl:pl-[100px] lg:pl-[70px] pl-[50px] flex flex-col items-start justify-center sm:w-[35%] pr-16 shrink-0 sm:py-0 py-11  pb-0 ">
+    <div className="flex  w-full tab:flex-row flex-col">
+      <div className="bg-[#210153] xl:pl-[100px] lg:pl-[70px] md:pl-[50px] pl-14 flex flex-col items-start justify-center tab:w-[35%] pr-16 shrink-0 tab:py-0 py-11  pb-0 ">
         <h2 className="font-medium  leading-[110%] 2xl:text-6xl sm:text-5xl text-4xl text-white ">
           Easy collab
           <br className="lg:hidden sm:block hidden" />
@@ -20,13 +20,15 @@ const Collaboration = () => {
           Businesses & Freelancers
         </p>
       </div>
-      <div className="sm:py-16 sm:pb-11 pb-11  flex flex-col items-center justify-center flex-1 2xl:px-32 lg:px-20 px-14 sm:bg-white bg-[#210153]">
-        <div className="flex justify-between w-full">
-          <h2 className="font-semibold 2xl:text-4xl text-3xl lg:leading-[42px] leading-7 sm:text-[#210153] text-[#9C66F0] uppercase">
+      <div className="tab:py-16 tab:pb-11 pb-11  flex flex-col items-center justify-center flex-1 2xl:px-32 lg:px-20 px-14 tab:bg-white bg-[#210153]">
+        <div className="flex justify-between w-full tab:mt-0 mt-3">
+          <h2 className="font-semibold 2xl:text-4xl text-3xl lg:leading-[42px] leading-7 tab:text-[#210153] text-[#9C66F0] uppercase">
             Start Your <br />
-            <span className="sm:text-[#9C66F0] text-white">7 Day Free Trial</span>
+            <span className="sm:text-[#9C66F0] text-white">
+              7 Day Free Trial
+            </span>
           </h2>
-          <p className="font-semibold text-[#6E3CBC] 2xl:text-2xl text-xl leading-7 text-right uppercase sm:block hidden">
+          <p className="font-semibold text-[#6E3CBC] 2xl:text-2xl text-xl leading-7 text-right uppercase tab:block hidden">
             Do you need a custom plan? <br />
             <span className="underline text-[#210153] font-medium">
               Talk to sales
@@ -54,7 +56,9 @@ const Collaboration = () => {
               <h2 className="w-full  flex items-center justify-between 2xl:text-5xl lg:text-4xl sm:text-3xl text-4xl font-bold text-[#210153] lg:flex-nowrap flex-wrap">
                 <span>{item.title}</span>
                 <span className="flex items-center gap-1 font-semibold">
-                  <small className="sm:text-2xl text-xl font-extrabold">$</small>
+                  <small className="sm:text-2xl text-xl font-extrabold">
+                    $
+                  </small>
                   {item.price}
                 </span>
               </h2>
@@ -84,6 +88,12 @@ const Collaboration = () => {
             </div>
           ))}
         </div>
+          <p className="font-semibold text-[#E0CCFF] text-2xl leading-7 uppercase block tab:hidden text-left w-full mt-8">
+            Do you need a custom plan? <br />
+            <span className="underline text-white font-medium mt-[10px] leading-10">
+              Talk to sales
+            </span>
+          </p>
       </div>
     </div>
   );
