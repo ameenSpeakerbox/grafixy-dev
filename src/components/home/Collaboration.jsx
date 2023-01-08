@@ -69,7 +69,7 @@ const Collaboration = () => {
                 {item.point.map((point) => (
                   <li
                     key={point.id}
-                    className="inline-flex items-center gap-[10px] text-[#210153]lg:text-base sm:text-[10px] text-xs "
+                    className="inline-flex items-center gap-[10px] text-[#210153]lg:text-base  text-xs "
                   >
                     <TickIcon className="lg:h-[9px] sm:h-[5px] lg:w-[9px] sm:w-[5px] h-[7px] w-[7px]" />{" "}
                     {point.title}
