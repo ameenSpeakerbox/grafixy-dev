@@ -13,7 +13,7 @@ const Free_trail = () => {
           alt="manThinking"
         />
       </div>
-      <div className="lg:py-24 sm:bg-[#6019CE]  flex lg:px-20 px-16 py-20 flex-col z-20">
+      <div className="lg:py-24 sm:bg-[#6019CE]  flex lg:px-20 sm:px-16 px-8 py-20 flex-col z-20">
         <h1 className="font-semibold 2xl:text-7xl lg:text-6xl sm:text-5xl text-4xl text-white leading-10">
           What if <br className="sm:hidden block"/> <span className="text-[#FF5E3A]">I don’t like it?</span>
         </h1>

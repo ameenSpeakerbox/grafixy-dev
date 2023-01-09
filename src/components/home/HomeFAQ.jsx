@@ -1,10 +1,9 @@
 import { Link } from "gatsby";
-import { MainImage, StaticImage } from "gatsby-plugin-image";
 import React, { useState } from "react";
 import { faq_home } from "../../lib/dummyData";
 import { TickIn_circleIcon } from "../../ui/Icon";
-import QuotationOpener from "../../ui/QuotationOpener";
 import faqPic from "../../images/home/homeFaq.png";
+import faqMobPic from "../../images/home/homeFaqMob.png";
 
 const HomeFAQ = () => {
   const [questionToggle, setQuestionToggle] = useState("");
@@ -14,18 +13,18 @@ const HomeFAQ = () => {
     else return setQuestionToggle(question);
   };
   return (
-    <div className="flex w-full ">
-      <div className="bg-[#1A0143] flex flex-col items-start justify-center w-full 2xl:px-32 px-24 place-content-center gap-9 2xl:py-52 py-40">
-        <h2 className="font-semibold 2xl:text-6xl lg:text-5xl text-4xl text-[#6E3CBC]">
+    <div className="flex w-full relative z-10">
+      <div className="bg-[#1A0143] flex flex-col items-start justify-center w-full 2xl:px-32 lg:px-24 sm:px-16 px-8 place-content-center gap-9 2xl:py-52 lg:py-40 py-16 ">
+        <h2 className="font-semibold 2xl:text-6xl lg:text-5xl text-4xl text-[#6E3CBC] z-10">
           Frequently Asked <br />
           <span className="text-[#E0CCFF]">Questions</span>
         </h2>
-        <div className="w-full grid lg:gap-10 gap-6 duration-300">
+        <div className="w-full grid lg:gap-10 gap-6 duration-300 ">
           {faq_home.map((item) => (
             <div
               key={item.id}
               onClick={() => handleToggle(item.question)}
-              className="px-10 lg:py-6 py-4 bg-[#1D004E] rounded-[10px] w-full duration-300 ease-in transition-all z-10"
+              className="px-10 lg:py-6 py-2 bg-[#1D004E] rounded-[10px] w-full duration-300 ease-in transition-all z-10"
             >
               <span className=" inline-flex justify-between items-center w-full cursor-pointer">
                 <h4 className="font-nunito font-semibold 2xl:text-2xl lg:text-xl text-sm text-[#E0CCFF]">
@@ -34,7 +33,7 @@ const HomeFAQ = () => {
                 <TickIn_circleIcon
                   className={`${
                     questionToggle === item.question ? "rotate-180" : "rotate-0"
-                  }  duration-300 ease-out `}
+                  }  duration-300 ease-out lg:w-9 w-5`}
                 />
               </span>
               <p
@@ -56,13 +55,18 @@ const HomeFAQ = () => {
           More from <span className="text-[#E0CCFF] underline">FAQs</span>{" "}
         </Link>
       </div>
-      <div className="bg-[#6019CE] flex flex-col items-end  justify-end w-[35%] shrink-0  relative overflow-hidden">
+      <div className="bg-[#6019CE] sm:flex hidden flex-col items-end  justify-end w-[35%] shrink-0  relative overflow-hidden">
         <img
           src={faqPic}
           alt="homeFaq"
-          className="h-max  absolute object-cover top-0  object-left-bottom left-0 2xl:min-w-[1055px] min-w-[900px]"
+          className="h-max  absolute object-cover top-0  object-left-bottom lg:left-0 -left-10 2xl:min-w-[1055px] lg:min-w-[900px] min-w-[600px]"
         />
       </div>
+      <img
+        src={faqMobPic}
+        alt="homeFaq"
+        className="flex sm:hidden flex-col items-end  justify-end   absolute z-[0] top-0 right-0 w-full h-full  object-contain object-right -mt-20"
+      />
     </div>
   );
 };

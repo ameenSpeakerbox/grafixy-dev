@@ -8,7 +8,7 @@ import { TickIcon } from "../../ui/Icon";
 const Collaboration = () => {
   return (
     <div className="flex  w-full tab:flex-row flex-col">
-      <div className="bg-[#210153] xl:pl-[100px] lg:pl-[70px] md:pl-[50px] pl-14 flex flex-col items-start justify-center tab:w-[35%] pr-16 shrink-0 tab:py-0 py-11  pb-0 ">
+      <div className="bg-[#210153] xl:pl-[100px] lg:pl-[70px] md:pl-[50px] sm:pl-14 pl-8 flex flex-col items-start justify-center tab:w-[35%] pr-16 shrink-0 tab:py-0 py-11  pb-0 ">
         <h2 className="font-medium  leading-[110%] 2xl:text-6xl sm:text-5xl text-4xl text-white ">
           Easy collab
           <br className="lg:hidden sm:block hidden" />
@@ -20,7 +20,7 @@ const Collaboration = () => {
           Businesses & Freelancers
         </p>
       </div>
-      <div className="tab:py-16 tab:pb-11 pb-11  flex flex-col items-center justify-center flex-1 2xl:px-32 lg:px-20 px-14 tab:bg-white bg-[#210153]">
+      <div className="tab:py-16 tab:pb-11 pb-11  flex flex-col items-center justify-center flex-1 2xl:px-32 lg:px-20 sm:px-14 px-8 tab:bg-white bg-[#210153]">
         <div className="flex justify-between w-full tab:mt-0 mt-3">
           <h2 className="font-semibold 2xl:text-4xl text-3xl lg:leading-[42px] leading-7 tab:text-[#210153] text-[#9C66F0] uppercase">
             Start Your <br />
@@ -69,7 +69,7 @@ const Collaboration = () => {
                 {item.point.map((point) => (
                   <li
                     key={point.id}
-                    className="inline-flex items-center gap-[10px] text-[#210153]lg:text-base  text-xs "
+                    className="inline-flex items-center gap-[10px] text-[#210153] lg:text-base font-nunito font-medium  text-xs "
                   >
                     <TickIcon className="lg:h-[9px] sm:h-[5px] lg:w-[9px] sm:w-[5px] h-[7px] w-[7px]" />{" "}
                     {point.title}
