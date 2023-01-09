@@ -10,8 +10,8 @@ const Why_grafixy = () => {
       </span>
 
       <span className="flex items-start justify-start 2xl:text-[34px] lg:text-3xl  sm:text-2xl text-xl leading-[110%] font-bold text-white  sm:-rotate-6 w-full">
-        <div className="2xl:mr-2 xl:mr-1 sm:mr-0 mr-[15px]">
-          <GrafixyWhiteIcon className="2xl:h-[95px] lg:h-[80px] sm:h-[28px] h-[42px]  shrink-0 " />
+        <div className="2xl:mr-2 xl:mr-1 sm:mr-[10px] mr-[15px]">
+          <GrafixyWhiteIcon className="2xl:h-[95px] lg:h-[80px] sm:h-[28px] h-[42px]  shrink-0" />
         </div>
         <h3>
           MAKE{" "}
@@ -22,7 +22,7 @@ const Why_grafixy = () => {
         </h3>
       </span>
       <span className="flex items-start justify-start 2xl:text-[34px] lg:text-3xl  sm:text-2xl text-xl leading-[110%] font-bold text-white  sm:-rotate-6 w-full">
-        <div className="mr-2">
+        <div className="2xl:mr-2 xl:mr-1 sm:mr-[10px] mr-[15px]">
           <GrafixyWhiteIcon className="2xl:h-[95px] lg:h-[80px] sm:h-[28px] h-[42px]  shrink-0  " />
         </div>
         <h3>
@@ -31,7 +31,7 @@ const Why_grafixy = () => {
         </h3>
       </span>
       <span className="flex items-start justify-start 2xl:text-[34px] lg:text-3xl sm:text-2xl  text-xl leading-[110%] font-bold text-white  sm:-rotate-6 w-full">
-        <div className="mr-2">
+        <div className="2xl:mr-2 xl:mr-1 sm:mr-[10px] mr-[15px]">
           <GrafixyWhiteIcon className="2xl:h-[95px] lg:h-[80px] sm:h-[28px] h-[42px]  shrink-0  " />
         </div>
         <h3>
@@ -43,7 +43,7 @@ const Why_grafixy = () => {
         </h3>
       </span>
       <span className="flex items-start justify-start 2xl:text-[34px] lg:text-3xl  sm:text-2xl text-xl leading-[110%] font-bold text-white  sm:-rotate-6 w-full">
-        <div className="mr-2">
+        <div className="2xl:mr-2 xl:mr-1 sm:mr-[10px] mr-[15px]">
           <GrafixyWhiteIcon className="2xl:h-[95px] lg:h-[80px] sm:h-[28px] h-[42px]  shrink-0  " />
         </div>
         <h3>
@@ -54,7 +54,7 @@ const Why_grafixy = () => {
         </h3>
       </span>
       <span className="flex items-start justify-start 2xl:text-[34px] lg:text-3xl  sm:text-2xl text-xl leading-[110%] font-bold text-white  sm:-rotate-6 w-full">
-        <div className="mr-2">
+        <div className="2xl:mr-2 xl:mr-1 sm:mr-[10px] mr-[15px]">
           <GrafixyWhiteIcon className="2xl:h-[95px] lg:h-[80px] sm:h-[28px] h-[42px]  shrink-0  " />
         </div>
         <h3>
