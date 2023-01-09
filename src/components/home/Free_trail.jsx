@@ -30,10 +30,11 @@ const Free_trail = () => {
           </p>
         </span>
       </div>
-      <div className="bg-[#6019CE] absolute w-screen h-full overflow-hidden sm:hidden block">
+      <div className="bg-[#6019CE] after:content-[' ']
+      after:bg-[#6019CE] after:w-full after:h-full after:top-0 after:-left-52 after:-z-10 after:absolute absolute right-0 h-full sm:hidden block">
 
 
-      <img src={manThinkingMob} alt="manThinking" className="w-full h-full object-right object-contain " />
+      <img src={manThinkingMob} alt="manThinking" className="w-full h-full object-right object-contain" />
       </div>
     </div>
   );

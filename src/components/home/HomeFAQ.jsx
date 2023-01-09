@@ -4,6 +4,7 @@ import { faq_home } from "../../lib/dummyData";
 import { TickIn_circleIcon } from "../../ui/Icon";
 import faqPic from "../../images/home/homeFaq.png";
 import faqMobPic from "../../images/home/homeFaqMob.png";
+import { GatsbyImage, MainImage, StaticImage } from "gatsby-plugin-image";
 
 const HomeFAQ = () => {
   const [questionToggle, setQuestionToggle] = useState("");
@@ -14,12 +15,12 @@ const HomeFAQ = () => {
   };
   return (
     <div className="flex w-full relative z-10">
-      <div className="bg-[#1A0143] flex flex-col items-start justify-center w-full 2xl:px-32 lg:px-24 sm:px-16 px-8 place-content-center gap-9 2xl:py-52 lg:py-40 py-16 ">
+      <div className="bg-[#1A0143] flex flex-col items-start justify-center w-full 2xl:px-32 lg:px-24 sm:px-16 px-8 place-content-center sm:gap-9 gap-6 2xl:py-52 lg:py-40 py-16 ">
         <h2 className="font-semibold 2xl:text-6xl lg:text-5xl text-4xl text-[#6E3CBC] z-10">
           Frequently Asked <br />
           <span className="text-[#E0CCFF]">Questions</span>
         </h2>
-        <div className="w-full grid lg:gap-10 gap-6 duration-300 ">
+        <div className="w-full grid lg:gap-10 sm:gap-6 gap-3 duration-300 ">
           {faq_home.map((item) => (
             <div
               key={item.id}
@@ -62,9 +63,13 @@ const HomeFAQ = () => {
           className="h-max  absolute object-cover top-0  object-left-bottom lg:left-0 -left-10 2xl:min-w-[1055px] lg:min-w-[900px] min-w-[600px]"
         />
       </div>
-      <img
-        src={faqMobPic}
+      <StaticImage
+        src='../../images/home/homeFaqMob.png'
         alt="homeFaq"
+        loading="eager"
+        layout="fixed"
+        width={237}
+        height={467}
         className="flex sm:hidden flex-col items-end  justify-end   absolute z-[0] top-0 right-0 w-full h-full  object-contain object-right -mt-20"
       />
     </div>

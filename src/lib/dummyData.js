@@ -1,3 +1,4 @@
+import React from "react";
 import instagram_1 from "../images/home/work_session/insta_post -1.png";
 import instagram_2 from "../images/home/work_session/insta_post -2.png";
 import instagram_3 from "../images/home/work_session/insta_post -3.png";
@@ -275,7 +276,14 @@ export const faq_home = [
 export const testimonial = [
   {
     id: 1,
-    text: "Lectus morbi sollicitudin ligula orci lorem feugiat. Pellentesque consectetur sodales libero urna nunc dictumst accumsan. Aliquet a in integer volutpa.",
+    text: (
+      <p className="text-[#946DD1] 2xl:text-[40px] lg:text-3xl text-2xl font-medium leading-[123%] mt-[18px]">
+        Lectus morbi sollicitudin ligula orci{" "}
+        <span className="text-[#E0CCFF]">lorem feugiat.</span> Pellentesque
+        consectetur sodales <span className="text-[#E0CCFF]">libero urna </span>{" "}
+        nunc dictumst accumsan. Aliquet a in integer volutpa.
+      </p>
+    ),
     textWite: "lorem,feugiat.,sodales,libero",
     userName: "BOBBY STEMPER",
     position: "Director of Marketing",
@@ -284,7 +292,14 @@ export const testimonial = [
   },
   {
     id: 2,
-    text: "Lectus morbi sollicitudin ligula orci lorem feugiat. Pellentesque consectetur sodales libero urna nunc dictumst accumsan. Aliquet a in integer volutpa.",
+    text: (
+      <p className="text-[#946DD1] 2xl:text-[40px] lg:text-3xl text-2xl font-medium leading-[123%] mt-[18px]">
+        Lectus morbi sollicitudin ligula orci{" "}
+        <span className="text-[#E0CCFF]">lorem feugiat.</span> Pellentesque
+        consectetur sodales <span className="text-[#E0CCFF]">libero urna </span>{" "}
+        nunc dictumst accumsan. Aliquet a in integer volutpa.
+      </p>
+    ),
     textWite: "lorem,feugiat.,sodales,libero",
     userName: "BOBBY STEMPER",
     position: "Director of Marketing",
@@ -293,7 +308,14 @@ export const testimonial = [
   },
   {
     id: 3,
-    text: "Lectus morbi sollicitudin ligula orci lorem feugiat. Pellentesque consectetur sodales libero urna nunc dictumst accumsan. Aliquet a in integer volutpa.",
+    text: (
+      <p className="text-[#946DD1] 2xl:text-[40px] lg:text-3xl text-2xl font-medium leading-[123%] mt-[18px]">
+        Lectus morbi sollicitudin ligula orci{" "}
+        <span className="text-[#E0CCFF]">lorem feugiat.</span> Pellentesque
+        consectetur sodales <span className="text-[#E0CCFF]">libero urna </span>{" "}
+        nunc dictumst accumsan. Aliquet a in integer volutpa.
+      </p>
+    ),
     textWite: "lorem,feugiat.,sodales,libero",
     userName: "BOBBY STEMPER",
     position: "Director of Marketing",
@@ -510,5 +532,4 @@ export const gallery = [
     category: "Prints",
     picture: gallery9,
   },
-
 ];
