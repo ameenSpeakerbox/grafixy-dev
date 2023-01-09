@@ -5,7 +5,7 @@ import manThinkingMob from "../../images/home/manThinkingMob.png";
 
 const Free_trail = () => {
   return (
-    <div className="flex h-full sm:flex-row flex-col relative z-[10]">
+    <div className="flex h-full sm:flex-row flex-col relative z-[10] sm:overflow-visible overflow-hidden">
       <div className="bg-white pl-[100px] sm:flex hidden flex-col items-end  justify-end w-[35%] relative shrink-0">
         <img
           src={manThinking}
@@ -31,7 +31,7 @@ const Free_trail = () => {
         </span>
       </div>
       <div className="bg-[#6019CE] after:content-[' ']
-      after:bg-[#6019CE] after:w-full after:h-full after:top-0 after:-left-52 after:-z-10 after:absolute absolute right-0 h-full sm:hidden block">
+      after:bg-[#6019CE] after:w-[1000vh] after:h-full after:top-0 after:-left-[200%] after:-z-10 after:absolute absolute right-0 h-full sm:hidden block">
 
 
       <img src={manThinkingMob} alt="manThinking" className="w-full h-full object-right object-contain" />

@@ -19,8 +19,8 @@ const WorkSession = () => {
   }, [autoCount]);
 
   return (
-    <div className="grid grid-cols-2 w-full h-min">
-      <div className="bg-gradient-to-l to-[#100028] from-[#220058]  pt-[93px]  2xl:px-[160px] 2xl:pl-[147px] lg:px-[100px] lg:py-[140px] px-[75px] py-[55px] items-center justify-center flex flex-col pb-14">
+    <div className="grid sm:grid-cols-2 w-full h-min">
+      <div className="bg-gradient-to-l to-[#100028] from-[#220058]  lg:pt-[93px] sm:pt-12  2xl:px-[160px] 2xl:pl-[147px] lg:px-[100px] lg:py-[140px] md:px-10 sm:px-9 px-8 py-8 items-center justify-center flex flex-col sm:pb-14 pb-8">
         {Work_Session_InstagramPost.map((item) => (
           <React.Fragment key={item.id}>
             <span
@@ -71,7 +71,7 @@ const WorkSession = () => {
           </React.Fragment>
         ))}
       </div>
-      <div className="2xl:px-[82px] 2xl:py-[102px] lg:px-[60px] lg:py-[80px] px-[50px] py-[48px] flex flex-col justify-between 2xl:gap-[74px] lg:gap-16 gap-10 pb-[64px]">
+      <div className="2xl:px-[82px] 2xl:py-[102px] lg:px-[60px] lg:py-[80px] md:px-10 sm:px-9 px-8 py-[48px] flex flex-col justify-between 2xl:gap-[74px] lg:gap-16 gap-10 pb-[64px]">
         <div>
           <h2 className="font-medium text-[#1D0149] 2xl:text-[65px] lg:text-5xl text-4xl leading-none">
             A perfect fit for <br />{" "}
@@ -97,16 +97,16 @@ const WorkSession = () => {
             team. Stress-free outsourcing. Create unlimited projects for just a
             flat monthly rate.
           </p>
-          <div className="gap-3 flex  mt-7 ">
+          <div className="gap-3 flex  mt-7 flex-wrap ">
             <Button
               name="SEE OUR WORK"
-              className="bg-[#6019CE] rounded-full text-white lg:h-16 h-10 inline-flex items-center justify-center shrink-0 lg:text-lg text-[10px]"
+              className="bg-[#6019CE] rounded-full text-white lg:h-16 h-10 inline-flex items-center justify-center shrink-0 lg:text-lg text-[10px] sm:w-auto w-[150px]"
             />
             <Button
               name="SEE PRICING"
-              className="bg-[#19013F] rounded-full px-8 py-[10px] text-white lg:h-16 h-10  shrink-0 lg:text-lg text-[10px] flex items-center justify-center"
+              className="bg-[#19013F] rounded-full px-8 py-[10px] text-white lg:h-16 h-10  shrink-0 lg:text-lg text-[10px] flex items-center justify-center sm:w-auto w-[150px]"
             />
-            `
+            
           </div>
         </div>
       </div>

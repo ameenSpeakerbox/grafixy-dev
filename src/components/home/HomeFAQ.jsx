@@ -15,17 +15,17 @@ const HomeFAQ = () => {
   };
   return (
     <div className="flex w-full relative z-10">
-      <div className="bg-[#1A0143] flex flex-col items-start justify-center w-full 2xl:px-32 lg:px-24 sm:px-16 px-8 place-content-center sm:gap-9 gap-6 2xl:py-52 lg:py-40 py-16 ">
+      <div className="bg-[#1A0143] flex flex-col items-start justify-center w-full 2xl:px-32 lg:px-24 sm:px-16 px-8 place-content-center sm:gap-9 gap-6 2xl:py-52 lg:py-20 py-16 ">
         <h2 className="font-semibold 2xl:text-6xl lg:text-5xl text-4xl text-[#6E3CBC] z-10">
           Frequently Asked <br />
           <span className="text-[#E0CCFF]">Questions</span>
         </h2>
-        <div className="w-full grid lg:gap-10 sm:gap-6 gap-3 duration-300 ">
+        <div className="w-full grid 2xl:gap-10 lg:gap-6 sm:gap-6 gap-3 duration-300 ">
           {faq_home.map((item) => (
             <div
               key={item.id}
               onClick={() => handleToggle(item.question)}
-              className="px-10 lg:py-6 py-2 bg-[#1D004E] rounded-[10px] w-full duration-300 ease-in transition-all z-10"
+              className="px-10 2xl:py-6 lg:py-3 py-2 bg-[#1D004E] rounded-[10px] w-full duration-300 ease-in transition-all z-10"
             >
               <span className=" inline-flex justify-between items-center w-full cursor-pointer">
                 <h4 className="font-nunito font-semibold 2xl:text-2xl lg:text-xl text-sm text-[#E0CCFF]">
@@ -40,9 +40,9 @@ const HomeFAQ = () => {
               <p
                 className={`${
                   questionToggle === item.question
-                    ? "opacity-100 h-20 "
+                    ? "opacity-100 h-22 mt-[10px]"
                     : "-translate-y-9 opacity-0 h-0"
-                } duration-300 transition-all mt-[10px] lg:text-base text-xs font-nunito text-white cursor-default -z-10 w-[90%]`}
+                } duration-500 transition-all  lg:text-base text-xs font-nunito text-white cursor-default -z-10 w-[90%]`}
               >
                 {item.answer}
               </p>
@@ -60,11 +60,11 @@ const HomeFAQ = () => {
         <img
           src={faqPic}
           alt="homeFaq"
-          className="h-max  absolute object-cover top-0  object-left-bottom lg:left-0 -left-10 2xl:min-w-[1055px] lg:min-w-[900px] min-w-[600px]"
+          className="h-max  absolute object-cover top-0  object-left-bottom lg:left-0 -left-10 2xl:min-w-[1055px] lg:min-w-[600px] min-w-[600px]"
         />
       </div>
       <StaticImage
-        src='../../images/home/homeFaqMob.png'
+        src="../../images/home/homeFaqMob.png"
         alt="homeFaq"
         loading="eager"
         layout="fixed"

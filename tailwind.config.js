@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/pages/**/*.{js,jsx,ts,tsx}",
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/pages/**/*.{js,jsx,ts,tsx}", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
       nunito: "Nunito Sans', sans-serif",
@@ -12,6 +9,7 @@ module.exports = {
       screens: {
         hight900: { raw: "(min-height: 901px)" },
         hightUt900: { raw: "(max-height: 901px)" },
+        uSm: { min: "400px" },
         sm: { min: "639px" },
         md: { min: "767px" },
         tab: { min: "965px" },
