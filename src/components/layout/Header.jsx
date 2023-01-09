@@ -119,12 +119,12 @@ const Header = () => {
               <Link
                 key={nav.id}
                 to={`/${nav.slug}`}
-                className="h-[110px] flex items-center border-b border-[#5A3D85] text-2xl font-semibold text-white px-8 w-full"
+                className="h-[110px] flex items-center border-b border-[#5A3D85] text-2xl font-semibold text-white px-8 sm:px-[80px] w-full"
               >
                 {nav.name}
               </Link>
             ))}
-            <div className="px-8 w-full grid sm:place-content-start ">
+            <div className="sm:px-[80px] px-8 w-full grid sm:place-content-start ">
               <Button
                 className="mt-10 w-full bg-white rounded-full text-sm text-[#6E3CBC] px-[22px] py-[9px] h-[50px]"
                 name="SCHEDULE A DEMO"
@@ -141,7 +141,7 @@ const Header = () => {
 
           <button
             onClick={() => setIsMenuClick(false)}
-            className="sm:inline-flex hidden items-center justify-center text-lg text-white gap-2 absolute bottom-12 right-8 "
+            className="sm:inline-flex hidden items-center justify-center text-lg text-white gap-2 absolute bottom-12 sm:right-[80px] right-8 "
           >
             <Arrow_withLineIcon />
             back to home
