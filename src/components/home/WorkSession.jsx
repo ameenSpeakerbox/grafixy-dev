@@ -20,7 +20,7 @@ const WorkSession = () => {
 
   return (
     <div className="grid sm:grid-cols-2 w-full h-min">
-      <div className="bg-gradient-to-l to-[#100028] from-[#220058]  lg:pt-[93px] sm:pt-12  2xl:px-[160px] 2xl:pl-[147px] lg:px-[100px] lg:py-[140px] md:px-10 sm:px-9 px-8 py-8 items-center justify-center flex flex-col sm:pb-14 pb-8">
+      <div className="bg-gradient-to-l to-[#100028] from-[#220058]  lg:pt-[93px] sm:pt-12  2xl:px-[160px] 2xl:pl-[147px] lg:px-[100px] lg:py-[140px] md:px-10 sm:px-9 px-8 py-14 items-center justify-center flex flex-col sm:pb-14 pb-8">
         {Work_Session_InstagramPost.map((item) => (
           <React.Fragment key={item.id}>
             <span
