@@ -6,9 +6,9 @@ import HeroSectionFeatures from "./HeroSectionFeatures";
 
 const HeroSection = () => {
   return (
-    <div className="hight900:h-[1117px]  hightUt900:h-full bg-gradient-to-r from-[#100028] to-[#220058] grid w-full relative grid-flow-row overflow-hidden">
+    <div className="hight900:h-[1117px]  hightUt900:h-full bg-gradient-to-r from-[#100028] to-[#220058] flex flex-col w-full relative  overflow-hidden">
       {/* main section */}
-      <div className="grid grid-cols-2 w-full ">
+      <div className="grid grid-cols-2 w-full h-full">
         <div className="2xl:text-[65px] text-[42px] leading-[110%] font-medium text-white flex flex-col items-start justify-center w-full 2xl:px-[147px] px-[100px] 2xl:mt-60 mt-32 mb-14">
           Your Design <br />
           <span className="inline-flex items-center">
