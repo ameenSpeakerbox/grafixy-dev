@@ -74,8 +74,12 @@ const Header = () => {
         </div>
         {/* toggleMenu */}
 
-        <nav className={`w-full h-screen bg-[#1E014B] fixed top-0 z-50 ${isMenuClick ? "block": 'hidden'}`}>
-          <div className="h-[110px] flex items-center  w-full bg-[#1E014B] border-b border-[#5A3D85] px-8 justify-between">
+        <nav
+          className={`w-full  h-screen bg-[#1E014B] fixed top-0 z-50 ${
+            isMenuClick ? "block lg:hidden" : "hidden"
+          }`}
+        >
+          <div className="h-[110px] flex items-center  w-full bg-[#1E014B] border-b border-[#5A3D85] sm:px-[80px] px-8 justify-between">
             <Link to="/">
               <img
                 src={logo}
@@ -120,18 +124,24 @@ const Header = () => {
                 {nav.name}
               </Link>
             ))}
-            <div className="px-8 w-full grid">
-
-            <Button
-              className="mt-10 w-full bg-white rounded-full text-sm text-[#6E3CBC] px-[22px] py-[9px] h-[50px]"
-              name="SCHEDULE A DEMO"
+            <div className="px-8 w-full grid sm:place-content-start ">
+              <Button
+                className="mt-10 w-full bg-white rounded-full text-sm text-[#6E3CBC] px-[22px] py-[9px] h-[50px]"
+                name="SCHEDULE A DEMO"
               />
-              </div>
+            </div>
+
+            <button
+              onClick={() => setIsMenuClick(false)}
+              className="inline-flex sm:hidden items-center justify-center text-lg text-white gap-2 mt-5 "
+            >
+              Back to home
+            </button>
           </div>
 
           <button
             onClick={() => setIsMenuClick(false)}
-            className="inline-flex items-center justify-center text-lg text-white gap-2 absolute bottom-12 right-8 "
+            className="sm:inline-flex hidden items-center justify-center text-lg text-white gap-2 absolute bottom-12 right-8 "
           >
             <Arrow_withLineIcon />
             back to home

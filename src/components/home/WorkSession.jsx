@@ -71,7 +71,7 @@ const WorkSession = () => {
           </React.Fragment>
         ))}
       </div>
-      <div className="2xl:px-[82px] 2xl:py-[102px] lg:px-[60px] lg:py-[80px] md:px-10 sm:px-9 px-8 py-[48px] flex flex-col justify-between 2xl:gap-[74px] lg:gap-16 gap-10 pb-[64px]">
+      <div className="2xl:px-[82px] 2xl:py-[102px] lg:px-[60px] lg:py-[80px] md:px-10 sm:px-9 px-8 py-[48px] flex flex-col justify-center 2xl:gap-[74px] lg:gap-16 gap-10 pb-[64px]">
         <div>
           <h2 className="font-medium text-[#1D0149] 2xl:text-[65px] lg:text-5xl text-4xl leading-none">
             A perfect fit for <br />{" "}

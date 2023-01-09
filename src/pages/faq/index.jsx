@@ -6,7 +6,7 @@ import "../../style/global.css";
 const index = () => {
   return (
     <Layout>
-      <div className="w-full pt-[312px] bg-[#1A0143] flex flex-col px-[160px] h-full py-[120px]">
+      <div className="w-full sm:pt-[312px] pt-20  bg-[#1A0143] flex flex-col 2xl:pl-[147px] lg:px-[100px] lg:py-[140px] md:px-10 sm:px-9 px-8   h-full py-[120px]">
         <h1 className="font-medium text-[65px] leading-none text-[#D5BAFF]">
           A perfect fit for <br />
           <span className="text-white">agencies</span> &{" "}
