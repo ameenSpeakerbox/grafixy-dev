@@ -24,18 +24,18 @@ const Header = () => {
               <Link
                 key={nav.id}
                 to={`/${nav.slug}`}
-                className="text-white font-bold 2xl:text-lg lg:text-base text-[10px]"
+                className="text-white font-bold 2xl:text-lg xl:text-base text-[10px]"
               >
                 {nav.name}
               </Link>
             ))}
           </div>
           <Button
-            className="2xl:h-[67px] h-[50px] bg-[#19013F] mr-[10px] drop-shadow-lg text-white 2xl:px-[31px] 2xl:py-[10px] px-5 py-3 rounded-full shrink-0 2xl:text-lg lg:text-base text-[10px] grid place-content-center"
+            className="2xl:h-[67px] xl:h-[50px] h-[40px] bg-[#19013F] mr-[10px] drop-shadow-lg text-white 2xl:px-[31px] 2xl:py-[10px] px-5 py-3 rounded-full shrink-0 2xl:text-lg xl:text-base text-[10px] grid place-content-center"
             name="CLIENT LOGIN"
           />
           <Button
-            className="2xl:h-[67px] h-[50px] grid place-content-center  bg-white text-[#19013F] drop-shadow-lg 2xl:px-[31px] 2xl:py-[10px] px-5 py-3 rounded-full shrink-0 2xl:text-lg lg:text-base text-[10px"
+            className="2xl:h-[67px] xl:h-[50px] h-[40px] grid place-content-center  bg-white text-[#19013F] drop-shadow-lg 2xl:px-[31px] 2xl:py-[10px] px-5 py-3 rounded-full shrink-0 2xl:text-lg xl:text-base text-[10px]"
             name="SCHEDULE A DEMO"
           />
         </div>
