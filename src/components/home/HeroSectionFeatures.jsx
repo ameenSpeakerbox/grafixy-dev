@@ -1,6 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { heroSection_features } from "../../lib/dummyData";
+import { MessageIcon } from "../../ui/Icon";
 
 const HeroSectionFeatures = () => (
   <div className="flex  w-full  items-end justify-center z-10">
@@ -9,19 +10,19 @@ const HeroSectionFeatures = () => (
         <div
           style={{ backgroundColor: item.bgColor }}
           key={item.id}
-          className="flex flex-col  gap-[2px] 2xl:py-[51px]  2xl:px-[76px] py-[30px] px-[45px]  border-l border-black  border-t h-full"
+          className="flex flex-col  gap-[2px] 2xl:py-[51px]  2xl:px-[76px] py-5 px-3  border-l border-black  border-t"
         >
           <h2
-            className={`font-bold 2xl:text-2xl lg:text-xl text-sm leading-[110%] ${
+            className={`font-bold 2xl:text-2xl lg:text-xl text-sm 2xl:leading-[110%] leading-5 ${
               item.id === 3
                 ? "text-white"
-                : "text-[#160137] 2xl:w-[80%] w-[90%] h-full"
+                : "text-[#160137] 2xl:w-[80%] w-[90%]"
             }  `}
           >
             {item.title}
           </h2>
           <p
-            className={`font-nunito font-light lg:text-lg text-[10px] leading-[110%] ${
+            className={`font-nunito font-light lg:text-base text-[10px] 2xl:leading-[110%] leading-3 ${
               item.id === 3
                 ? "text-white"
                 : "text-[#160137] 2xl:w-[80%] w-[90%]"
@@ -33,8 +34,8 @@ const HeroSectionFeatures = () => (
       ))}
     </div>
 
-    <div className="bg-[#1D014A] 2xl:py-[51px]  2xl:px-[76px] py-[30px] px-[45px] border-t border-l border-black 2xl:pb-[35px] pb-[20px] relative h-[110%]">
-      <h2 className="text-white 2xl:text-2xl lg:text-xl text-sm font-bold flex shrink-0 w-max">
+    <div className="bg-[#1D014A] 2xl:py-[51px]  2xl:px-[76px] py-5 px-3 border-t border-l border-black 2xl:pb-[35px] pb-[20px] relative h-[110%]">
+      <h2 className="font-bold 2xl:text-2xl lg:text-xl text-sm 2xl:leading-[110%] leading-5 text-white  flex shrink-0 w-max pl-10">
         <MessageIcon className="absolute 2xl:left-[24px] left-[14px] 2xl:top-[51px] top-[30px] 2xl:w-[48px] 2xl:h-[48px] w-[28px] h-[28px]" />
         NEED TO KNOW MORE? <br />
         LET’S HAVE A CHAT
