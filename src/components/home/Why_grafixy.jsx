@@ -10,8 +10,8 @@ const Why_grafixy = () => {
       </span>
 
       <span className="flex items-start justify-start 2xl:text-[34px] lg:text-3xl  sm:text-2xl text-xl leading-[110%] font-bold text-white  sm:-rotate-6 w-full">
-        <div className="2xl:mr-2 xl:mr-1 sm:mr-[10px] mr-[15px]">
-          <GrafixyWhiteIcon className="2xl:h-[95px] lg:h-[80px] sm:h-[28px] h-[42px]  shrink-0" />
+        <div className="2xl:mr-3 xl:mr-3 sm:mr-[12px] mr-[12px]">
+          <GrafixyWhiteIcon className="2xl:h-[47px] 2xl:w-[47px] h-[42px] w-[42px] shrink-0" />
         </div>
         <h3>
           MAKE{" "}
@@ -22,8 +22,8 @@ const Why_grafixy = () => {
         </h3>
       </span>
       <span className="flex items-start justify-start 2xl:text-[34px] lg:text-3xl  sm:text-2xl text-xl leading-[110%] font-bold text-white  sm:-rotate-6 w-full">
-        <div className="2xl:mr-2 xl:mr-1 sm:mr-[10px] mr-[15px]">
-          <GrafixyWhiteIcon className="2xl:h-[95px] lg:h-[80px] sm:h-[28px] h-[42px]  shrink-0  " />
+        <div className="2xl:mr-3 xl:mr-3 sm:mr-[12px] mr-[12px]">
+          <GrafixyWhiteIcon className="2xl:h-[47px] 2xl:w-[47px] h-[42px] w-[42px] shrink-0  " />
         </div>
         <h3>
           NO STRESS OF <br /> <span className="text-[#FFE600]">HIRING </span>A{" "}
@@ -31,8 +31,8 @@ const Why_grafixy = () => {
         </h3>
       </span>
       <span className="flex items-start justify-start 2xl:text-[34px] lg:text-3xl sm:text-2xl  text-xl leading-[110%] font-bold text-white  sm:-rotate-6 w-full">
-        <div className="2xl:mr-2 xl:mr-1 sm:mr-[10px] mr-[15px]">
-          <GrafixyWhiteIcon className="2xl:h-[95px] lg:h-[80px] sm:h-[28px] h-[42px]  shrink-0  " />
+        <div className="2xl:mr-3 xl:mr-3 sm:mr-[12px] mr-[12px]">
+          <GrafixyWhiteIcon className="2xl:h-[47px] 2xl:w-[47px] h-[42px] w-[42px] shrink-0  " />
         </div>
         <h3>
           INCREDIBLY{" "}
@@ -43,8 +43,8 @@ const Why_grafixy = () => {
         </h3>
       </span>
       <span className="flex items-start justify-start 2xl:text-[34px] lg:text-3xl  sm:text-2xl text-xl leading-[110%] font-bold text-white  sm:-rotate-6 w-full">
-        <div className="2xl:mr-2 xl:mr-1 sm:mr-[10px] mr-[15px]">
-          <GrafixyWhiteIcon className="2xl:h-[95px] lg:h-[80px] sm:h-[28px] h-[42px]  shrink-0  " />
+        <div className="2xl:mr-3 xl:mr-3 sm:mr-[12px] mr-[12px]">
+          <GrafixyWhiteIcon className="2xl:h-[47px] 2xl:w-[47px] h-[42px] w-[42px] shrink-0  " />
         </div>
         <h3>
           <span className="text-[#FFE600]">
@@ -54,8 +54,8 @@ const Why_grafixy = () => {
         </h3>
       </span>
       <span className="flex items-start justify-start 2xl:text-[34px] lg:text-3xl  sm:text-2xl text-xl leading-[110%] font-bold text-white  sm:-rotate-6 w-full">
-        <div className="2xl:mr-2 xl:mr-1 sm:mr-[10px] mr-[15px]">
-          <GrafixyWhiteIcon className="2xl:h-[95px] lg:h-[80px] sm:h-[28px] h-[42px]  shrink-0  " />
+        <div className="2xl:mr-3 xl:mr-3 sm:mr-[12px] mr-[12px]">
+          <GrafixyWhiteIcon className="2xl:h-[47px] 2xl:w-[47px] h-[42px] w-[42px] shrink-0  " />
         </div>
         <h3>
           NO{" "}
