@@ -3,8 +3,7 @@ import React, { useState } from "react";
 import { faq_home } from "../../lib/dummyData";
 import { TickIn_circleIcon } from "../../ui/Icon";
 import faqPic from "../../images/home/homeFaq.png";
-import faqMobPic from "../../images/home/homeFaqMob.png";
-import { GatsbyImage, MainImage, StaticImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 
 const HomeFAQ = () => {
   const [questionToggle, setQuestionToggle] = useState("");

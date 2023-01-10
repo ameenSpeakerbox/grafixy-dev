@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { StaticImage } from "gatsby-plugin-image";
 import { Button } from "../../ui/Button";
 import { Link } from "gatsby";
 import { navLink } from "../../lib/dummyData";

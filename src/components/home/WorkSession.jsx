@@ -1,4 +1,4 @@
-import { GatsbyImage, getImage, MainImage, StaticImage } from "gatsby-plugin-image";
+import { MainImage, } from "gatsby-plugin-image";
 import React, { useEffect, useState } from "react";
 import { Work_Session_InstagramPost } from "../../lib/dummyData";
 import { Button } from "../../ui/Button";

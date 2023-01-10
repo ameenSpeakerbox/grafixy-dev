@@ -1,6 +1,5 @@
 import { LocationIcon, MailIcon } from "../../ui/Icon";
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
 import { footerLinks } from "../../lib/dummyData";
 import { Link } from "gatsby";
 import logo from "../../images/logo-dark.png";
