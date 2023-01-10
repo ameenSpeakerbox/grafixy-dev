@@ -62,7 +62,7 @@
 
 
    .collaboration-hover::after {
-     content: ' ';
+     content:' ';
      position: absolute;
      height: 0;
      width: 100%;
