@@ -1,4 +1,3 @@
-import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import manThinking from "../../images/home/manThinking.png";
 import manThinkingMob from "../../images/home/manThinkingMob.png";

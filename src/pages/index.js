@@ -10,6 +10,8 @@ import {
 } from "../components";
 import Layout from "../components/layout/layout";
 import "../style/global.css";
+import "../style/output.css";
+
 
 const IndexPage = () => {
   return (

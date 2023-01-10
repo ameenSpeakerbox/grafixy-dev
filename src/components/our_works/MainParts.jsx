@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { gallery } from "../../lib/dummyData";
 import MainParts_head from "./MainParts_head";
 import PhotoGrid from "./PhotoGrid";

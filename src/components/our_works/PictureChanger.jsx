@@ -2,7 +2,6 @@ import { MainImage } from "gatsby-plugin-image";
 import React, { useRef } from "react";
 import { ArrowLeftIcon, CloseIcon } from "../../ui/Icon";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { gallery } from "../../lib/dummyData";
 
 const PictureChanger = ({ isGalleryOpen, setIsGalleryOpen, data }) => {
   const swiperRef = useRef();
