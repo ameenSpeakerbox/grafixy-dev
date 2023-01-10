@@ -51,23 +51,23 @@ const Header = () => {
 
           <div
             onClick={() => setIsMenuClick(!isMenuClick)}
-            className={`w-[40px] h-[40px] border-[3px] border-[#6019CE] rounded-md lg:hidden flex flex-col justify-evenly p-1 cursor-pointer relative ${
+            className={`w-[40px] h-[40px] border-[3px] border-[#6019CE] rounded-md lg:hidden flex flex-col justify-evenly p-1 cursor-pointer relative overflow-hidden ${
               isMenuClick && "items-center justify-center p-2"
             }`}
           >
             <span
-              className={`h-[0px] border border-[#5A3D85] w-full bg-[#5A3D85] duration-300  ${
-                isMenuClick && "rotate-45 absolute"
+              className={`h-[0px] border border-[#5A3D85] right-1 left-1 bg-[#5A3D85] duration-300 absolute ${
+                isMenuClick ? "rotate-45 " : 'rotate-0 top-2'
               }`}
             />
             <span
-              className={`h-[0px] border-2 border-[#5A3D85] duration-300 ${
-                isMenuClick && "hidden"
+              className={`h-[0px] border border-[#5A3D85] duration-300 ${
+                isMenuClick ? "opacity-0": 'opacity-100'
               }`}
             />
             <span
-              className={`h-[0px] border border-[#5A3D85] w-full bg-[#5A3D85] duration-300 ${
-                isMenuClick && "-rotate-45 absolute"
+              className={`h-[0px] border border-[#5A3D85]  bg-[#5A3D85] duration-300 absolute left-1 right-1 ${
+                isMenuClick ? "-rotate-45 ":'rotate-0 bottom-2'
               }`}
             />
           </div>
@@ -97,18 +97,13 @@ const Header = () => {
               }`}
             >
               <span
-                className={`h-[0px] border border-[#5A3D85] w-full bg-[#5A3D85] duration-300  ${
-                  isMenuClick && "rotate-45 absolute"
+                className={`h-[0px] border border-[#5A3D85] right-1 left-1 bg-[#5A3D85] duration-300 absolute ${
+                  isMenuClick ? "rotate-45 " : 'rotate-0 top-2'
                 }`}
               />
               <span
-                className={`h-[0px] border-2 border-[#5A3D85] duration-300 ${
-                  isMenuClick && "hidden"
-                }`}
-              />
-              <span
-                className={`h-[0px] border border-[#5A3D85] w-full bg-[#5A3D85] duration-300 ${
-                  isMenuClick && "-rotate-45 absolute"
+                className={`h-[0px] border border-[#5A3D85]  bg-[#5A3D85] duration-300 absolute left-1 right-1 ${
+                  isMenuClick ? "-rotate-45 ":'rotate-0 bottom-2'
                 }`}
               />
             </div>
