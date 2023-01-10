@@ -6,7 +6,7 @@ import {
   Collaboration,
   Free_trail,
   HomeFAQ,
-  Testimonial ,
+  Testimonial,
 } from "../components";
 import Layout from "../components/layout/layout";
 import "../style/global.css";
@@ -19,7 +19,7 @@ const IndexPage = () => {
         <WorkSession />
         <Why_grafixy />
         <Collaboration />
-        <Free_trail/>
+        <Free_trail />
         <HomeFAQ />
         <Testimonial />
       </Layout>

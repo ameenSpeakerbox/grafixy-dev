@@ -10,7 +10,7 @@ const HeroSectionFeatures = () => (
         <div
           // style={{ backgroundColor: item.bgColor }}
           key={item.id}
-          className={`flex flex-col gap-[2px] 2xl:py-[51px]  2xl:px-[76px] lg:py-5 lg:px-10 sm:py-5 sm:px-10 px-8 py-10 border-l border-black duration-500 border-t bg-[${item.bgColor}] hover:lg:bg-[${item.bgHover}] group`}
+          className={`flex flex-col gap-[2px] 2xl:py-[51px]  2xl:px-[76px] lg:py-5 lg:px-10 sm:py-5 sm:px-10 px-8 py-10 border-l border-black duration-500 border-t group ${item.hoverStyle}`}
         >
           <h2
             className={`font-bold 2xl:text-2xl lg:text-xl md:hightUt900:text-lg md:hightUt900:leading-5 sm:text-sm text-[22px] 2xl:leading-[110%] leading-5 sm:w-auto w-[60%] ${
