@@ -56,7 +56,7 @@ const Header = () => {
             }`}
           >
             <span
-              className={`h-[0px] border border-[#5A3D85] right-1 left-1 bg-[#5A3D85] duration-300 absolute ${
+              className={`h-[0px] border border-[#5A3D85] right-1 left-1 bg-[#5A3D85] duration-300 absolute transition-all ${
                 isMenuClick ? "rotate-45 " : 'rotate-0 top-2'
               }`}
             />
@@ -86,7 +86,7 @@ const Header = () => {
                 alt="logo"
                 layout="fullWidth"
                 objectFit="contain"
-                className="2xl:w-[205px] lg:w-[150px] w-[120px]"
+                className="h-full"
               />
             </Link>
 
@@ -114,7 +114,7 @@ const Header = () => {
               <Link
                 key={nav.id}
                 to={`/${nav.slug}`}
-                className="h-[110px] flex items-center border-b border-[#5A3D85] text-2xl font-semibold text-white px-8 sm:px-[80px] w-full"
+                className="sm:h-[110px] h-[80px] flex items-center border-b border-[#5A3D85] text-2xl font-semibold text-white px-8 sm:px-[80px] w-full"
               >
                 {nav.name}
               </Link>

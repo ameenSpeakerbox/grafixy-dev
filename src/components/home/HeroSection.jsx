@@ -68,7 +68,7 @@ const HeroSection = () => {
           <MainImage
             alt="hero-pic"
             src={heroPic}
-            className="w-full sm:hight900:h-[1117px] min-[430px]   hightUt900:h-screen sm:absolute right-0 object-cover object-right"
+            className="w-full sm:hight900:h-[1117px] min-h-[430px] sm:hightUt900:h-screen sm:absolute right-0 object-cover object-right"
           />
 
           <span className="bg-white h-[60px] w-[270px] items-center justify-center  rounded-[9px] flex sm:hidden drop-shadow-xl absolute bottom-10">

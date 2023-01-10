@@ -9,14 +9,14 @@ const PictureChanger = ({ isGalleryOpen, setIsGalleryOpen, data }) => {
 
   return (
     <div
-      className={`bg-black bg-opacity-50  fixed   inset-0  place-content-center w-full h-full flex items-center justify-center  ${
+      className={`bg-black bg-opacity-70  fixed   inset-0  place-content-center w-full h-full flex items-center justify-center  ${
         isGalleryOpen ? "opacity-100 z-[100]" : "opacity-0 -z-[500]"
       } duration-500`}
     >
       <div className="w-full h-full relative flex items-center sm:justify-center justify-between sm:flex-row flex-col">
         <CloseIcon
           onClick={() => setIsGalleryOpen(false)}
-          className="absolute right-8 sm:top-8 top-1 cursor-pointer hover:rotate-90 duration-300 2xl:w-24 lg:w-20 sm:w-16 w-10 z-50"
+          className="absolute right-8 top-8 cursor-pointer hover:rotate-90 duration-300 2xl:w-24 lg:w-20 sm:w-16 w-10 2xl:h-24 lg:h-20 sm:h-16 h-10 z-50"
         />
         <div
           onClick={() => swiperRef.current?.slidePrev()}
