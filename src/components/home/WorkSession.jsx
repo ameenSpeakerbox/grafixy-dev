@@ -1,3 +1,4 @@
+import { GatsbyImage, getImage, MainImage, StaticImage } from "gatsby-plugin-image";
 import React, { useEffect, useState } from "react";
 import { Work_Session_InstagramPost } from "../../lib/dummyData";
 import { Button } from "../../ui/Button";
@@ -10,11 +11,11 @@ const WorkSession = () => {
     if (autoCount > 0 && autoCount < Work_Session_InstagramPost.length) {
       setTimeout(() => {
         setAutoCount(autoCount + 1);
-      }, 5000);
+      }, 3000);
     } else {
       setTimeout(() => {
         setAutoCount(1);
-      }, 5000);
+      }, 3000);
     }
   }, [autoCount]);
 
@@ -28,11 +29,13 @@ const WorkSession = () => {
                 item.id === autoCount ? "flex" : "hidden"
               } flex-col items-center justify-center max-w-[525px] max-h-[525px] animateInst`}
             >
-              <img
+              <MainImage 
                 src={item.post}
                 alt={item.subtitle}
+                width={512}
+                height={512}
                 loading="lazy"
-                className="object-cover"
+                className="object-cover w-full h-full"
               />
               <span
                 className={`${
