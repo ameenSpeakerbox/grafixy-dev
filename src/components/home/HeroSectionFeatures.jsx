@@ -10,13 +10,13 @@ const HeroSectionFeatures = () => (
         <div
           // style={{ backgroundColor: item.bgColor }}
           key={item.id}
-          className={`flex flex-col gap-[2px] 2xl:py-[51px]  2xl:px-[76px] lg:py-5 lg:px-10 sm:py-5 sm:px-10 px-8 py-10 border-l border-black duration-500 border-t bg-[${item.bgColor}] hover:bg-[${item.bgHover}] group`}
+          className={`flex flex-col gap-[2px] 2xl:py-[51px]  2xl:px-[76px] lg:py-5 lg:px-10 sm:py-5 sm:px-10 px-8 py-10 border-l border-black duration-500 border-t bg-[${item.bgColor}] hover:lg:bg-[${item.bgHover}] group`}
         >
           <h2
             className={`font-bold 2xl:text-2xl lg:text-xl md:hightUt900:text-lg md:hightUt900:leading-5 sm:text-sm text-[22px] 2xl:leading-[110%] leading-5 sm:w-auto w-[60%] ${
               item.id === 3
-                ? "text-white group-hover:text-[#6019CE]"
-                : "text-[#160137] group-hover:text-[#A770FF] 2xl:w-[80%] w-[90%]"
+                ? "text-white group-hover:lg:text-[#6019CE]"
+                : "text-[#160137] group-hover:lg:text-[#A770FF] 2xl:w-[80%] w-[90%]"
             }  `}
           >
             {item.title}
@@ -24,8 +24,8 @@ const HeroSectionFeatures = () => (
           <p
             className={`font-nunito font-light lg:text-base  text-lg 2xl:leading-[110%] lg:leading-tight mt-2 sm:w-auto w-[60%] sm:hightUt900:mt-1 ${
               item.id === 3
-                ? "text-white group-hover:text-[#6019CE]"
-                : "text-[#160137] group-hover:text-[#A770FF] 2xl:w-[80%] w-[90%]"
+                ? "text-white group-hover:lg:text-[#6019CE]"
+                : "text-[#160137] group-hover:lg:text-[#A770FF] 2xl:w-[80%] w-[90%]"
             }`}
           >
             {item.subtitle}

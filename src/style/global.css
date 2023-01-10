@@ -46,6 +46,7 @@
     opacity: .7;
 
   }
+
   50% {
     filter: saturate(0);
 
@@ -57,17 +58,22 @@
   }
 }
 
-.collaboration-hover::after {
-  content: ' ';
-  position: absolute; 
-  height: 0;
-  width: 100%;
-  background: #210153;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all .4s ease-in;
-}
-.collaboration-hover:hover::after {
-  height: 100%;
+@media (min-width: 1024px) {
+
+
+  .collaboration-hover::after {
+    content: ' ';
+    position: absolute;
+    height: 0;
+    width: 100%;
+    background: #210153;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s ease-in;
+  }
+
+  .collaboration-hover:hover::after {
+    height: 100%;
+  }
 }
