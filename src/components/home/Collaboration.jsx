@@ -69,9 +69,9 @@ const Collaboration = () => {
                 {item.point.map((point) => (
                   <li
                     key={point.id}
-                    className="inline-flex items-center gap-[10px] text-[#210153] lg:text-base font-nunito font-medium  text-xs group-hover:text-white"
+                    className="inline-flex items-center gap-[10px] text-[#210153] lg:text-base font-nunito font-medium  text-xs group-hover:text-white duration-300 ease-linear"
                   >
-                    <TickIcon className="lg:h-[9px] sm:h-[5px] lg:w-[9px] sm:w-[5px] h-[7px] w-[7px] group-hover:stroke-white group-hover:fill-white" />{" "}
+                    <TickIcon className="lg:h-[9px] sm:h-[5px] lg:w-[9px] sm:w-[5px] h-[7px] w-[7px] group-hover:stroke-white group-hover:fill-white duration-300 ease-linear" />{" "}
                     {point.title}
                   </li>
                 ))}
@@ -79,9 +79,9 @@ const Collaboration = () => {
               <div className="flex items-center justify-center flex-col">
                 <Button
                   name="Start your free trial!"
-                  className="bg-[#210153] rounded-full 2xl:h-16 lg:h-12 h-9 text-white font-bold 2xl:text-lg lg:text-sm sm:text-[10px] text-sm lg:mt-8 mt-7 drop-shadow-2xl shrink-0 flex items-center justify-center lg:px-[30px] px-5 leading-3 group-hover:bg-[#E0CCFF] group-hover:text-[#210153] "
+                  className="bg-[#210153] rounded-full 2xl:h-16 lg:h-12 h-9 text-white font-bold 2xl:text-lg lg:text-sm sm:text-[10px] text-sm lg:mt-8 mt-7 drop-shadow-2xl shrink-0 flex items-center justify-center lg:px-[30px] px-5 leading-3 group-hover:bg-[#E0CCFF] group-hover:text-[#210153] duration-300 ease-linear"
                 />
-                <Link className="mt-[10px] font-nunito font-bold lg:text-base text-[10px] text-[#210153] group-hover:text-white">
+                <Link className="mt-[10px] font-nunito font-bold lg:text-base text-[10px] text-[#210153] group-hover:text-white duration-300 ease-linear">
                   More details
                 </Link>
               </div>

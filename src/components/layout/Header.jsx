@@ -22,7 +22,7 @@ const Header = () => {
               alt="logo"
               layout="fullWidth"
               objectFit="contain"
-              className="2xl:w-[205px] lg:w-[150px] w-[120px]"
+              className="h-full"
             />
           </Link>
           <div className="lg:flex hidden items-center justify-center w-full">
