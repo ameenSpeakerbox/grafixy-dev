@@ -63,8 +63,11 @@ const HeroSection = () => {
       </div>
 
       {/* heroSection feature */}
+      <div className="flex w-full h-max shrink-0">
+
 
       <HeroSectionFeatures />
+      </div>
     </div>
   );
 };
