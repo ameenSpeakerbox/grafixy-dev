@@ -123,6 +123,7 @@ export const heroSection_features = [
     subtitle:
       "It’s simple as that. Once you start your subscription, you get a team of dedicated designers at your disposal!",
     bgColor: "#BF9AFB",
+    bgHover: '#1F014E'
   },
   {
     id: 2,
@@ -130,6 +131,7 @@ export const heroSection_features = [
     subtitle:
       "It’s simple as that. Once you start your subscription, you get a team of dedicated designers at your disposal!",
     bgColor: "#A770FF",
+    bgHover: '#1F014E'
   },
   {
     id: 3,
@@ -137,6 +139,7 @@ export const heroSection_features = [
     subtitle:
       "Try out Grafixy Rise for 7 days for free! You may cancel if it’s not the fit for your business.",
     bgColor: "#6019CE",
+    bgHover: '#FFFFFF'
   },
 ];
 

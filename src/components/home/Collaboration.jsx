@@ -43,7 +43,7 @@ const Collaboration = () => {
           {trialPlan.map((item) => (
             <div
               key={item.id}
-              className="w-full bg-[#E0CCFF] rounded-[15px] 2xl:px-[62px] 2xl:py-12 xl:px-[50px]  xl:py-11 px-[36px] py-[30px] items-center justify-center max-w-[458px] h-full"
+              className="w-full bg-[#E0CCFF] rounded-[15px] 2xl:px-[62px] 2xl:py-12 xl:px-[50px]  xl:py-11 px-[36px] py-[30px] items-center duration-500 justify-center max-w-[458px] h-full  relative overflow-hidden  group z-10 collaboration-hover"
             >
               <div className="flex items-center justify-center">
                 <MainImage
@@ -53,7 +53,7 @@ const Collaboration = () => {
                   className="object-cover 2xl:w-[195px] lg:w-[150px] sm:w-[110px] w-[136px]"
                 />
               </div>
-              <h2 className="w-full  flex items-center justify-between 2xl:text-5xl lg:text-4xl sm:text-3xl text-4xl font-bold text-[#210153] lg:flex-nowrap flex-wrap">
+              <h2 className="w-full  flex items-center justify-between 2xl:text-5xl lg:text-4xl sm:text-3xl text-4xl font-bold text-[#210153] lg:flex-nowrap flex-wrap group-hover:text-white">
                 <span>{item.title}</span>
                 <span className="flex items-center gap-1 font-semibold">
                   <small className="sm:text-2xl text-xl font-extrabold">
@@ -62,16 +62,16 @@ const Collaboration = () => {
                   {item.price}
                 </span>
               </h2>
-              <h5 className="mt-4 text-[rgba(32,1,83,0.50)] font-semibold 2xl:text-[22px] lg:text-[20px] text-sm lg:leading-[24px] leading-[14px]">
+              <h5 className="mt-4 text-[rgba(32,1,83,0.50)] font-semibold 2xl:text-[22px] lg:text-[20px] text-sm lg:leading-[24px] leading-[14px] group-hover:text-white">
                 {item.subtitle}
               </h5>
               <ul className="grid gap-1 2xl:mt-7 lg:mt-5 mt-3">
                 {item.point.map((point) => (
                   <li
                     key={point.id}
-                    className="inline-flex items-center gap-[10px] text-[#210153] lg:text-base font-nunito font-medium  text-xs "
+                    className="inline-flex items-center gap-[10px] text-[#210153] lg:text-base font-nunito font-medium  text-xs group-hover:text-white"
                   >
-                    <TickIcon className="lg:h-[9px] sm:h-[5px] lg:w-[9px] sm:w-[5px] h-[7px] w-[7px]" />{" "}
+                    <TickIcon className="lg:h-[9px] sm:h-[5px] lg:w-[9px] sm:w-[5px] h-[7px] w-[7px] group-hover:stroke-white group-hover:fill-white" />{" "}
                     {point.title}
                   </li>
                 ))}
@@ -79,21 +79,21 @@ const Collaboration = () => {
               <div className="flex items-center justify-center flex-col">
                 <Button
                   name="Start your free trial!"
-                  className="bg-[#210153] rounded-full 2xl:h-16 lg:h-12 h-9 text-white font-bold 2xl:text-lg lg:text-sm sm:text-[10px] text-sm lg:mt-8 mt-7 drop-shadow-2xl shrink-0 flex items-center justify-center lg:px-[30px] px-5 leading-3"
+                  className="bg-[#210153] rounded-full 2xl:h-16 lg:h-12 h-9 text-white font-bold 2xl:text-lg lg:text-sm sm:text-[10px] text-sm lg:mt-8 mt-7 drop-shadow-2xl shrink-0 flex items-center justify-center lg:px-[30px] px-5 leading-3 group-hover:bg-[#E0CCFF] group-hover:text-[#210153] "
                 />
-                <Link className="mt-[10px] font-nunito font-bold lg:text-base text-[10px] text-[#210153]">
+                <Link className="mt-[10px] font-nunito font-bold lg:text-base text-[10px] text-[#210153] group-hover:text-white">
                   More details
                 </Link>
               </div>
             </div>
           ))}
         </div>
-          <p className="font-semibold text-[#E0CCFF] text-2xl leading-7 uppercase block tab:hidden text-left w-full mt-8">
-            Do you need a custom plan? <br />
-            <span className="underline text-white font-medium mt-[10px] leading-10">
-              Talk to sales
-            </span>
-          </p>
+        <p className="font-semibold text-[#E0CCFF] text-2xl leading-7 uppercase block tab:hidden text-left w-full mt-8">
+          Do you need a custom plan? <br />
+          <span className="underline text-white font-medium mt-[10px] leading-10">
+            Talk to sales
+          </span>
+        </p>
       </div>
     </div>
   );
