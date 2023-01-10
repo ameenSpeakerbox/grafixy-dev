@@ -76,25 +76,31 @@
   .collaboration-hover:hover::after {
     height: 100%;
   }
-}
-.heroSection_features {
-  background-color:#BF9AFB ;
-  transition: all .3s ease-in;
-}
-.heroSection_features:hover {
-  background-color:#1F014E ;
-}
-.heroSection_features1 {
-  background-color:#A770FF ;
-  transition: all .3s ease-in;
-}
-.heroSection_features1:hover {
-  background-color:#1F014E ;
-}
-.heroSection_features2 {
-  background-color:#6019CE;
-  transition: all .3s ease-in;
-}
-.heroSection_features2:hover {
-  background-color:#FFFFFF ;
+
+  .heroSection_features {
+    background-color: #BF9AFB;
+    transition: all .3s ease-in;
+  }
+
+  .heroSection_features:hover {
+    background-color: #1F014E;
+  }
+
+  .heroSection_features1 {
+    background-color: #A770FF;
+    transition: all .3s ease-in;
+  }
+
+  .heroSection_features1:hover {
+    background-color: #1F014E;
+  }
+
+  .heroSection_features2 {
+    background-color: #6019CE;
+    transition: all .3s ease-in;
+  }
+
+  .heroSection_features2:hover {
+    background-color: #FFFFFF;
+  }
 }
