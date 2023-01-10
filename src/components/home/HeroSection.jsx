@@ -32,7 +32,7 @@ const HeroSection = () => {
           mb-14 
           lg:leading-[110%] leading-[110%] 
           sm:hightUt900:mt-28
-          sm:hightUt900:mb-2"
+          sm:hightUt900:mb-1"
         >
           Your Design <br />
           <span className="inline-flex items-center">

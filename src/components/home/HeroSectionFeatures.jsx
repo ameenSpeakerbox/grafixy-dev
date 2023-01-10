@@ -4,8 +4,8 @@ import { heroSection_features } from "../../lib/dummyData";
 import { MessageIcon } from "../../ui/Icon";
 
 const HeroSectionFeatures = () => (
-  <div className="grid sm:grid-flow-col  w-full  items-end justify-center z-10">
-    <div className="grid sm:grid-flow-col w-full">
+  <div className="grid sm:grid-flow-col  w-full lg:h-[135px] items-end justify-center z-10  place-content-end place-items-end">
+    <div className="grid sm:grid-flow-col w-full  overflow-visible">
       {heroSection_features.map((item) => (
         <div
           // style={{ backgroundColor: item.bgColor }}
@@ -22,7 +22,7 @@ const HeroSectionFeatures = () => (
             {item.title}
           </h2>
           <p
-            className={`font-nunito font-light lg:text-base sm:text-[10px] text-lg 2xl:leading-[110%] lg:leading-tight mt-2 sm:w-auto w-[60%] sm:hightUt900:mt-1 ${
+            className={`font-nunito font-light lg:text-base  text-lg 2xl:leading-[110%] lg:leading-tight mt-2 sm:w-auto w-[60%] sm:hightUt900:mt-1 ${
               item.id === 3
                 ? "text-white group-hover:text-[#6019CE]"
                 : "text-[#160137] group-hover:text-[#A770FF] 2xl:w-[80%] w-[90%]"
