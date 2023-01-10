@@ -30,7 +30,7 @@ const MainParts = () => {
 
   console.log(swiperData);
   return (
-    <div className="mt-20">
+    <div className="mt-20 w-full grid overflow-hidden ">
       <MainParts_head
         category={category}
         isCategory={isCategory}

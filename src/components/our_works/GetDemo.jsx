@@ -6,7 +6,7 @@ import image_of_demo from "../../images/our_works/getADemo.png";
 
 const GetDemo = () => {
   return (
-    <div className=" flex w-full my-20 h-auto px-24">
+    <div className=" flex w-full my-20 h-auto 2xl:px-[147px] sm:px-[80px] px-8 ">
       <div className="w-full py-[70px] px-[122px]  bg-gradient-to-l from-[#6019CE] to-[#41118C] rounded-[50px] relative">
         <h1 className="font-medium text-6xl text-white ">
           <span className="opacity-[.65] text-[#E0CCFF]"> Ready to try</span>{" "}

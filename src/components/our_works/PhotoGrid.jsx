@@ -1,10 +1,9 @@
-import { GatsbyImage, MainImage, StaticImage } from "gatsby-plugin-image";
+import { MainImage } from "gatsby-plugin-image";
 import React from "react";
-import { gallery } from "../../lib/dummyData";
 
 const PhotoGrid = ({ setIsGalleryOpen, data, setSwiperPosition }) => {
   return (
-    <div className="px-[122px] mt-20 grid xl:grid-cols-4 grid-cols-3 xl:gap-12 gap-4 ">
+    <div className="2xl:px-[147px] sm:px-[80px] px-8   2xl:my-20 lg:my-16 sm:my-12 my-10 grid xl:grid-cols-4 sm:grid-cols-3 grid-cols-2 xl:gap-12 gap-4 ">
       {data.map((item) => (
         <div
           onClick={() => {

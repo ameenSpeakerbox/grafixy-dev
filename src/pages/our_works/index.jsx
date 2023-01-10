@@ -9,17 +9,17 @@ const index = () => {
   return (
     <div className="bg-[#1A0143] max-w-[2560px] mx-auto grid w-full ">
       <Layout>
-        <div className="h-[632px] flex w-full relative items-center justify-center flex-col text-center z-10">
+        <div className="sm:h-[632px] h-[420px] flex w-full relative items-center justify-center flex-col text-center z-10">
           <MainImage
             src={headerImg}
             alt="header"
             className="w-full h-full object-cover absolute -z-10"
           />
-          <h1 className="font-medium text-[65px] text-[#D5BAFF] leading-none ">
+          <h1 className="font-medium  2xl:text-[65px] lg:text-6xl sm:text-5xl text-[45px] text-[#D5BAFF] leading-none ">
             A perfect fit for <br /> <span>agencies</span> &{" "}
             <span className="text-white">brands</span>
           </h1>
-          <p className="text-white text-2xl leading-[125%] w-[50%] mt-5 ">
+          <p className="text-white sm:text-2xl text-lg leading-[125%] w-[50%] mt-5 ">
             Invite team members and clients to help you make and manage designs
             at no extra cost. Easy integration into slack and microsoft teams.
           </p>
