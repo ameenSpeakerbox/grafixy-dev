@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { isBrowser, isMobileSafari, useWindowSize } from "../../lib/healpers";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
 
   useEffect(() => {
     if((isBrowser && !lockHeight) || !hasChin) {
-      document.body.style.setProperty('--vh', `${windowHeight * 0,01}px`)
+      document.body.style.setProperty('--vh', `${windowHeight * 0.01}px`)
       setLockHeight(hasChin)
     }
     
