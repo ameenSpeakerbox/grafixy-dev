@@ -47,7 +47,7 @@ const HeroSection = () => {
             Unlimited <br /> Designs! <br />{" "}
           </span>
           Monthly <br /> Flat Fee
-          <span className="bg-white 2xl:px-10 2xl:py-4 px-4 py-1 mt-5 lg:rounded-[12px] rounded-lg sm:flex hidden drop-shadow-xl ">
+          {/* <span className="bg-white 2xl:px-10 2xl:py-4 px-4 py-1 mt-5 lg:rounded-[12px] rounded-lg sm:flex hidden drop-shadow-xl ">
             <p className="2xl:text-[22px] lg:text-base text-sm font-extrabold text-[#1D014A] 2xl:leading-[110%] text-center leading-3">
               BLACK FRIDAY SALE{" "}
               <p className="text-[#FD0503]">
@@ -57,7 +57,7 @@ const HeroSection = () => {
                 </span>
               </p>
             </p>
-          </span>
+          </span> */}
           <Button
             name="SCHEDULE A DEMO"
             className="text-[#6E3CBC] px-5 py-2 bg-white rounded-full mt-5 text font-bold text-sm sm:hidden flex"

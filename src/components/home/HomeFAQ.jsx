@@ -58,11 +58,11 @@ const HomeFAQ = () => {
           More from <span className="text-[#E0CCFF] underline">FAQs</span>{" "}
         </Link>
       </div>
-      <div className="bg-[#6019CE] sm:flex hidden flex-col items-end  justify-end w-[35%] shrink-0  relative overflow-hidden">
+      <div className="bg-[#6019CE] sm:flex hidden flex-col items-end h-full justify-end w-[35%] shrink-0  relative">
         <img
           src={faqPic}
           alt="homeFaq"
-          className="h-max  absolute object-cover top-0  object-left-bottom lg:left-0 -left-10 2xl:min-w-[1055px] lg:min-w-[600px] min-w-[600px]"
+          className="h-max   absolute object-contain  object-left-bottom lg:left-0 left-0 bottom-0 w-full"
         />
       </div>
       <MainImage

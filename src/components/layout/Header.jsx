@@ -20,8 +20,7 @@ const Header = () => {
               src={logo}
               alt="logo"
               layout="fullWidth"
-              objectFit="contain"
-              className="sm:h-full h-[35px]"
+              className="sm:h-full h-[35px] object-contain"
             />
           </Link>
           <div className="lg:flex hidden items-center justify-center w-full">
@@ -86,8 +85,7 @@ const Header = () => {
                 src={logo}
                 alt="logo"
                 layout="fullWidth"
-                objectFit="contain"
-                className="sm:h-full h-[35px]"
+                className="sm:h-full h-[35px] object-contain"
               />
             </Link>
 

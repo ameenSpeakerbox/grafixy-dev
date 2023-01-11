@@ -1,14 +1,22 @@
 import React from "react";
 import manThinking from "../../images/home/manThinking.png";
 import manThinkingMob from "../../images/home/manThinkingMob.png";
+import { isMobileSafari } from "../../lib/healpers";
+
 
 const FreeTrail = () => {
+
+
+  const hasChin = isMobileSafari()
+
+  console.log(hasChin);
+  
   return (
     <div className="flex h-full sm:flex-row flex-col relative z-[10] sm:overflow-visible overflow-hidden">
       <div className="bg-white pl-[100px] sm:flex hidden flex-col items-end  justify-end w-[35%] relative shrink-0">
         <img
           src={manThinking}
-          className="-mr-14 z-30  object-cover  min-w-max  h-[110%]    absolute right-0 bottom-0 object-bottom"
+          className={`-mr-14 z-30 object-contain min-w-max  h-[110%] absolute right-0 bottom-0 object-bottom`}
           alt="manThinking"
         />
       </div>
