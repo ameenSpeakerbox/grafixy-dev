@@ -57,7 +57,7 @@ export const footerLinks = [
       {
         id: 2,
         title: "Our Work",
-        slug: "",
+        slug: "our_works",
       },
       {
         id: 3,

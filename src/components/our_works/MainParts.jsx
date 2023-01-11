@@ -6,11 +6,11 @@ import PictureChanger from "./PictureChanger";
 
 const category = [
   { id: 1, title: "Featured" },
-  { id: 1, title: "Brochures" },
-  { id: 1, title: "Branding" },
-  { id: 1, title: "Logos" },
-  { id: 1, title: "Websites" },
-  { id: 1, title: "Prints" },
+  { id: 2, title: "Brochures" },
+  { id: 3, title: "Branding" },
+  { id: 4, title: "Logos" },
+  { id: 5, title: "Websites" },
+  { id: 6, title: "Prints" },
 ];
 const MainParts = () => {
   const [isGalleryOpen, setIsGalleryOpen] = React.useState(false);
@@ -26,9 +26,7 @@ const MainParts = () => {
   };
 
   const swiperData = [...galleryFiltered()].sort((a) => a.id >= swiperPosition ? 1: -1)
-  
 
-  console.log(swiperData);
   return (
     <div className=" w-full grid overflow-hidden">
       <MainPartsHead
