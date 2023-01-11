@@ -7,7 +7,7 @@ const MainParts_head = ({ category, isCategory, setIsCategory }) => {
       {category.map((item) => (
         <p
           onClick={() => setIsCategory(item.title)}
-          key={item.id}
+          key={item.id} role="button"
           className={`font-medium 2xl:text-4xl lg:text-3xl sm:text-2xl text-xl  
         text-[#6E3CBC] cursor-pointer hover:text-[#210153]  px-[15px] py-[10px] rounded-[10px] duration-300 ${
           isCategory === item.title && "bg-[#874ce618] text-[#210153]"

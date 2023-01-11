@@ -15,7 +15,7 @@ const QuotationOpener = ({
 
   return (
     <div
-      onClick={handleToggle}
+      onClick={handleToggle} role="button"
       className="px-10 py-6 bg-[#1D004E] rounded-[10px] w-full duration-300 ease-in transition-all z-10"
     >
       <span className=" inline-flex justify-between items-center w-full cursor-pointer">

@@ -116,7 +116,7 @@ export const ShareIcon = (props) => (
     />
   </svg>
 );
-export const Grafixy_questionIcon = (props) => (
+export const GrafixyQuestionIcon = (props) => (
   <svg
     width="252"
     height="101"
@@ -316,7 +316,7 @@ export const CloseIcon = (props) => (
     />
   </svg>
 );
-export const Arrow_withLineIcon = (props) => (
+export const ArrowWithLineIcon = (props) => (
   <svg
     width="16"
     height="12"

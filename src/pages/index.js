@@ -2,9 +2,9 @@ import * as React from "react";
 import {
   HeroSection,
   WorkSession,
-  Why_grafixy,
+  WhyGrafixy,
   Collaboration,
-  Free_trail,
+  FreeTrail,
   HomeFAQ,
   Testimonial,
 } from "../components";
@@ -17,9 +17,9 @@ const IndexPage = () => {
       <Layout>
         <HeroSection />
         <WorkSession />
-        <Why_grafixy />
+        <WhyGrafixy />
         <Collaboration />
-        <Free_trail />
+        <FreeTrail />
         <HomeFAQ />
         <Testimonial />
       </Layout>
