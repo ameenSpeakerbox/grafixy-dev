@@ -1,18 +1,33 @@
 import { MainImage } from "gatsby-plugin-image";
-import React, { useRef } from "react";
+import React from "react";
 import { ArrowLeftIcon, CloseIcon } from "../../ui/Icon";
-import { Swiper, SwiperSlide } from "swiper/react";
 
-const PictureChanger = ({ isGalleryOpen, setIsGalleryOpen, data }) => {
-  const swiperRef = useRef();
+const PictureChanger = ({
+  isGalleryOpen,
+  setIsGalleryOpen,
+  data,
+  swiperPosition,
+  setSwiperPosition,
+}) => {
+
+  const prevSlide = () => {
+    swiperPosition === 0
+      ? setSwiperPosition(data.length - 1)
+      : setSwiperPosition(swiperPosition - 1);
+  };
+  const nextSlide = () => {
+    swiperPosition + 1 === data.length
+      ? setSwiperPosition(0)
+      : setSwiperPosition(swiperPosition + 1);
+  };
 
   return (
     <div
-      className={`bg-black bg-opacity-70  fixed   inset-0  place-content-center w-full h-full flex items-center justify-center  ${
+      className={`bg-black bg-opacity-70  fixed   inset-0  place-content-center w-full h-full flex items-center justify-center   ${
         isGalleryOpen ? "opacity-100 z-[100]" : "opacity-0 -z-[500]"
       } duration-500`}
     >
-      <div className="w-full h-full relative flex items-center sm:justify-center justify-between sm:flex-row flex-col">
+      <div className="w-full h-full relative flex items-center sm:justify-between justify-evenly sm:flex-row flex-col">
         <CloseIcon
           role="button"
           tabIndex={0}
@@ -22,36 +37,20 @@ const PictureChanger = ({ isGalleryOpen, setIsGalleryOpen, data }) => {
         <div
           role="button"
           tabIndex={0}
-          onClick={() => swiperRef.current?.slidePrev()}
+          onClick={prevSlide}
           className="w-[20%] cursor-pointer sm:flex hidden items-center justify-center hover:bg-[#0000004f] h-full shrink-0"
         >
           <ArrowLeftIcon className="cursor-pointer 2xl:w-20 lg:w-16 sm:w-12 w-8" />
         </div>
-        <div className="sm:w-[60%] w-full flex items-center justify-center sm:px-[74px] px-8 sm:py-[74px] h-full relative">
-          <Swiper
-            slidesPerView={1}
-            onBeforeInit={(swiper) => {
-              swiperRef.current = swiper;
-            }}
-            loop={true}
-            className="w-full h-full flex items-center justify-center"
-          >
-            {data?.map((item) => (
-              <SwiperSlide
-                key={item.id}
-                className="w-full h-full flex items-center justify-center "
-              >
-                <MainImage
-                  src={item.picture}
-                  className="object-contain h-full "
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+        <div className="sm:w-[60%] shrink-0 flex items-center justify-center sm:px-[74px] px-8 sm:py-[74px] h-min relative">
+          <MainImage
+            src={data[swiperPosition].picture}
+            className="object-contain h-full w-full flex items-center justify-center"
+          />
         </div>
 
         <div
-          onClick={() => swiperRef.current?.slideNext()}
+          onClick={nextSlide}
           role="button"
           tabIndex={0}
           className="w-[20%] cursor-pointer sm:flex hidden items-center justify-center hover:bg-[#0000004f] h-full shrink-0"
@@ -62,7 +61,7 @@ const PictureChanger = ({ isGalleryOpen, setIsGalleryOpen, data }) => {
         {/* mobile slider */}
         <div className="w-full flex items-center justify-center">
           <div
-            onClick={() => swiperRef.current?.slidePrev()}
+            onClick={prevSlide}
             role="button"
             tabIndex={0}
             className="w-[90px] h-[90px] rounded-full cursor-pointer  flex sm:hidden items-center justify-center hover:bg-[#0000004f]"
@@ -70,7 +69,7 @@ const PictureChanger = ({ isGalleryOpen, setIsGalleryOpen, data }) => {
             <ArrowLeftIcon className="cursor-pointer 2xl:w-20 lg:w-16 sm:w-12 w-8 2xl:h-20 lg:h-16 sm:h-12 h-8" />
           </div>
           <div
-            onClick={() => swiperRef.current?.slideNext()}
+            onClick={nextSlide}
             role="button"
             tabIndex={0}
             className="w-[90px] h-[90px] rounded-full cursor-pointer flex sm:hidden items-center justify-center hover:bg-[#0000004f]"

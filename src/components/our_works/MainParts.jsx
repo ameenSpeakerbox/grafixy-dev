@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { gallery } from "../../lib/dummyData";
-import MainPartsHead from "./MainParts_head";
+import MainParts_head from "./MainParts_head";
 import PhotoGrid from "./PhotoGrid";
 import PictureChanger from "./PictureChanger";
 
@@ -24,12 +24,11 @@ const MainParts = () => {
       return gallery.filter((item) => item.category === isCategory && item);
     }
   };
-
-  const swiperData = [...galleryFiltered()].sort((a) => a.id >= swiperPosition ? 1: -1)
+  
 
   return (
     <div className=" w-full grid overflow-hidden">
-      <MainPartsHead
+      <MainParts_head
         category={category}
         isCategory={isCategory}
         setIsCategory={setIsCategory}
@@ -42,7 +41,9 @@ const MainParts = () => {
       <PictureChanger
         isGalleryOpen={isGalleryOpen}
         setIsGalleryOpen={setIsGalleryOpen}
-        data={swiperData}
+        data={galleryFiltered()}
+        swiperPosition={swiperPosition}
+        setSwiperPosition={setSwiperPosition}
       />
     </div>
   );

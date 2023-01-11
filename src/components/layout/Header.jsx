@@ -21,7 +21,7 @@ const Header = () => {
               alt="logo"
               layout="fullWidth"
               objectFit="contain"
-              className="h-full"
+              className="sm:h-full h-[35px]"
             />
           </Link>
           <div className="lg:flex hidden items-center justify-center w-full">
@@ -49,7 +49,8 @@ const Header = () => {
           {/* mobile menu */}
 
           <div
-            onClick={() => setIsMenuClick(!isMenuClick)}  role="button"
+            onClick={() => setIsMenuClick(!isMenuClick)}
+            role="button"
             tabIndex={0}
             className={`w-[40px] h-[40px] border-[3px] border-[#6019CE] rounded-md lg:hidden flex flex-col justify-evenly p-1 cursor-pointer relative overflow-hidden ${
               isMenuClick && "items-center justify-center p-2"
@@ -57,17 +58,17 @@ const Header = () => {
           >
             <span
               className={`h-[0px] border border-[#5A3D85] right-1 left-1 bg-[#5A3D85] duration-300 absolute transition-all ${
-                isMenuClick ? "rotate-45 " : 'rotate-0 top-2'
+                isMenuClick ? "rotate-45 " : "rotate-0 top-2"
               }`}
             />
             <span
               className={`h-[0px] border border-[#5A3D85] duration-300 ${
-                isMenuClick ? "opacity-0": 'opacity-100'
+                isMenuClick ? "opacity-0" : "opacity-100"
               }`}
             />
             <span
               className={`h-[0px] border border-[#5A3D85]  bg-[#5A3D85] duration-300 absolute left-1 right-1 ${
-                isMenuClick ? "-rotate-45 ":'rotate-0 bottom-2'
+                isMenuClick ? "-rotate-45 " : "rotate-0 bottom-2"
               }`}
             />
           </div>
@@ -86,12 +87,13 @@ const Header = () => {
                 alt="logo"
                 layout="fullWidth"
                 objectFit="contain"
-                className="h-full"
+                className="sm:h-full h-[35px]"
               />
             </Link>
 
             <div
-              onClick={() => setIsMenuClick(!isMenuClick)}  role="button"
+              onClick={() => setIsMenuClick(!isMenuClick)}
+              role="button"
               tabIndex={0}
               className={`w-[40px] h-[40px] border-[3px] border-[#6019CE] rounded-md lg:hidden flex flex-col justify-evenly p-1 cursor-pointer relative ${
                 isMenuClick && "items-center justify-center p-2"
@@ -99,12 +101,12 @@ const Header = () => {
             >
               <span
                 className={`h-[0px] border border-[#5A3D85] right-1 left-1 bg-[#5A3D85] duration-300 absolute ${
-                  isMenuClick ? "rotate-45 " : 'rotate-0 top-2'
+                  isMenuClick ? "rotate-45 " : "rotate-0 top-2"
                 }`}
               />
               <span
                 className={`h-[0px] border border-[#5A3D85]  bg-[#5A3D85] duration-300 absolute left-1 right-1 ${
-                  isMenuClick ? "-rotate-45 ":'rotate-0 bottom-2'
+                  isMenuClick ? "-rotate-45 " : "rotate-0 bottom-2"
                 }`}
               />
             </div>
@@ -128,7 +130,8 @@ const Header = () => {
             </div>
 
             <button
-              onClick={() => setIsMenuClick(false)}  role="button"
+              onClick={() => setIsMenuClick(false)}
+              role="button"
               tabIndex={0}
               className="inline-flex sm:hidden items-center justify-center text-lg text-white gap-2 mt-5 "
             >
@@ -137,7 +140,8 @@ const Header = () => {
           </div>
 
           <button
-            onClick={() => setIsMenuClick(false)}  role="button"
+            onClick={() => setIsMenuClick(false)}
+            role="button"
             tabIndex={0}
             className="sm:inline-flex hidden items-center justify-center text-lg text-white gap-2 absolute bottom-12 sm:right-[80px] right-8 "
           >
