@@ -1,5 +1,5 @@
 import React from "react";
-import { TickIn_circleIcon } from "./Icon";
+import { TickInCircleIcon } from "./Icon";
 
 const QuotationOpener = ({
   questionToggle,
@@ -22,7 +22,7 @@ const QuotationOpener = ({
         <h4 className="font-nunito font-semibold text-2xl text-[#E0CCFF]">
           {question}
         </h4>
-        <TickIn_circleIcon
+        <TickInCircleIcon
           className={`${
             questionToggle === question ? "rotate-180" : "rotate-0"
           }  duration-300 ease-out `}

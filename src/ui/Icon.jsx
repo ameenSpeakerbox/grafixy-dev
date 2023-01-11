@@ -247,7 +247,7 @@ export const TickIcon = (props) => (
     />
   </svg>
 );
-export const TickIn_circleIcon = (props) => (
+export const TickInCircleIcon = (props) => (
   <svg
     width="35"
     height="35"
