@@ -7,7 +7,7 @@ import { Button } from "../../ui/Button";
 
 const HeroSection = () => {
   return (
-    <div className="sm:hight900:h-[1117px]  sm:hightUt900:h-screen h-full bg-[#1E014B] sm:bg-gradient-to-r from-[#100028] to-[#220058] flex flex-col w-full relative  overflow-hidden justify-between">
+    <div className="sm:hight900:h-full  sm:hightUt900:h-screen h-full bg-[#1E014B] sm:bg-gradient-to-r from-[#100028] to-[#220058] flex flex-col w-full relative  overflow-hidden justify-between">
       {/* main section */}
       <div className="grid sm:grid-cols-2 w-full h-full place-content-center place-items-center">
         <div

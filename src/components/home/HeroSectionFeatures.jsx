@@ -4,7 +4,7 @@ import { heroSection_features } from "../../lib/dummyData";
 import { MessageIcon } from "../../ui/Icon";
 
 const HeroSectionFeatures = () => (
-  <div className="grid sm:grid-flow-col  w-full lg:h-[135px] h-auto items-end justify-center z-10  place-content-end place-items-end">
+  <div className="grid sm:grid-flow-col  w-full lg:hightUt900:h-[135px] h-auto items-end justify-center z-10  place-content-end place-items-end">
     <div className="grid sm:grid-flow-col w-full  overflow-visible">
       {heroSection_features.map((item) => (
         <div

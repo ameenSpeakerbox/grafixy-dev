@@ -7,8 +7,8 @@ module.exports = {
     },
     extend: {
       screens: {
-        hight900: { raw: "(min-height: 901px)" },
-        hightUt900: { raw: "(max-height: 901px)" },
+        hight900: { raw: "(min-height: 981px)" },
+        hightUt900: { raw: "(max-height: 981px)" },
         uSm: { min: "400px" },
         sm: { min: "639px" },
         md: { min: "767px" },
