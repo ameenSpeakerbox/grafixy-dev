@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export function isMobileSafari() {
   if (!isBrowser) return;
 
@@ -16,4 +18,18 @@ export function useWindowSize() {
       height: isBrowser ? window.innerHeight : 0,
     };
   }
+  const [windowSize, setWindowSize] = useState(getSize);
+
+  useEffect(() => {
+    if (!isBrowser) return;
+
+    function handleResize() {
+      setWindowSize(getSize());
+    }
+
+    window.addEventListener("resize", handleResize());
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return windowSize;
 }
