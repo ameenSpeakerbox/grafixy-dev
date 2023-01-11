@@ -21,11 +21,12 @@ const HomeFAQ = () => {
           <span className="text-[#E0CCFF]">Questions</span>
         </h2>
         <div className="w-full grid 2xl:gap-10 lg:gap-6 sm:gap-6 gap-3 duration-300 ">
-          {faq_home.map((item) => (
+          {faq_home.map((item, i) => (
             <div
               key={item.id}
-              role="button"
-              onClick={() => handleToggle(item.question)}
+               
+              onClick={() => handleToggle(item.question)} role="button"
+              tabIndex={i}
               className="px-10 2xl:py-6 lg:py-3 py-2 bg-[#1D004E] rounded-[10px] w-full duration-300 ease-in transition-all z-10"
             >
               <span className=" inline-flex justify-between items-center w-full cursor-pointer">

@@ -49,7 +49,8 @@ const Header = () => {
           {/* mobile menu */}
 
           <div
-            onClick={() => setIsMenuClick(!isMenuClick)} role="button"
+            onClick={() => setIsMenuClick(!isMenuClick)}  role="button"
+            tabIndex={0}
             className={`w-[40px] h-[40px] border-[3px] border-[#6019CE] rounded-md lg:hidden flex flex-col justify-evenly p-1 cursor-pointer relative overflow-hidden ${
               isMenuClick && "items-center justify-center p-2"
             }`}
@@ -90,7 +91,8 @@ const Header = () => {
             </Link>
 
             <div
-              onClick={() => setIsMenuClick(!isMenuClick)} role="button"
+              onClick={() => setIsMenuClick(!isMenuClick)}  role="button"
+              tabIndex={0}
               className={`w-[40px] h-[40px] border-[3px] border-[#6019CE] rounded-md lg:hidden flex flex-col justify-evenly p-1 cursor-pointer relative ${
                 isMenuClick && "items-center justify-center p-2"
               }`}
@@ -126,7 +128,8 @@ const Header = () => {
             </div>
 
             <button
-              onClick={() => setIsMenuClick(false)} role="button"
+              onClick={() => setIsMenuClick(false)}  role="button"
+              tabIndex={0}
               className="inline-flex sm:hidden items-center justify-center text-lg text-white gap-2 mt-5 "
             >
               Back to home
@@ -134,7 +137,8 @@ const Header = () => {
           </div>
 
           <button
-            onClick={() => setIsMenuClick(false)} role="button"
+            onClick={() => setIsMenuClick(false)}  role="button"
+            tabIndex={0}
             className="sm:inline-flex hidden items-center justify-center text-lg text-white gap-2 absolute bottom-12 sm:right-[80px] right-8 "
           >
             <ArrowWithLineIcon />

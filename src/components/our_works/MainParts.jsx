@@ -1,6 +1,6 @@
 import React from "react";
 import { gallery } from "../../lib/dummyData";
-import MainParts_head from "./MainParts_head";
+import MainPartsHead from "./MainParts_head";
 import PhotoGrid from "./PhotoGrid";
 import PictureChanger from "./PictureChanger";
 
@@ -31,7 +31,7 @@ const MainParts = () => {
   console.log(swiperData);
   return (
     <div className=" w-full grid overflow-hidden">
-      <MainParts_head
+      <MainPartsHead
         category={category}
         isCategory={isCategory}
         setIsCategory={setIsCategory}

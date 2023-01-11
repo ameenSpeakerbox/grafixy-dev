@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../../components/layout/layout";
 import { faq } from "../../lib/dummyData";
-import "../../style/global.css";
 
 const index = () => {
   return (

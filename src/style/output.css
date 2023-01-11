@@ -371,7 +371,7 @@ Set the default cursor for buttons.
 */
 
 button,
-[role="button"] {
+[ ] {
   cursor: pointer;
 }
 
@@ -1867,7 +1867,8 @@ video {
 }
 
 .underline {
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .opacity-100 {
@@ -1980,7 +1981,7 @@ video {
 
 @media (min-width: 1024px) {
   .collaboration-hover::after {
-    content: ' ';
+    content:' ';
     position: absolute;
     height: 0;
     width: 100%;
