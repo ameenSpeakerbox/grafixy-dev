@@ -29,7 +29,7 @@ const Free_trail = () => {
           </p>
         </span>
       </div>
-      <div className="bg-[#6019CE] after:content-[' ']
+      <div className="bg-[#6019CE]
       after:bg-[#6019CE] after:w-[1000vh] after:h-full after:top-0 after:-left-[200%] after:-z-10 after:absolute absolute right-0 h-full sm:hidden block">
 
 

@@ -13,8 +13,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "tailwind": "tailwindcss -i ./src/style/global.css -o ./src/style/output.css",
-    "start:tailwind": "gatsby develop \" \"npm run tailwind -- --watch\""
+    "tailwind": "tailwindcss -i ./src/style/global.css -o ./src/style/output.css"
   },
   "dependencies": {
     "framer-motion": "^8.2.4",
