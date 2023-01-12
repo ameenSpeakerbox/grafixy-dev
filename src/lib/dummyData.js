@@ -1,11 +1,11 @@
 import React from "react";
-import instagram_1 from "../images/home/work_session/insta_post -1.png";
-import instagram_2 from "../images/home/work_session/insta_post -2.png";
-import instagram_3 from "../images/home/work_session/insta_post -3.png";
-import instagram_4 from "../images/home/work_session/insta_post -4.png";
-import instagram_5 from "../images/home/work_session/insta_post -5.png";
-import instagram_6 from "../images/home/work_session/insta_post -6.png";
-import instagram_7 from "../images/home/work_session/insta_post -7.png";
+import instagram_1 from "../images/home/work_session/insta_post -1.webp";
+import instagram_2 from "../images/home/work_session/insta_post -2.webp";
+import instagram_3 from "../images/home/work_session/insta_post -3.webp";
+import instagram_4 from "../images/home/work_session/insta_post -4.webp";
+import instagram_5 from "../images/home/work_session/insta_post -5.webp";
+import instagram_6 from "../images/home/work_session/insta_post -6.webp";
+import instagram_7 from "../images/home/work_session/insta_post -7.webp";
 import toy_car from "../images/home/Toy car.png";
 import toy_bus from "../images/home/Toy bus.png";
 import avatar from "../images/home/avatar.png";
