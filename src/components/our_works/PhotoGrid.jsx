@@ -1,26 +1,7 @@
 import { motion } from "framer-motion";
 import { MainImage } from "gatsby-plugin-image";
 import React from "react";
-
-const fadeAnim = {
-  show: {
-    opacity: 1,
-    transition: {
-      duration: 0.2,
-      delay: 0.1,
-      ease: "linear",
-      when: "beforeChildren",
-    },
-  },
-  hide: {
-    opacity: 0,
-    transition: {
-      duration: 0.2,
-      ease: "linear",
-      when: "beforeChildren",
-    },
-  },
-};
+import { fadeAnim } from "../../lib/motions";
 
 const PhotoGrid = ({ setIsGalleryOpen, data, setSwiperPosition }) => {
   const handleClick = (id) => {

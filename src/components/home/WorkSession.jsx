@@ -1,8 +1,11 @@
+import { motion } from "framer-motion";
 import { MainImage, } from "gatsby-plugin-image";
 import React, { useEffect, useState } from "react";
 import { Work_Session_InstagramPost } from "../../lib/dummyData";
 import { Button } from "../../ui/Button";
 import { BookmarkIcon, CommentIcon, LikeIcon, ShareIcon } from "../../ui/Icon";
+import {fadeAnim} from "../../lib/motions";
+
 
 const WorkSession = () => {
   const [autoCount, setAutoCount] = useState(1);
@@ -24,7 +27,10 @@ const WorkSession = () => {
       <div className="bg-gradient-to-l to-[#100028] from-[#220058]  lg:pt-[93px] sm:pt-12  2xl:px-[160px] 2xl:pl-[147px] lg:px-[100px] lg:py-[140px] md:px-10 sm:px-9 px-8 py-14 items-center justify-center flex flex-col sm:pb-14 pb-8">
         {Work_Session_InstagramPost.map((item) => (
           <React.Fragment key={item.id}>
-            <span
+            <motion.span initial="hide"
+          animate="show"
+          exit="hide"
+          variants={fadeAnim}
               className={`${
                 item.id === autoCount ? "flex" : "hidden"
               } flex-col items-center justify-center max-w-[525px] max-h-[525px] animateInst`}
@@ -55,7 +61,7 @@ const WorkSession = () => {
                   className="lg:w-[38px] lg:h-[38px] w-[22px] h-[22px] "
                 />
               </span>
-            </span>
+            </motion.span>
             <h2
               className={`${
                 item.id === autoCount ? "block" : "hidden"

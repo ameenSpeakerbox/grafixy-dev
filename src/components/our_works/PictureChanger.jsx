@@ -1,27 +1,9 @@
 import { motion } from "framer-motion";
 import { MainImage } from "gatsby-plugin-image";
 import React from "react";
+import { fadeAnim } from "../../lib/motions";
 import { ArrowLeftIcon, CloseIcon } from "../../ui/Icon";
 
-const fadeAnim = {
-  show: {
-    opacity: 1,
-    transition: {
-      duration: 0.2,
-      delay: 0.1,
-      ease: "linear",
-      when: "beforeChildren",
-    },
-  },
-  hide: {
-    opacity: 0,
-    transition: {
-      duration: 0.2,
-      ease: "linear",
-      when: "beforeChildren",
-    },
-  },
-};
 
 const PictureChanger = ({
   isGalleryOpen,
