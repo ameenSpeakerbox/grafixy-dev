@@ -1,6 +1,6 @@
 import { MainImage } from "gatsby-plugin-image";
 import React from "react";
-import hero_textImage from "../../images/home/hero-section_text.png";
+import hero_textImage from "../../images/home/hero-section_text.webp";
 import heroPic from "../../images/home/hero-section.webp";
 import HeroSectionFeatures from "./HeroSectionFeatures";
 import { Button } from "../../ui/Button";
@@ -68,6 +68,8 @@ const HeroSection = () => {
           <MainImage
             alt="hero-pic"
             src={heroPic}
+            width={967}
+            height={884}
             className="w-full sm:hight900:h-[1117px] min-h-[430px] sm:hightUt900:h-screen sm:absolute right-0 object-cover object-right"
           />
 

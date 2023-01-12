@@ -1,6 +1,6 @@
 import React from "react";
 import manThinking from "../../images/home/manThinking.webp";
-import manThinkingMob from "../../images/home/manThinkingMob.png";
+import manThinkingMob from "../../images/home/manThinkingMob.webp";
 import { isMobileSafari } from "../../lib/healpers";
 
 
