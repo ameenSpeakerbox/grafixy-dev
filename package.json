@@ -16,6 +16,7 @@
     "tailwind": "tailwindcss -i ./src/style/global.css -o ./src/style/output.css"
   },
   "dependencies": {
+    "@tawk.to/tawk-messenger-react": "^2.0.1",
     "framer-motion": "^8.2.4",
     "gatsby": "^5.3.3",
     "gatsby-plugin-image": "^3.3.2",
