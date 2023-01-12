@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
-import { MainImage, } from "gatsby-plugin-image";
+import { MainImage } from "gatsby-plugin-image";
 import React, { useEffect, useState } from "react";
 import { Work_Session_InstagramPost } from "../../lib/dummyData";
 import { Button } from "../../ui/Button";
 import { BookmarkIcon, CommentIcon, LikeIcon, ShareIcon } from "../../ui/Icon";
-import {fadeAnim} from "../../lib/motions";
-
+import { fadeAnim } from "../../lib/motions";
 
 const WorkSession = () => {
   const [autoCount, setAutoCount] = useState(1);
@@ -14,11 +13,11 @@ const WorkSession = () => {
     if (autoCount > 0 && autoCount < Work_Session_InstagramPost.length) {
       setTimeout(() => {
         setAutoCount(autoCount + 1);
-      }, 3000);
+      }, 2000);
     } else {
       setTimeout(() => {
         setAutoCount(1);
-      }, 3000);
+      }, 2000);
     }
   }, [autoCount]);
 
@@ -27,15 +26,16 @@ const WorkSession = () => {
       <div className="bg-gradient-to-l to-[#100028] from-[#220058]  lg:pt-[93px] sm:pt-12  2xl:px-[160px] 2xl:pl-[147px] lg:px-[100px] lg:py-[140px] md:px-10 sm:px-9 px-8 py-14 items-center justify-center flex flex-col sm:pb-14 pb-8">
         {Work_Session_InstagramPost.map((item) => (
           <React.Fragment key={item.id}>
-            <motion.span initial="hide"
-          animate="show"
-          exit="hide"
-          variants={fadeAnim}
+            <motion.span
+              initial="hide"
+              animate="show"
+              exit="hide"
+              variants={fadeAnim}
               className={`${
                 item.id === autoCount ? "flex" : "hidden"
               } flex-col items-center justify-center max-w-[525px] max-h-[525px] animateInst`}
             >
-              <MainImage 
+              <MainImage
                 src={item.post}
                 alt={item.subtitle}
                 width={512}
@@ -115,7 +115,6 @@ const WorkSession = () => {
               name="SEE PRICING"
               className="bg-[#19013F] rounded-full px-8 py-[10px] text-white lg:h-16 h-10  shrink-0 lg:text-lg text-[10px] flex items-center justify-center sm:w-auto w-[150px]"
             />
-            
           </div>
         </div>
       </div>
