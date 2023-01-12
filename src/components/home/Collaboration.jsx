@@ -62,7 +62,7 @@ const Collaboration = () => {
                   {item.price}
                 </span>
               </h2>
-              <h5 className="mt-4 text-[rgba(32,1,83,0.50)] font-semibold 2xl:text-[22px] lg:text-[20px] text-sm lg:leading-[24px] leading-[14px] group-hover:lg:text-white">
+              <h5 className="mt-4 text-[rgba(32,1,83,0.50)] font-semibold 2xl:text-[22px] lg:text-[20px] text-sm lg:leading-[24px] leading-[14px] group-hover:lg:text-white font-nunito">
                 {item.subtitle}
               </h5>
               <ul className="grid gap-1 2xl:mt-7 lg:mt-5 mt-3">
