@@ -295,7 +295,7 @@ export const ArrowLeftIcon = (props) => (
     <path
       d="M89.1614 118L97 110.101L60.6773 73.5L97 36.8988L89.1614 29L45 73.5L89.1614 118Z"
       fill="white"
-      fill-opacity="0.8"
+      fillOpacity="0.8"
     />
   </svg>
 );
@@ -311,8 +311,8 @@ export const CloseIcon = (props) => (
     <path
       d="M101 102L50 51M101 51L50 102"
       stroke="white"
-      stroke-width="3"
-      stroke-linecap="round"
+      strokeWidth="3"
+      strokeLinecap="round"
     />
   </svg>
 );

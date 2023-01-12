@@ -1,6 +1,27 @@
+import { motion } from "framer-motion";
 import { MainImage } from "gatsby-plugin-image";
 import React from "react";
 import { ArrowLeftIcon, CloseIcon } from "../../ui/Icon";
+
+const fadeAnim = {
+  show: {
+    opacity: 1,
+    transition: {
+      duration: 0.2,
+      delay: 0.1,
+      ease: "linear",
+      when: "beforeChildren",
+    },
+  },
+  hide: {
+    opacity: 0,
+    transition: {
+      duration: 0.2,
+      ease: "linear",
+      when: "beforeChildren",
+    },
+  },
+};
 
 const PictureChanger = ({
   isGalleryOpen,
@@ -9,7 +30,6 @@ const PictureChanger = ({
   swiperPosition,
   setSwiperPosition,
 }) => {
-
   const prevSlide = () => {
     swiperPosition === 0
       ? setSwiperPosition(data.length - 1)
@@ -42,12 +62,18 @@ const PictureChanger = ({
         >
           <ArrowLeftIcon className="cursor-pointer 2xl:w-20 lg:w-16 sm:w-12 w-8" />
         </div>
-        <div className="sm:w-[60%] shrink-0 flex items-center justify-center sm:px-[74px] px-8 sm:py-[74px] h-min relative">
-          <MainImage
+        <motion.div
+          initial="hide"
+          animate="show"
+          exit="hide"
+          variants={fadeAnim}
+          className="sm:w-[60%] shrink-0 flex items-center justify-center sm:px-[74px] px-8 sm:py-[74px] h-min relative"
+        >
+          <MainImage alt='slider Pics'
             src={data[swiperPosition].picture}
             className="object-contain h-full w-full flex items-center justify-center"
           />
-        </div>
+        </motion.div>
 
         <div
           onClick={nextSlide}
