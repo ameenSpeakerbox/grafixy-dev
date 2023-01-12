@@ -1,11 +1,12 @@
 
+import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { heroSection_features } from "../../lib/dummyData";
 import { MessageIcon } from "../../ui/Icon";
 
 const HeroSectionFeatures = () => (
   <div className="grid sm:grid-flow-col  w-full h-auto items-end justify-center z-10  place-content-end place-items-end">
-    <div className="grid sm:grid-cols-4 w-full  overflow-visible place-items-end">
+    <div className="grid sm:grid-cols-4 w-full  overflow-visible place-items-end h-full">
       {heroSection_features.map((item) => (
         <div
           // style={{ backgroundColor: item.bgColor }}
@@ -39,7 +40,7 @@ const HeroSectionFeatures = () => (
           LET’S HAVE A CHAT
         </h2>
         <div className="flex justify-end">
-          {/* <StaticImage
+          <StaticImage
           src="../../images/home/AJID.png"
           layout="fullWidth"
           width={135}
@@ -47,7 +48,7 @@ const HeroSectionFeatures = () => (
           objectFit="cover"
           alt="ajid"
           className="lg:w-[135px] lg:h-[135px] sm:w-[80px] sm:h-[80px] h-[135px] w-[135px]"
-        /> */}
+        />
          
 
         </div>
