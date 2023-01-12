@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/pages/**/*.{js,jsx,ts,tsx}", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
-      nunito: "Nunito Sans', sans-serif",
+      nunito: "'Nunito Sans', sans-serif",
     },
     extend: {
       screens: {
