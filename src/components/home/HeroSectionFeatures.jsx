@@ -5,12 +5,12 @@ import { MessageIcon } from "../../ui/Icon";
 
 const HeroSectionFeatures = () => (
   <div className="grid sm:grid-flow-col  w-full h-auto items-end justify-center z-10  place-content-end place-items-end">
-    <div className="grid sm:grid-flow-col w-full  overflow-visible">
+    <div className="grid sm:grid-cols-4 w-full  overflow-visible place-items-end">
       {heroSection_features.map((item) => (
         <div
           // style={{ backgroundColor: item.bgColor }}
           key={item.id}
-          className={`flex flex-col gap-[2px] 2xl:py-[51px]  2xl:px-[76px] lg:py-5 lg:px-10 sm:py-5 sm:px-10 px-8 py-10 border-l border-black duration-500 border-t group ${item.hoverStyle}`}
+          className={`flex flex-col gap-[2px] 2xl:py-[51px]  2xl:px-[76px] lg:py-5 lg:px-10 sm:py-5 sm:px-10 px-8 py-10 border-l border-black duration-500 border-t group sm:h-[80%] ${item.hoverStyle}`}
         >
           <h2
             className={`font-bold 2xl:text-2xl lg:text-xl md:hightUt900:text-lg md:hightUt900:leading-5 sm:text-sm text-[22px] 2xl:leading-[110%] leading-5 sm:w-auto w-[60%] ${
@@ -32,9 +32,7 @@ const HeroSectionFeatures = () => (
           </p>
         </div>
       ))}
-    </div>
-
-    <div className="bg-[#4600B2] 2xl:py-[51px]  2xl:px-[76px] sm:py-5 sm:px-10 px-8 py-10 border-t border-l border-black 2xl:pb-[35px] pb-[20px] relative grid sm:h-[110%] sm:w-auto w-full h-full">
+    <div className="bg-[#4600B2] 2xl:py-[51px]  2xl:px-[76px] sm:py-5 sm:px-10 px-8 py-10 border-t border-l border-black 2xl:pb-[35px] pb-[20px] relative grid sm:h-[110%] w-full h-full">
       <h2 className="font-bold 2xl:text-2xl lg:text-xl sm:text-sm text-[22px] 2xl:leading-[110%] leading-5 text-white  flex shrink-0 w-max pl-10 relative">
         <MessageIcon className="absolute lg:-left-4 -left-[2px] 2xl:w-[48px] 2xl:h-[48px] sm:w-[28px] sm:h-[28px] w-[40px] h-[40px]" />
         NEED TO KNOW MORE? <br />
@@ -52,6 +50,8 @@ const HeroSectionFeatures = () => (
         />
       </div>
     </div>
+    </div>
+
   </div>
 );
 

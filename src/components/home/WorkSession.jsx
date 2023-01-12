@@ -22,7 +22,7 @@ const WorkSession = () => {
   }, [autoCount]);
 
   return (
-    <div className="grid sm:grid-cols-2 w-full h-min">
+    <div className="grid sm:grid-cols-2 w-full h-min hightUt900:h-full max-h-screen">
       <div className="bg-gradient-to-l to-[#100028] from-[#220058]  lg:pt-[93px] sm:pt-12  2xl:px-[160px] 2xl:pl-[147px] lg:px-[100px] lg:py-[140px] md:px-10 sm:px-9 px-8 py-14 items-center justify-center flex flex-col sm:pb-14 pb-8">
         {Work_Session_InstagramPost.map((item) => (
           <React.Fragment key={item.id}>
@@ -73,7 +73,7 @@ const WorkSession = () => {
               style={{ color: `${item.color}` }}
               className={`${
                 item.id === autoCount ? "block" : "hidden"
-              } font-medium lg:text-5xl text-4xl  text-center leading-none animateInst`}
+              } font-medium lg:text-5xl text-4xl  text-center leading-none `}
             >
               {item.subtitle}
             </h2>

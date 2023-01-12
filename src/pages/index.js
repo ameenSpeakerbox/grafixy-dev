@@ -9,6 +9,7 @@ import {
   Testimonial,
 } from "../components";
 import Layout from "../components/layout/layout";
+import { SEO } from "../components/seo";
 
 
 const IndexPage = () => {
@@ -29,4 +30,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <SEO title='Home Page'/>;
