@@ -43,7 +43,7 @@ const Collaboration = () => {
           {trialPlan.map((item) => (
             <div
               key={item.id}
-              className="w-full bg-[#E0CCFF] rounded-[15px] 2xl:px-[62px] 2xl:py-12 xl:px-[50px]  xl:py-11 px-[36px] py-[30px] items-center duration-500 justify-center max-w-[458px] h-full  relative overflow-hidden  group z-10 collaboration-hover"
+              className="w-full bg-[#E0CCFF] rounded-[15px] 2xl:px-[62px] 2xl:py-12 xl:px-[50px]  xl:py-11 px-[36px] py-[30px] items-center duration-500 justify-center max-w-[458px] h-full  relative overflow-hidden  group z-10 collaboration-hover grid"
             >
               <div className="flex items-center justify-center">
                 <MainImage
