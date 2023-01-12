@@ -1,5 +1,5 @@
 import React from "react";
-import manThinking from "../../images/home/manThinking.png";
+import manThinking from "../../images/home/manThinking.webp";
 import manThinkingMob from "../../images/home/manThinkingMob.png";
 import { isMobileSafari } from "../../lib/healpers";
 
@@ -17,7 +17,7 @@ const FreeTrail = () => {
         <img
           src={manThinking}
           className={`-mr-14 z-30 object-contain min-w-max  h-[110%] absolute right-0 bottom-0 object-bottom`}
-          alt="manThinking"
+          alt="manThinking" loading="lazy"
         />
       </div>
       <div className="lg:py-24 sm:bg-[#6019CE]  flex lg:px-20 sm:px-16 px-8 py-20 flex-col z-20">
@@ -41,7 +41,7 @@ const FreeTrail = () => {
       after:bg-[#6019CE] after:w-[1000vh] after:h-full after:top-0 after:-left-[200%] after:-z-10 after:absolute absolute right-0 h-full sm:hidden block">
 
 
-      <img src={manThinkingMob} alt="manThinking" className="w-full h-full object-right object-contain" />
+      <img src={manThinkingMob} alt="manThinking" loading="lazy" className="w-full h-full object-right object-contain" />
       </div>
     </div>
   );

@@ -19,6 +19,7 @@ const Header = () => {
             <img
               src={logo}
               alt="logo"
+              loading="eager"
               layout="fullWidth"
               className="sm:h-full h-[35px] object-contain"
             />
@@ -84,6 +85,7 @@ const Header = () => {
               <img
                 src={logo}
                 alt="logo"
+                loading="eager"
                 layout="fullWidth"
                 className="sm:h-full h-[35px] object-contain"
               />

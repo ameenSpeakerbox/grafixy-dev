@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import React, { useState } from "react";
 import { faq_home } from "../../lib/dummyData";
 import { TickInCircleIcon } from "../../ui/Icon";
-import faqPic from "../../images/home/homeFaq.png";
+import faqPic from "../../images/home/homeFaq-min.webp";
 import faqMobPic from "../../images/home/homeFaqMob.png";
 import { MainImage } from "gatsby-plugin-image";
 
@@ -62,6 +62,7 @@ const HomeFAQ = () => {
         <img
           src={faqPic}
           alt="homeFaq"
+          loading="lazy"
           className="h-max   absolute object-contain  object-left-bottom lg:left-0 left-0 bottom-0 w-full"
         />
       </div>

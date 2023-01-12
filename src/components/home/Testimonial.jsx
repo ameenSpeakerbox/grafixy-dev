@@ -45,6 +45,8 @@ const Testimonial = () => {
                       alt={item.userName}
                       src={item.image}
                       className="object-contain w-full h-full"
+                      loading="lazy"
+                      
                     />
                   </div>
                   <div className="flex flex-col justify-center gap-1">

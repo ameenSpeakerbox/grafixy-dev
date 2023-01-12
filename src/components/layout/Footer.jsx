@@ -12,7 +12,7 @@ const Footer = () => {
         <div className=" grid place-content-start sm:place-content-center place-items-center flex-1 w-full">
           <img
             src={logo}
-            alt="logo"
+            alt="logo" loading="eager"
             className="lg:h-[75px] sm:h-[43px] h-[37px] object-contain"
           />
         </div>
