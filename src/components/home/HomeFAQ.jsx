@@ -24,8 +24,8 @@ const HomeFAQ = () => {
           {faq_home.map((item, i) => (
             <div
               key={item.id}
-               
-              onClick={() => handleToggle(item.question)} role="button"
+              onClick={() => handleToggle(item.question)}
+              role="button"
               tabIndex={i}
               className="px-10 2xl:py-6 lg:py-3 py-2 bg-[#1D004E] rounded-[10px] w-full duration-300 ease-in transition-all z-10"
             >

@@ -71,7 +71,7 @@ const Collaboration = () => {
                     key={point.id}
                     className="inline-flex items-center gap-[10px] text-[#210153] lg:text-base font-nunito font-medium  text-xs group-hover:lg:text-white duration-300 ease-linear"
                   >
-                    <TickIcon className="lg:h-[9px] sm:h-[5px] lg:w-[9px] sm:w-[5px] h-[7px] w-[7px] group-hover:lg:stroke-white group-hover:lg:fill-white duration-300 ease-linear" />{" "}
+                    <TickIcon className="lg:h-[9px] sm:h-[5px] lg:w-[9px] sm:w-[5px] h-[7px] w-[7px] group-hover:lg:fill-white duration-300 ease-linear" />{" "}
                     {point.title}
                   </li>
                 ))}
