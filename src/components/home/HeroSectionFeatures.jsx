@@ -1,4 +1,4 @@
-import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
+
 import React from "react";
 import { heroSection_features } from "../../lib/dummyData";
 import { MessageIcon } from "../../ui/Icon";
@@ -48,9 +48,7 @@ const HeroSectionFeatures = () => (
           alt="ajid"
           className="lg:w-[135px] lg:h-[135px] sm:w-[80px] sm:h-[80px] h-[135px] w-[135px]"
         /> */}
-         <TawkMessengerReact
-                propertyId="63bfbe8cc2f1ac1e202d05f5"
-                widgetId="1gmihugjb"/>
+         
 
         </div>
       </div>
