@@ -22,6 +22,7 @@ export const SEO = ({ title, description, pathname, children }) => {
       <meta name="twitter:url" content={seo.url} />
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={seo.image} />
+      <meta http-equiv="Content-Security-Policy" content="script-src 'none'" />
       <meta name="twitter:creator" content={seo.twitterUsername} />
       <link rel="icon" href="../images/icon.png" />
       {children}

@@ -81,7 +81,7 @@ const Collaboration = () => {
                   name="Start your free trial!"
                   className="bg-[#210153] rounded-full 2xl:h-16 lg:h-12 h-9 text-white font-bold 2xl:text-lg lg:text-sm sm:text-[10px] text-sm lg:mt-8 mt-7 drop-shadow-2xl shrink-0 flex items-center justify-center lg:px-[30px] px-5 leading-3 group-hover:lg:bg-[#E0CCFF] group-hover:lg:text-[#210153] duration-300 ease-linear"
                 />
-                <Link className="mt-[10px] font-nunito font-bold lg:text-base text-[10px] text-[#210153] group-hover:lg:text-white duration-300 ease-linear">
+                <Link  to="" className="mt-[10px] font-nunito font-bold lg:text-base text-[10px] text-[#210153] group-hover:lg:text-white duration-300 ease-linear">
                   More details
                 </Link>
               </div>
