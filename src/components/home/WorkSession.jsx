@@ -33,7 +33,7 @@ const WorkSession = () => {
               variants={fadeAnim}
               className={`${
                 item.id === autoCount ? "flex" : "hidden"
-              } flex-col items-center justify-center max-w-[525px] max-h-[525px] animateInst`}
+              } flex-col items-center justify-center max-w-[525px] max-h-[40vh] animateInst`}
             >
               <MainImage
                 src={item.post}
@@ -65,7 +65,7 @@ const WorkSession = () => {
             <h2
               className={`${
                 item.id === autoCount ? "block" : "hidden"
-              } font-semibold lg:text-5xl text-4xl text-center text-white pt-[35px] leading-none `}
+              } font-semibold lg:text-5xl text-4xl text-center text-white pt-[50px] leading-none `}
             >
               {item.title}
             </h2>
@@ -80,14 +80,14 @@ const WorkSession = () => {
           </React.Fragment>
         ))}
       </div>
-      <div className="2xl:px-[82px] 2xl:py-[102px] lg:px-[60px] lg:py-[80px] md:px-10 sm:px-9 px-8 py-[48px] flex flex-col justify-center 2xl:gap-[74px] lg:gap-16 gap-10 pb-[64px]">
+      <div className="2xl:px-[82px] lg:px-[60px] md:px-10 sm:px-9 px-8 py-[48px] flex flex-col justify-center 2xl:gap-[74px] lg:gap-16 gap-10 pb-[64px]">
         <div>
           <h2 className="font-medium text-[#1D0149] 2xl:text-[65px] lg:text-5xl text-4xl leading-none">
             A perfect fit for <br />{" "}
             <span className="text-[#6019CE]">agencies</span> &{" "}
             <span className="text-[#6019CE]">brands</span>
           </h2>
-          <p className="font-nunito 2xl:text-2xl lg:text-xl text-sm  text-[#1E014C] leading-none mt-7 w-[70%]">
+          <p className="font-nunito 2xl:text-2xl lg:text-xl text-sm  text-[#1E014C] leading-none mt-2 w-[70%]">
             Grafixy makes it incredibly easy to set up or scale your design
             team. Stress-free outsourcing. Create unlimited projects for just a
             flat monthly rate.
@@ -101,7 +101,7 @@ const WorkSession = () => {
             </span>{" "}
             with your team.
           </h2>
-          <p className="font-nunito 2xl:text-2xl lg:text-xl text-sm text-[#1E014C] leading-none mt-7 w-[70%]">
+          <p className="font-nunito 2xl:text-2xl lg:text-xl text-sm text-[#1E014C] leading-none mt-2 w-[70%]">
             Grafixy makes it incredibly easy to set up or scale your design
             team. Stress-free outsourcing. Create unlimited projects for just a
             flat monthly rate.

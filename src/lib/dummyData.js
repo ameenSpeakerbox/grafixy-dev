@@ -338,7 +338,7 @@ export const faq = [
       {
         id: 2,
         subQuestion:
-          "How How many tasks will the team work on each day? it work",
+          "How many tasks will the team work on each day? it work",
         answer:
           "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
       },

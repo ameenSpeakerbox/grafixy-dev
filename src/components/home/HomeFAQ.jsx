@@ -52,7 +52,7 @@ const HomeFAQ = () => {
           ))}
         </div>
         <Link
-          to="/faq"
+          to="faq"
           className="font-semibold 2xl:text-[35px] lg:text-[32px] text-base text-[#6E3CBC] underline"
         >
           More from <span className="text-[#E0CCFF] underline">FAQs</span>{" "}
