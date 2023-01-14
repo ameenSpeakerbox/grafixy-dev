@@ -37,7 +37,7 @@ const WorkSession = () => {
               width={512}
               height={512}
               loading="lazy"
-              className="object-cover w-full h-full"
+              className="object-contain w-full h-full"
             />
           <span className={`flex justify-between w-full mt-5 `}>
             <div className="flex gap-6 items-center justify-center">

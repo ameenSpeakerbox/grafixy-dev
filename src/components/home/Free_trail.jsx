@@ -9,7 +9,6 @@ const FreeTrail = () => {
 
   const hasChin = isMobileSafari()
 
-  console.log(hasChin);
   
   return (
     <div className="flex h-full sm:flex-row flex-col relative z-[10] sm:overflow-visible overflow-hidden">
