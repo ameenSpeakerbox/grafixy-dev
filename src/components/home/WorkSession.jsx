@@ -32,7 +32,7 @@ const WorkSession = () => {
               exit="hide"
               variants={fadeAnim}
               className={`${
-                item.id === autoCount ? "flex" : "hidden"
+                item.id === 1 ? "flex" : "hidden"
               } flex-col items-center justify-center max-w-[525px] max-h-[40vh] animateInst`}
             >
               <img
@@ -42,6 +42,8 @@ const WorkSession = () => {
                 height={512}
                 className="object-cover w-full h-full"
               />
+            
+            </motion.span>
               <span
                 className={`${
                   item.id === autoCount ? "flex" : "hidden"
@@ -60,7 +62,6 @@ const WorkSession = () => {
                   className="lg:w-[38px] lg:h-[38px] w-[22px] h-[22px] "
                 />
               </span>
-            </motion.span>
             <h2
               className={`${
                 item.id === autoCount ? "block" : "hidden"
