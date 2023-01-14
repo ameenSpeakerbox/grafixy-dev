@@ -21,7 +21,7 @@ const GetDemo = () => {
             name="GET A DEMO"
           />
           <Button  className="text-white px-[11px] py-[32px] bg-[#19013F] rounded-[33px] drop-shadow-lg h-[67px] flex items-center justify-center w-[180px] sm:text-lg text-base"
-            name="GET A DEMO" />
+            name="SEE PRICING" />
         </div>
           <MainImage src={image_of_demo} 
           alt='image of demo'
