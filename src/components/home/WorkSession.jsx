@@ -39,7 +39,6 @@ const WorkSession = () => {
               loading="lazy"
               className="object-cover w-full h-full"
             />
-          </motion.span>
           <span className={`flex justify-between w-full mt-5 `}>
             <div className="flex gap-6 items-center justify-center">
               <LikeIcon
@@ -56,11 +55,12 @@ const WorkSession = () => {
                 fill: `${Work_Session_InstagramPost[autoCount]?.color}`,
               }}
               className="lg:w-[38px] lg:h-[38px] w-[22px] h-[22px] "
-            />
+              />
           </span>
+              </motion.span>
           <h2
             className={`block font-semibold lg:text-5xl text-4xl text-center text-white pt-[50px] leading-none `}
-          >
+            >
             {" "}
             We Design
           </h2>
