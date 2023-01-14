@@ -35,7 +35,7 @@ const WorkSession = () => {
                 item.id === autoCount ? "flex" : "hidden"
               } flex-col items-center justify-center max-w-[525px] max-h-[40vh] animateInst`}
             >
-              <MainImage
+              <img
                 src={item.post}
                 alt={item.subtitle}
                 width={512}
