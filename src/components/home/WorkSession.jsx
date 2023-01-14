@@ -40,7 +40,6 @@ const WorkSession = () => {
                 alt={item.subtitle}
                 width={512}
                 height={512}
-                loading="eager"
                 className="object-cover w-full h-full"
               />
               <span
