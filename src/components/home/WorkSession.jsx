@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { MainImage } from "gatsby-plugin-image";
 import React, { useEffect, useState } from "react";
 import { Work_Session_InstagramPost } from "../../lib/dummyData";
 import { Button } from "../../ui/Button";
@@ -36,7 +35,7 @@ const WorkSession = () => {
               } flex-col items-center justify-center max-w-[525px] max-h-[40vh] animateInst`}
             >
               <img
-                src={Work_Session_InstagramPost[autoCount].post}
+                src={Work_Session_InstagramPost[autoCount]?.post}
                 alt={item.subtitle}
                 width={512}
                 height={512}

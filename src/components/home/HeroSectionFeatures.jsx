@@ -9,7 +9,6 @@ const HeroSectionFeatures = () => (
     <div className="grid sm:grid-cols-4 w-full  overflow-visible place-items-end h-full">
       {heroSection_features.map((item) => (
         <div
-          // style={{ backgroundColor: item.bgColor }}
           key={item.id}
           className={`flex flex-col gap-[2px] 2xl:py-[51px]  2xl:px-[76px] lg:py-5 lg:px-10 sm:py-5 sm:px-10 px-8 py-10 border-l border-black duration-500 border-t group h-full ${item.hoverStyle}`}
         >
@@ -23,7 +22,7 @@ const HeroSectionFeatures = () => (
             {item.title}
           </h2>
           <p
-            className={`font-nunito font-light lg:text-base  text-lg 2xl:leading-[110%] lg:leading-tight mt-2 sm:w-auto w-[60%] sm:hightUt900:mt-1 ${
+            className={`font-nunito font-light lg:text-base  text-lg 2xl:leading-[110%] lg:leading-tight mt-2 sm:w-auto w-[60%] sm:hightUt900:mt-1 leading-5 shrink-0 ${
               item.id === 3
                 ? "text-white group-hover:lg:text-[#6019CE]"
                 : "text-[#160137] group-hover:lg:text-[#A770FF] 2xl:w-[80%] w-[90%]"
