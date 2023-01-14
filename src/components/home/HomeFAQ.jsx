@@ -63,7 +63,7 @@ const HomeFAQ = () => {
           src={faqPic}
           alt="homeFaq"
           loading="lazy"
-          className="h-max   absolute object-contain  object-left-bottom lg:left-0 left-0 bottom-0 w-full"
+          className="h-max absolute object-contain  object-left-bottom lg:left-0 left-0 bottom-0 w-full"
         />
       </div>
       <MainImage
@@ -72,7 +72,7 @@ const HomeFAQ = () => {
         loading="eager"
         width={164}
         height={467}
-        className="flex sm:hidden flex-col items-end  justify-end   absolute z-[0] top-0 right-0 w-full h-full  object-contain object-right -mt-20"
+        className="flex sm:hidden flex-col items-end  justify-end   absolute z-[0] bottom-0 right-0 w-full h-full  object-contain object-right -mt-20"
       />
     </div>
   );
