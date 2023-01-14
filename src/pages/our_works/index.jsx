@@ -10,7 +10,7 @@ const index = () => {
     <div className="bg-[#1A0143] max-w-[2560px] mx-auto grid w-full ">
       <Layout>
         <div className="sm:h-[632px] h-[420px] flex w-full relative items-center justify-center flex-col text-center z-10 px-8 max-h-[60vh]">
-          <MainImage
+        <MainImage
             src={headerImg}
             alt="header"
             className="w-full h-full object-cover absolute -z-10"

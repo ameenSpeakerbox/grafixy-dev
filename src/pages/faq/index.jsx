@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../../components/layout/layout";
-import { faq } from "../../lib/dummyData";
 import TypoFAQ from "../../ui/TypoFAQ";
 
 const index = () => {
@@ -9,6 +8,7 @@ const index = () => {
       "font-nunito 2xl:text-[30px] lg:text-[28px] sm:text-2xl text-xl font-bold text-white 2xl:leading-10 leading-[24px] 2xl:mb-[10px] lg:mb-[9px] sm:mb-[8px] mb-[7px]",
     ans: "2xl:text-2xl lg:text-xl sm:text-lg text-base font-semibold font-nunito text-[rgba(255,255,255,0.7)] lg:w-[60%]",
     listMain: "list-disc ml-8 pl-8",
+    subMain: "grid gap-12 xl:px-20 lg:px-8 sm:px-3",
   };
   return (
     <Layout>
@@ -23,30 +23,11 @@ const index = () => {
           no extra cost. Easy integration into slack and microsoft teams.
         </p>
         <div className="grid w-full 2xl:gap-24 lg:gap-20 sm:gap-16 gap-14">
-          {/* {faq.map((item) => (
-            <div key={item.id} className="">
-              <h2 className="font-bold 2xl:text-[40px] lg:text-[36px] sm:text-3xl text-2xl leading-none text-white 2xl:mb-[30px] lg:mb-7 sm:mb-6 mb-5 uppercase">
-                {item.question}
-              </h2>
-              <div className="grid gap-12">
-                {item.answer.map((ans) => (
-                  <span key={ans.id} className="">
-                    <h4 className="font-nunito 2xl:text-[30px] lg:text-[28px] sm:text-2xl text-xl font-bold text-white 2xl:leading-10 leading-[24px] 2xl:mb-[10px] lg:mb-[9px] sm:mb-[8px] mb-[7px]">
-                      {ans.subQuestion}
-                    </h4>
-                    <p className="2xl:text-2xl lg:text-xl sm:text-lg text-base font-semibold font-nunito text-[rgba(255,255,255,0.7)] lg:w-[60%]">
-                      {ans.answer}
-                    </p>
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))} */}
           <div className="grid gap-5">
             <h1 className="font-bold 2xl:text-[40px] lg:text-[36px] sm:text-3xl text-2xl leading-none text-white 2xl:mb-[30px] lg:mb-7 sm:mb-6 mb-5 uppercase">
               GRAFIXY FAQ’S
             </h1>
-            <div className="grid gap-12">
+            <div className={classes.subMain}>
               <TypoFAQ
                 question="Which countries does Grafixy serve?"
                 ans={
@@ -562,7 +543,7 @@ const index = () => {
             <h1 className="font-bold 2xl:text-[40px] lg:text-[36px] sm:text-3xl text-2xl leading-none text-white 2xl:mb-[30px] lg:mb-7 sm:mb-6 mb-5 uppercase">
               REQUEST GUIDELINES
             </h1>
-            <div className="grid gap-12">
+            <div className={classes.subMain}>
               <TypoFAQ
                 question="Social Media Designs"
                 ans={
