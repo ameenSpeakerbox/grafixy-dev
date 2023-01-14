@@ -9,13 +9,13 @@ const WorkSession = () => {
   const [autoCount, setAutoCount] = useState(1);
 
   useEffect(() => {
-    if (autoCount > 0 && autoCount < Work_Session_InstagramPost.length) {
+    if (autoCount >= 0 && autoCount <= Work_Session_InstagramPost.length - 2) {
       setTimeout(() => {
         setAutoCount(autoCount + 1);
       }, 2000);
-    } else {
+    } else if (autoCount > Work_Session_InstagramPost.length - 2) {
       setTimeout(() => {
-        setAutoCount(1);
+        setAutoCount(0);
       }, 2000);
     }
   }, [autoCount]);
@@ -23,62 +23,56 @@ const WorkSession = () => {
   return (
     <div className="grid sm:grid-cols-2 w-full h-min hightUt900:h-full max-h-screen">
       <div className="bg-gradient-to-l to-[#100028] from-[#220058]  lg:pt-[93px] sm:pt-12  2xl:px-[160px] 2xl:pl-[147px] lg:px-[100px] lg:py-[140px] md:px-10 sm:px-9 px-8 py-14 items-center justify-center flex flex-col sm:pb-14 pb-8">
-        {Work_Session_InstagramPost.map((item) => (
-          <React.Fragment key={item.id}>
-            <motion.span
-              initial="hide"
-              animate="show"
-              exit="hide"
-              variants={fadeAnim}
-              className={`${
-                item.id === 1 ? "flex" : "hidden"
-              } flex-col items-center justify-center max-w-[525px] max-h-[40vh] animateInst`}
-            >
-              <img
-                src={Work_Session_InstagramPost[autoCount]?.post}
-                alt={item.subtitle}
-                width={512}
-                height={512}
-                loading='lazy'
-                className="object-cover w-full h-full"
+        <React.Fragment>
+          <motion.span
+            initial="hide"
+            animate="show"
+            exit="hide"
+            variants={fadeAnim}
+            className={`flex flex-col items-center justify-center max-w-[525px] max-h-[40vh] animateInst`}
+          >
+            <img
+              src={Work_Session_InstagramPost[autoCount]?.post}
+              alt={"item.subtitle"}
+              width={512}
+              height={512}
+              loading="lazy"
+              className="object-cover w-full h-full"
+            />
+          </motion.span>
+          <span className={`flex justify-between w-full mt-5 `}>
+            <div className="flex gap-6 items-center justify-center">
+              <LikeIcon
+                style={{
+                  fill: `${Work_Session_InstagramPost[autoCount]?.color}`,
+                }}
+                className="lg:w-[38px] lg:h-[38px] w-[22px] h-[22px] "
               />
-            
-            </motion.span>
-              <span
-                className={`${
-                  item.id === autoCount ? "flex" : "hidden"
-                } justify-between w-full mt-5 `}
-              >
-                <div className="flex gap-6 items-center justify-center">
-                  <LikeIcon
-                    style={{ fill: `${item.color}` }}
-                    className="lg:w-[38px] lg:h-[38px] w-[22px] h-[22px] "
-                  />
-                  <CommentIcon className="lg:w-[38px] lg:h-[38px] w-[22px] h-[22px] " />
-                  <ShareIcon className="lg:w-[38px] lg:h-[38px] w-[22px] h-[22px] " />
-                </div>
-                <BookmarkIcon
-                  style={{ fill: `${item.color}` }}
-                  className="lg:w-[38px] lg:h-[38px] w-[22px] h-[22px] "
-                />
-              </span>
-            <h2
-              className={`${
-                item.id === autoCount ? "block" : "hidden"
-              } font-semibold lg:text-5xl text-4xl text-center text-white pt-[50px] leading-none `}
-            >
-              {item.title}
-            </h2>
-            <h2
-              style={{ color: `${item.color}` }}
-              className={`${
-                item.id === autoCount ? "block" : "hidden"
-              } font-medium lg:text-5xl text-4xl  text-center leading-none `}
-            >
-              {item.subtitle}
-            </h2>
-          </React.Fragment>
-        ))}
+              <CommentIcon className="lg:w-[38px] lg:h-[38px] w-[22px] h-[22px] " />
+              <ShareIcon className="lg:w-[38px] lg:h-[38px] w-[22px] h-[22px] " />
+            </div>
+            <BookmarkIcon
+              style={{
+                fill: `${Work_Session_InstagramPost[autoCount]?.color}`,
+              }}
+              className="lg:w-[38px] lg:h-[38px] w-[22px] h-[22px] "
+            />
+          </span>
+          <h2
+            className={`block font-semibold lg:text-5xl text-4xl text-center text-white pt-[50px] leading-none `}
+          >
+            {" "}
+            We Design
+          </h2>
+          <h2
+            style={{ color: `${Work_Session_InstagramPost[autoCount]?.color}` }}
+            className="
+              block
+            font-medium lg:text-5xl text-4xl  text-center leading-none "
+          >
+            {Work_Session_InstagramPost[autoCount]?.subtitle}
+          </h2>
+        </React.Fragment>
       </div>
       <div className="2xl:px-[82px] lg:px-[60px] md:px-10 sm:px-9 px-8 py-[48px] flex flex-col justify-center 2xl:gap-[74px] lg:gap-16 gap-10 pb-[64px]">
         <div>
