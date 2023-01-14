@@ -36,7 +36,7 @@ const WorkSession = () => {
               } flex-col items-center justify-center max-w-[525px] max-h-[40vh] animateInst`}
             >
               <img
-                src={item.post}
+                src={Work_Session_InstagramPost[autoCount].post}
                 alt={item.subtitle}
                 width={512}
                 height={512}
