@@ -16,7 +16,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     "gatsby-plugin-netlify",
-    "gatsby-plugin-typescript",
+    "gatsby-plugin-typescript",`gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
