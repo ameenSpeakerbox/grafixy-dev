@@ -1,13 +1,6 @@
 import * as React from "react";
-import {
-  HeroSection,
-  WorkSession,
-  WhyGrafixy,
-  Collaboration,
-  FreeTrail,
-  HomeFAQ,
-  Testimonial,
-} from "../components";
+import {Collaboration,FreeTrail,HeroSection, HomeFAQ, Testimonial, WhyGrafixy, WorkSession
+} from "../components/home";
 import Layout from "../components/layout/layout";
 import { SEO } from "../components/seo";
 

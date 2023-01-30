@@ -1,9 +1,0 @@
-export { default as Header } from "./layout/Header";
-export { default as Footer } from "./layout/Footer";
-export { default as HeroSection } from "../components/home/HeroSection";
-export { default as WhyGrafixy } from "../components/home/Why_grafixy";
-export { default as WorkSession } from "../components/home/WorkSession";
-export { default as Collaboration } from "../components/home/Collaboration";
-export { default as FreeTrail } from "../components/home/Free_trail";
-export { default as HomeFAQ } from "../components/home/HomeFAQ";
-export { default as Testimonial  } from "../components/home/Testimonial";

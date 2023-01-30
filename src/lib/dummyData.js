@@ -21,11 +21,18 @@ import {
   gallery9,
 } from "../images/our_works/gallery";
 
+import dedicated from "../images/why_grafixy/dedicated support team.svg";
+import turnarounds from "../images/why_grafixy/fast turnarounds.svg";
+import costs from "../images/why_grafixy/no hidden costs.svg";
+import collaboration from "../images/why_grafixy/team collaboration.svg";
+import unlimited from "../images/why_grafixy/unlimited design requests.svg";
+import design from "../images/why_grafixy/you own every design.svg";
+
 export const navLink = [
   {
     id: 1,
     name: "why grafixy?",
-    slug: "",
+    slug: "why_grafixy",
   },
   {
     id: 2,
@@ -337,8 +344,7 @@ export const faq = [
       },
       {
         id: 2,
-        subQuestion:
-          "How many tasks will the team work on each day? it work",
+        subQuestion: "How many tasks will the team work on each day? it work",
         answer:
           "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
       },
@@ -531,5 +537,375 @@ export const gallery = [
     title: "",
     category: "Prints",
     picture: gallery9,
+  },
+];
+
+export const getGrafixy = [
+  {
+    id: 1,
+    title: "Unlimited Design Requests",
+    subtitle:
+      "Get unlimited requests and unlimited revisions. We work through them, in the order you need them!",
+    icon: unlimited,
+  },
+  {
+    id: 2,
+    title: "Fast Turnarounds",
+    subtitle:
+      "Get unlimited requests and unlimited revisions. We work through them, in the order you need them!",
+    icon: turnarounds,
+  },
+  {
+    id: 3,
+    title: "No Hidden Costs",
+    subtitle:
+      "No contracts, no hourly billing, and no additional fees for source files. Just a flat monthly rate.",
+    icon: costs,
+  },
+  {
+    id: 4,
+    title: "Dedicated Support Team",
+    subtitle:
+      "Your dedicated Grafixy Team and our Customer Experience Team can support you with anything you need.",
+    icon: dedicated,
+  },
+  {
+    id: 5,
+    title: "Team Collaboration",
+    subtitle:
+      "You can invite your team members to work and give feedback on your designs.",
+    icon: collaboration,
+  },
+  {
+    id: 6,
+    title: "You Own Every Design",
+    subtitle:
+      "We provide source files so that you own 100% of your designs. You may edit them however you like.",
+    icon: design,
+  },
+];
+
+export const servicesData = [
+  {
+    id: 1,
+    title: "Advertisements",
+    service: [
+      {
+        id: 1,
+        item: "Billboards",
+      },
+      {
+        id: 2,
+        item: "Digital ads",
+      },
+      {
+        id: 3,
+        item: "Magazines ads",
+      },
+      {
+        id: 4,
+        item: "Newspaper ads",
+      },
+      {
+        id: 5,
+        item: "Print ads",
+      },
+      {
+        id: 6,
+        item: "Retargeting ads",
+      },
+      {
+        id: 7,
+        item: "Facebook ads",
+      },
+      {
+        id: 8,
+        item: "Google ads",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Branding & Logos",
+    service: [
+      {
+        id: 1,
+        item: "Logos",
+      },
+      {
+        id: 2,
+        item: "Wordmarks",
+      },
+      {
+        id: 3,
+        item: "Typography",
+      },
+      {
+        id: 4,
+        item: "Business cards",
+      },
+      {
+        id: 5,
+        item: "Labels",
+      },
+      {
+        id: 6,
+        item: "Letterheads",
+      },
+      {
+        id: 7,
+        item: "Stationaries",
+      },
+      {
+        id: 8,
+        item: "Packaging",
+      },
+      {
+        id: 9,
+        item: "Brand guidelines",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Social media",
+    service: [
+      {
+        id: 1,
+        item: "Youtube banner",
+      },
+      {
+        id: 2,
+        item: "Youtube thumbnails",
+      },
+      {
+        id: 3,
+        item: "Instagram post",
+      },
+      {
+        id: 4,
+        item: "Twitch banner",
+      },
+      {
+        id: 5,
+        item: "Facebook cover photo",
+      },
+      {
+        id: 6,
+        item: "Facebook post",
+      },
+      {
+        id: 7,
+        item: "Linkedin posts",
+      },
+      {
+        id: 8,
+        item: "Twitter header",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Books & Magazines",
+    service: [
+      {
+        id: 1,
+        item: "Magazine covers",
+      },
+      {
+        id: 2,
+        item: "Magazine internal pages",
+      },
+      {
+        id: 3,
+        item: "Booklets internal pages",
+      },
+      {
+        id: 4,
+        item: "Book covers",
+      },
+      {
+        id: 5,
+        item: "Ebook internal pages",
+      },
+      {
+        id: 6,
+        item: "Ebook covers",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Marketing",
+    service: [
+      {
+        id: 1,
+        item: "Presentations",
+      },
+      {
+        id: 2,
+        item: "Powerpoints",
+      },
+      {
+        id: 3,
+        item: "Slide decks",
+      },
+      {
+        id: 4,
+        item: "Book covers",
+      },
+      {
+        id: 5,
+        item: "Brochures",
+      },
+      {
+        id: 6,
+        item: "Pitch deck",
+      },
+      {
+        id: 7,
+        item: "Signage",
+      },
+      {
+        id: 8,
+        item: "Email templates",
+      },
+      {
+        id: 9,
+        item: "Marketing graphics",
+      },
+    ],
+  },
+  {
+    id: 6,
+    title: "UX/UI",
+    service: [
+      {
+        id: 1,
+        item: "Landing pages",
+      },
+      {
+        id: 2,
+        item: "Website design",
+      },
+      {
+        id: 3,
+        item: "Wireframing",
+      },
+      {
+        id: 4,
+        item: "UX/UI",
+      },
+      {
+        id: 5,
+        item: "UX/UI - Icons",
+      },
+    ],
+  },
+  {
+    id: 7,
+    title: "Merch",
+    service: [
+      {
+        id: 1,
+        item: "T-shirts",
+      },
+      {
+        id: 2,
+        item: "Clothing & Apparel",
+      },
+      {
+        id: 3,
+        item: "Tags",
+      },
+      {
+        id: 4,
+        item: "Greeting cards",
+      },
+      {
+        id: 5,
+        item: "Custom merch",
+      },
+      {
+        id: 6,
+        item: "Hats",
+      },
+      {
+        id: 7,
+        item: "Mugs",
+      },
+      {
+        id: 8,
+        item: "Hoodies",
+      },
+    ],
+  },
+  {
+    id: 8,
+    title: "Print & Promotion",
+    service: [
+      {
+        id: 1,
+        item: "Flyers",
+      },
+      {
+        id: 2,
+        item: "Invitation",
+      },
+      {
+        id: 3,
+        item: "Catalogs",
+      },
+      {
+        id: 4,
+        item: "Promotional items",
+      },
+      {
+        id: 5,
+        item: "Posters",
+      },
+      {
+        id: 6,
+        item: "Restaurant menus",
+      },
+      {
+        id: 7,
+        item: "Rollup banners",
+      },
+      {
+        id: 8,
+        item: "Vehicle wrap",
+      },
+      {
+        id: 9,
+        item: "Leaflets",
+      },
+    ],
+  },
+  {
+    id: 9,
+    title: "Other",
+    service: [
+      {
+        id: 1,
+        item: "Photo edits",
+      },
+      {
+        id: 2,
+        item: "Custom projects",
+      },
+      {
+        id: 3,
+        item: "Podcast covers",
+      },
+      {
+        id: 4,
+        item: "Album cover",
+      },
+      {
+        id: 5,
+        item: "Vectorized images",
+      },
+    ],
   },
 ];

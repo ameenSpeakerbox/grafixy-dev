@@ -124,3 +124,16 @@
    background-color: #6019CE;
    transition: all .3s ease-in;
  }
+ .why_grafixy--heroSection {
+  max-height: 720px;
+  height: 65vh;
+ }
+ .scope_of_service--heroSection {
+  max-height: 480px;
+  height: 65vh;
+ }
+ @media (min-width :1535px) {
+  .why_grafixy--heroSection {
+    height: 70vh;
+   }
+ }

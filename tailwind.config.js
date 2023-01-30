@@ -10,7 +10,7 @@ module.exports = {
         hight600: { raw: "(min-height: 630px)" },
         hight900: { raw: "(min-height: 981px)" },
         hightUt900: { raw: "(max-height: 981px)" },
-        uSm: { min: "400px" },
+        xs: { min: "400px" },
         sm: { min: "639px" },
         md: { min: "767px" },
         tab: { min: "965px" },
