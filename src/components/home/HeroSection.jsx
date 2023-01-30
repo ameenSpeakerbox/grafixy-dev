@@ -6,7 +6,7 @@ import questionMark from "../../images/home/question mark.svg";
 const HeroSection = () => {
   return (
     <div
-      className="sm:hight900:h-full  sm:hight600:h-screen  h-full bg-[#1E014B] sm:bg-gradient-to-br from-[#100028] to-[#220058] flex flex-col w-full relative  overflow-hidden items-center justify-end py-24  "
+      className="sm:hight900:h-[850px]  sm:hight600:h-screen  h-full bg-[#1E014B] sm:bg-gradient-to-br from-[#100028] to-[#220058] flex flex-col w-full relative  overflow-hidden items-center justify-end py-24  "
     >
       {/* main section */}
 
@@ -44,7 +44,7 @@ const HeroSection = () => {
 
       <div className="w-full flex justify-between items-end z-20 2xl:px-[147px] 
     sm:px-[80px] 
-    px-8">
+    px-8 gap-10">
         <div>
           <h3 className="text-xl leading-[110%] font-bold text-white">
             READY TO GET STARTED? <br />
