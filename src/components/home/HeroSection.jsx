@@ -1,83 +1,79 @@
 import { MainImage } from "gatsby-plugin-image";
 import React from "react";
-import hero_textImage from "../../images/home/hero-section_text.webp";
-import heroPic from "../../images/home/hero-section.webp";
-import HeroSectionFeatures from "./HeroSectionFeatures";
-import { Button } from "../../ui/Button";
+import { GradientBtn } from "../../ui/Button";
+import questionMark from "../../images/home/question mark.svg";
 
 const HeroSection = () => {
   return (
-    <div className="sm:hight900:h-full  sm:hight600:h-screen  h-full bg-[#1E014B] sm:bg-gradient-to-r from-[#100028] to-[#220058] flex flex-col w-full relative  overflow-hidden justify-between">
+    <div
+      className="sm:hight900:h-full  sm:hight600:h-screen  h-full bg-[#1E014B] sm:bg-gradient-to-br from-[#100028] to-[#220058] flex flex-col w-full relative  overflow-hidden items-center justify-end py-24  "
+    >
       {/* main section */}
-      <div className="grid sm:grid-cols-2 w-full h-full place-content-center place-items-center">
-        <div
-          className="
-          2xl:text-[65px] 
-          xl:text-[42px] 
-          lg:text-4xl 
-          sm:text-[42px] 
-          text-[35px]  
-          font-medium 
-          text-white 
-          flex flex-col 
-          items-start 
-          justify-center 
-          w-full 
-          2xl:px-[147px] 
-          sm:px-[80px] 
-          px-8 
-          2xl:mt-60 
-          sm:mt-32 
-          mt-11 
-          mb-14 
-          lg:leading-[110%] leading-[110%] 
-          sm:hightUt900:mt-28
-          sm:hightUt900:mb-1"
+
+      {/* center designs */}
+      <div className="gap-3 grid w-full -rotate-[10.22deg] mb-12 place-items-center">
+
+
+      <div
+        className="w-[140%] bg-[#6019CE] max-h-[90px]
+        h-full flex items-center justify-center text-[#1D0149] font-semibold text-6xl leading-[100%]"
         >
-          Your Design <br />
-          <span className="inline-flex items-center">
-            Team
-            <img
-              alt="textImage"
-              src={hero_textImage}
-              className="object-contain ml-2 xl:-mb-5 sm:-mb-2 -mb-3 2xl:h-[42px] lg:h-[38px] sm:h-[36px] h-[22px]"
-            />
-          </span>
-          <span className="text-[#E0CCFF]">
-            Unlimited <br /> Designs! <br />{" "}
-          </span>
-          Monthly <br /> Flat Fee
-          <Button
-            name="SCHEDULE A DEMO"
-            className="text-[#6E3CBC] px-5 py-2 bg-white rounded-full mt-5 text font-bold text-sm sm:hidden flex"
-          />
-        </div>
-
-        <div className="h-full relative grid w-full place-items-center">
-          <MainImage
-            alt="hero-pic"
-            src={heroPic}
-            width={967}
-            height={884}
-            className="w-full sm:hight900:h-[1117px] min-h-[430px] sm:hightUt900:h-screen sm:absolute right-0 object-cover object-right"
-          />
-
-          <span className="bg-white h-[60px] w-[270px] items-center justify-center  rounded-[9px] flex sm:hidden drop-shadow-xl absolute bottom-10">
-            <p className="2xl:text-[22px] lg:text-base sm:text-sm text-base  font-extrabold text-[#1D014A] 2xl:leading-[110%] text-center sm:leading-3 leading-[110%]">
-              BLACK FRIDAY SALE{" "}
-              <p className="text-[#FD0503]">
-                30% OFF{" "}
-                <span className="font-semibold text-[#1D014A]">
-                  ON ALL PLANS!
-                </span>
-              </p>
-            </p>
-          </span>
-        </div>
+        <p className="h-full bg-white px-4 grid place-items-center">
+          On Demand Graphic Design
+        </p>
+      </div>
+      <div
+        className="w-[140%] bg-[#FF5E3A] max-h-[90px]
+        h-full flex items-center justify-center text-[#1D0149] font-semibold text-6xl leading-[100%]"
+      >
+        <p className="h-full bg-white px-4 grid place-items-center">
+          One Flat Monthly Rate
+        </p>
+      </div>
+      <div
+        className="w-[140%] bg-[#FFE600] max-h-[90px]
+        h-full flex items-center justify-center text-[#1D0149] font-semibold text-6xl leading-[100%]"
+        >
+        <p className="h-full bg-white px-4 grid place-items-center">
+          Unlimited Requests
+        </p>
       </div>
 
-      {/* heroSection feature */}
-      <HeroSectionFeatures />
+        </div>
+      {/* center designs */}
+
+      <div className="w-full flex justify-between items-end z-20 2xl:px-[147px] 
+    sm:px-[80px] 
+    px-8">
+        <div>
+          <h3 className="text-xl leading-[110%] font-bold text-white">
+            READY TO GET STARTED? <br />
+            <span className="text-[#FFE600]">TRY 14 DAYS RISK FREE!</span>
+          </h3>
+          <div className="flex items-center justify-center gap-5 mt-5">
+            <GradientBtn text="SEE PRICING" />
+            <GradientBtn text="GET A DEMO" />
+          </div>
+        </div>
+
+        <div className="grid place-items-end gap-4">
+          <MainImage
+            alt="question mark"
+            src={questionMark}
+            width={60.17}
+            height={90.25}
+            className="object-contain"
+          />
+          <p className="font-nunito text-lg text-right leading-[140%] text-white max-w-[737px]">
+            Grafixy is a service that can accelerate your growth with a fully
+            remote team of vetted designers. Unlimited design projects. Fast
+            turnaround. No hourly billing, all at a fixed monthly rate. You can
+            submit as many projects as you want, get your completed designs back
+            in under 24 hours. It’s just like hiring a designer, just more
+            efficient and cost effective.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
