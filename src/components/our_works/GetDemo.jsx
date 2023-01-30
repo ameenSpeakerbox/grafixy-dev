@@ -7,7 +7,7 @@ import image_of_demo from "../../images/our_works/getADemo.png";
 const GetDemo = () => {
   return (
     <div className=" flex w-full sm:mb-20   h-auto 2xl:px-[147px] sm:px-[80px] px-0">
-      <div className="w-full py-[70px] 2xl:px-[122px] lg:px-[80px] sm:px-[50px] px-[30px]  bg-gradient-to-l from-[#6019CE] to-[#41118C] sm:rounded-[50px] rounded-t-[50px] rounded-tr-[50px] relative Z-40">
+      <div className="w-full py-[70px] 2xl:px-[122px] lg:px-[80px] sm:px-[50px] px-[30px]  bg-gradient-to-l from-[#6019CE] to-[#41118C] sm:rounded-[50px] rounded-t-[50px] rounded-tr-[50px] relative Z-40 sm:overflow-visible overflow-hidden">
         <h1 className="font-medium 2xl:text-6xl sm:text-5xl text-4xl  text-white z-30 relative leading-[100%] ">
           <span className="opacity-[.65] text-[#E0CCFF]"> Ready to try <br className="lg:hidden sm:block hidden "/></span> Grafixy?
         </h1>

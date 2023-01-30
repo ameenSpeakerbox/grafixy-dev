@@ -18,7 +18,7 @@ const HeroSection = () => {
       <p className="leading-[134%] 2xl:text-[40px] text-3xl font-semibold  text-white max-w-[867px] text-center">
       Scope of service
       </p>
-      <div className="inline-flex text-white font-semibold 2xl:text-[28px] text-2xl leading-[134%] tracking-[3px] gap-[47px] mt-[14px] mb-14">
+      <div className="inline-flex text-white font-semibold 2xl:text-[28px] text-2xl leading-[134%] tracking-[3px] gap-[47px] mt-[14px] mb-14 text-center">
         <p>Over 150+ design services covered</p>
       </div>
     </div>
