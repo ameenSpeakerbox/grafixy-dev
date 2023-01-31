@@ -7,7 +7,7 @@ const HeroSection = () => {
   const ColorLine = ({ heading, bgColor }) => (
     <div
       className="w-[140%] lg:max-h-[80px] sm:max-h-[54px] max-h-[40px]
-    h-full flex items-center justify-center text-[#1D0149] font-semibold 2xl:text-5xl sm:text-4xl
+    h-full flex items-center justify-end pr-[55%] text-[#1D0149] font-semibold 2xl:text-5xl sm:text-4xl
     text-2xl leading-[100%] "
       style={{ backgroundColor: bgColor }}
     >
@@ -41,7 +41,7 @@ const HeroSection = () => {
           </h3>
           <div className="flex items-center justify-center gap-5 lg:mt-5 mt-4">
             <GradientBtn text="SEE PRICING" />
-            <GradientBtn text="GET A DEMO" className=''/>
+            <GradientBtn text="GET A DEMO" className="" />
           </div>
         </div>
 
