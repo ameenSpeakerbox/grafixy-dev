@@ -185,6 +185,7 @@
   z-index: -1;
   transform: translateY(-30%);
   filter: blur(30px);
+  opacity: .6;
 }
 .heroSection__hight-homePage {
 
