@@ -183,6 +183,7 @@
     #130eff 100.44%
   );
   z-index: -1;
+  transform: translateY(-30%);
   filter: blur(30px);
 }
 .heroSection__hight-homePage {
