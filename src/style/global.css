@@ -185,17 +185,17 @@
   z-index: -1;
   transform: translateY(-30%);
   filter: blur(30px);
-  opacity: .6;
+  opacity: 0.6;
 }
-.heroSection__hight-homePage {
-
-  height: calc(100vh - 110px);
+@media (max-width: 639px) {
+  .heroSection__hight-homePage {
+    height: calc(100vh - 110px);
+  }
 }
-@media  ( max-height : 845px) {
+@media (max-height: 845px) {
   @media (max-width: 375px) {
     .heroSection__hight-homePage {
-
-      height: auto;
+      height: 100%;
     }
   }
 }

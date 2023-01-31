@@ -14,7 +14,7 @@ const Header = () => {
         className="relative sm:h-[.1px] h-[110px] flex items-center  w-full bg-[#1E014B] sm:border-none border-b
     border-[#5A3D85] "
       >
-        <div className="2xl:px-[147px] sm:px-[80px] px-8  flex sm:absolute z-50 h-[67px] items-center justify-between w-full left-0 top-0 2xl:mt-[90px] sm:mt-6 overflow-hidden">
+        <div className="2xl:px-[147px] sm:px-[80px] px-8  flex sm:absolute z-50 h-[67px] items-center justify-between w-full left-0 top-0 2xl:mt-[50px] sm:mt-6 overflow-hidden">
           <Link to="/">
             <img
               src={logo}
