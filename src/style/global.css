@@ -171,10 +171,10 @@
 .gradientBtn__gradientBorder::after {
   content: " ";
   width: 120%;
-  height: 120%;
+  height: 90%;
   position: absolute;
   background: linear-gradient(
-    228.09deg,
+    180deg,
     #ff2cf7 -9.95%,
     rgba(251, 4, 123, 0.796875) 12.47%,
     rgba(255, 126, 188, 0.81) 30.87%,
@@ -183,6 +183,20 @@
     #130eff 100.44%
   );
   z-index: -1;
-  transform: translateX(-25%) translateY(-25%);
-  filter: blur(60px);
+  filter: blur(30px);
+}
+.heroSection__hight-homePage {
+
+  height: calc(100vh - 110px);
+}
+@media  ( max-height : 845px) {
+  @media (max-width: 375px) {
+    .heroSection__hight-homePage {
+
+      height: auto;
+    }
+  }
+}
+.heroSection__textShadow-homePage {
+  box-shadow: 0px 0px 8.13122px rgba(0, 0, 0, 0.5);
 }

@@ -4,55 +4,44 @@ import { GradientBtn } from "../../ui/Button";
 import questionMark from "../../images/home/question mark.svg";
 
 const HeroSection = () => {
-  return (
+  const ColorLine = ({ heading, bgColor }) => (
     <div
-      className="sm:hight900:h-[850px]  sm:hight600:h-screen  h-full bg-[#1E014B] sm:bg-gradient-to-br from-[#100028] to-[#220058] flex flex-col w-full relative  overflow-hidden items-center justify-end py-24  "
+      className="w-[140%] lg:max-h-[90px] sm:max-h-[54px] max-h-[40px]
+    h-full flex items-center justify-center text-[#1D0149] font-semibold 2xl:text-5xl sm:text-4xl
+    text-2xl leading-[100%] "
+      style={{ backgroundColor: bgColor }}
     >
+      <p className="h-full bg-white px-4 grid place-items-center lg:py-4 sm:py-3 py-2 heroSection__textShadow-homePage">
+        {heading}
+      </p>
+    </div>
+  );
+
+  return (
+    <div className="sm:hight900:h-[850px]  sm:hight600:h-screen  heroSection__hight-homePage bg-[#1E014B] sm:bg-gradient-to-br from-[#100028] to-[#220058] flex flex-col w-full relative  overflow-hidden items-center justify-end sm:py-14 py-8 ">
       {/* main section */}
 
       {/* center designs */}
-      <div className="gap-3 grid w-full -rotate-[10.22deg] sm:hight600:mb-12 mb-6 place-items-center">
-
-
-      <div
-        className="w-[140%] bg-[#6019CE] max-h-[90px]
-        h-full flex items-center justify-center text-[#1D0149] font-semibold 2xl:text-5xl text-4xl leading-[100%] "
-        >
-        <p className="h-full bg-white px-4 grid place-items-center py-4">
-          On Demand Graphic Design
-        </p>
+      <div className="gap-3 grid w-full -rotate-[10.22deg] sm:hight600:mb-12 mb-6 place-items-center sm:mt-10">
+        <ColorLine heading="On Demand Graphic Design" bgColor="#6019CE" />
+        <ColorLine heading="One Flat Monthly Rate" bgColor="#FF5E3A" />
+        <ColorLine heading="Unlimited Requests" bgColor="#FFE600" />
       </div>
-      <div
-        className="w-[140%] bg-[#FF5E3A] max-h-[90px]
-        h-full flex items-center justify-center text-[#1D0149] font-semibold 2xl:text-5xl text-4xl leading-[100%]"
-      >
-        <p className="h-full bg-white px-4 grid place-items-center py-4">
-          One Flat Monthly Rate
-        </p>
-      </div>
-      <div
-        className="w-[140%] bg-[#FFE600] max-h-[90px]
-        h-full flex items-center justify-center text-[#1D0149] font-semibold 2xl:text-5xl text-4xl leading-[100%]"
-        >
-        <p className="h-full bg-white px-4 grid place-items-center py-4">
-          Unlimited Requests
-        </p>
-      </div>
-
-        </div>
       {/* center designs */}
 
-      <div className="w-full flex justify-between items-end z-20 2xl:px-[147px] 
+      <div
+        className="w-full flex sm:justify-between justify-center sm:items-end z-20 2xl:px-[147px] 
     sm:px-[80px] 
-    px-8 gap-10">
-        <div>
-          <h3 className="text-xl leading-[110%] font-bold text-white">
+    px-8 gap-10 sm:flex-row flex-col sm:mt-0 mt-16"
+      >
+        <div className="grid sm:place-content-center place-content-start">
+          <h3 className="lg:text-xl text-lg lg:leading-[110%] leading-[110%] font-bold text-white">
             READY TO GET STARTED? <br />
             <span className="text-[#FFE600]">TRY 14 DAYS RISK FREE!</span>
           </h3>
-          <div className="flex items-center justify-center gap-5 mt-5">
+          <div className="flex items-center justify-center gap-5 lg:mt-5 mt-4">
             <GradientBtn text="SEE PRICING" />
-            <GradientBtn text="GET A DEMO" />
+            <GradientBtn text="GET A DEMO" className=''/>
           </div>
         </div>
 
@@ -62,9 +51,9 @@ const HeroSection = () => {
             src={questionMark}
             width={60.17}
             height={90.25}
-            className="object-contain"
+            className="object-contain lg:max-w-[60.17px] sm:max-w-[45.12px] max-w-[33.69px]"
           />
-          <p className="font-nunito text-lg text-right leading-[140%] text-white max-w-[737px]">
+          <p className="font-nunito lg:text-lg text-base sm:text-right leading-[140%] text-white max-w-[737px]">
             Grafixy is a service that can accelerate your growth with a fully
             remote team of vetted designers. Unlimited design projects. Fast
             turnaround. No hourly billing, all at a fixed monthly rate. You can
