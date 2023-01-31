@@ -7,7 +7,7 @@ export const Button = ({ className, name }) => (
 );
 
 export const GradientBtn = ({text}) => (
-  <span className="py-[.7px] px-[.4px] grid w-max rounded-full gradientBtn__gradientBorder">
+  <span className="py-[.7px] px-[.4px] grid w-max rounded-full gradientBtn__gradientBorder place-items-center">
     <button
       name="button"
       type="button"

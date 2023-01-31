@@ -11,30 +11,30 @@ const HeroSection = () => {
       {/* main section */}
 
       {/* center designs */}
-      <div className="gap-3 grid w-full -rotate-[10.22deg] mb-12 place-items-center">
+      <div className="gap-3 grid w-full -rotate-[10.22deg] sm:hight600:mb-12 mb-6 place-items-center">
 
 
       <div
         className="w-[140%] bg-[#6019CE] max-h-[90px]
-        h-full flex items-center justify-center text-[#1D0149] font-semibold text-6xl leading-[100%]"
+        h-full flex items-center justify-center text-[#1D0149] font-semibold 2xl:text-5xl text-4xl leading-[100%] "
         >
-        <p className="h-full bg-white px-4 grid place-items-center">
+        <p className="h-full bg-white px-4 grid place-items-center py-4">
           On Demand Graphic Design
         </p>
       </div>
       <div
         className="w-[140%] bg-[#FF5E3A] max-h-[90px]
-        h-full flex items-center justify-center text-[#1D0149] font-semibold text-6xl leading-[100%]"
+        h-full flex items-center justify-center text-[#1D0149] font-semibold 2xl:text-5xl text-4xl leading-[100%]"
       >
-        <p className="h-full bg-white px-4 grid place-items-center">
+        <p className="h-full bg-white px-4 grid place-items-center py-4">
           One Flat Monthly Rate
         </p>
       </div>
       <div
         className="w-[140%] bg-[#FFE600] max-h-[90px]
-        h-full flex items-center justify-center text-[#1D0149] font-semibold text-6xl leading-[100%]"
+        h-full flex items-center justify-center text-[#1D0149] font-semibold 2xl:text-5xl text-4xl leading-[100%]"
         >
-        <p className="h-full bg-white px-4 grid place-items-center">
+        <p className="h-full bg-white px-4 grid place-items-center py-4">
           Unlimited Requests
         </p>
       </div>

@@ -8,7 +8,8 @@ import instagram_6 from "../images/home/work_session/insta_post -6.webp";
 import instagram_7 from "../images/home/work_session/insta_post -7.webp";
 import toy_car from "../images/home/Toy car.png";
 import toy_bus from "../images/home/Toy bus.png";
-import avatar from "../images/home/avatar.png";
+import avatar1 from "../images/home/avatar.webp";
+import avatar2 from "../images/home/avatar 2.webp";
 import {
   gallery1,
   gallery2,
@@ -295,7 +296,7 @@ export const testimonial = [
     userName: "BOBBY STEMPER",
     position: "Director of Marketing",
     company: "AdHawk",
-    image: avatar,
+    image: avatar1,
   },
   {
     id: 2,
@@ -308,26 +309,10 @@ export const testimonial = [
       </p>
     ),
     textWite: "lorem,feugiat.,sodales,libero",
-    userName: "BOBBY STEMPER",
+    userName: "JOHAN NATE",
     position: "Director of Marketing",
-    company: "AdHawk",
-    image: avatar,
-  },
-  {
-    id: 3,
-    text: (
-      <p className="text-[#946DD1] 2xl:text-[40px] lg:text-3xl text-2xl font-medium lg:leading-[123%] leading-[123% mt-[18px]">
-        Lectus morbi sollicitudin ligula orci{" "}
-        <span className="text-[#E0CCFF]">lorem feugiat.</span> Pellentesque
-        consectetur sodales <span className="text-[#E0CCFF]">libero urna </span>{" "}
-        nunc dictumst accumsan. Aliquet a in integer volutpa.
-      </p>
-    ),
-    textWite: "lorem,feugiat.,sodales,libero",
-    userName: "BOBBY STEMPER",
-    position: "Director of Marketing",
-    company: "AdHawk",
-    image: avatar,
+    company: "Sparkle Group",
+    image: avatar2,
   },
 ];
 
