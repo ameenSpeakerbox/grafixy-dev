@@ -18,7 +18,7 @@ const HeroSection = () => {
   );
 
   return (
-    <div className="heroSection__hight-homePage sm:hight900:h-[850px]  sm:hight600:h-screen h-full  heroSection__hight-homePage bg-[#1E014B] sm:bg-gradient-to-br from-[#100028] to-[#220058] flex flex-col w-full relative  overflow-hidden items-center justify-end sm:py-14 py-8 ">
+    <div className="heroSection__hight-homePage sm:hight900:h-[850px]  sm:hight700:h-screen h-full  heroSection__hight-homePage bg-[#1E014B] sm:bg-gradient-to-br from-[#100028] to-[#220058] flex flex-col w-full relative  overflow-hidden items-center justify-end sm:py-14 py-8 ">
       {/* main section */}
       <div className="pt-[150px] grid w-full h-full">
         {/* center designs */}

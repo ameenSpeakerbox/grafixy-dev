@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       screens: {
         hight600: { raw: "(min-height: 630px)" },
+        hight700: { raw: "(min-height: 720px)" },
         hight900: { raw: "(min-height: 981px)" },
         hightUt900: { raw: "(max-height: 981px)" },
         xs: { min: "400px" },
