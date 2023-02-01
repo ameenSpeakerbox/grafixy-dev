@@ -1,13 +1,10 @@
 import React from "react";
 import manThinking from "../../images/home/manThinking.webp";
 import manThinkingMob from "../../images/home/manThinkingMob.webp";
-import { isMobileSafari } from "../../lib/healpers";
+import { isMobileSafari } from "../../lib/helpers";
 
 
 const FreeTrail = () => {
-
-
-  const hasChin = isMobileSafari()
 
   
   return (
