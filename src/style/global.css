@@ -121,7 +121,7 @@
 }
 .scope_of_service--heroSection {
   max-height: 480px;
-  height: 65vh;
+  height: 45vh;
 }
 @media (min-width: 1535px) {
   .why_grafixy--heroSection {
