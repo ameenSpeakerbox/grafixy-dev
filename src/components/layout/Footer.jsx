@@ -19,15 +19,15 @@ const Footer = () => {
         <div className="flex  sm:gap-[98px] gap-10 flex-1 sm:justify-around justify-between sm:flex-nowrap flex-wrap w-full">
           {footerLinks.map((link) => (
             <ul key={link.id} className="flex flex-col gap-5">
-              <h3 className="text-[#6E3CBC] font-extrabold text-xl font-nunito">
+              <h3 className="text-[#6E3CBC] font-extrabold text-lg font-nunito">
                 {link.title}
               </h3>
-              <li className="grid gap-[10px]">
+              <li className="grid gap-2">
                 {link?.subtitle.map((text) => (
                   <Link 
                   to={`/${text?.slug}`}
                     key={text.id}
-                    className="font-semibold text-xl text-[#6E3CBC] cursor-pointer font-nunito"
+                    className="font-semibold text-lg text-[#6E3CBC] cursor-pointer font-nunito"
                   >
                     {text.title}
                   </Link>
@@ -41,18 +41,18 @@ const Footer = () => {
       <div className="bg-[#41118C] flex items-center lg:justify-center justify-start lg:gap-[100px] gap-4 lg:h-[80px] px-8 flex-wrap lg:py-0 py-5 ">
         <a
           href=""
-          className="inline-flex items-center gap-3 text-white font-nunito font-semibold text-xl"
+          className="inline-flex items-center gap-3 text-white font-nunito font-semibold text-lg"
         >
           <MailIcon  className='shrink-0'/>
           hello@grafixy.io
         </a>
-        <p className="inline-flex items-center font-nunito font-semibold text-xl text-white gap-3">
+        <p className="inline-flex items-center font-nunito font-semibold text-lg text-white gap-3">
           <LocationIcon className='shrink-0'/> 43/359 H, 2nd Floor, Sabu Plaza, Calicut Road,
           Thurakkal, Manjeri
         </p>
       </div>
 
-      <div className="bg-[#27065A] flex items-center lg:justify-center text-white font-nunito text-xl h-[80px] px-8">
+      <div className="bg-[#27065A] flex items-center lg:justify-center text-white font-nunito text-lg h-[80px] px-8">
         <p>© By Speakerbox Media LLP. All Rights Reserved</p>
       </div>
     </footer>

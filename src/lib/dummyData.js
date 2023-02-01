@@ -285,7 +285,7 @@ export const testimonial = [
   {
     id: 1,
     text: (
-      <p className="text-[#946DD1] 2xl:text-[40px] lg:text-3xl text-2xl font-medium lg:leading-[123%] leading-[123% mt-[18px]">
+      <p className="text-[#946DD1] 2xl:text-3xl lg:text-2xl text-xl font-medium lg:leading-[123%] leading-[123% mt-[18px]">
         Lectus morbi sollicitudin ligula orci{" "}
         <span className="text-[#E0CCFF]">lorem feugiat.</span> Pellentesque
         consectetur sodales <span className="text-[#E0CCFF]">libero urna </span>{" "}
@@ -301,7 +301,7 @@ export const testimonial = [
   {
     id: 2,
     text: (
-      <p className="text-[#946DD1] 2xl:text-[40px] lg:text-3xl text-2xl font-medium lg:leading-[123%] leading-[123%] mt-[18px]">
+      <p className="text-[#946DD1] 2xl:text-[40px] 2xl:text-3xl lg:text-2xl text-xl font-medium lg:leading-[123%] leading-[123%] mt-[18px]">
         Lectus morbi sollicitudin ligula orci{" "}
         <span className="text-[#E0CCFF]">lorem feugiat.</span> Pellentesque
         consectetur sodales <span className="text-[#E0CCFF]">libero urna </span>{" "}

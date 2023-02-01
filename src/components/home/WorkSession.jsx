@@ -4,6 +4,7 @@ import { Work_Session_InstagramPost } from "../../lib/dummyData";
 import { Button } from "../../ui/Button";
 import { BookmarkIcon, CommentIcon, LikeIcon, ShareIcon } from "../../ui/Icon";
 import { fadeAnim } from "../../lib/motions";
+import { MainImage } from "gatsby-plugin-image";
 
 const WorkSession = () => {
   const [autoCount, setAutoCount] = useState(1);
@@ -22,53 +23,54 @@ const WorkSession = () => {
 
   return (
     <div className="grid sm:grid-cols-2 w-full h-min hightUt900:h-full max-h-screen">
-      <div className="bg-gradient-to-l to-[#100028] from-[#220058]  lg:pt-[93px] sm:pt-12  2xl:px-[160px] 2xl:pl-[147px] lg:px-[100px] lg:py-[140px] md:px-10 sm:px-9 px-8 py-14 items-center justify-center flex flex-col sm:pb-14 pb-8">
+      <div className="bg-gradient-to-l to-[#100028] from-[#220058] 2xl:px-[160px] 2xl:pl-[147px] lg:px-[100px] lg:py-20 py-14  md:px-10 sm:px-9 px-8 items-center justify-center flex flex-col">
         <React.Fragment>
           <motion.span
             initial="hide"
             animate="show"
             exit="hide"
             variants={fadeAnim}
-            className={`flex flex-col items-center justify-center max-w-[525px] max-h-[40vh] animateInst`}
+            className={`flex flex-col items-center justify-center max-w-[625px] max-h-[50vh] animateInst`}
           >
-            <img
+            <MainImage
               src={Work_Session_InstagramPost[autoCount]?.post}
               alt={"item.subtitle"}
               width={512}
               height={512}
-              loading="lazy"
+              loading="eager"
               className="object-contain w-full h-full"
             />
-          <span className={`flex justify-between w-full mt-5 `}>
-            <div className="flex gap-6 items-center justify-center">
-              <LikeIcon
+            <span className={`flex justify-between w-full mt-5 `}>
+              <div className="flex gap-6 items-center justify-center">
+                <LikeIcon
+                  style={{
+                    fill: `${Work_Session_InstagramPost[autoCount]?.color}`,
+                  }}
+                  className="lg:w-[38px] lg:h-[38px] w-[22px] h-[22px] "
+                />
+                <CommentIcon className="lg:w-[38px] lg:h-[38px] w-[22px] h-[22px] " />
+                <ShareIcon className="lg:w-[38px] lg:h-[38px] w-[22px] h-[22px] " />
+              </div>
+              <BookmarkIcon
                 style={{
                   fill: `${Work_Session_InstagramPost[autoCount]?.color}`,
                 }}
                 className="lg:w-[38px] lg:h-[38px] w-[22px] h-[22px] "
               />
-              <CommentIcon className="lg:w-[38px] lg:h-[38px] w-[22px] h-[22px] " />
-              <ShareIcon className="lg:w-[38px] lg:h-[38px] w-[22px] h-[22px] " />
-            </div>
-            <BookmarkIcon
-              style={{
-                fill: `${Work_Session_InstagramPost[autoCount]?.color}`,
-              }}
-              className="lg:w-[38px] lg:h-[38px] w-[22px] h-[22px] "
-              />
-          </span>
-              </motion.span>
+            </span>
+          </motion.span>
           <h2
-            className={`block font-semibold lg:text-5xl text-4xl text-center text-white pt-[50px] leading-none `}
-            >
-            {" "}
+            className={`block font-semibold 2xl:text-5xl
+             lg:text-4xl text-3xl text-center text-white pt-[50px] leading-none `}
+          >
             We Design
           </h2>
           <h2
             style={{ color: `${Work_Session_InstagramPost[autoCount]?.color}` }}
             className="
               block
-            font-medium lg:text-5xl text-4xl  text-center leading-none "
+            font-medium 2xl:text-5xl
+            lg:text-4xl text-3xl  text-center leading-none "
           >
             {Work_Session_InstagramPost[autoCount]?.subtitle}
           </h2>
@@ -76,19 +78,19 @@ const WorkSession = () => {
       </div>
       <div className="2xl:px-[82px] lg:px-[60px] md:px-10 sm:px-9 px-8 py-[48px] flex flex-col justify-center 2xl:gap-[74px] lg:gap-16 gap-10 pb-[64px]">
         <div>
-          <h2 className="font-medium text-[#1D0149] 2xl:text-[65px] lg:text-5xl text-4xl leading-none">
+          <h2 className="font-medium text-[#1D0149] 2xl:text-5xl lg:text-4xl text-3xl leading-none">
             A perfect fit for <br />{" "}
             <span className="text-[#6019CE]">agencies</span> &{" "}
             <span className="text-[#6019CE]">brands</span>
           </h2>
-          <p className="font-nunito 2xl:text-2xl lg:text-xl text-sm  text-[#1E014C] leading-none mt-2 w-[70%]">
+          <p className="font-nunito 2xl:text-xl lg:text-lg text-sm  text-[#1E014C] leading-[100%] mt-2 w-[70%]">
             Grafixy makes it incredibly easy to set up or scale your design
             team. Stress-free outsourcing. Create unlimited projects for just a
             flat monthly rate.
           </p>
         </div>
         <div>
-          <h2 className="font-medium text-[#1D0149] 2xl:text-[65px] lg:text-5xl text-4xl leading-none">
+          <h2 className="font-medium text-[#1D0149] 2xl:text-5xl lg:text-4xl text-3xl leading-none">
             {" "}
             <span className="text-[#6019CE]">
               Easy collaboration <br />

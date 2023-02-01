@@ -15,8 +15,8 @@ const HomeFAQ = () => {
   };
   return (
     <div className="flex w-full relative z-10">
-      <div className="bg-[#1A0143] flex flex-col items-start justify-center w-full 2xl:px-32 lg:px-24 sm:px-16 px-8 place-content-center sm:gap-9 gap-6 2xl:py-52 lg:py-20 py-16 ">
-        <h2 className="font-semibold 2xl:text-6xl lg:text-5xl text-4xl text-[#6E3CBC] z-10">
+      <div className="bg-[#1A0143] flex flex-col items-start justify-center w-full 2xl:px-32 lg:px-24 sm:px-16 px-8 place-content-center sm:gap-9 gap-6 2xl:py-24 lg:py-20 py-16 ">
+        <h2 className="font-semibold 2xl:text-5xl lg:text-4xl text-3xl text-[#6E3CBC] z-10">
           Frequently Asked <br />
           <span className="text-[#E0CCFF]">Questions</span>
         </h2>
@@ -53,25 +53,23 @@ const HomeFAQ = () => {
         </div>
         <Link
           to="faq"
-          className="font-semibold 2xl:text-[35px] lg:text-[32px] text-base text-[#6E3CBC] underline"
+          className="font-semibold 2xl:text-[35px] lg:text-[28px] text-base text-[#6E3CBC] underline"
         >
           More from <span className="text-[#E0CCFF] underline">FAQs</span>{" "}
         </Link>
       </div>
       <div className="bg-[#6019CE] sm:flex hidden flex-col items-end h-full justify-end w-[35%] shrink-0  relative">
-        <img
+        <MainImage
           src={faqPic}
           alt="homeFaq"
           loading="lazy"
-          className="h-max absolute object-contain  object-left-bottom lg:left-0 left-0 bottom-0 w-full"
+          className="h-max max-h-[790px] absolute object-contain  object-right-bottom lg:right-0  bottom-0 w-max"
         />
       </div>
       <MainImage
         src={faqMobPic}
         alt="homeFaq"
         loading="eager"
-        width={164}
-        height={467}
         className="flex sm:hidden flex-col items-end  justify-end   absolute z-[0] bottom-0 right-0 w-full h-full  object-contain object-right -mt-20"
       />
     </div>

@@ -6,8 +6,8 @@ import questionMark from "../../images/home/question mark.svg";
 const HeroSection = () => {
   const ColorLine = ({ heading, bgColor }) => (
     <div
-      className="w-[140%] lg:max-h-[80px] sm:max-h-[54px] max-h-[40px] h-min
-     flex items-center sm:justify-end justify-center sm:pr-[55%] text-[#1D0149] font-semibold 2xl:text-5xl sm:text-4xl
+      className="w-[200%] lg:max-h-[80px] sm:max-h-[54px] max-h-[40px] h-min
+     flex items-center sm:justify-end justify-center sm:pr-[80%] text-[#1D0149] font-semibold 2xl:text-5xl sm:text-4xl
     text-xl leading-[100%] "
       style={{ backgroundColor: bgColor }}
     >
@@ -18,9 +18,9 @@ const HeroSection = () => {
   );
 
   return (
-    <div className="heroSection__hight-homePage sm:hight900:h-[850px]  sm:hight700:h-screen h-full  heroSection__hight-homePage bg-[#1E014B] sm:bg-gradient-to-br from-[#100028] to-[#220058] flex flex-col w-full relative  overflow-hidden items-center justify-end sm:py-14 py-8 ">
+    <div className="heroSection__hight-homePage sm:hight900:h-[850px]  sm:hight700:h-screen h-full  heroSection__hight-homePage bg-[#1E014B] sm:bg-gradient-to-br from-[#100028] to-[#220058] flex flex-col w-full relative  overflow-hidden items-center justify-end sm:py-14 py-8">
       {/* main section */}
-      <div className="lg:pt-[150px] pt-5 sm:grid w-full h-full flex items-center justify-evenly flex-col">
+      <div className="lg:pt-[150px] pt-5 w-full h-full flex items-center justify-evenly flex-col">
         {/* center designs */}
         <div className="gap-3 flex flex-col w-full -rotate-[10.22deg] sm:hight600:mb-12 mb-6 place-items-center">
           <ColorLine heading="On Demand Graphic Design" bgColor="#6019CE" />
