@@ -201,4 +201,19 @@
 }
 .heroSection__textShadow-homePage {
   box-shadow: 0px 0px 8.13122px rgba(0, 0, 0, 0.5);
+  
+}
+.heroSection__text-homePage {
+  animation: heroText .3s ease-in ;
+}
+
+
+@keyframes heroText {
+  0% {
+    transform: translateY(100%);
+    
+  }
+  100% { 
+    transform: translateY(0);
+  }
 }

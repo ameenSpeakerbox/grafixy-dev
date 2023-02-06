@@ -11,9 +11,11 @@ const HeroSection = () => {
     text-xl leading-[100%] "
       style={{ backgroundColor: bgColor }}
     >
-      <p className="h-full bg-white px-4 grid place-items-center sm:py-3 py-2 heroSection__textShadow-homePage">
+      <span className="h-full bg-white px-4 grid place-items-center sm:py-3 py-2 heroSection__textShadow-homePage overflow-hidden">
+        <p className="heroSection__text-homePage">
         {heading}
-      </p>
+        </p>
+      </span>
     </div>
   );
 
