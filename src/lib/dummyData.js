@@ -266,19 +266,19 @@ export const faq_home = [
     id: 2,
     question: "Will there be any hidden fees?",
     answer:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.",
+      "There are no hidden fees at all. You will only pay the flat fee on a monthly basis. All taxes and other fees are included in the flat fee.",
   },
   {
     id: 3,
     question: "Do you use design templates?",
     answer:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.",
+      "At grafixy, we deliver custom designs which are created from scratch or designs that are a combination of custom design and customized stock elements. We will give you the design outputs as your design brief",
   },
   {
     id: 4,
     question: "How to access your files?",
     answer:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.",
+      "Your completed design files are all available in the “Completed” list on your Trello board. To find what you’re looking for quickly, use the search bar at the top of your board.Or they'll be in your inbox if you've chosen to use grafixy with email.If you require your designs in a particular format, be sure to let your grafixy team know!",
   },
 ];
 export const testimonial = [
