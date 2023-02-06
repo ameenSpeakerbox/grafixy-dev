@@ -63,7 +63,7 @@ const Testimonial = () => {
                     <h4 className="2xl:text-2xl lg:text-xl sm:text-base text-sm  text-white leading-[100%] font-nunito font-semibold ">
                       {item.userName}
                     </h4>
-                    <i className="text-[#884CE6] lg:text-lg text-sm leading-[1px] font-nunito mt-[1px] font-light">
+                    <i className="text-[#884CE6] lg:text-lg text-sm font-nunito mt-[1px] font-light">
                       {item.position}
                     </i>
                     <p className="2xl:text-xl lg:text-lg sm:text-base text-xs font-semibold font-nunito text-[#E0CCFF]">

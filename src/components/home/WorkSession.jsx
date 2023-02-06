@@ -22,7 +22,7 @@ const WorkSession = () => {
   }, [autoCount]);
 
   return (
-    <div className="grid sm:grid-cols-2 w-full h-min hightUt900:h-full max-h-screen">
+    <div className="grid sm:grid-cols-2 w-full h-min hightUt900:h-full sm:max-h-screen ">
       <div className="bg-gradient-to-l to-[#100028] from-[#220058] 2xl:px-[160px] 2xl:pl-[147px] lg:px-[100px] lg:py-20 py-14  md:px-10 sm:px-9 px-8 items-center justify-center flex flex-col">
         <React.Fragment>
           <motion.span
@@ -61,7 +61,7 @@ const WorkSession = () => {
           </motion.span>
           <h2
             className={`block font-semibold 2xl:text-5xl
-             lg:text-4xl text-3xl text-center text-white pt-[50px] leading-none `}
+             lg:text-4xl text-2xl text-center text-white sm:pt-[50px] pt-7 leading-none `}
           >
             We Design
           </h2>
@@ -70,13 +70,13 @@ const WorkSession = () => {
             className="
               block
             font-medium 2xl:text-5xl
-            lg:text-4xl text-3xl  text-center leading-none "
+            lg:text-4xl text-2xl  text-center leading-none "
           >
             {Work_Session_InstagramPost[autoCount]?.subtitle}
           </h2>
         </React.Fragment>
       </div>
-      <div className="2xl:px-[82px] lg:px-[60px] md:px-10 sm:px-9 px-8 py-[48px] flex flex-col justify-center 2xl:gap-[74px] lg:gap-16 gap-10 pb-[64px]">
+      <div className="2xl:px-[82px] lg:px-[60px] md:px-10 sm:px-9 px-8 py-[48px] flex flex-col justify-center 2xl:gap-[74px] lg:gap-16 gap-10 pb-[64px] h-full">
         <div>
           <h2 className="font-medium text-[#1D0149] 2xl:text-5xl lg:text-4xl text-3xl leading-none">
             A perfect fit for <br />{" "}

@@ -57,17 +57,17 @@ const Header = () => {
             }`}
           >
             <span
-              className={`h-[0px] border border-[#5A3D85] right-1 left-1 bg-[#5A3D85] duration-300 absolute transition-all ${
+              className={`h-[0px] border border-white right-1 left-1 bg-white duration-300 absolute transition-all ${
                 isMenuClick ? "rotate-45 " : "rotate-0 top-2"
               }`}
             />
             <span
-              className={`h-[0px] border border-[#5A3D85] duration-300 ${
+              className={`h-[0px] border border-white duration-300 bg-white ${
                 isMenuClick ? "opacity-0" : "opacity-100"
               }`}
             />
             <span
-              className={`h-[0px] border border-[#5A3D85]  bg-[#5A3D85] duration-300 absolute left-1 right-1 ${
+              className={`h-[0px] border border-white  bg-white duration-300 absolute left-1 right-1 ${
                 isMenuClick ? "-rotate-45 " : "rotate-0 bottom-2"
               }`}
             />
@@ -100,12 +100,12 @@ const Header = () => {
               }`}
             >
               <span
-                className={`h-[0px] border border-[#5A3D85] right-1 left-1 bg-[#5A3D85] duration-300 absolute ${
+                className={`h-[0px] border border-white right-1 left-1 bg-white duration-300 absolute ${
                   isMenuClick ? "rotate-45 " : "rotate-0 top-2"
                 }`}
               />
               <span
-                className={`h-[0px] border border-[#5A3D85]  bg-[#5A3D85] duration-300 absolute left-1 right-1 ${
+                className={`h-[0px] border border-white  bg-white duration-300 absolute left-1 right-1 ${
                   isMenuClick ? "-rotate-45 " : "rotate-0 bottom-2"
                 }`}
               />
@@ -117,7 +117,7 @@ const Header = () => {
               <Link
                 key={nav.id}
                 to={`/${nav.slug}`}
-                className="sm:h-[110px] h-[80px] flex items-center border-b border-[#5A3D85] text-2xl font-semibold text-white px-8 sm:px-[80px] w-full"
+                className="sm:h-[110px] h-[80px] flex items-center border-b border-[#5A3D85] text-xl font-semibold text-white px-8 sm:px-[80px] w-full"
               >
                 {nav.name}
               </Link>
