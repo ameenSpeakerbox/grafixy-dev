@@ -14,9 +14,9 @@ const WhyGrafixy = () => {
   );
   return (
     <div className="2xl:px-[147px] 2xl:py-[122px] lg:px-[100px] lg:py-[80px] sm:py-[73px] sm:px-11 px-8 py-8   md:px-[90px] bg-[#6019CE] grid md:grid-cols-3 sm:grid-cols-2 2xl:gap-[86px] lg:gap-16 gap-10 w-full">
-      <span className="flex sm:flex-nowrap flex-wrap items-center justify-start 2xl:text-6xl lg:text-5xl sm:text-4xl text-[53px] font-medium text-white leading-[.1] xs:mt-0 mt-8">
-        why&nbsp;
-        <GrafixyQuestionIcon className="2xl:h-[90px] lg:h-[80px] sm:h-[50px] h-[60]  shrink-0 2xl:-ml-3 lg:-ml-8 sm:-ml-[65px] -ml-1 " />
+      <span className="flex sm:flex-nowrap flex-wrap items-center justify-start 2xl:text-6xl lg:text-5xl text-4xl font-medium text-white leading-[.1] xs:mt-0 mt-8">
+        why&nbsp; <br className="sm:hidden  block"/>
+        <GrafixyQuestionIcon className="2xl:h-[90px] lg:h-[80px] sm:h-[50px] h-[60px] shrink-0  w-auto" />
       </span>
 
       <TextContainer

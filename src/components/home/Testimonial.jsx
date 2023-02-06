@@ -53,10 +53,10 @@ const Testimonial = () => {
                     <MainImage
                       alt={item.userName}
                       src={item.image}
-                      className="object-contain w-full h-full"
+                      className="object-contain w-full sm:h-full h-14"
                       loading="lazy"
-                      width={50}
-                      height={50}
+                      width={100}
+                      height={100}
                     />
                   </div>
                   <div className="flex flex-col justify-center">

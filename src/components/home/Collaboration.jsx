@@ -20,9 +20,9 @@ const Collaboration = () => {
           Businesses & Freelancers
         </p>
       </div>
-      <div className="tab:py-14 tab:pb-11 pb-11  flex flex-col items-center justify-center flex-1 2xl:px-32 lg:px-20 sm:px-14 px-8 tab:bg-white bg-[#210153]">
-        <div className="flex tab:justify-center w-full tab:mt-0">
-          <h2 className="font-semibold 2xl:text-3xl lg:text-3xl tab:text-2xl text-3xl lg:leading-[42px] tab:text-[#210153] text-[#9C66F0] uppercase tab:text-center">
+      <div className="tab:py-14 tab:pb-11 pb-11 py-5  flex flex-col items-center justify-center flex-1 2xl:px-32 lg:px-20 sm:px-14 px-8 tab:bg-white bg-[#210153]">
+        <div className="flex justify-center w-full tab:mt-0">
+          <h2 className="font-semibold 2xl:text-3xl lg:text-3xl tab:text-2xl text-xl lg:leading-[42px] leading-[100%] tab:text-[#210153] text-[#9C66F0] uppercase text-center">
             Start Your <br />
             <span className="sm:text-[#9C66F0] text-white">
               7 Day Free Trial
@@ -85,7 +85,7 @@ const Collaboration = () => {
             </div>
           ))}
         </div>
-        <p className="font-semibold tab:text-[#6E3CBC] text-[#E0CCFF] text-2xl leading-7 uppercase block tab:text-center text-left w-full mt-8">
+        <p className="font-semibold tab:text-[#6E3CBC] text-[#E0CCFF] sm:text-2xl text-xl  sm:leading-7 leading-[100%] uppercase block tab:text-center text-left w-full mt-8">
           Do you need a custom plan? <br />
           <span className="underline tab:text-[#210153] text-white font-medium mt-[10px] leading-10">
             Talk to sales
