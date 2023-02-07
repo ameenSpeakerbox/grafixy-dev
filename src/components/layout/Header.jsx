@@ -1,18 +1,17 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Button } from "../../ui/Button";
 import { Link } from "gatsby";
 import { navLink } from "../../lib/dummyData";
 import logo from "../../images/logo.png";
 import { ArrowWithLineIcon } from "../../ui/Icon";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [isMenuClick, setIsMenuClick] = useState(false);
 
   return (
     <>
-      <nav
-        className="relative sm:h-[.1px] h-[110px] flex items-center  w-full bg-[#1E014B]"
-      >
+      <nav className="relative sm:h-[.1px] h-[110px] flex items-center  w-full bg-[#1E014B]">
         <div className="2xl:px-[147px] sm:px-[80px] px-8  flex sm:absolute z-50 h-[67px] items-center justify-between w-full left-0 top-0 2xl:mt-[50px] sm:mt-6 overflow-hidden">
           <Link to="/">
             <img
@@ -74,10 +73,29 @@ const Header = () => {
         </div>
         {/* toggleMenu */}
 
-        <nav
-          className={`w-full  h-screen bg-[#1E014B] fixed top-0 z-50 ${
-            isMenuClick ? "block lg:hidden" : "hidden"
-          }`}
+        <motion.nav
+          initial={false}
+          animate={isMenuClick ? "true" : "false"}
+          variants={{
+            true: (height = 1000) => ({
+              clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+              transition: {
+                type: "spring",
+                stiffness: 20,
+                restDelta: 2,
+              },
+            }),
+            false: {
+              clipPath: "circle(30px at 40px 40px)",
+              transition: {
+                delay: 0.5,
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+              },
+            },
+          }}
+          className={`w-full  h-screen bg-[#1E014B] fixed top-0 z-50`}
         >
           <div className="h-[110px] flex items-center  w-full bg-[#1E014B] border-b border-[#5A3D85] sm:px-[80px] px-8 justify-between">
             <Link to="/">
@@ -104,6 +122,11 @@ const Header = () => {
                 }`}
               />
               <span
+                className={`h-[0px] border border-white bg-white ${
+                  isMenuClick ? "opacity-0" : "opacity-100"
+                }`}
+              />
+              <span
                 className={`h-[0px] border border-white  bg-white duration-300 absolute left-1 right-1 ${
                   isMenuClick ? "-rotate-45 " : "rotate-0 bottom-2"
                 }`}
@@ -112,30 +135,87 @@ const Header = () => {
           </div>
 
           <div className=" flex flex-col justify-center items-center">
-            {navLink.map((nav) => (
-              <Link
-                key={nav.id}
-                to={`/${nav.slug}`}
-                className="sm:h-[110px] h-[80px] flex items-center border-b border-[#5A3D85] text-xl font-semibold text-white px-8 sm:px-[80px] w-full"
+            {navLink.map((nav, idx) => (
+              <motion.p
+                initial={false}
+                animate={isMenuClick ? "true" : "false"}
+                variants={{
+                  true: {
+                    y: "0%",
+                    opacity: 1,
+                  },
+                  false: {
+                    y: "50%",
+                    opacity: 0,
+                  },
+                }}
+                transition={{
+                  duration: 0.3,
+                  ease: [0.16, 1, 0.3, 1],
+                  delay: 0.2 * (idx + 1),
+                }}
+                className="w-full"
               >
-                {nav.name}
-              </Link>
+                <Link
+                  key={nav.id}
+                  to={`/${nav.slug}`}
+                  className="sm:h-[110px] h-[80px] flex items-center border-b border-[#5A3D85] text-xl font-semibold text-white px-8 sm:px-[80px] w-full"
+                >
+                  {nav.name}
+                </Link>
+              </motion.p>
             ))}
-            <div className="sm:px-[80px] px-8 w-full grid sm:place-content-start ">
+            <motion.div
+              initial={false}
+              animate={isMenuClick ? "true" : "false"}
+              variants={{
+                true: {
+                  y: "0%",
+                  opacity: 1,
+                },
+                false: {
+                  y: "50%",
+                  opacity: 0,
+                },
+              }}
+              transition={{
+                duration: 0.5,
+                ease: [0.16, 1, 0.3, 1],
+                delay: 0.9,
+              }}
+              className="sm:px-[80px] px-8 w-full grid sm:place-content-start "
+            >
               <Button
                 className="mt-10 w-full bg-white rounded-full text-sm text-[#6E3CBC] px-[22px] py-[9px] h-[50px]"
                 name="SCHEDULE A DEMO"
               />
-            </div>
+            </motion.div>
 
-            <button
+            <motion.button
+              initial={false}
+              animate={isMenuClick ? "true" : "false"}
+              variants={{
+                true: {
+                  y: "0%",
+                  opacity: 1,
+                },
+                false: {
+                  y: "50%",
+                  opacity: 0,
+                },
+              }}
+              transition={{
+                duration: 0.5,
+                ease: [0.16, 1, 0.3, 1],
+                delay: 1.2,
+              }}
               onClick={() => setIsMenuClick(false)}
               role="button"
               tabIndex={0}
               className="inline-flex sm:hidden items-center justify-center text-lg text-white gap-2 mt-5 "
             >
               Back to home
-            </button>
+            </motion.button>
           </div>
 
           <button
@@ -147,7 +227,7 @@ const Header = () => {
             <ArrowWithLineIcon />
             back to home
           </button>
-        </nav>
+        </motion.nav>
       </nav>
     </>
   );
