@@ -7,13 +7,15 @@ export const Button = ({ className, name }) => (
 );
 
 export const GradientBtn = ({text}) => (
-  <span className="py-[.7px] px-[.4px] grid w-max rounded-full gradientBtn__gradientBorder place-items-center">
+  <span className="py-[.7px] px-[.4px] grid w-max rounded-full gradientBtn__gradientBorder place-items-center ">
     <button
       name="button"
       type="button"
-      className="px-6 py-4 rounded-full bg-[#1B034B] w-full h-full"
+      className="px-6 py-4 rounded-full bg-[#1B034B] w-full h-full relative overflow-hidden group z-10"
     >
-      <p className="gradientBtn__gradientText">{text}</p>
+      <span className="absolute w-full h-full bg-[#6019CE] top-0 right-0 group-hover:translate-x-0 -translate-x-48 duration-300 ease-in -z-10" />
+      <p className="gradientBtn__gradientText group-hover:hidden">{text}</p>
+      <p className="hidden group-hover:flex z-20 gradientBtn__normalText">{text}</p>
     </button>
   </span>
 );

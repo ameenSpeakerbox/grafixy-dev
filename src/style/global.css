@@ -155,6 +155,25 @@
   bottom: -1px;
   background: linear-gradient(90deg, #ffe500 2.4%, #ff5e3a 100.82%);
 }
+.gradientBtn__normalText {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 110%;
+  align-items: center;
+  text-align: center;
+  color: white;
+  
+  position: relative;
+}
+.gradientBtn__normalText::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -1px;
+  background: white;
+}
 .gradientBtn__gradientBorder {
   background: linear-gradient(
     228.09deg,
@@ -202,18 +221,4 @@
 .heroSection__textShadow-homePage {
   box-shadow: 0px 0px 8.13122px rgba(0, 0, 0, 0.5);
   
-}
-.heroSection__text-homePage {
-  animation: heroText .3s ease-in ;
-}
-
-
-@keyframes heroText {
-  0% {
-    transform: translateY(100%);
-    
-  }
-  100% { 
-    transform: translateY(0);
-  }
 }

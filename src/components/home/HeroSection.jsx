@@ -2,19 +2,30 @@ import { MainImage } from "gatsby-plugin-image";
 import React from "react";
 import { GradientBtn } from "../../ui/Button";
 import questionMark from "../../images/home/question mark.svg";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
-  const ColorLine = ({ heading, bgColor }) => (
+  const ColorLine = ({ heading, bgColor, animationDelay }) => (
     <div
       className="w-[200%] lg:max-h-[80px] sm:max-h-[54px] max-h-[40px] h-min
      flex items-center sm:justify-end justify-center sm:pr-[80%] text-[#1D0149] font-semibold 2xl:text-5xl sm:text-4xl
     text-xl leading-[100%] "
       style={{ backgroundColor: bgColor }}
     >
-      <span className="h-full bg-white px-4 grid place-items-center sm:py-3 py-2 heroSection__textShadow-homePage overflow-hidden">
-        <p className="heroSection__text-homePage">
-        {heading}
-        </p>
+      <span
+        className={
+          "h-full bg-white px-4 grid place-items-center sm:py-3 py-2 heroSection__textShadow-homePage overflow-hidden"
+        }
+      >
+        <motion.p
+        initial={{ translateY : 100 }}
+        animate={{ translateY : 0  }}
+        transition={{ duration: 0.5 , delay: animationDelay}}
+        
+          
+        >
+          {heading}
+        </motion.p>
       </span>
     </div>
   );
@@ -25,9 +36,24 @@ const HeroSection = () => {
       <div className="lg:pt-[150px] pt-5 w-full h-full flex items-center justify-evenly flex-col">
         {/* center designs */}
         <div className="gap-3 flex flex-col w-full -rotate-[10.22deg] sm:hight600:mb-8 mb-6 place-items-center">
-          <ColorLine heading="On Demand Graphic Design" bgColor="#6019CE" />
-          <ColorLine heading="One Flat Monthly Rate" bgColor="#FF5E3A" />
-          <ColorLine heading="Unlimited Requests" bgColor="#FFE600" />
+          <ColorLine
+            heading="On Demand Graphic Design"
+            bgColor="#6019CE"
+            animationDelay=".3"
+            
+          />
+          <ColorLine
+            heading="One Flat Monthly Rate"
+            bgColor="#FF5E3A"
+            animationDelay=".5"
+            
+          />
+          <ColorLine
+            heading="Unlimited Requests"
+            bgColor="#FFE600"
+            animationDelay=".7"
+            
+          />
         </div>
         {/* center designs */}
 
