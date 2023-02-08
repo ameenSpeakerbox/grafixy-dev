@@ -89,7 +89,7 @@ const Collaboration = () => {
           Do you need
           <br className="tab:hidden block" /> <span className="tab:text-[#6E3CBC]  text-white">a custom plan?</span> <br />
           <Button
-            className="underline text-white font-medium mt-[10px] leading-10 tab:bg-[#210153] bg-[#6019CE] rounded-full py-1 px-6 relative after:absolute after:w-full after:h-full after:bg-[#6E3CBC] after:"
+            className="text-white font-medium mt-[10px] leading-10 tab:bg-[#210153] bg-[#6019CE] rounded-full py-1 px-6 relative after:absolute after:w-full after:h-full after:bg-[#6E3CBC] after:-left-[100%] after:top-0 after:-z-10 z-10 overflow-hidden hover:after:left-0 after:duration-300 after:ease-in shadow-xl"
             name="Talk to sales"
           />
         </p>
