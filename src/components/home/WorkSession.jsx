@@ -23,7 +23,7 @@ const WorkSession = () => {
 
   return (
     <div className="grid sm:grid-cols-2 w-full h-min hightUt900:h-full sm:max-h-screen ">
-      <div className="sm:bg-gradient-to-l to-[#100028] from-[#220058] bg-[#6019CE] 2xl:px-[160px] 2xl:pl-[147px] lg:px-[100px] lg:py-20 sm:py-14 py-8  md:px-10 sm:px-9 px-8 items-center justify-center flex flex-col">
+      <div className="sm:bg-gradient-to-l to-[#100028] from-[#220058] bg-[#6019CE] 2xl:px-[160px] 2xl:pl-[147px] lg:px-[100px] lg:py-20 sm:py-14 py-10 sm:pt-0 pt-11  md:px-10 sm:px-9 px-8 items-center justify-center flex flex-col">
         <React.Fragment>
           <motion.span
             initial="hide"
