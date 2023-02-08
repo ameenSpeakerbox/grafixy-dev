@@ -102,7 +102,7 @@ const WorkSession = () => {
             team. Stress-free outsourcing. Create unlimited projects for just a
             flat monthly rate.
           </p>
-          <div className="gap-3 flex  mt-7 flex-wrap ">
+          <div className="gap-3 flex  mt-7">
             <Button
               name="SEE OUR WORK"
               className="bg-[#6019CE] rounded-full text-white lg:h-16 h-10 inline-flex items-center justify-center shrink-0 lg:text-lg text-[10px] sm:w-auto w-[150px]"
