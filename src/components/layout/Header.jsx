@@ -41,6 +41,8 @@ const Header = () => {
             <Button
               className="2xl:h-[67px] xl:h-[50px] h-[40px] grid place-content-center  bg-white text-[#19013F] drop-shadow-lg 2xl:px-[31px] 2xl:py-[10px] px-5 py-3 rounded-full shrink-0 2xl:text-lg xl:text-base text-[10px]"
               name="SCHEDULE A DEMO"
+              link="https://calendly.com/grafixy-demo/grafixy-demo-session"
+                target="_blank"
             />
           </div>
 
@@ -190,6 +192,8 @@ const Header = () => {
               <Button
                 className="mt-10 w-full bg-white rounded-full text-sm text-[#6E3CBC] px-[22px] py-[9px] h-[50px]"
                 name="SCHEDULE A DEMO"
+                link="https://calendly.com/grafixy-demo/grafixy-demo-session"
+                target="_blank"
               />
             </motion.div>
 

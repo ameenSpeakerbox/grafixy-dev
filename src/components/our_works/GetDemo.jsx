@@ -18,7 +18,7 @@ const GetDemo = () => {
         <div className="flex sm:gap-[26px] gap-[22px] mt-[30px] z-50 relative flex-wrap">
           <Button
             className="text-white px-[11px] py-[32px] bg-[#6019CE] rounded-[33px] drop-shadow-lg h-[67px] flex items-center justify-center w-[180px] font-bold sm:text-lg text-base"
-            name="GET A DEMO"
+            name="GET A DEMO" link="https://calendly.com/grafixy-demo/grafixy-demo-session" target="_blank"
           />
           <Button  className="text-white px-[11px] py-[32px] bg-[#19013F] rounded-[33px] drop-shadow-lg h-[67px] flex items-center justify-center w-[180px] sm:text-lg text-base"
             name="SEE PRICING" />
