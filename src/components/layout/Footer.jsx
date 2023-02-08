@@ -27,7 +27,7 @@ const Footer = () => {
                   <Link 
                   to={`/${text?.slug}`}
                     key={text.id}
-                    className="font-semibold sm:text-lg text-base text-[#6E3CBC] cursor-pointer font-nunito"
+                    className="font-semibold text-base text-[#6E3CBC] cursor-pointer font-nunito"
                   >
                     {text.title}
                   </Link>

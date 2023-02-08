@@ -8,12 +8,12 @@ const index = () => {
       "font-nunito 2xl:text-[30px] lg:text-[28px] sm:text-2xl text-xl font-bold text-white 2xl:leading-10 leading-[24px] 2xl:mb-[10px] lg:mb-[9px] sm:mb-[8px] mb-[7px]",
     ans: "2xl:text-2xl lg:text-xl sm:text-lg text-base font-semibold font-nunito text-[rgba(255,255,255,0.7)] lg:w-[60%]",
     listMain: "list-disc ml-8 pl-8",
-    subMain: "grid gap-12 xl:px-20 lg:px-8 sm:px-3",
+    subMain: "grid gap-10",
   };
   return (
     <Layout>
       <div className="w-full lg:pt-[312px] sm:pt-36 pt-11  bg-[#1A0143] flex flex-col 2xl:pl-[147px] lg:py-[140px] sm:px-[80px] px-8   h-full py-[120px]">
-        <h1 className="font-medium 2xl:text-[65px] lg:text-6xl sm:text-5xl text-[45px] leading-none text-[#D5BAFF]">
+        <h1 className="font-medium 2xl:text-5xl lg:text-4xl sm:text-3xl text-2xl leading-none text-[#D5BAFF]">
           A perfect fit for <br />
           <span className="text-white">agencies</span> &{" "}
           <span className="text-white">brands</span>
@@ -24,14 +24,14 @@ const index = () => {
         </p>
         <div className="grid w-full 2xl:gap-24 lg:gap-20 sm:gap-16 gap-14">
           <div className="grid gap-5">
-            <h1 className="font-bold 2xl:text-[40px] lg:text-[36px] sm:text-3xl text-2xl leading-none text-white 2xl:mb-[30px] lg:mb-7 sm:mb-6 mb-5 uppercase">
+            <h1 className="font-bold 2xl:text-3xl lg:text-2xl sm:text-xl text-2xl leading-none text-white 2xl:mb-[30px] lg:mb-7 sm:mb-6 mb-5 uppercase ">
               GRAFIXY FAQ’S
             </h1>
             <div className={classes.subMain}>
               <TypoFAQ
                 question="Which countries does Grafixy serve?"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     Grafixy likes to serve clients around the Globe. Our team
                     works remotely and gets your design works done wherever you
                     are at your convenience.
@@ -46,7 +46,7 @@ const index = () => {
               <TypoFAQ
                 question="How many tasks will Grafixy team works on each day"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     Our Grafixy team will work on 2 tasks in progress for you in
                     our working time and they will allocate 8 Hours in each
                     business day to complete your requests
@@ -70,7 +70,7 @@ const index = () => {
               <TypoFAQ
                 question="What are the Grafixy’s business hours?"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     We are offering our service to GCC countries and India.
                     <br />
                     <br />
@@ -86,14 +86,14 @@ const index = () => {
               />
               <TypoFAQ
                 question="I need designs on time. What should I do?"
-                ans="We can work for 2 tasks taking 8 hours in a business day, So if
+                ans="We can work for 2 tasks taking 8 hours in aI business day, So if
             you can specify the time for delivering the designs at the time
             of task allocation. We will be able to deliver it on time."
               />
               <TypoFAQ
                 question="Who works on my requests?"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     Your team is made of 1 Project manager and 2 designers. The
                     Project manager reviews your requests and assigns them to
                     these designers. When a request is completed, we then move
@@ -134,7 +134,7 @@ const index = () => {
               <TypoFAQ
                 question="What is grafixy for? (about)"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     We design for : <br />
                     Print companies <br />
                     Ecommerce and retail shops <br />
@@ -159,7 +159,7 @@ const index = () => {
               <TypoFAQ
                 question="What’s unlimited?"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     Grafixy’s unlimited graphic design service includes
                     unlimited requests and unlimited revisions. This means that
                     you can make many requests as you would like and we will
@@ -187,7 +187,7 @@ const index = () => {
               <TypoFAQ
                 question="What is Grafixy?"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     Grafixy is a subscription-based unlimited design service
                     offering unlimited graphic design services. Through us,
                     anyone who needs help with design can work with a dedicated
@@ -211,7 +211,7 @@ const index = () => {
               <TypoFAQ
                 question="Who owns the rights to the designs created by grafixy?"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     You will have the rights to all the designs created by
                     grafixy for you during your paid subscription. <br />
                     If you would like to resell any of the designs, please be
@@ -236,7 +236,7 @@ const index = () => {
               <TypoFAQ
                 question="Do you have different tiers of service?"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     At grafixy we aim to keep things simple. That's why we have
                     one graphic design subscription - grafixy Graphics - and one
                     video design subscription - grafixy Video. And one
@@ -276,7 +276,7 @@ const index = () => {
               <TypoFAQ
                 question="How hard is it to cancel the subscription?"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     Not hard at all. We keep things simple at grafixy. No
                     documentation or extensive process. You can cancel at any
                     point in time. Just log in to your grafixy account, and you
@@ -302,7 +302,7 @@ const index = () => {
               <TypoFAQ
                 question="Can I pause my account if I don't have a lot of requests to make?"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     Yes, you can! We get it. Workflows change and you don't
                     always need to have an active subscription. But at the same
                     time, you might still need access to your Trello board.{" "}
@@ -356,7 +356,7 @@ const index = () => {
               <TypoFAQ
                 question="What kind of designs can grafixy create?"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     grafixy Graphics: <br />
                     <ul className={classes.listMain}>
                       <li>Amazon Graphics</li>
@@ -443,7 +443,7 @@ const index = () => {
               <TypoFAQ
                 question="My business is rapidly expanding. Can you keep up?"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     Absolutely. If you require more than one subscription to
                     keep up with all your design needs, you can add additional
                     subscriptions at any time. And you can also cancel them at
@@ -464,7 +464,7 @@ const index = () => {
               <TypoFAQ
                 question="How much is the service?"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     $200 USD per month, for grafixy Graphics; $500 USD per month
                     for grafixy Video; <br /> No set-up fee, no minimum terms,
                     no cancellation penalties. Absolutely no contracts.
@@ -491,7 +491,7 @@ const index = () => {
               <TypoFAQ
                 question="Trello 101"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     Your Trello board includes:
                     <ul className={classes.listMain}>
                       <li>Cards for each of your requests</li>
@@ -540,14 +540,14 @@ const index = () => {
           </div>
 
           <div className="">
-            <h1 className="font-bold 2xl:text-[40px] lg:text-[36px] sm:text-3xl text-2xl leading-none text-white 2xl:mb-[30px] lg:mb-7 sm:mb-6 mb-5 uppercase">
+            <h1 className="font-bold 2xl:text-3xl lg:text-2xl sm:text-xl text-2xl leading-none text-white 2xl:mb-[30px] lg:mb-7 sm:mb-6 mb-5 uppercase ">
               REQUEST GUIDELINES
             </h1>
             <div className={classes.subMain}>
               <TypoFAQ
                 question="Social Media Designs"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     <ul className={classes.listMain}>
                       <li>Describe what you’re looking for</li>
                       <li>
@@ -577,7 +577,7 @@ const index = () => {
               <TypoFAQ
                 question="The Basics"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     {" "}
                     With every design request you should include the following
                     details:
@@ -615,7 +615,7 @@ const index = () => {
                 question="Business Card
             "
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     <ul className={classes.listMain}>
                       <li>Describe what you’re looking for</li>
                       <li>
@@ -702,7 +702,7 @@ const index = () => {
               <TypoFAQ
                 question="Brochures"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     <ul className={classes.listMain}>
                       <li>Describe what you’re looking for</li>
                       <li>
@@ -769,7 +769,7 @@ const index = () => {
               <TypoFAQ
                 question="Background Removal"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     Just let us know exactly which portions of the image(s) you
                     require and/or whether you'd like the background to be
                     completely removed, made transparent, or to retain a
@@ -986,7 +986,7 @@ const index = () => {
               <TypoFAQ
                 question="Avoiding Typos"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     There are 2 easy ways to avoid typos in your design:
                     <ul className={classes.listMain}>
                       <li>1. Triple check the spelling of your text copy.</li>
@@ -1198,7 +1198,7 @@ const index = () => {
               <TypoFAQ
                 question="Requesting Revisions"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     On Trello: br Comment, drag, and drop. Just add the details
                     of the revision required in a comment. Then move the
                     relevant card from the “In Review” or "Completed" list to
@@ -1212,7 +1212,7 @@ const index = () => {
                 question="Prioritizing Requests
               "
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     When you’re making multiple requests, be sure to order your
                     cards according to priority. <br />
                     Requests are fulfilled on a first-come, first-served basis,
@@ -1227,7 +1227,7 @@ const index = () => {
               <TypoFAQ
                 question="How To Email A Request"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     <ul className={classes.listMain}>
                       <li>
                         Email the details of your request to request@grafixy.io
@@ -1260,7 +1260,7 @@ const index = () => {
               <TypoFAQ
                 question="Pausing & Cancelling Requests"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     Pausing a request is easy. Simply comment on the relevant
                     card to let your designer know that the request should be
                     paused until you confirm. <br />
@@ -1274,7 +1274,7 @@ const index = () => {
                 question="Setting Up Notifications
               "
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     You can set up notifications for individual tasks by opening
                     the relevant card and selecting “watch”. <br />
                     If you’d like to set up notifications for an entire list,
@@ -1299,7 +1299,7 @@ const index = () => {
               <TypoFAQ
                 question="Duplicating Requests"
                 ans={
-                  <p>
+                  <p className="font-nunito">
                     Duplicate requests easily by opening up a card, and
                     selecting “copy” under “actions”. You’ll be prompted to
                     create a new card title, and to select the board and list to
