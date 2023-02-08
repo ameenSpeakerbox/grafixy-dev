@@ -52,7 +52,7 @@ const Footer = () => {
         </p>
       </div>
 
-      <div className="bg-[#27065A] flex items-center lg:justify-center text-white font-nunito sm:text-lg text-[80%] sm:h-[80px] h-[50px] px-8">
+      <div className="bg-[#27065A] flex items-center justify-center text-white font-nunito sm:text-lg text-[80%] sm:h-[80px] h-[50px] px-8">
         <p>© By Speakerbox Media LLP. All Rights Reserved</p>
       </div>
     </footer>
