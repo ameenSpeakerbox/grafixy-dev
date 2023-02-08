@@ -61,7 +61,7 @@ const WorkSession = () => {
           </motion.span>
           <h2
             className={`block font-semibold 2xl:text-5xl
-             lg:text-4xl text-2xl text-center text-white sm:pt-[50px] pt-7 leading-none `}
+             lg:text-4xl text-2xl text-center text-white sm:pt-[50px] pt-7 `}
           >
             We Design
           </h2>
@@ -70,7 +70,7 @@ const WorkSession = () => {
             className="
               block
             font-medium 2xl:text-5xl
-            lg:text-4xl text-2xl  text-center leading-none "
+            lg:text-4xl text-2xl  text-center"
           >
             {Work_Session_InstagramPost[autoCount]?.subtitle}
           </h2>

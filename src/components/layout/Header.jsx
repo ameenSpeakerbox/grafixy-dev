@@ -84,7 +84,7 @@ const Header = () => {
                 stiffness: 20,
                 restDelta: 2,
               },
-              display : 'block'
+              display: "block",
             }),
             false: {
               clipPath: "circle(30px at 40px 40px)",
