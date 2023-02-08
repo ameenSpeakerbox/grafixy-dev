@@ -22,9 +22,9 @@ const Collaboration = () => {
       </div>
       <div className="tab:py-14 tab:pb-11 pb-11 py-5  flex flex-col items-center justify-center flex-1 2xl:px-32 lg:px-20 sm:px-14 px-8 tab:bg-white bg-[#210153]">
         <div className="flex justify-center w-full tab:mt-0">
-          <h2 className="font-semibold 2xl:text-3xl lg:text-3xl tab:text-2xl text-xl lg:leading-[42px] leading-[100%] tab:text-[#210153] text-[#9C66F0] uppercase text-center">
+          <h2 className="font-semibold 2xl:text-3xl lg:text-3xl tab:text-2xl text-xl lg:leading-[42px] leading-[100%]  uppercase text-center tab:text-[#9C66F0] text-white">
             Start Your <br />
-            <span className="sm:text-[#9C66F0] text-white">
+            <span className="tab:text-[#210153] text-[#9C66F0]">
               7 Day Free Trial
             </span>
           </h2>

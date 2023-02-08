@@ -24,4 +24,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <SEO title='Home Page'/>;
+export const Head = () => <SEO title='Grafixy | On-demand graphic design | Flat monthly Rate'/>;

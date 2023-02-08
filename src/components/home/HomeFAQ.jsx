@@ -55,7 +55,7 @@ const HomeFAQ = () => {
           to="faq"
           className="font-semibold lg:text-2xl text-lg sm:text-[#6E3CBC] text-[#E0CCFF] underline z-20"
         >
-          More from <span className="sm:text-[#E0CCFF] underline">FAQs</span>{" "}
+          More from <span className="sm:text-[#E0CCFF] underline">FAQs</span>
         </Link>
       </div>
       <div className="bg-[#6019CE] sm:flex hidden flex-col items-end h-full justify-end w-[35%] shrink-0  relative">
@@ -66,14 +66,7 @@ const HomeFAQ = () => {
           className="h-max max-h-[790px] absolute object-contain  object-right-bottom lg:right-0  bottom-0 w-max"
         />
       </div>
-      {/* <MainImage
-        src={faqMobPic}
-        alt="homeFaq"
-        loading="lazy"
-        width={1000}
-        height={1000}
-        className="flex sm:hidden flex-col items-end  justify-end absolute z-[0] -top-10 right-0 w-full h-full  object-contain object-right"
-      /> */}
+
     </div>
   );
 };

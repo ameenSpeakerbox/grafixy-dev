@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import React from "react";
 
 export const Button = ({ className, name, link, target }) => (
-  <Link to={link} target={target} className="flex">
+  <Link to={link} target={target} className="flex items-center justify-center">
     <button className={`px-[31px] py-[10px] font-bold text-lg ${className}`}>
       {name}
     </button>
