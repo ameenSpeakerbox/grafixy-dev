@@ -85,11 +85,13 @@ const Collaboration = () => {
             </div>
           ))}
         </div>
-        <p className="font-semibold tab:text-[#6E3CBC] text-[#E0CCFF] sm:text-2xl text-xl  sm:leading-7 leading-[100%] uppercase block tab:text-center text-left w-full mt-8">
-          Do you need a custom plan? <br />
-          <span className="underline tab:text-[#210153] text-white font-medium mt-[10px] leading-10">
-            Talk to sales
-          </span>
+        <p className="font-semibold text-[#6E3CBC] sm:text-2xl text-xl leading-7 uppercase block text-center w-full mt-8">
+          Do you need
+          <br className="tab:hidden block" /> <span className="tab:text-[#6E3CBC]  text-white">a custom plan?</span> <br />
+          <Button
+            className="underline text-white font-medium mt-[10px] leading-10 tab:bg-[#210153] bg-[#6019CE] rounded-full py-1 px-6 relative after:absolute after:w-full after:h-full after:bg-[#6E3CBC] after:"
+            name="Talk to sales"
+          />
         </p>
       </div>
     </div>

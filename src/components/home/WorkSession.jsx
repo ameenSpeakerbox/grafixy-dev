@@ -23,7 +23,7 @@ const WorkSession = () => {
 
   return (
     <div className="grid sm:grid-cols-2 w-full h-min hightUt900:h-full sm:max-h-screen ">
-      <div className="bg-gradient-to-l to-[#100028] from-[#220058] 2xl:px-[160px] 2xl:pl-[147px] lg:px-[100px] lg:py-20 py-14  md:px-10 sm:px-9 px-8 items-center justify-center flex flex-col">
+      <div className="sm:bg-gradient-to-l to-[#100028] from-[#220058] bg-[#6019CE] 2xl:px-[160px] 2xl:pl-[147px] lg:px-[100px] lg:py-20 sm:py-14 py-8  md:px-10 sm:px-9 px-8 items-center justify-center flex flex-col">
         <React.Fragment>
           <motion.span
             initial="hide"
@@ -76,14 +76,14 @@ const WorkSession = () => {
           </h2>
         </React.Fragment>
       </div>
-      <div className="2xl:px-[82px] lg:px-[60px] md:px-10 sm:px-9 px-8 py-[48px] flex flex-col justify-center 2xl:gap-[74px] lg:gap-16 gap-10 pb-[64px] h-full">
+      <div className="2xl:px-[82px] lg:px-[60px] md:px-10 sm:px-9 px-8 sm:py-12 py-8 flex flex-col justify-center 2xl:gap-[74px] lg:gap-16 gap-10 sm:pb-[64px] h-full">
         <div>
           <h2 className="font-medium text-[#1D0149] 2xl:text-5xl lg:text-4xl text-3xl leading-none">
             A perfect fit for <br />{" "}
             <span className="text-[#6019CE]">agencies</span> &{" "}
             <span className="text-[#6019CE]">brands</span>
           </h2>
-          <p className="font-nunito 2xl:text-xl lg:text-lg text-sm  text-[#1E014C] leading-[100%] mt-2 w-[70%]">
+          <p className="font-nunito 2xl:text-xl lg:text-lg text-sm  text-[#1E014C] leading-[120%] mt-2 w-[70%]">
             Grafixy makes it incredibly easy to set up or scale your design
             team. Stress-free outsourcing. Create unlimited projects for just a
             flat monthly rate.
@@ -97,7 +97,7 @@ const WorkSession = () => {
             </span>{" "}
             with your team.
           </h2>
-          <p className="font-nunito 2xl:text-2xl lg:text-xl text-sm text-[#1E014C] leading-none mt-2 w-[70%]">
+          <p className="font-nunito 2xl:text-2xl lg:text-xl text-sm text-[#1E014C] leading-[120%] mt-2 w-[70%]">
             Grafixy makes it incredibly easy to set up or scale your design
             team. Stress-free outsourcing. Create unlimited projects for just a
             flat monthly rate.
