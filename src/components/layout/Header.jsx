@@ -84,6 +84,7 @@ const Header = () => {
                 stiffness: 20,
                 restDelta: 2,
               },
+              display : 'block'
             }),
             false: {
               clipPath: "circle(30px at 40px 40px)",
@@ -93,6 +94,7 @@ const Header = () => {
                 stiffness: 400,
                 damping: 40,
               },
+              display: "none",
             },
           }}
           className={`w-full  h-screen bg-[#1E014B] fixed top-0 z-50`}
