@@ -8,10 +8,10 @@ const GetDemo = () => {
   return (
     <div className=" flex w-full sm:mb-20   h-auto 2xl:px-[147px] sm:px-[80px] px-0">
       <div className="w-full py-[70px] 2xl:px-[122px] lg:px-[80px] sm:px-[50px] px-[30px]  bg-gradient-to-l from-[#6019CE] to-[#41118C] sm:rounded-[50px] rounded-t-[50px] rounded-tr-[50px] relative Z-40 sm:overflow-visible overflow-hidden">
-        <h1 className="font-medium 2xl:text-6xl sm:text-5xl text-4xl  text-white z-30 relative leading-[100%] ">
+        <h1 className="font-medium sm:text-4xl text-3xl  text-white z-30 relative leading-[100%] ">
           <span className="opacity-[.65] text-[#E0CCFF]"> Ready to try <br className="lg:hidden sm:block hidden "/></span> Grafixy?
         </h1>
-        <p className="font-nunito font-semibold  lg:text-2xl sm:text-xl text-lg text-[#E0CCFF] lg:max-w-[50%] sm:max-w-[60%] sm:mt-[30px] mt-[21px] z-20 relative">
+        <p className="font-nunito font-semibold  sm:text-xl text-lg text-[#E0CCFF] lg:max-w-[50%] sm:max-w-[60%] sm:mt-[30px] mt-[21px] z-20 relative">
           Grafixy makes it incredibly easy Grafixy makes it incredibly easy
           Grafixy makes it incredibly. Grafixy makes it incredibly.
         </p>

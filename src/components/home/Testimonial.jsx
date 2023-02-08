@@ -7,12 +7,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { Autoplay, Pagination } from "swiper";
+import { Autoplay  } from "swiper";
 
 const Testimonial = () => {
   return (
     <div className="grid sm:grid-cols-2 w-full ">
-      <div className="w-full bg-white 2xl:pl-24 2xl:py-44 2xl:pr-20 lg:pl-20 lg:py-40 lg:pr-16 sm:pl-12 sm:py-20 sm:pr-5  pl-8 py-8 pr-4">
+      <div className="w-full bg-white 2xl:pl-24 2xl:pr-20 lg:pl-20 lg:py-28 lg:pr-16 sm:pl-12 sm:py-20 sm:pr-5  pl-8 py-8 pr-4">
         <h1 className="text-[#1D0149] font-medium 2xl:text-5xl lg:text-4xl text-3xl leading-none">
           Trusted by the worlds <br />
           <span className="text-[#6019CE]">largest </span>&{" "}
@@ -33,6 +33,7 @@ const Testimonial = () => {
           slidesPerView={1}
           autoplay={true}
           className="w-full"
+          
           
         >
           {testimonial.map((item) => (
@@ -60,7 +61,7 @@ const Testimonial = () => {
                     />
                   </div>
                   <div className="flex flex-col justify-center gap-1">
-                    <h4 className=" sm:text-lg text-base  text-white leading-[100%] font-nunito font-semibold ">
+                    <h4 className="sm:text-lg text-base  text-white leading-[100%] font-nunito font-semibold ">
                       {item.userName}
                     </h4>
                     <p className="sm:text-lg text-base font-light font-nunito text-[#884CE6] sm:leading-[110%] leading-[110%]">

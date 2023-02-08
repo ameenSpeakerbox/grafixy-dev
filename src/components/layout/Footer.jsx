@@ -38,10 +38,10 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-[#41118C] flex items-center lg:justify-center justify-start lg:gap-[100px] sm:gap-4 gap-2 lg:h-[80px] px-8 flex-wrap lg:py-0 py-5 ">
+      <div className="bg-[#41118C] flex items-center lg:justify-center justify-start lg:gap-[100px] sm:gap-4 gap-2 py-5 px-8 flex-wrap">
         <a
           href=""
-          className="inline-flex items-center gap-3 text-white font-nunito font-semibold sm:text-lg text-base"
+          className="inline-flex items-center gap-3 text-white font-nunito font-semibold text-base"
         >
           <MailIcon  className='shrink-0'/>
           hello@grafixy.io
@@ -52,7 +52,7 @@ const Footer = () => {
         </p>
       </div>
 
-      <div className="bg-[#27065A] flex items-center justify-center text-white font-nunito sm:text-lg text-[80%] sm:h-[80px] h-[50px] px-8">
+      <div className="bg-[#27065A] flex items-center justify-center text-white font-nunito sm:text-xs text-[80%] px-8 py-5">
         <p>© By Speakerbox Media LLP. All Rights Reserved</p>
       </div>
     </footer>

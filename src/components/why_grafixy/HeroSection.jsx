@@ -1,4 +1,4 @@
-import { MainImage } from "gatsby-plugin-image";
+import { MainImage, StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import heroPic from "../../images/why_grafixy/why grafixy head.webp";
 
@@ -7,11 +7,13 @@ const HeroSection = () => {
     <div className=" bg-[#6E3CBC] why_grafixy--heroSection flex-col w-full relative  overflow-hidden justify-end z-0 flex items-center  2xl:px-[147px] 
     sm:px-[80px] 
     px-8 sm:py-14 py-6">
-      <MainImage
-        src={heroPic}
+      <StaticImage
+        src='../../images/why_grafixy/why grafixy head.webp'
         alt="heroPic"
-        width={100}
-        height={100}
+        loading="lazy"
+        width={1000}
+        height={1000}
+        objectFit="cover"
         className="object-cover origin-center w-full h-full absolute -z-10 opacity-[25%] top-0 left-0"
       />
       <span className="bg-[#1A0143] absolute inset-0 bg-opacity-95 -z-20" />
