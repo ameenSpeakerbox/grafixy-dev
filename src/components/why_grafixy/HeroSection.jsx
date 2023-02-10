@@ -17,11 +17,11 @@ const HeroSection = () => {
         className="object-cover origin-center w-full h-full absolute -z-10 opacity-[25%] top-0 left-0"
       />
       <span className="bg-[#1A0143] absolute inset-0 bg-opacity-95 -z-20" />
-      <p className="leading-[134%] 2xl:text-[40px] sm:text-2xl text-[24px] font-semibold  text-white max-w-[867px] text-center">
+      <p className=" lg:leading-[134%]  sm:leading-[134%] leading-[134%] lg:text-4xl sm:text-3xl text-2xl font-semibold  text-white max-w-[867px] text-center">
         Accelerate your growth with a fully remote team of vetted designers.
         Unlimited design projects. Fast turnaround. All at a fixed monthly rate.
       </p>
-      <div className="flex text-[#E0CCFF] font-semibold 2xl:text-[28px] sm:text-xl text-lg leading-[134%] sm:gap-[47px] gap-3 sm:mt-20 mt-10 flex-wrap sm:flex-row flex-col items-center justify-center tracking-normal">
+      <div className="flex text-[#FFE600] font-semibold 2xl:text-[28px] sm:text-xl text-lg leading-[134%] sm:gap-[47px] gap-3 sm:mt-16 mt-10 flex-wrap sm:flex-row flex-col items-center justify-center tracking-normal">
         <p>NO HR</p>
         <p>NO HIRING</p>
         <p>NO HOURLY BILLING</p>
