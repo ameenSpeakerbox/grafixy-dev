@@ -40,7 +40,7 @@ const Header = () => {
               className="2xl:h-[67px] xl:h-[50px] h-[40px] bg-[#6019CE] mr-[10px] drop-shadow-lg text-white 2xl:px-[31px] 2xl:py-[10px] px-5 py-3 rounded-full shrink-0 2xl:text-lg xl:text-base text-[10px] grid place-content-center w-max"
               name="LOGIN"
               link='https://speakerbox.chargebeeportal.com/portal/v2/login?forward=portal_main'
-              target="_blank"
+              
               />
             <Button
               className="2xl:h-[67px] xl:h-[50px] h-[40px] grid place-content-center  bg-white text-[#19013F] drop-shadow-lg 2xl:px-[31px] 2xl:py-[10px] px-5 py-3 rounded-full shrink-0 2xl:text-lg xl:text-base text-[10px] w-max"
