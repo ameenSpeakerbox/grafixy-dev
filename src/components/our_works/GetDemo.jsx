@@ -25,7 +25,7 @@ const GetDemo = () => {
         </div>
           <MainImage src={image_of_demo} 
           alt='image of demo'
-          className="absolute bottom-0 xs:block hidden lg:right-16 sm:right-0 -right-[20%]" />
+          className="absolute bottom-0 xs:block hidden lg:right-16 sm:right-0 -right-[20%] lg:h-auto h-full object-contain object-right-bottom" />
           
       </div>
     </div>
