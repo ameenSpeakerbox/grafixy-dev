@@ -9,7 +9,7 @@ const Index = () => {
   return (
     <div className="bg-[#1A0143]">
       <Layout>
-        <main className="mt-80 2xl:px-[147px] sm:px-[80px] px-8 gap-12">
+        <main className="lg:mt-80 sm:mt-40 mt-20  2xl:px-[147px] sm:px-[80px] px-8 gap-12 mb-40 grid">
           <div>
             <h1 className={styles.heading}>Privacy Policy</h1>
             <p className={styles.text}>
