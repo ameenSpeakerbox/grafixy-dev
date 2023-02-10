@@ -98,6 +98,7 @@ export const footerLinks = [
       {
         id: 4,
         title: "Privacy Policy",
+        slug: 'privacy_policy'
       },
     ],
   },
