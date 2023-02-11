@@ -63,7 +63,7 @@ const HomeFAQ = () => {
           src={faqPic}
           alt="homeFaq"
           loading="lazy"
-          className="h-max max-h-[790px] absolute object-contain  object-right-bottom lg:right-0  bottom-0 w-max"
+          className="h-max max-h-[600px] absolute object-contain  object-right-bottom lg:right-0  bottom-0 w-max"
         />
       </div>
 
