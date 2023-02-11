@@ -15,18 +15,17 @@ const GetDemo = () => {
           Grafixy makes it incredibly easy Grafixy makes it incredibly easy
           Grafixy makes it incredibly. Grafixy makes it incredibly.
         </p>
-        <div className="flex sm:gap-[26px] gap-[22px] mt-[30px] z-50 relative flex-wrap">
+        <div className="flex sm:gap-[26px] gap-[22px] mt-[30px] z-50 relative ">
           <Button
-            className="text-white px-[11px] py-[32px] bg-[#6019CE] rounded-[33px] drop-shadow-lg h-[67px] flex items-center justify-center w-[180px] font-bold sm:text-lg text-base"
+            className="text-white px-[11px] sm:py-[32px] bg-[#6019CE] rounded-[33px] drop-shadow-lg sm:h-[67px] h-[50px] flex items-center justify-center sm:w-[180px] font-bold sm:text-lg shrink-0 text-sm"
             name="GET A DEMO" link="https://calendly.com/grafixy-demo/grafixy-demo-session" target="_blank"
           />
-          <Button  className="text-white px-[11px] py-[32px] bg-[#19013F] rounded-[33px] drop-shadow-lg h-[67px] flex items-center justify-center w-[180px] sm:text-lg text-base"
+          <Button  className="text-white px-[11px] sm:py-[32px] bg-[#19013F] rounded-[33px] drop-shadow-lg sm:h-[67px] h-[50px] flex items-center justify-center sm:w-[180px] shrink-0 sm:text-lg text-sm"
             name="SEE PRICING" />
         </div>
           <MainImage src={image_of_demo} 
           alt='image of demo'
-          className="absolute bottom-0 xs:block hidden lg:right-16 sm:right-0 -right-[20%] lg:h-auto h-full object-contain object-right-bottom" />
-          
+          className="absolute bottom-0 sm:block hidden lg:right-16 sm:right-0 -right-[20%] lg:h-auto h-full object-contain object-right-bottom" />
       </div>
     </div>
   );

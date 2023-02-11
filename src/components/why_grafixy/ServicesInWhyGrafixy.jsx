@@ -46,7 +46,7 @@ const ServicesInWhyGrafixy = () => {
   ];
   return (
     <div className="2xl:px-[147px] sm:px-[80px] px-8 bg-[#28075A] 2xl:py-32 sm:py-16 py-8 mb-20 max-h-screen">
-      <div className="w-full h-full flex items-start  relative justify-center z-0 rounded-[14px] overflow-hidden max-h-[825px] pl-24 pt-24 flex-col gap-8 max-w-5xl mx-auto my-auto ">
+      <div className="w-full h-full flex items-start  relative justify-center z-0 rounded-[14px] overflow-hidden max-h-[825px] pl-24 pt-14 flex-col gap-8 max-w-5xl mx-auto my-auto ">
         <MainImage
           src={texture}
           alt="pattern"
@@ -87,8 +87,8 @@ const ServicesInWhyGrafixy = () => {
         {/* head part ends  */}
 
         {/* bottom part start */}
-        <div className="grid rounded-t-[15px] bg-[#F3ECFF] overflow-hidden w-max px-10 pt-5 pb-[76px] shrink-0 gap-7 ">
-          <h1 className=" text-2xl text-[#210153] leading-[95%] font-medium  gap-7">
+        <div className="grid rounded-t-[15px] bg-[#F3ECFF] overflow-hidden w-max px-10 pt-5 pb-[76px] shrink-0 gap-4 ">
+          <h1 className=" text-2xl text-[#210153] leading-[95%] font-medium">
             We Design
           </h1>
 
@@ -101,9 +101,9 @@ const ServicesInWhyGrafixy = () => {
                   loading="lazy"
                   width={100}
                   height={100}
-                  className="object-contain w-4 h-4"
+                  className="object-contain w-3 h-3"
                 />
-                <p className="text-base text-[#6138A3] font-nunito font-semibold leading-[120%] ">
+                <p className="text-sm text-[#6138A3] font-nunito font-semibold leading-[120%] ">
                   {item.text}
                 </p>
               </span>
@@ -115,9 +115,9 @@ const ServicesInWhyGrafixy = () => {
                 loading="lazy"
                 width={100}
                 height={100}
-                className="object-contain w-5 h-5"
+                className="object-contain w-3 h-3"
               />
-              <p className="text-lg text-[#19013F] font-nunito font-semibold leading-[120%] underline ">
+              <p className="text-sm text-[#19013F] font-nunito font-semibold leading-[120%] underline ">
                 more services
               </p>
             </span>

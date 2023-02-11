@@ -3,7 +3,7 @@ import { servicesData } from "../../../lib/dummyData";
 
 const Service = () => {
   return (
-    <div className="2xl:px-[147px] sm:px-[80px] px-8 grid lg:grid-cols-3 sm:grid-cols-2  py-16 w-full place-items-center sm:gap-y-10 gap-y-6 gap-x-20 max-w-7xl mx-auto">
+    <div className="2xl:px-[147px] sm:px-[80px] px-8 grid lg:grid-cols-3 sm:grid-cols-2  py-16 w-full place-items-center sm:gap-y-10 gap-y-6 gap-x-20 max-w-6xl mx-auto">
       {servicesData.map((item) => (
         <ul
           key={item.id}

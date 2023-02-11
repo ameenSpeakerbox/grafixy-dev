@@ -37,7 +37,7 @@ export const navLink = [
   },
   {
     id: 2,
-    name: "how it's works",
+    name: "how it works",
     slug: "",
   },
   {
