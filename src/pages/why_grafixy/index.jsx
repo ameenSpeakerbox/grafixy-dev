@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../../components/layout/layout";
 import GetDemo from "../../components/our_works/GetDemo";
 import HeroSection from "../../components/why_grafixy/HeroSection";
+import ServicesInWhyGrafixy from "../../components/why_grafixy/ServicesInWhyGrafixy";
 import WhyGetGrafixy from "../../components/why_grafixy/WhyGetGrafixy ";
 
 const index = () => {
@@ -10,6 +11,7 @@ const index = () => {
       <Layout>
         <HeroSection />
         <WhyGetGrafixy />
+        <ServicesInWhyGrafixy />
         <GetDemo />
       </Layout>
     </main>

@@ -98,7 +98,7 @@ export const footerLinks = [
       {
         id: 4,
         title: "Privacy Policy",
-        slug: 'privacy_policy'
+        slug: "privacy_policy",
       },
     ],
   },
@@ -314,158 +314,6 @@ export const testimonial = [
     position: "Director of Marketing",
     company: "Sparkle Group",
     image: avatar2,
-  },
-];
-
-export const faq = [
-  {
-    id: 1,
-    question: "How does it work?",
-    answer: [
-      {
-        id: 1,
-        subQuestion: "How does it work?",
-        answer:
-          "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
-      },
-      {
-        id: 2,
-        subQuestion: "How many tasks will the team work on each day? it work",
-        answer:
-          "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
-      },
-      {
-        id: 3,
-        subQuestion: "How our unlimited design plan works?",
-        answer:
-          "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
-      },
-      {
-        id: 4,
-        subQuestion: "Where is the team situated?",
-        answer:
-          "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
-      },
-      {
-        id: 5,
-        subQuestion: "What will my Grafixy team design for me?",
-        answer:
-          "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
-      },
-    ],
-  },
-  {
-    id: 2,
-    question: "Billing",
-    answer: [
-      {
-        id: 1,
-        subQuestion: "Can I get a discount if I get multiple subscriptions?",
-        answer:
-          "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
-      },
-      {
-        id: 2,
-        subQuestion: "What's included with my monthly subscription fee?",
-        answer:
-          "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
-      },
-      {
-        id: 3,
-        subQuestion: "Will there be any hidden fees?",
-        answer:
-          "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
-      },
-      {
-        id: 4,
-        subQuestion: "Which method of payment can I use?",
-        answer:
-          "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
-      },
-      {
-        id: 5,
-        subQuestion:
-          "What does my billing cycle look like and when will I be billed?",
-        answer:
-          "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
-      },
-    ],
-  },
-  {
-    id: 3,
-    question: "IP and Confidentiality",
-    answer: [
-      {
-        id: 1,
-        subQuestion: "Do you use design templates?",
-        answer:
-          "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
-      },
-      {
-        id: 2,
-        subQuestion:
-          "Can I resell any of the designs created by Grafixy for me?",
-        answer:
-          "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
-      },
-      {
-        id: 3,
-        subQuestion:
-          "Where Does Grafixy Get Stock Photos, Videos, Animations, Fonts, Icons and Elements From?",
-        answer:
-          "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
-      },
-      {
-        id: 4,
-        subQuestion: "Keeping Things Confidential",
-        answer:
-          "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
-      },
-      {
-        id: 5,
-        subQuestion:
-          "Who owns the rights to the designs created through Grafixy?",
-        answer:
-          "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
-      },
-    ],
-  },
-  {
-    id: 4,
-    question: "How to send a request?",
-    answer: [
-      {
-        id: 1,
-        subQuestion: "How The Basics it work?",
-        answer:
-          "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
-      },
-      {
-        id: 2,
-        subQuestion: "Prioritizing Requests",
-        answer:
-          "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
-      },
-      {
-        id: 3,
-        subQuestion: "How To Access Your Files",
-        answer:
-          "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
-      },
-      {
-        id: 4,
-        subQuestion:
-          "What should I do if my team is having trouble understanding my ideas?",
-        answer:
-          "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
-      },
-      {
-        id: 5,
-        subQuestion: "Requesting Revisions",
-        answer:
-          "Invite team members and clients to help you make and manage designs at no extra cost. Easy integration into slack and microsoft teams.",
-      },
-    ],
   },
 ];
 
@@ -893,5 +741,76 @@ export const servicesData = [
         item: "Vectorized images",
       },
     ],
+  },
+];
+
+export const WeDesign__whyGrafixy = [
+  {
+    id: 1,
+    text: "Logos",
+  },
+  {
+    id: 2,
+    text: "Flyers",
+  },
+  {
+    id: 3,
+    text: "Social media graphics",
+  },
+  {
+    id: 4,
+    text: "Packaging",
+  },
+  {
+    id: 5,
+    text: "Presentations",
+  },
+  {
+    id: 6,
+    text: "Stationaries",
+  },
+  {
+    id: 7,
+    text: "Advertisements",
+  },
+  {
+    id: 8,
+    text: "Infographics",
+  },
+  {
+    id: 9,
+    text: "Labels & Stickers",
+  },
+  {
+    id: 10,
+    text: "Photo editing",
+  },
+  {
+    id: 11,
+    text: "Marketing materials",
+  },
+  {
+    id: 12,
+    text: "Typography",
+  },
+  {
+    id: 13,
+    text: "Merch & T-shirts",
+  },
+  {
+    id: 14,
+    text: "Blog graphics",
+  },
+  {
+    id: 15,
+    text: "Custom illustration",
+  },
+  {
+    id: 16,
+    text: "Catalogs",
+  },
+  {
+    id: 17,
+    text: "Youtube thumbnails",
   },
 ];

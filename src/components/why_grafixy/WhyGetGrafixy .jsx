@@ -4,7 +4,7 @@ import { getGrafixy } from "../../lib/dummyData";
 
 const WhyGetGrafixy = () => {
   return (
-    <div className="2xl:px-[147px] sm:px-[80px] px-8 2xl:py-20 lg:py-14 sm:py-10 py-8 flex items-center justify-center flex-col sm:mb-20">
+    <div className="2xl:px-[147px] sm:px-[80px] px-8 2xl:py-20 lg:py-14 sm:py-10 py-8 flex items-center justify-center flex-col">
       <div className="gap-2 grid items-center justify-center text-center">
         <h1 className="font-semibold 2xl:text-[45px] sm:text-4xl text-3xl tracking-[-2%] text-[#210153]">
           Why get grafixy?
