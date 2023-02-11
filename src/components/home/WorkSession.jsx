@@ -83,7 +83,7 @@ const WorkSession = () => {
             <span className="text-[#6019CE]">agencies</span> &{" "}
             <span className="text-[#6019CE]">brands</span>
           </h2>
-          <p className="font-nunito 2xl:text-xl lg:text-lg text-sm  text-[#1E014C] leading-[120%] mt-2 w-[70%]">
+          <p className="font-nunito 2xl:text-xl lg:text-lg text-base  text-[#1E014C] leading-[120%] mt-2 w-[70%]">
             Grafixy makes it incredibly easy to set up or scale your design
             team. Stress-free outsourcing. Create unlimited projects for just a
             flat monthly rate.
@@ -97,19 +97,19 @@ const WorkSession = () => {
             </span>{" "}
             with your team.
           </h2>
-          <p className="font-nunito 2xl:text-2xl lg:text-xl text-sm text-[#1E014C] leading-[120%] mt-2 w-[70%]">
+          <p className="font-nunito 2xl:text-2xl lg:text-xl text-base text-[#1E014C] leading-[120%] mt-2 w-[70%]">
             Grafixy makes it incredibly easy to set up or scale your design
             team. Stress-free outsourcing. Create unlimited projects for just a
             flat monthly rate.
           </p>
-          <div className="gap-3 flex  mt-7">
+          <div className="gap-3 flex items-center mt-7  ">
             <Button
               name="SEE OUR WORK"
-              className="bg-[#6019CE] rounded-full text-white lg:h-16 h-10 inline-flex items-center justify-center shrink-0 lg:text-lg text-sm sm:w-auto "
+              className="bg-[#6019CE] rounded-full text-white lg:h-16 h-12 inline-flex items-center justify-center shrink-0 lg:text-lg text-sm sm:w-auto sm:px-8 px-5"
             />
             <Button
               name="SEE PRICING"
-              className="bg-[#19013F] rounded-full px-8 py-[10px] text-white lg:h-16 h-10  shrink-0 lg:text-lg text-sm flex items-center justify-center sm:w-auto "
+              className="bg-[#19013F] rounded-full sm:px-8 px-5 text-white lg:h-16 h-12  shrink-0 lg:text-lg text-sm flex items-center justify-center sm:w-auto "
             />
           </div>
         </div>

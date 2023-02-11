@@ -56,14 +56,14 @@ const Collaboration = () => {
                   {item.price}
                 </span>
               </h2>
-              <h5 className="mt-3 text-[rgba(32,1,83,0.80)] font-semibold 2xl:text-xl lg:text-lg text-sm lg:leading-[24px] leading-[14px] group-hover:lg:text-white font-nunito">
+              <h5 className="mt-3 text-[rgba(32,1,83,0.80)] font-semibold 2xl:text-xl lg:text-lg text-base lg:leading-[24px] leading-[140%] group-hover:lg:text-white font-nunito">
                 {item.subtitle}
               </h5>
               <ul className="grid gap-1 2xl:mt-5 lg:mt-3 mt-3">
                 {item.point.map((point) => (
                   <li
                     key={point.id}
-                    className="inline-flex items-center gap-[10px] text-[#210153] lg:text-base font-nunito font-medium  text-xs group-hover:lg:text-white duration-300 ease-linear"
+                    className="inline-flex items-center gap-[10px] text-[#210153] lg:text-base font-nunito font-medium  text-sm group-hover:lg:text-white duration-300 ease-linear"
                   >
                     <TickIcon className="lg:h-[9px] sm:h-[5px] lg:w-[9px] sm:w-[5px] h-[7px] w-[7px] group-hover:lg:fill-white duration-300 ease-linear" />{" "}
                     {point.title}
@@ -73,11 +73,11 @@ const Collaboration = () => {
               <div className="flex items-center justify-center flex-col">
                 <Button
                   name="Start your free trial!"
-                  className="bg-[#210153] rounded-full 2xl:h-16 lg:h-12 h-9 text-white font-bold 2xl:text-lg lg:text-sm sm:text-[10px] text-sm lg:mt-8 mt-7 drop-shadow-2xl shrink-0 flex items-center justify-center lg:px-[30px] px-5 leading-3 group-hover:lg:bg-[#E0CCFF] group-hover:lg:text-[#210153] duration-300 ease-linear"
+                  className="bg-[#210153] rounded-full 2xl:h-16 h-12 text-white font-bold 2xl:text-lg lg:text-sm sm:text-[10px] text-sm lg:mt-8 mt-7 drop-shadow-2xl shrink-0 flex items-center justify-center lg:px-[30px] px-5 leading-3 group-hover:lg:bg-[#E0CCFF] group-hover:lg:text-[#210153] duration-300 ease-linear"
                 />
                 <Link
                   to=""
-                  className="mt-[10px] font-nunito font-bold lg:text-base text-[10px] text-[#210153] group-hover:lg:text-white duration-300 ease-linear"
+                  className="mt-[10px] font-nunito font-bold text-sm text-[#210153] group-hover:lg:text-white duration-300 ease-linear"
                 >
                   More details
                 </Link>
@@ -87,9 +87,11 @@ const Collaboration = () => {
         </div>
         <p className="font-semibold text-[#6E3CBC] sm:text-2xl text-xl leading-7 uppercase block text-center w-full mt-8">
           Do you need
-          <br className="tab:hidden block" /> <span className="tab:text-[#210153]  text-white">a custom plan?</span> <br />
+          <br className="tab:hidden block" />{" "}
+          <span className="tab:text-[#210153]  text-white">a custom plan?</span>{" "}
+          <br />
           <Button
-            className="text-white font-medium mt-[10px] leading-10 tab:bg-[#210153] bg-[#6019CE] rounded-full py-1 px-6 relative after:absolute after:w-full after:h-full after:bg-[#6E3CBC] after:-left-[100%] after:top-0 after:-z-10 z-10 overflow-hidden hover:after:left-0 after:duration-300 after:ease-in shadow-xl h-[53.64px] grid place-content-center text-xs"
+            className="text-white font-medium mt-[10px] leading-10 tab:bg-[#210153] bg-[#6019CE] rounded-full py-1 px-6 relative after:absolute after:w-full after:h-full after:bg-[#6E3CBC] after:-left-[100%] after:top-0 after:-z-10 z-10 overflow-hidden hover:after:left-0 after:duration-300 after:ease-in shadow-xl h-12 grid place-content-center text-sm"
             name="TALK TO SALES"
           />
         </p>

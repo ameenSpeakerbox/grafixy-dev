@@ -12,7 +12,7 @@ const HeroSection = () => {
         alt="heroPic"
         loading="lazy"
         objectFit="cover"
-        className="object-cover origin-center h-auto absolute -z-10 opacity-[25%] -bottom-80 w-full left-0"
+        className="object-cover origin-center h-auto absolute -z-10 opacity-[25%] top-0 w-full left-0"
       />
       <span className="bg-[#1A0143] absolute inset-0 bg-opacity-95 -z-20" />
       <p className=" lg:leading-[134%]  sm:leading-[134%] leading-[134%] lg:text-4xl sm:text-3xl text-2xl font-semibold  text-white max-w-[867px] text-center">

@@ -46,14 +46,14 @@ const ServicesInWhyGrafixy = () => {
   ];
   return (
     <div className="2xl:px-[147px] sm:px-[80px] px-8 bg-[#28075A] 2xl:py-32 sm:py-16 py-8 mb-20 max-h-screen">
-      <div className="w-full h-full flex items-start  relative justify-center z-0 rounded-[14px] overflow-hidden max-h-[825px] pl-24 pt-14 flex-col gap-8 max-w-5xl mx-auto my-auto ">
+      <div className="w-full h-full flex items-start  relative justify-center z-0 rounded-[14px] overflow-hidden max-h-[825px] lg:pl-24 pl-14 pt-14 flex-col gap-8 max-w-5xl mx-auto my-auto ">
         <MainImage
           src={texture}
           alt="pattern"
           className="-z-10 object-cover w-full h-full absolute top-0 left-0 min-w-[1380px]"
           loading="lazy"
         />
-        <div className="flex w-full items-center justify-between">
+        <div className="flex w-full items-center justify-between ">
           {/* head part starts */}
           <div className="grid place-items-start gap-2 shrink-0">
             <h2 className="text-3xl font-semibold text-[#210153] leading-[115%]">
