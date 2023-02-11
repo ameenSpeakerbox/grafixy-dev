@@ -12,10 +12,11 @@ const index = () => {
         <HeroSection />
         <WhyGetGrafixy />
         <ServicesInWhyGrafixy />
-        <GetDemo />
+        <div className="flex w-full sm:mt-20">
+          <GetDemo />
+        </div>
       </Layout>
     </main>
-
   );
 };
 

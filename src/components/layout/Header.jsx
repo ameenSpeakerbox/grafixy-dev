@@ -194,8 +194,15 @@ const Header = () => {
               }}
               className="sm:px-[80px] px-8 w-full grid sm:place-content-start "
             >
+
+            <Button
+              className="mt-10 w-full bg-[#6019CE] rounded-full text-sm text-white px-[22px] py-[9px] h-[50px]"
+              name="LOGIN"
+              link='https://speakerbox.chargebeeportal.com/portal/v2/login?forward=portal_main'
+              
+              />
               <Button
-                className="mt-10 w-full bg-white rounded-full text-sm text-[#6E3CBC] px-[22px] py-[9px] h-[50px]"
+                className="mt-5 w-full bg-white rounded-full text-sm text-[#6E3CBC] px-[22px] py-[9px] h-[50px]"
                 name="SCHEDULE A DEMO"
                 link="https://calendly.com/grafixy-demo/grafixy-demo-session"
                 target="_blank"

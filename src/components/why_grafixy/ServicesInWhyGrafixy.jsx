@@ -45,27 +45,33 @@ const ServicesInWhyGrafixy = () => {
     },
   ];
   return (
-    <div className="2xl:px-[147px] sm:px-[80px] px-8 bg-[#28075A] 2xl:py-32 sm:py-16 py-8 mb-20 max-h-screen">
-      <div className="w-full h-full flex items-start  relative justify-center z-0 rounded-[14px] overflow-hidden max-h-[825px] lg:pl-24 pl-14 pt-14 flex-col gap-8 max-w-5xl mx-auto my-auto ">
+    <div className="2xl:px-[147px] sm:px-[80px] sm:bg-[#28075A] 2xl:py-32 sm:py-16 sm:hight700:max-h-screen h-full relative">
+     <MainImage
+          src={texture}
+          alt="pattern"
+          className="-z-10 object-cover w-full h-full absolute top-40 left-0 sm:hidden block"
+          loading="lazy"
+        />
+      <div className="w-full h-full flex items-start  relative justify-center z-0 sm:rounded-[14px] rounded-[60px] overflow-hidden sm:max-h-[825px] lg:pl-24 sm:pl-14 pt-14 flex-col gap-8 max-w-5xl mx-auto sm:my-auto sm:pb-16 pb-14">
         <MainImage
           src={texture}
           alt="pattern"
           className="-z-10 object-cover w-full h-full absolute top-0 left-0 min-w-[1380px]"
           loading="lazy"
         />
-        <div className="flex w-full items-center justify-between ">
+        <div className="flex w-full items-center sm:justify-between justify-center">
           {/* head part starts */}
-          <div className="grid place-items-start gap-2 shrink-0">
-            <h2 className="text-3xl font-semibold text-[#210153] leading-[115%]">
+          <div className="grid sm:place-items-start gap-2 shrink-0 ">
+            <h2 className="text-3xl font-semibold text-[#210153] leading-[115%] sm:text-left text-center">
               150+ Design <br /> Services <br />1 Subscription
             </h2>
             <Button
               name="See complete list"
               link="scope_of_service"
-              className="bg-[#19013F] px-[14px] py-2 rounded-full text-white h-[36px] text-xs leading-[95%] shadow-xl"
+              className="bg-[#19013F] px-[14px] py-3 rounded-full text-white  text-xs leading-[95%] shadow-xl"
             />
           </div>
-          <div className="grid bg-[#F3ECFF] py-4 px-10 rounded-l-[15px] overflow-hidden w-max pr-36 gap-4">
+          <div className="sm:grid hidden bg-[#F3ECFF] py-4 px-10 rounded-l-[15px] overflow-hidden w-max lg:pr-36 pr-20 gap-4">
             <h3 className="text-2xl font-medium text-[#210153]">
               Softwares we use
             </h3>
@@ -87,8 +93,8 @@ const ServicesInWhyGrafixy = () => {
         {/* head part ends  */}
 
         {/* bottom part start */}
-        <div className="grid rounded-t-[15px] bg-[#F3ECFF] overflow-hidden w-max px-10 pt-5 pb-[76px] shrink-0 gap-4 ">
-          <h1 className=" text-2xl text-[#210153] leading-[95%] font-medium">
+        <div className="grid sm:rounded-t-[15px] bg-[#F3ECFF] overflow-hidden sm:w-max w-full px-10 pt-5 sm:pb-[76px] pb-5 shrink-0 sm:gap-4 gap-7 ">
+          <h1 className=" text-2xl text-[#210153] leading-[95%] font-medium sm:text-left text-center">
             We Design
           </h1>
 
@@ -122,7 +128,28 @@ const ServicesInWhyGrafixy = () => {
               </p>
             </span>
           </div>
+
         </div>
+          {/* software we use for mobile */}
+
+          <div className="grid sm:hidden px-10 rounded-l-[15px] h-full w-full py-10 gap-4 place-content-center">
+            <h3 className="text-2xl font-medium text-[#210153]">
+              Softwares we use
+            </h3>
+            <div className="grid grid-cols-3 gap-4 w-full">
+              {software.map((item) => (
+                <span key={item.id}>
+                  <MainImage
+                    src={item.icon}
+                    alt={item.name}
+                    title={item.name}
+                    loading="lazy"
+                    className="h-11 w-auto object-contain "
+                  />
+                </span>
+              ))}
+            </div>
+          </div>
         {/* bottom parts ends */}
       </div>
 

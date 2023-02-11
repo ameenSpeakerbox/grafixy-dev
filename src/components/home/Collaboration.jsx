@@ -15,7 +15,7 @@ const Collaboration = () => {
           oration <br />
           <span className="text-[#D4BFF4]">with your team.</span>{" "}
         </h2>
-        <p className="2xl:text-2xl lg:text-xl sm:text-lg 2xl:leading-[35px] leading-6 text-white tracking-[1px] mt-[15px] ">
+        <p className="2xl:text-2xl lg:text-xl sm:text-lg 2xl:leading-[35px] leading-6 text-white tracking-[1px] mt-[15px] font-nunito">
           For Individuals, Small Businesses & Freelancers For Individuals, Small
           Businesses & Freelancers
         </p>
