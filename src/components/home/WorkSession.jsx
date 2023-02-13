@@ -98,9 +98,8 @@ const WorkSession = () => {
             with your team.
           </h2>
           <p className="font-nunito 2xl:text-2xl lg:text-xl text-base text-[#1E014C] leading-[120%] mt-2 w-[70%]">
-            Grafixy makes it incredibly easy to set up or scale your design
-            team. Stress-free outsourcing. Create unlimited projects for just a
-            flat monthly rate.
+            Invite team members and clients to help you make and manage designs
+            at no extra cost. Easy integration into slack and microsoft teams.
           </p>
           <div className="gap-3 flex items-center mt-7  ">
             <Button
