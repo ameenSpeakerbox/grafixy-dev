@@ -9,7 +9,7 @@ const FreeTrail = () => {
       <div className="bg-white pl-[100px] sm:flex hidden flex-col items-end  justify-end w-[35%] relative shrink-0">
         <img
           src={manThinking}
-          className={`-mr-14 z-30 object-contain min-w-max  h-[110%] absolute right-0 bottom-0 object-bottom`}
+          className={`lg:-mr-14 -mr-4 z-30 object-contain min-w-max  h-[110%] absolute right-0 bottom-0 object-bottom`}
           alt="manThinking"
           loading="lazy"
         />
@@ -23,10 +23,7 @@ const FreeTrail = () => {
           7 Day Free Trial
         </h2>
         <p className="font-nunito 2xl:text-lg lg:text-base sm:text-sm text-base mt-2 text-white max-w-[646px]">
-          If you feel like our services are not the right fit for your business,
-          you can cancel within first 7 days. You get billed only after day 7
-          and you don’t have to sign any contracts to continue with Grafixy. Our
-          service is delivered month-to-month for a flat monthly rate.
+        At Grafixy, we understand that finding the right fit for your business is important. That's why we offer a 7-day trial period, during which you can cancel with no obligation. Our services are billed on a month-to-month basis and there are no contracts to sign, ensuring that you can enjoy the flexibility you need for your business.
         </p>
       </div>
       <div

@@ -7,19 +7,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { Autoplay  } from "swiper";
+import { Autoplay } from "swiper";
 
 const Testimonial = () => {
   return (
     <div className="grid sm:grid-cols-2 w-full ">
-      <div className="w-full bg-white 2xl:pl-24 2xl:pr-20 lg:pl-20 lg:py-28 lg:pr-16 sm:pl-12 sm:py-20 sm:pr-5  pl-8 py-8 pr-4">
-        <h1 className="text-[#1D0149] font-medium 2xl:text-5xl lg:text-4xl text-3xl leading-none">
-          Trusted by the worlds <br />
-          <span className="text-[#6019CE]">largest </span>&{" "}
-          <span className="text-[#6019CE]">
-            fastest growing <br />
-          </span>{" "}
-          companies
+      <div className="w-full bg-white 2xl:pl-24  lg:pl-20 lg:py-28 sm:pl-12 sm:py-20   pl-8 py-8 pr-4">
+        <h1 className="text-[#1D0149] font-medium 2xl:text-5xl lg:text-4xl text-3xl leading-none max-w-[420px]">
+          A <span className="text-[#6019CE]">trusted choice</span> for <br /> expanding
+          teams worldwide
         </h1>
         <p className="2xl:text-2xl lg:text-xl text-base font-semibold font-nunito leading-[130%] text-[#1E014C] mt-6 lg:max-w-[469px] hidden sm:block max-w-[340px] ">
           Grafixy makes it incredibly easy Grafixy makes it incredibly easy
@@ -33,8 +29,6 @@ const Testimonial = () => {
           slidesPerView={1}
           autoplay={true}
           className="w-full"
-          
-          
         >
           {testimonial.map((item) => (
             <SwiperSlide virtualIndex={item.id} key={item.id}>

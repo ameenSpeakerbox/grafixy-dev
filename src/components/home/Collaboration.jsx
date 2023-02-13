@@ -9,14 +9,13 @@ const Collaboration = () => {
   return (
     <div className="flex  w-full tab:flex-row flex-col">
       <div className="bg-[#210153] xl:pl-[100px] lg:pl-[70px] md:pl-[50px] sm:pl-14 pl-8 flex flex-col items-start justify-center tab:w-[35%] pr-16 shrink-0 tab:py-0 py-11  pb-0 ">
-        <h2 className="font-medium  leading-[110%] 2xl:text-5xl sm:text-4xl text-3xl text-white ">
-          Easy collab
-          <br className="lg:hidden sm:block hidden" />
-          oration <br />
-          <span className="text-[#D4BFF4]">with your team.</span>{" "}
+        <h2 className="font-medium  leading-[110%] 2xl:text-5xl sm:text-4xl text-3xl text-white shrink-0">
+          Fit for businesses of
+          <br />
+          all sizes
         </h2>
         <p className="2xl:text-2xl lg:text-xl sm:text-lg 2xl:leading-[35px] leading-6 text-white tracking-[1px] mt-[15px] font-nunito">
-          For Individuals, Small Businesses & Freelancers For Individuals, Small
+          For Individuals, Small Businesses & FreelancersFor Individuals, Small
           Businesses & Freelancers
         </p>
       </div>
