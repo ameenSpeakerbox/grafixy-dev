@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Button } from "../../ui/Button";
 import { Link } from "gatsby";
 import { navLink } from "../../lib/dummyData";

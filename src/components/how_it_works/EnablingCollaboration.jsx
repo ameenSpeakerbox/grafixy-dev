@@ -1,7 +1,5 @@
 import { MainImage } from "gatsby-plugin-image";
 import React, { useEffect, useState } from "react";
-import { Autoplay } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
 import trello from "../../images/how_it_works/trello.webp";
 import slack from "../../images/how_it_works/slack.webp";
 
@@ -28,7 +26,7 @@ const EnablingCollaboration = () => {
       setTimeout(() => {
         setAutoChange(0);
       }, 2500);
-  }, [autoChange]);
+  }, [autoChange, picData]);
 
   return (
     <div className="bg-white w-screen 2xl:px-[147px] sm:px-[80px] px-8 2xl:py-20 sm:py-16 py-10">

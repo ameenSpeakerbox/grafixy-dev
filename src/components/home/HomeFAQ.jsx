@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { faq_home } from "../../lib/dummyData";
 import { TickInCircleIcon } from "../../ui/Icon";
 import faqPic from "../../images/home/homeFaq-min.webp";
-import faqMobPic from "../../images/home/homeFaqMob.webp";
 import { MainImage } from "gatsby-plugin-image";
 
 const HomeFAQ = () => {
