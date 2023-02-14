@@ -146,6 +146,7 @@
   -webkit-text-fill-color: transparent;
   transform: rotate(-0.38deg);
   position: relative;
+  
 }
 .gradientBtn__gradientText::after {
   content: "";
@@ -163,7 +164,7 @@
   align-items: center;
   text-align: center;
   color: white;
-  
+
   position: relative;
 }
 .gradientBtn__normalText::after {
@@ -189,22 +190,21 @@
 }
 .gradientBtn__gradientBorder::after {
   content: " ";
-  width: 120%;
-  height: 90%;
+  width: 180%;
+  height: 100%;
+  border-radius: 80px;
   position: absolute;
   background: linear-gradient(
     180deg,
-    #ff2cf7 -9.95%,
-    rgba(251, 4, 123, 0.796875) 12.47%,
-    rgba(255, 126, 188, 0.81) 30.87%,
-    rgba(255, 255, 255, 0) 53.87%,
-    rgba(73, 255, 233, 0.65) 70.34%,
-    #130eff 100.44%
+    rgba(248, 0, 59, 0.3),
+    rgba(0, 56, 255, 0.3)
   );
+
+  
+
   z-index: -1;
-  transform: translateY(-30%);
   filter: blur(30px);
-  opacity: 0.6;
+  opacity: 1;
 }
 @media (max-width: 639px) {
   .heroSection__hight-homePage {
@@ -220,5 +220,4 @@
 }
 .heroSection__textShadow-homePage {
   box-shadow: 0px 0px 8.13122px rgba(0, 0, 0, 0.5);
-  
 }

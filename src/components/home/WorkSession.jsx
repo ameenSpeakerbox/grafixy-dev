@@ -35,10 +35,10 @@ const WorkSession = () => {
             <MainImage
               src={Work_Session_InstagramPost[autoCount]?.post}
               alt={"item.subtitle"}
-              width={512}
-              height={512}
+              width={100}
+              height={100}
               loading="eager"
-              className="object-contain w-full h-full"
+              className="object-contain w-full h-full max-h-[420px]"
             />
             <span className={`flex justify-between w-full mt-5 `}>
               <div className="flex gap-6 items-center justify-center">
@@ -60,7 +60,7 @@ const WorkSession = () => {
             </span>
           </motion.span>
           <h2
-            className={`block font-semibold 2xl:text-5xl
+            className={`block font-semibold 
              lg:text-4xl text-2xl text-center text-white sm:pt-[50px] pt-7 `}
           >
             We Design
@@ -69,7 +69,7 @@ const WorkSession = () => {
             style={{ color: `${Work_Session_InstagramPost[autoCount]?.color}` }}
             className="
               block
-            font-medium 2xl:text-5xl
+            font-medium 
             lg:text-4xl text-2xl  text-center"
           >
             {Work_Session_InstagramPost[autoCount]?.subtitle}
@@ -78,7 +78,7 @@ const WorkSession = () => {
       </div>
       <div className="2xl:px-[82px] lg:px-[60px] md:px-10 sm:px-9 px-8 sm:py-12 py-8 flex flex-col justify-center 2xl:gap-[74px] lg:gap-16 gap-10 sm:pb-[64px] h-full">
         <div>
-          <h2 className="font-medium text-[#1D0149] 2xl:text-5xl lg:text-4xl text-3xl leading-none">
+          <h2 className="font-medium text-[#1D0149]  lg:text-4xl text-3xl leading-none">
             A perfect fit for <br />{" "}
             <span className="text-[#6019CE]">agencies</span> &{" "}
             <span className="text-[#6019CE]">brands</span>
@@ -90,7 +90,7 @@ const WorkSession = () => {
           </p>
         </div>
         <div>
-          <h2 className="font-medium text-[#1D0149] 2xl:text-5xl lg:text-4xl text-3xl leading-none">
+          <h2 className="font-medium text-[#1D0149]  lg:text-4xl text-3xl leading-none">
             {" "}
             <span className="text-[#6019CE]">
               Easy collaboration <br />

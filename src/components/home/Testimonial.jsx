@@ -17,7 +17,7 @@ const Testimonial = () => {
           A <span className="text-[#6019CE]">trusted choice</span> for <br /> expanding
           teams worldwide
         </h1>
-        <p className="2xl:text-2xl lg:text-xl text-base font-semibold font-nunito leading-[130%] text-[#1E014C] mt-6 lg:max-w-[469px] hidden sm:block max-w-[340px] ">
+        <p className=" lg:text-lg text-base font-semibold font-nunito leading-[130%] text-[#1E014C] mt-6 lg:max-w-[469px] hidden sm:block max-w-[340px] ">
           Grafixy makes it incredibly easy Grafixy makes it incredibly easy
           Grafixy makes it incredibly.
         </p>
