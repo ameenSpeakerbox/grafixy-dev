@@ -65,7 +65,7 @@ const HeroSection = () => {
           <div className="grid sm:place-content-center place-content-start">
             <h3 className="lg:text-xl text-lg lg:leading-[110%] leading-[110%] font-bold text-white">
               READY TO GET STARTED? <br />
-              <span className="text-[#FFE600]">TRY 14 DAYS RISK FREE!</span>
+              <span className="text-[#FFE600]">TRY 7 DAYS RISK FREE!</span>
             </h3>
             <div className="flex items-center justify-center gap-5 lg:mt-5 mt-4">
               <GradientBtn text="SEE PRICING" />

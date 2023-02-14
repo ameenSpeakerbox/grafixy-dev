@@ -205,7 +205,7 @@ export const trialPlan = [
   {
     id: 1,
     title: "Rise",
-    price: 209,
+    price: 299,
     subtitle: "For Individuals, Small Businesses & Freelancers",
     buttonName: "Start your free trial!",
     picture: toy_car,
@@ -231,7 +231,7 @@ export const trialPlan = [
   {
     id: 2,
     title: "Grow",
-    price: 279,
+    price: 399,
     subtitle: "For businesses and agencies",
     buttonName: "Start your free trial!",
     picture: toy_bus,

@@ -8,7 +8,7 @@ const category = [
   { id: 1, title: "Featured" },
   { id: 2, title: "Brochures" },
   { id: 3, title: "Branding" },
-  { id: 4, title: "Logos" },
+  { id: 4, title: "Signages" },
   { id: 5, title: "Websites" },
   { id: 6, title: "Prints" },
 ];

@@ -96,7 +96,7 @@ const ServicesInWhyGrafixy = () => {
             We Design
           </h1>
 
-          <div className="grid grid-cols-2 gap-y-1 gap-x-[50px]">
+          <div className="grid grid-cols-2 hight1100:gap-y-5 gap-y-1 gap-x-[50px]">
             {WeDesign__whyGrafixy.map((item) => (
               <span key={item.id} className="flex items-center gap-3">
                 <MainImage
