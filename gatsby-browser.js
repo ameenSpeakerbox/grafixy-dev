@@ -1,4 +1,6 @@
 import './src/style/global.css'
+import "swiper/css";
+import "swiper/css/navigation";
 
 export const onServiceWorkerUpdateReady = () => {
   const answer = window.confirm(

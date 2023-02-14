@@ -24,24 +24,24 @@ const HeroSection = () => {
           loading="lazy"
           className=" object-contain 2xl:max-h-[165px] max-h-28 w-auto h-full  "
         />
-        <h2 className="2xl:-mt-6 -mt-3 2xl:text-lg text-sm font-nunito leading-[120%] font-semibold text-white ">
+        <h2 className="2xl:-mt-6 -mt-3 2xl:text-lg sm:text-sm text-base font-nunito leading-[120%] font-semibold sm:text-white text-[#E0CCFF] ">
           {bottomText}
         </h2>
       </div>
     </div>
   );
   return (
-    <div className="heroSection__hight-homePage sm:hight1100:h-[850px]  sm:hight600:h-screen h-full  heroSection__hight-homePage grid place-content-end place-items-center 2xl:pb-16 pb-10 sm:hight600:pt-10 pt-40 mx-auto 2xl:px-[147px] sm:px-[80px] px-8">
-      <h1 className="2xl:text-4xl text-3xl font-semibold leading-[134%] tracking-[-1%] text-white text-center">
+    <div className="heroSection__hight-homePage sm:hight1100:h-[1000px]  sm:hight600:h-screen h-full  heroSection__hight-homePage grid place-content-end place-items-center 2xl:pb-16 pb-10 sm:hight600:pt-10 sm:pt-40 pt-7 mx-auto 2xl:px-[147px] sm:px-[80px] px-8">
+      <h1 className="2xl:text-4xl sm:text-3xl text-[28px] font-semibold leading-[134%] tracking-[-1%] text-white text-center">
         Spend less time on your designers and <br /> scale your business faster.
       </h1>
-      <div className="grid grid-cols-2 gap-10 w-full place-content-center 2xl:mt-16 mt-10">
+      <div className="grid sm:grid-cols-2 sm:gap-10 gap-8 w-full sm:place-content-center 2xl:mt-16 mt-10">
         <HeadTask
           number={one}
           heading="Submit a Design Request"
           mainImg={mouseClick}
           bottomText={
-            <p>
+            <p className="font-nunito">
               Tell us what and how you <br /> need it designed.
             </p>
           }
@@ -51,19 +51,19 @@ const HeroSection = () => {
           heading="Give Feedback, Get Revisions"
           mainImg={mouseClick}
           bottomText={
-            <p>
+            <p  className="font-nunito">
               Give feedback and suggest <br /> changes to design.
             </p>
           }
         />
       </div>
-      <div className="2xl:mt-10 mt-6">
+      <div className="2xl:mt-10 sm:mt-6 mt-8 grid w-full ">
         <HeadTask
           number={third}
           heading="Approve and Download"
           mainImg={download}
           bottomText={
-            <p>
+            <p  className="font-nunito">
               Approve design and <br /> download source files.
             </p>
           }
