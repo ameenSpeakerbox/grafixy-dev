@@ -7,7 +7,7 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
     description: `Example project for the Gatsby Head API`,
     twitterUsername: `@gatsbyjs`,
-    image: `src/images/favicon.png`,
+    image: `/src/images/favicon.svg`,
   },
   plugins: [
     `gatsby-plugin-postcss`,

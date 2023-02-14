@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <>
-      <nav className="relative sm:h-[.1px] h-[110px] flex items-center  w-full bg-[#1E014B]">
+      <nav className="relative sm:h-[.1px] h-[110px] flex items-center  w-full bg-[#1E014B] z-[10001]">
         <div className="2xl:px-[147px] sm:px-[80px] px-8  flex sm:absolute z-50 h-[67px] items-center justify-between w-full left-0 top-0 2xl:mt-[50px] sm:mt-6 overflow-hidden">
           <Link to="/">
             <img

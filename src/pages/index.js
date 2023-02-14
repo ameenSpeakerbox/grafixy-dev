@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Collaboration,FreeTrail,HeroSection, HomeFAQ, Testimonial, WhyGrafixy, WorkSession
+import {FitForBusinesses, FreeTrail,HeroSection, HomeFAQ, Testimonial, WhyGrafixy, WorkSession
 } from "../components/home";
 import Layout from "../components/layout/layout";
 import { SEO } from "../components/seo";
@@ -13,7 +13,7 @@ const IndexPage = () => {
         <HeroSection />
         <WorkSession />
         <WhyGrafixy />
-        <Collaboration />
+        <FitForBusinesses />
         <FreeTrail />
         <HomeFAQ />
         <Testimonial />

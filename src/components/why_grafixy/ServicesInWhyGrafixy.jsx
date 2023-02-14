@@ -45,14 +45,12 @@ const ServicesInWhyGrafixy = () => {
     },
   ];
   return (
-    <div className="2xl:px-[147px] sm:px-[80px] sm:bg-[#28075A] 2xl:py-32 sm:py-16 sm:hight700:max-h-screen h-full relative">
-     <MainImage
-          src={texture}
-          alt="pattern"
-          className="-z-10 object-cover w-full h-full absolute top-40 left-0 sm:hidden block"
+    <div className="2xl:px-[147px] sm:px-[80px] sm:bg-[#28075A]  2xl:py-32 sm:py-16 sm:hight700:max-h-screen h-full relative ">
+     <span
+          className="-z-[1] object-cover w-full h-full absolute top-40 left-0 sm:hidden block bg-gradient-to-l from-[#6019CE] to-[#41118C]"
           loading="lazy"
         />
-      <div className="w-full h-full flex items-start  relative justify-center z-0 sm:rounded-[14px] rounded-[60px] overflow-hidden sm:max-h-[825px] lg:pl-24 sm:pl-14 pt-14 flex-col gap-8 max-w-5xl mx-auto sm:my-auto sm:pb-16 pb-14">
+      <div className="w-full h-full flex items-start  relative  justify-center z-0 sm:rounded-[14px] rounded-[60px] overflow-hidden sm:max-h-[825px] lg:pl-24 sm:pl-14 pt-14 flex-col gap-8 max-w-5xl mx-auto sm:my-auto sm:pb-0 pb-14">
         <MainImage
           src={texture}
           alt="pattern"
@@ -93,7 +91,7 @@ const ServicesInWhyGrafixy = () => {
         {/* head part ends  */}
 
         {/* bottom part start */}
-        <div className="grid sm:rounded-t-[15px] bg-[#F3ECFF] overflow-hidden sm:w-max w-full px-10 pt-5 sm:pb-[76px] pb-5 shrink-0 sm:gap-4 gap-7 ">
+        <div className="grid sm:rounded-t-[15px] bg-[#F3ECFF] overflow-hidden sm:w-max w-full px-10 pt-5 sm:pb-[76px] pb-5 shrink-0 sm:gap-4 gap-7">
           <h1 className=" text-2xl text-[#210153] leading-[95%] font-medium sm:text-left text-center">
             We Design
           </h1>

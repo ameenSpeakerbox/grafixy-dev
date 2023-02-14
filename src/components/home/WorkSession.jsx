@@ -104,11 +104,11 @@ const WorkSession = () => {
           <div className="gap-3 flex items-center mt-7  ">
             <Button
               name="SEE OUR WORK"
-              className="bg-[#6019CE] rounded-full text-white lg:h-16 h-12 inline-flex items-center justify-center shrink-0 lg:text-lg text-sm sm:w-auto sm:px-8 px-5"
+              className="bg-[#6019CE] rounded-full text-white lg:h-16 h-12 inline-flex items-center justify-center shrink-0 lg:text-lg text-sm sm:w-auto sm:px-8 px-5 relative after:absolute after:w-full after:h-full after:bg-[#19013F] after:-left-[100%] after:top-0 after:-z-10 z-10 overflow-hidden hover:after:left-0 after:duration-300 after:ease-in"
             />
             <Button
               name="SEE PRICING"
-              className="bg-[#19013F] rounded-full sm:px-8 px-5 text-white lg:h-16 h-12  shrink-0 lg:text-lg text-sm flex items-center justify-center sm:w-auto "
+              className="bg-[#19013F] rounded-full sm:px-8 px-5 text-white lg:h-16 h-12  shrink-0 lg:text-lg text-sm flex items-center justify-center sm:w-auto relative after:absolute after:w-full after:h-full after:bg-[#6019CE] after:-left-[100%] after:top-0 after:-z-10 z-10 overflow-hidden hover:after:left-0 after:duration-300 after:ease-in"
             />
           </div>
         </div>

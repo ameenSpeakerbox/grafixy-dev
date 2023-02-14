@@ -5,7 +5,7 @@ import { trialPlan } from "../../lib/dummyData";
 import { Button } from "../../ui/Button";
 import { TickIcon } from "../../ui/Icon";
 
-const Collaboration = () => {
+const FitForBusinesses = () => {
   return (
     <div className="flex  w-full tab:flex-row flex-col">
       <div className="bg-[#210153] xl:pl-[100px] lg:pl-[70px] md:pl-[50px] sm:pl-14 pl-8 flex flex-col items-start justify-center tab:w-[35%] pr-16 shrink-0 tab:py-0 py-11  pb-0 ">
@@ -99,4 +99,4 @@ const Collaboration = () => {
   );
 };
 
-export default Collaboration;
+export default FitForBusinesses;
