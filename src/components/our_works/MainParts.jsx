@@ -35,7 +35,7 @@ const MainParts = () => {
       />
       <PhotoGrid
         setIsGalleryOpen={setIsGalleryOpen}
-        data={galleryFiltered()}
+        data={galleryFiltered().sort((a, b) => b.id < a.id ? -1 : 1) }
         setSwiperPosition={setSwiperPosition}
       />
       <PictureChanger

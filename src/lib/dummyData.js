@@ -19,7 +19,7 @@ import {
   gallery6,
   gallery7,
   gallery8,
-  gallery9,
+  gallery9,gallery10
 } from "../images/our_works/gallery";
 
 import dedicated from "../images/why_grafixy/dedicated support team.svg";
@@ -450,7 +450,7 @@ export const gallery = [
   {
     id: 7,
     title: "",
-    category: "Logos",
+    category: "Signages",
     picture: gallery7,
   },
   {
@@ -464,6 +464,12 @@ export const gallery = [
     title: "",
     category: "Prints",
     picture: gallery9,
+  },
+  {
+    id: 10,
+    title: "",
+    category: "Branding",
+    picture: gallery10,
   },
 ];
 
