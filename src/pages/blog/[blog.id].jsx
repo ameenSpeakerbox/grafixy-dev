@@ -11,23 +11,25 @@ const index = () => {
   return (
     <Layout>
       <div className="w-full flex items-center justify-center  2xl:px-[147px] sm:px-[80px] px-8 pt-40 flex-col bg-[#1A0143] pb-16">
+        <div className="max-w-[1440px] mx-auto">
+
         <div className="grid lg:grid-cols-2 w-full items-center justify-center lg:gap-20 gap-10 ">
           <div>
-            <h1 className="font-medium text-4xl leading-[110%] text-[#E0CCFF]">
+            <h1 className="font-medium text-4xl leading-[110%] text-[#E0CCFF] max-w-[400px]">
               At the heart of branding lies a journey of self-discovery.
             </h1>
             <div className="flex items-center justify-center gap-3 w-max mt-4 mb-4">
-              <span className="bg-[#9C66F0] text-black text-xs px-2 py-1 rounded-md">
+              <span className="bg-[#9C66F0] text-black text-xs px-2 py-1 rounded-md font-nunito">
                 #branding
               </span>
-              <span className="bg-[#9C66F0] text-black text-xs px-2 py-1 rounded-md">
+              <span className="bg-[#9C66F0] text-black text-xs px-2 py-1 rounded-md font-nunito">
                 #design
               </span>
-              <span className="bg-[#9C66F0] text-black text-xs px-2 py-1 rounded-md">
+              <span className="bg-[#9C66F0] text-black text-xs px-2 py-1 rounded-md font-nunito">
                 #agency
               </span>
             </div>
-            <p className="text-lg font-nunito leading-[120%] tracking-[-1%] text-[#EADDFF]  lg:block hidden">
+            <p className="text-lg font-nunito leading-[140%] tracking-[-1%] text-[#EADDFF]  lg:block hidden max-w-[1140px]">
               A brand’s identity is the visual expression of a brand that is
               communicated to the outside world, and includes its name, logo,
               communications, and visual appearance. A brand identity creates an
@@ -35,7 +37,7 @@ const index = () => {
               desired image.
             </p>
           </div>
-          <div className="grid place-content-center max-w-[753px] rounded-[27px] overflow-hidden">
+          <div className="grid place-content-center max-w-[753px] max-h-[400px] rounded-[27px] overflow-hidden">
             <MainImage
               src={headerImg}
               alt="img"
@@ -47,22 +49,22 @@ const index = () => {
           </div>
         </div>
         <div className="">
-          <p className="text-lg font-nunito leading-[120%] tracking-[-1%] text-[#EADDFF] block lg:hidden mt-11">
+          <p className="text-lg font-nunito leading-[140%] tracking-[-1%] text-[#EADDFF] block lg:hidden mt-11 max-w-[1140px]">
             A brand’s identity is the visual expression of a brand that is
             communicated to the outside world, and includes its name, logo,
             communications, and visual appearance. A brand identity creates an
             emotional connection and reflects the brand positioning and desired
             image.
           </p> <br />
-          <p className="text-lg font-nunito leading-[120%] tracking-[-1%] text-[#EADDFF] lg:mt-11 ">
+          <p className="text-lg font-nunito leading-[140%] tracking-[-1%] text-[#EADDFF] lg:mt-11 max-w-[1140px]">
             Our branding services are tried and tested, yet flexible enough to
             accommodate your unique and optimum needs. By adopting a strong
             brand strategy and digital marketing plan, we facilitate a strong
             connect between your consumers and your brand, ultimately leading to
             a better brand experience and improved brand recall.
           </p>
-          <h2 className="text-4xl font-bold leading-[100%] tracking-[-1%] text-[#9C66F0] mt-11">What you can expect from the team?</h2>
-          <p className="text-lg font-nunito leading-[120%] tracking-[-1%] text-[#EADDFF] mt-4">
+          <h2 className="font-medium text-3xl leading-[110%] text-[#E0CCFF] mt-11">What you can expect from the team?</h2>
+          <p className="text-lg font-nunito leading-[140%] tracking-[-1%] text-[#EADDFF] mt-4 max-w-[1140px]">
             Our research team will study your brand, rediscover its core tenets,
             and reintegrate its identity. We will then repackage and reposition
             your brand in a manner that complements your company’s futuristic
@@ -87,6 +89,7 @@ const index = () => {
           </div>
         </div>
       </div>
+        </div>
     </Layout>
   );
 };
