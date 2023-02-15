@@ -27,7 +27,7 @@ const index = () => {
                 #agency
               </span>
             </div>
-            <p className="text-2xl font-nunito leading-[120%] tracking-[-1%] text-[#EADDFF]  lg:block hidden">
+            <p className="text-lg font-nunito leading-[120%] tracking-[-1%] text-[#EADDFF]  lg:block hidden">
               A brand’s identity is the visual expression of a brand that is
               communicated to the outside world, and includes its name, logo,
               communications, and visual appearance. A brand identity creates an
@@ -46,15 +46,15 @@ const index = () => {
             />
           </div>
         </div>
-        <div className="blog--single__bottom">
-          <p className="text-2xl font-nunito leading-[120%] tracking-[-1%] text-[#EADDFF] block lg:hidden mt-11">
+        <div className="">
+          <p className="text-lg font-nunito leading-[120%] tracking-[-1%] text-[#EADDFF] block lg:hidden mt-11">
             A brand’s identity is the visual expression of a brand that is
             communicated to the outside world, and includes its name, logo,
             communications, and visual appearance. A brand identity creates an
             emotional connection and reflects the brand positioning and desired
             image.
           </p> <br />
-          <p className="text-2xl font-nunito leading-[120%] tracking-[-1%] text-[#EADDFF] lg:mt-11 ">
+          <p className="text-lg font-nunito leading-[120%] tracking-[-1%] text-[#EADDFF] lg:mt-11 ">
             Our branding services are tried and tested, yet flexible enough to
             accommodate your unique and optimum needs. By adopting a strong
             brand strategy and digital marketing plan, we facilitate a strong
@@ -62,7 +62,7 @@ const index = () => {
             a better brand experience and improved brand recall.
           </p>
           <h2 className="text-4xl font-bold leading-[100%] tracking-[-1%] text-[#9C66F0] mt-11">What you can expect from the team?</h2>
-          <p className="text-2xl font-nunito leading-[120%] tracking-[-1%] text-[#EADDFF] mt-4">
+          <p className="text-lg font-nunito leading-[120%] tracking-[-1%] text-[#EADDFF] mt-4">
             Our research team will study your brand, rediscover its core tenets,
             and reintegrate its identity. We will then repackage and reposition
             your brand in a manner that complements your company’s futuristic

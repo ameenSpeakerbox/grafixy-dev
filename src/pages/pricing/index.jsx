@@ -5,19 +5,17 @@ import { pricingData } from "../../lib/dummyData";
 import { MainImage } from "gatsby-plugin-image";
 import { TickIcon } from "../../ui/Icon";
 import { Button } from "../../ui/Button";
-import { Link } from "gatsby";
-
 import toy_train from "../../images/home/toy train.webp";
 
 const index = () => {
   return (
     <div className="bg-[#18003F]">
     <Layout>
-      <div className="bg-[#18003F] w-full 2xl:px-[147px] sm:px-[80px] px-8 pt-40 flex flex-col items-center justify-center">
+      <div className="bg-[#18003F] w-full 2xl:px-[147px] sm:px-[80px] px-8 lg:pt-40 sm:pt-36 pt-10  flex flex-col items-center justify-center">
         <h1 className="text-[#E0CCFF] sm:text-4xl text-3xl font-bold tracking-[-2%] text-center">
           Simple Pricing, No Hidden Costs
         </h1>
-        <p className="font-nunito text-[#E0CCFF] sm:text-2xl text-base sm:mt-4 mt-2">
+        <p className="font-nunito text-white sm:text-2xl text-base sm:mt-4 mt-2">
           Always know what you’ll pay.
         </p>
 
