@@ -1,7 +1,7 @@
 import { MainImage } from "gatsby-plugin-image";
 import React from "react";
+import GetDemo from "../../components/GetDemo";
 import Layout from "../../components/layout/layout";
-import GetDemo from "../../components/our_works/GetDemo";
 import MainParts from "../../components/our_works/MainParts";
 import headerImg from "../../images/our_works/ourWorks_heder.png";
 

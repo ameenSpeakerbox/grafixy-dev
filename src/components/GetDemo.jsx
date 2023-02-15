@@ -1,6 +1,6 @@
 import { MainImage } from "gatsby-plugin-image";
 import React from "react";
-import { Button } from "../../ui/Button";
+import { Button } from "../ui/Button";
 import image_of_demo from "../../images/our_works/getADemo.png";
 
 
