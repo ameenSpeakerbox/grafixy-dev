@@ -8,6 +8,7 @@ import { Button } from "../../ui/Button";
 import toy_train from "../../images/home/toy train.webp";
 
 const index = () => {
+
   return (
     <div className="bg-[#18003F]">
     <Layout>

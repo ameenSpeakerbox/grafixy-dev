@@ -71,11 +71,13 @@ const FitForBusinesses = () => {
               </ul>
               <div className="flex items-center justify-center flex-col">
                 <Button
-                  name="Start your free trial!"
+                  name="Start your free trial"
                   className="bg-[#210153] rounded-full 2xl:h-16 h-12 text-white font-bold 2xl:text-lg lg:text-sm sm:text-[10px] text-sm lg:mt-8 mt-7 drop-shadow-2xl shrink-0 flex items-center justify-center lg:px-[30px] px-5 leading-3 group-hover:lg:bg-[#E0CCFF] group-hover:lg:text-[#210153] duration-300 ease-linear"
                 />
                 <Link
-                  to=""
+                  type="button"
+                  onClick={() => window !== undefined && window.scrollTo(0, 0)}
+                  to="pricing"
                   className="mt-[10px] font-nunito font-bold text-sm text-[#210153] group-hover:lg:text-white duration-300 ease-linear"
                 >
                   More details
@@ -90,6 +92,8 @@ const FitForBusinesses = () => {
           <span className="tab:text-[#210153]  text-white">a custom plan?</span>{" "}
           <br />
           <Button
+            link="https://calendly.com/grafixy-demo/grafixy-demo-session"
+            target="_blank"
             className="text-white font-medium mt-[10px] leading-10 tab:bg-[#210153] bg-[#6019CE] rounded-full py-1 px-6 relative after:absolute after:w-full after:h-full after:bg-[#6E3CBC] after:-left-[100%] after:top-0 after:-z-10 z-10 overflow-hidden hover:after:left-0 after:duration-300 after:ease-in shadow-xl h-12 grid place-content-center text-sm"
             name="TALK TO SALES"
           />

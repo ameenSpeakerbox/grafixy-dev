@@ -35,20 +35,18 @@ const Header = () => {
               ))}
             </div>
             <div className="gap-4 flex items-center justify-center">
-
-            <Button
-              className="2xl:h-[67px] xl:h-[50px] h-[40px] bg-[#6019CE] mr-[10px] drop-shadow-lg text-white 2xl:px-[31px] 2xl:py-[10px] px-5 py-3 rounded-full shrink-0 2xl:text-lg xl:text-base text-[10px] grid place-content-center w-max relative after:absolute after:w-full after:h-full after:bg-white after:-left-[100%] after:top-0 after:-z-10 z-10 overflow-hidden hover:after:left-0 after:duration-300 after:ease-in shadow-xl hover:text-[#6019CE]"
-              name="LOGIN"
-              link='https://speakerbox.chargebeeportal.com/portal/v2/login?forward=portal_main'
-              
+              <Button
+                className="2xl:h-[67px] xl:h-[50px] h-[40px] bg-[#6019CE] mr-[10px] drop-shadow-lg text-white 2xl:px-[31px] 2xl:py-[10px] px-5 py-3 rounded-full shrink-0 2xl:text-lg xl:text-base text-[10px] grid place-content-center w-max relative after:absolute after:w-full after:h-full after:bg-white after:-left-[100%] after:top-0 after:-z-10 z-10 overflow-hidden hover:after:left-0 after:duration-300 after:ease-in shadow-xl hover:text-[#6019CE]"
+                name="LOGIN"
+                link="https://speakerbox.chargebeeportal.com/portal/v2/login?forward=portal_main"
               />
-            <Button
-              className="2xl:h-[67px] xl:h-[50px] h-[40px] grid place-content-center  bg-white text-[#19013F] hover:text-white drop-shadow-lg 2xl:px-[31px] 2xl:py-[10px] px-5 py-3 rounded-full shrink-0 2xl:text-lg xl:text-base text-[10px] w-max relative after:absolute after:w-full after:h-full after:bg-[#19013F] after:-left-[100%] after:top-0 after:-z-10 z-10 overflow-hidden hover:after:left-0 after:duration-300 after:ease-in shadow-xl"
-              name="SCHEDULE A DEMO"
-              link="https://calendly.com/grafixy-demo/grafixy-demo-session"
-              target="_blank"
+              <Button
+                className="2xl:h-[67px] xl:h-[50px] h-[40px] grid place-content-center  bg-white text-[#19013F] hover:text-white drop-shadow-lg 2xl:px-[31px] 2xl:py-[10px] px-5 py-3 rounded-full shrink-0 2xl:text-lg xl:text-base text-[10px] w-max relative after:absolute after:w-full after:h-full after:bg-[#19013F] after:-left-[100%] after:top-0 after:-z-10 z-10 overflow-hidden hover:after:left-0 after:duration-300 after:ease-in shadow-xl"
+                name="SCHEDULE A DEMO"
+                link="https://calendly.com/grafixy-demo/grafixy-demo-session"
+                target="_blank"
               />
-              </div>
+            </div>
           </div>
 
           {/* mobile menu */}
@@ -194,12 +192,10 @@ const Header = () => {
               }}
               className="sm:px-[80px] px-8 w-full grid sm:place-content-start "
             >
-
-            <Button
-              className="mt-10 w-full bg-[#6019CE] rounded-full text-sm text-white px-[22px] py-[9px] h-[50px]"
-              name="LOGIN"
-              link='https://speakerbox.chargebeeportal.com/portal/v2/login?forward=portal_main'
-              
+              <Button
+                className="mt-10 w-full bg-[#6019CE] rounded-full text-sm text-white px-[22px] py-[9px] h-[50px]"
+                name="LOGIN"
+                link="https://speakerbox.chargebeeportal.com/portal/v2/login?forward=portal_main"
               />
               <Button
                 className="mt-5 w-full bg-white rounded-full text-sm text-[#6E3CBC] px-[22px] py-[9px] h-[50px]"
@@ -232,25 +228,24 @@ const Header = () => {
               tabIndex={0}
               className="inline-flex sm:hidden items-center justify-center text-lg text-white gap-2 mt-5 "
             >
-              <Link to="/">
-              Back to home
-              </Link>
+              <Link to="/">Back to home</Link>
             </motion.button>
           </div>
 
           <button
-            onClick={() =>{ 
-              setIsMenuClick(false)
-              
+            onClick={() => {
+              setIsMenuClick(false);
             }}
             role="button"
             tabIndex={0}
             className="sm:inline-flex hidden items-center justify-center text-lg text-white gap-2 absolute bottom-12 sm:right-[80px] right-8 "
           >
-            <Link to="/" className="inline-flex items-center justify-center gap-2">
-            
-            <ArrowWithLineIcon />
-            back to home
+            <Link
+              to="/"
+              className="inline-flex items-center justify-center gap-2"
+            >
+              <ArrowWithLineIcon />
+              back to home
             </Link>
           </button>
         </motion.nav>

@@ -86,14 +86,17 @@ export const footerLinks = [
       {
         id: 1,
         title: "About us",
+        slug: "404",
       },
       {
         id: 2,
         title: "Book a call",
+        slug: "404",
       },
       {
         id: 3,
         title: "Brand Assets",
+        slug: "404",
       },
       {
         id: 4,
@@ -109,18 +112,22 @@ export const footerLinks = [
       {
         id: 1,
         title: "Contact us",
+        slug: "404",
       },
       {
         id: 2,
         title: "Affiliates",
+        slug: "404",
       },
       {
         id: 3,
         title: "Testimonials",
+        slug: "404",
       },
       {
         id: 4,
         title: "Careers",
+        slug: "404",
       },
     ],
   },

@@ -68,7 +68,7 @@ const HeroSection = () => {
               <span className="text-[#FFE600]">TRY 7 DAYS RISK FREE!</span>
             </h3>
             <div className="flex items-center justify-center gap-5 lg:mt-5 mt-4">
-              <GradientBtn text="SEE PRICING" />
+              <GradientBtn text="SEE PRICING" link="pricing" />
               <GradientBtn text="GET A DEMO" link='https://calendly.com/grafixy-demo/grafixy-demo-session' target="_blank" />
             </div>
           </div>
