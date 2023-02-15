@@ -232,18 +232,26 @@ const Header = () => {
               tabIndex={0}
               className="inline-flex sm:hidden items-center justify-center text-lg text-white gap-2 mt-5 "
             >
+              <Link to="/">
               Back to home
+              </Link>
             </motion.button>
           </div>
 
           <button
-            onClick={() => setIsMenuClick(false)}
+            onClick={() =>{ 
+              setIsMenuClick(false)
+              
+            }}
             role="button"
             tabIndex={0}
             className="sm:inline-flex hidden items-center justify-center text-lg text-white gap-2 absolute bottom-12 sm:right-[80px] right-8 "
           >
+            <Link to="/" className="inline-flex items-center justify-center gap-2">
+            
             <ArrowWithLineIcon />
             back to home
+            </Link>
           </button>
         </motion.nav>
       </nav>
