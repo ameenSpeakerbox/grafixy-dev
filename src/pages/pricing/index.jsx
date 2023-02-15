@@ -79,6 +79,8 @@ const index = () => {
                 className="object-cover 2xl:w-[195px] lg:w-[150px] sm:w-[110px] w-[136px]"
               />
             </div>
+            <div className="grid">
+
             <h2 className="w-full  flex items-center justify-center 2xl:text-4xl lg:text-3xl sm:text-2xl text-4xl font-bold text-[#210153] lg:flex-nowrap flex-wrap group-hover:lg:text-white">
               Enterprise
             </h2>
@@ -86,6 +88,7 @@ const index = () => {
               Have a specific requirement? Are you a company/agency looking to
               outsource your design team as per your custom requirements?
             </h5>
+            </div>
             <div className="flex items-center justify-center flex-col">
               <Button
                 name="Talk to sales"
