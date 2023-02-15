@@ -221,3 +221,7 @@
 .heroSection__textShadow-homePage {
   box-shadow: 0px 0px 8.13122px rgba(0, 0, 0, 0.5);
 }
+
+.notFoundPageBgGradient {
+  background: linear-gradient(294.61deg, #45108A 2.27%, #3D065F 29.57%, #10054D 101.35%);
+}
