@@ -60,7 +60,7 @@ export const footerLinks = [
       {
         id: 1,
         title: "Pricing",
-        slug: "",
+        slug: "pricing",
       },
       {
         id: 2,
@@ -75,7 +75,7 @@ export const footerLinks = [
       {
         id: 4,
         title: "Blog",
-        slug: "",
+        slug: "blog",
       },
     ],
   },
@@ -207,7 +207,7 @@ export const trialPlan = [
     title: "Rise",
     price: 299,
     subtitle: "For Individuals, Small Businesses & Freelancers",
-    buttonName: "Start your free trial!",
+    buttonName: "Start your free trial",
     picture: toy_car,
     point: [
       {
@@ -233,7 +233,7 @@ export const trialPlan = [
     title: "Grow",
     price: 399,
     subtitle: "For businesses and agencies",
-    buttonName: "Start your free trial!",
+    buttonName: "Start your free trial",
     picture: toy_bus,
     point: [
       {
@@ -251,6 +251,92 @@ export const trialPlan = [
       {
         id: 4,
         title: "Unlimited Brands",
+      },
+    ],
+  },
+];
+export const pricingData = [
+  {
+    id: 1,
+    title: "Rise",
+    price: 299,
+    subtitle: "For Individuals, Small Businesses & Freelancers",
+    buttonName: "Start your free trial",
+    picture: toy_car,
+    point: [
+      {
+        id: 1,
+        title: "1 Active Requests",
+      },
+      {
+        id: 2,
+        title: "Unlimited Requests",
+      },
+      {
+        id: 3,
+        title: "Turnaround within 4-12 Hour ",
+      },
+      {
+        id: 4,
+        title: "Dedicated Project Manager",
+      },
+      {
+        id: 5,
+        title: "Unlimited Revisions",
+      },
+      {
+        id: 6,
+        title: "Trello Project Management",
+      },
+      {
+        id: 7,
+        title: "Source files",
+      },
+      {
+        id: 8,
+        title: "Whatsapp Support",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Grow",
+    price: 399,
+    subtitle: "For businesses and agencies",
+    buttonName: "Start your free trial",
+    picture: toy_bus,
+    point: [
+      {
+        id: 1,
+        title: "2 Active Requests",
+      },
+      {
+        id: 2,
+        title: "Unlimited Requests",
+      },
+      {
+        id: 3,
+        title: "Turnaround within 4-12 Hour ",
+      },
+      {
+        id: 4,
+        title: "Dedicated Project Manager",
+      },
+      {
+        id: 5,
+        title: "Unlimited Revisions",
+      },
+      {
+        id: 6,
+        title: "Trello Project Management",
+      },
+      {
+        id: 7,
+        title: "Source files",
+      },
+      {
+        id: 8,
+        title: "Whatsapp Support",
       },
     ],
   },
@@ -386,7 +472,7 @@ export const getGrafixy = [
     id: 2,
     title: "Fast Turnarounds",
     subtitle:
-      "Get unlimited requests and unlimited revisions. We work through them, in the order you need them!",
+      "We offer faster turnaround with designs delivered in 12 hours, compared to other design services' 24-48 hours.",
     icon: turnarounds,
   },
   {
