@@ -11,12 +11,13 @@ import toy_train from "../../images/home/toy train.webp";
 
 const index = () => {
   return (
+    <div className="bg-[#18003F]">
     <Layout>
       <div className="bg-[#18003F] w-full 2xl:px-[147px] sm:px-[80px] px-8 pt-40 flex flex-col items-center justify-center">
-        <h1 className="text-white sm:text-4xl text-3xl font-bold tracking-[-2%] text-center">
+        <h1 className="text-[#E0CCFF] sm:text-4xl text-3xl font-bold tracking-[-2%] text-center">
           Simple Pricing, No Hidden Costs
         </h1>
-        <p className="font-nunito text-white sm:text-2xl text-base sm:mt-4 mt-2">
+        <p className="font-nunito text-[#E0CCFF] sm:text-2xl text-base sm:mt-4 mt-2">
           Always know what you’ll pay.
         </p>
 
@@ -98,12 +99,13 @@ const index = () => {
           </div>
         </div>
       </div>
-        <div className="sm:pt-28 pt-20 bg-[#18003F]">
+        <div className="sm:pt-32 pt-20 z-50 flex relative">
 
 
         <GetDemo />
         </div>
     </Layout>
+    </div>
   );
 };
 
