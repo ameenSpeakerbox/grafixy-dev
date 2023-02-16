@@ -6,7 +6,7 @@ import blog3 from "../../images/blog/Blog Image-2.webp";
 import blog4 from "../../images/blog/Blog Image-3.webp";
 import blog5 from "../../images/blog/Blog Image-4.webp";
 import { MainImage } from "gatsby-plugin-image";
-import { Link } from "gatsby";
+import { graphql, Link, useStaticQuery } from "gatsby";
 
 const dummyBlog = [
   {
@@ -51,7 +51,31 @@ const dummyBlog = [
   },
 ];
 
-const index = () => {
+const Index = () => {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        allContentfulBlog {
+          nodes {
+            id
+            createdAt(formatString: "MMMM Do, yyyy")
+            subtitle {
+              subtitle
+            }
+            heading {
+              heading
+            }
+            onePicture {
+              file {
+                url
+              }
+            }
+          }
+        }
+      }
+    `
+  );
+
   return (
     <Layout>
       <div className="bg-[#18003F] w-full 2xl:px-[147px] sm:px-[80px] px-8 lg:pt-40 sm:pt-36 pt-10  flex flex-col items-center justify-center pb-20">
@@ -65,6 +89,31 @@ const index = () => {
         </p>
 
         <div className="mt-10 grid lg:grid-cols-3 sm:grid-cols-2 gap-7 gap-y-[60px] place-content-center place-items-center">
+          {data.allContentfulBlog.nodes.map((item) => (
+            <div key={item.id} className="grid w-full max-w-[370px] h-full">
+              <div className="w-full max-h-[220px] h-full flex items-center justify-center overflow-hidden rounded-[5px]">
+                <MainImage
+                  src={item.onePicture.file.url}
+                  alt="pic"
+                  width={100}
+                  height={100}
+                  className="object-cover w-full  h-full ove"
+                />
+              </div>
+              <span className=" py-1 px-3 flex items-center justify-center bg-[#6019CE] rounded-[5px] font-nunito font-semibold text-xs w-max text-white mt-7 h-min">
+                {item.createdAt}
+              </span>
+              <Link
+                to={item.heading.heading}
+                className="font-bold text-2xl text-[#9C66F0] mt-5 hover:text-[#E0CCFF]"
+              >
+                {item.heading.heading}
+              </Link>
+              <p className="text-[#8B59DA] text-lg font-nunito mt-2">
+                {item.subtitle.subtitle}
+              </p>
+            </div>
+          ))}
           {dummyBlog.map((item) => (
             <div key={item.id} className="grid w-full max-w-[370px]">
               <div className="w-full max-h-[220px] h-full flex items-center justify-center overflow-hidden rounded-[5px]">
@@ -73,12 +122,21 @@ const index = () => {
                   alt="pic"
                   width={100}
                   height={100}
-                  className="object-cover w-full  h-full"
+                  className="object-cover w-full  h-full ove"
                 />
               </div>
-              <span className=" py-1 px-3 flex items-center justify-center bg-[#6019CE] rounded-[5px] font-nunito font-semibold text-xs w-max text-white mt-7">{item.createdAt}</span>
-              <Link to={item.title} className="font-bold text-2xl text-[#9C66F0] mt-5 hover:text-[#E0CCFF]">{item.title}</Link>
-              <p className="text-[#8B59DA] text-lg font-nunito mt-2">{item.discretion}</p>
+              <span className=" py-1 px-3 flex items-center justify-center bg-[#6019CE] rounded-[5px] font-nunito font-semibold text-xs w-max text-white mt-7">
+                {item.createdAt}
+              </span>
+              <Link
+                to={item.title}
+                className="font-bold text-2xl text-[#9C66F0] mt-5 hover:text-[#E0CCFF]"
+              >
+                {item.title}
+              </Link>
+              <p className="text-[#8B59DA] text-lg font-nunito mt-2">
+                {item.discretion}
+              </p>
             </div>
           ))}
         </div>
@@ -87,4 +145,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
