@@ -40,7 +40,13 @@ const Index = ({ location }) => {
     (item) => item.id === slug && item
   )[0];
 
-  console.log(blog);
+  const shareToWhatsapp = (
+    <>
+      {location.href} <br />*{blog.heading.heading}* <br />
+      <br />
+      {blog.subtitle.subtitle}
+    </>
+  );
 
   return (
     <Layout>
@@ -104,30 +110,37 @@ const Index = ({ location }) => {
               Share it on:&nbsp;&nbsp;
               <a
                 type="button"
-                href={`whatsapp://send?text=${__dirname}.blog.${slug}`}
+                href={`whatsapp://send?text=${location.href}`}
                 data-action="share/whatsapp/share"
                 target="_blank"
                 className="border-none w-[35px] h-[35px] grid place-content-center bg-[#9C66F0] rounded-md"
               >
                 <MainImage src={whatsappIcon} alt="whats app" loading="lazy" />
               </a>
-              <button
-                name="button"
+              <a
                 type="button"
+                href={`https://linkedin.com/shareArticle?${location.href}`}
+                data-action="share/whatsapp/share"
+                target="_blank"
                 className="border-none w-[35px] h-[35px] grid place-content-center bg-[#9C66F0] rounded-md"
               >
                 <MainImage src={linkedinIcon} alt="whats app" loading="lazy" />
-              </button>
-              <button
-                name="button"
+              </a>
+              <a
                 type="button"
+                href={`https://www.facebook.com/sharer.php?u=${location.href}?imageurl=${blog.onePicture.file.url}`}
+                data-action="share/whatsapp/share"
+                target="_blank"
                 className="border-none w-[35px] h-[35px] grid place-content-center bg-[#9C66F0] rounded-md"
               >
                 <MainImage src={facebookIcon} alt="whats app" loading="lazy" />
-              </button>
+              </a>
               <button
-                name="button"
                 type="button"
+                onClick={() => {
+                  window.confirm(`Copied the link: ${location.href}`) &&
+                    navigator.clipboard.writeText(location.href);
+                }}
                 className="border-none w-[35px] h-[35px] grid place-content-center bg-[#9C66F0] rounded-md"
               >
                 <MainImage src={instagramIcon} alt="whats app" loading="lazy" />
