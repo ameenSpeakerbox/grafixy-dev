@@ -9,9 +9,7 @@ import headerImg from "../../images/single blog header image.webp";
 import { graphql, useStaticQuery } from "gatsby";
 
 const Index = ({ location }) => {
-  const slug = location.pathname.split("/").slice(2).toString();
-
-  console.log(slug);
+  const slug = location.pathname.split("/")[2];
 
   const data = useStaticQuery(
     graphql`
@@ -19,6 +17,7 @@ const Index = ({ location }) => {
         allContentfulBlog {
           nodes {
             id
+            tags
             createdAt(formatString: "MMMM do yyyy")
             subtitle {
               subtitle
@@ -37,7 +36,12 @@ const Index = ({ location }) => {
     `
   );
 
-  // console.log(data)
+  const blog = data.allContentfulBlog.nodes.filter(
+    (item) => item.id === slug && item
+  )[0];
+
+  console.log(blog);
+
   return (
     <Layout>
       <div className="w-full flex items-center justify-center  2xl:px-[147px] sm:px-[80px] px-8 pt-40 flex-col bg-[#1A0143] pb-16">
@@ -45,30 +49,25 @@ const Index = ({ location }) => {
           <div className="grid lg:grid-cols-2 w-full items-center justify-center lg:gap-20 gap-10 ">
             <div>
               <h1 className="font-medium text-4xl leading-[110%] text-[#E0CCFF] max-w-[400px]">
-                At the heart of branding lies a journey of self-discovery.
+                {blog.heading.heading}
               </h1>
               <div className="flex items-center justify-center gap-3 w-max mt-4 mb-4">
-                <span className="bg-[#9C66F0] text-black text-xs px-2 py-1 rounded-md font-nunito">
-                  #branding
-                </span>
-                <span className="bg-[#9C66F0] text-black text-xs px-2 py-1 rounded-md font-nunito">
-                  #design
-                </span>
-                <span className="bg-[#9C66F0] text-black text-xs px-2 py-1 rounded-md font-nunito">
-                  #agency
-                </span>
+                {blog.tags?.map((tag, idx) => (
+                  <span
+                    key={idx}
+                    className="bg-[#9C66F0] text-black text-xs px-2 py-1 rounded-md font-nunito"
+                  >
+                    #{tag}
+                  </span>
+                ))}
               </div>
               <p className="text-lg font-nunito leading-[140%] tracking-[-1%] text-[#EADDFF]  lg:block hidden max-w-[1140px]">
-                A brand’s identity is the visual expression of a brand that is
-                communicated to the outside world, and includes its name, logo,
-                communications, and visual appearance. A brand identity creates
-                an emotional connection and reflects the brand positioning and
-                desired image.
+                {blog.subtitle.subtitle}
               </p>
             </div>
             <div className="grid place-content-center max-w-[753px] max-h-[400px] rounded-[27px] overflow-hidden">
               <MainImage
-                src={headerImg}
+                src={blog.onePicture.file.url}
                 alt="img"
                 width={100}
                 height={100}
@@ -79,12 +78,8 @@ const Index = ({ location }) => {
           </div>
           <div className="">
             <p className="text-lg font-nunito leading-[140%] tracking-[-1%] text-[#EADDFF] block lg:hidden mt-11 max-w-[1140px]">
-              A brand’s identity is the visual expression of a brand that is
-              communicated to the outside world, and includes its name, logo,
-              communications, and visual appearance. A brand identity creates an
-              emotional connection and reflects the brand positioning and
-              desired image.
-            </p>{" "}
+              {blog.subtitle.subtitle}
+            </p>
             <br />
             <p className="text-lg font-nunito leading-[140%] tracking-[-1%] text-[#EADDFF] lg:mt-11 max-w-[1140px]">
               Our branding services are tried and tested, yet flexible enough to

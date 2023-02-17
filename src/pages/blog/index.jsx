@@ -104,7 +104,7 @@ const Index = () => {
                 {item.createdAt}
               </span>
               <Link
-                to={item.heading.heading}
+                to={item.id}
                 className="font-bold text-2xl text-[#9C66F0] mt-5 hover:text-[#E0CCFF]"
               >
                 {item.heading.heading}
