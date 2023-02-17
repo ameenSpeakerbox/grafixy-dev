@@ -102,13 +102,15 @@ const Index = ({ location }) => {
             </p>
             <div className="inline-flex items-center justify-center text-[22px] leading-[122%] tracking-[-1%] text-white mt-12 gap-4">
               Share it on:&nbsp;&nbsp;
-              <button
-                name="button"
+              <a
                 type="button"
+                href={`whatsapp://send?text=${__dirname}.blog.${slug}`}
+                data-action="share/whatsapp/share"
+                target="_blank"
                 className="border-none w-[35px] h-[35px] grid place-content-center bg-[#9C66F0] rounded-md"
               >
                 <MainImage src={whatsappIcon} alt="whats app" loading="lazy" />
-              </button>
+              </a>
               <button
                 name="button"
                 type="button"
