@@ -84,6 +84,7 @@ const Index = ({ location }) => {
           </div>
           <div className="">
             <p className="text-lg font-nunito leading-[140%] tracking-[-1%] text-[#EADDFF] block lg:hidden mt-11 max-w-[1140px]">
+            
               {blog.subtitle.subtitle}
             </p>
             <br />

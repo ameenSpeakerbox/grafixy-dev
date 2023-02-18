@@ -31,7 +31,7 @@ const HeroSection = () => {
     </div>
   );
   return (
-    <div className="heroSection__hight-homePage sm:hight1100:h-[1000px]  sm:hight600:h-screen h-full  heroSection__hight-homePage grid place-content-end place-items-center 2xl:pb-16 pb-10 sm:hight600:pt-10 sm:pt-40 pt-7 mx-auto 2xl:px-[147px] sm:px-[80px] px-8">
+    <div className="heroSection__hight-homePage  sm:hight600:h-full h-full  heroSection__hight-homePage grid place-content-end place-items-center 2xl:pb-16 pb-10 sm:hight600:pt-40 sm:pt-80 pt-7 mx-auto 2xl:px-[147px] sm:px-[80px] px-8">
       <h1 className="2xl:text-4xl sm:text-3xl text-[28px] font-semibold leading-[134%] tracking-[-1%] text-white text-center">
         Spend less time on your designers and <br /> scale your business faster.
       </h1>

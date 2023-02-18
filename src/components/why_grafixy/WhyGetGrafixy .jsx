@@ -14,7 +14,7 @@ const WhyGetGrafixy = () => {
           expensive. Get your own design team at just a fraction of the cost.
         </p>
       </div>
-      <div className="grid md:grid-cols-2 2xl:mt-20 lg:mt-16 mt-10 2xl:gap-16 lg:gap-14 gap-8 place-items-start md:w-max w-full">
+      <div className="grid lg:grid-cols-2 2xl:mt-20 lg:mt-16 mt-10 2xl:gap-16 lg:gap-14 gap-8 place-items-start lg:w-max w-full">
         {getGrafixy.map((item) => (
           <div key={item.id} className="grid grid-flow-col items-center justify-start 2xl:gap-6 lg:gap-5 gap-2">
             <div className="flex items-center justify-center w-24 h-24">
