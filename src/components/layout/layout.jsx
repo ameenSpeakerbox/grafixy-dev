@@ -4,14 +4,13 @@ import Footer from "./Footer";
 import Header from "./Header";
 
 const Layout = ({ children }) => {
-  
-
   return (
     <React.Fragment>
       <TawkMessengerReact
         propertyId="63bfb5b447425128790d012d"
         widgetId="1gmidriej"
       />
+
       <Header />
       {children}
       <Footer />
@@ -19,4 +18,10 @@ const Layout = ({ children }) => {
   );
 };
 
+export const head = () => (
+  <script
+    src="https://js.chargebee.com/v2/chargebee.js"
+    data-cb-site="speakerbox"
+  />
+);
 export default Layout;

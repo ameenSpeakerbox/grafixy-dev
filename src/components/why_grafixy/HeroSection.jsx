@@ -11,7 +11,6 @@ const HeroSection = () => {
         src={heroPic}
         alt="heroPic"
         loading="lazy"
-        objectFit="cover"
         className="object-cover origin-center h-full absolute -z-10 opacity-[25%] top-0 w-full left-0"
       />
       <span className="bg-[#1A0143] absolute inset-0 bg-opacity-95 -z-20" />

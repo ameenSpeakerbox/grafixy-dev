@@ -311,6 +311,8 @@ export const pricingData = [
     price: 399,
     subtitle: "For businesses and agencies",
     buttonName: "Start your free trial",
+    link: "javascript:void(0)",
+
     picture: toy_bus,
     point: [
       {

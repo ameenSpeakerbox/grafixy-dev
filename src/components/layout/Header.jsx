@@ -144,6 +144,7 @@ const Header = () => {
           <div className=" flex flex-col justify-center items-center">
             {navLink.map((nav, idx) => (
               <motion.p
+                key={nav.id}
                 initial={false}
                 animate={isMenuClick ? "true" : "false"}
                 variants={{
@@ -164,7 +165,6 @@ const Header = () => {
                 className="w-full"
               >
                 <Link
-                  key={nav.id}
                   to={`/${nav.slug}`}
                   className="sm:h-[110px] h-[80px] flex items-center border-b border-[#5A3D85] text-xl font-semibold text-white px-8 sm:px-[80px] w-full"
                 >
