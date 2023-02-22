@@ -62,20 +62,25 @@ const index = () => {
                 </ul>
                 <div className="flex items-center justify-center flex-col">
                   {item.title === "Rise" && (
-                    <Button
-                      name={item.buttonName}
-                      link={item.link}
+                    <a
+                      href="javascript:void(0)"
+                      data-cb-type="checkout"
+                      data-cb-item-0="Grafixy-Rise-USD-Monthly"
+                      data-cb-item-0-quantity="1"
                       className="bg-[#210153] rounded-full 2xl:h-16 h-12 text-white font-bold 2xl:text-lg lg:text-sm sm:text-[10px] text-sm lg:mt-8 mt-7 drop-shadow-2xl shrink-0 flex items-center justify-center lg:px-[30px] px-5 leading-3 group-hover:lg:bg-[#E0CCFF] group-hover:lg:text-[#210153] duration-300 ease-linear"
-                    />
+                    >
+                      {item.buttonName}
+                    </a>
                   )}
                   {item.title === "Grow" && (
                     <a
                       href="javascript:void(0)"
                       data-cb-type="checkout"
                       data-cb-item-0="Grafixy-Grow-USD-Monthly"
+                      data-cb-item-0-quantity="1"
                       className="bg-[#210153] rounded-full 2xl:h-16 h-12 text-white font-bold 2xl:text-lg lg:text-sm sm:text-[10px] text-sm lg:mt-8 mt-7 drop-shadow-2xl shrink-0 flex items-center justify-center lg:px-[30px] px-5 leading-3 group-hover:lg:bg-[#E0CCFF] group-hover:lg:text-[#210153] duration-300 ease-linear"
                     >
-                      Start your free trial
+                      {item.buttonName}
                     </a>
                   )}
                 </div>
