@@ -28,7 +28,7 @@ const Header = () => {
                 <Link
                   key={nav.id}
                   to={`/${nav.slug}`}
-                  className="text-white font-bold 2xl:text-lg xl:text-base text-[10px]"
+                  className="text-white font-bold 2xl:text-lg text-base"
                 >
                   {nav.name}
                 </Link>
@@ -36,12 +36,12 @@ const Header = () => {
             </div>
             <div className="gap-4 flex items-center justify-center">
               <Button
-                className="2xl:h-[67px] xl:h-[50px] h-[40px] bg-[#6019CE] mr-[10px] drop-shadow-lg text-white 2xl:px-[31px] 2xl:py-[10px] px-5 py-3 rounded-full shrink-0 2xl:text-lg xl:text-base text-[10px] grid place-content-center w-max relative after:absolute after:w-full after:h-full after:bg-white after:-left-[100%] after:top-0 after:-z-10 z-10 overflow-hidden hover:after:left-0 after:duration-300 after:ease-in shadow-xl hover:text-[#6019CE]"
+                className="2xl:h-[67px] xl:h-[50px] h-[40px] bg-[#6019CE] mr-[10px] drop-shadow-lg text-white 2xl:px-[31px] 2xl:py-[10px] px-5 py-3 rounded-full shrink-0 2xl:text-lg text-base grid place-content-center w-max relative after:absolute after:w-full after:h-full after:bg-white after:-left-[100%] after:top-0 after:-z-10 z-10 overflow-hidden hover:after:left-0 after:duration-300 after:ease-in shadow-xl hover:text-[#6019CE]"
                 name="LOGIN"
                 link="https://speakerbox.chargebeeportal.com/portal/v2/login?forward=portal_main"
               />
               <Button
-                className="2xl:h-[67px] xl:h-[50px] h-[40px] grid place-content-center  bg-white text-[#19013F] hover:text-white drop-shadow-lg 2xl:px-[31px] 2xl:py-[10px] px-5 py-3 rounded-full shrink-0 2xl:text-lg xl:text-base text-[10px] w-max relative after:absolute after:w-full after:h-full after:bg-[#19013F] after:-left-[100%] after:top-0 after:-z-10 z-10 overflow-hidden hover:after:left-0 after:duration-300 after:ease-in shadow-xl"
+                className="2xl:h-[67px] xl:h-[50px] h-[40px] grid place-content-center  bg-white text-[#19013F] hover:text-white drop-shadow-lg 2xl:px-[31px] 2xl:py-[10px] px-5 py-3 rounded-full shrink-0 2xl:text-lg text-base w-max relative after:absolute after:w-full after:h-full after:bg-[#19013F] after:-left-[100%] after:top-0 after:-z-10 z-10 overflow-hidden hover:after:left-0 after:duration-300 after:ease-in shadow-xl"
                 name="SCHEDULE A DEMO"
                 link="https://calendly.com/grafixy-demo/grafixy-demo-session"
                 target="_blank"
