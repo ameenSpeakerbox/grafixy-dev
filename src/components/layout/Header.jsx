@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "../../ui/Button";
-import { Link } from "gatsby";
+import { Link, Script } from "gatsby";
 import { navLink } from "../../lib/dummyData";
 import logo from "../../images/logo.png";
 import { ArrowWithLineIcon } from "../../ui/Icon";
@@ -11,6 +11,10 @@ const Header = () => {
 
   return (
     <>
+    <Script
+    src="https://js.chargebee.com/v2/chargebee.js"
+    data-cb-site="speakerbox"
+   />
       <nav className="relative sm:h-[.1px] h-[110px] flex items-center  w-full bg-[#1E014B] z-[500]">
         <div className="2xl:px-[147px] sm:px-[80px] px-8  flex sm:absolute z-50 h-[67px] items-center justify-between w-full left-0 top-0 2xl:mt-[50px] sm:mt-6 overflow-hidden">
           <Link to="/">
