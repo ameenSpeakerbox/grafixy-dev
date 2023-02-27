@@ -20,6 +20,9 @@ const Index = ({ location }) => {
             subtitle {
               subtitle
             }
+            description {
+              description
+            }
             heading {
               heading
             }
@@ -28,7 +31,7 @@ const Index = ({ location }) => {
                 url
               }
             }
-            contentRichText {
+            richText {
               raw
             }
           }
@@ -54,26 +57,9 @@ const Index = ({ location }) => {
           </a>
         );
       },
-      [BLOCKS.LIST_ITEM]: (node, children) => {
-        return <li className="list-disc flex ml-3">{children}</li>;
-      },
-      [BLOCKS.HEADING_1]: (node, children) => {
-        return (
-          <h1 className="font-medium text-3xl leading-[110%] text-[#E0CCFF] mt-11">
-            {children}
-          </h1>
-        );
-      },
       [BLOCKS.HEADING_2]: (node, children) => {
         return (
           <h1 className="font-medium text-3xl leading-[110%] text-[#E0CCFF] mt-11">
-            {children}
-          </h1>
-        );
-      },
-      [BLOCKS.HEADING_3]: (node, children) => {
-        return (
-          <h1 className="font-medium text-3xl leading-[110%] text-[#E0CCFF] mt-11 ">
             {children}
           </h1>
         );
@@ -86,6 +72,7 @@ const Index = ({ location }) => {
     },
   };
 
+  console.log(blog.description.description.split("\n\n").slice(1))
   return (
     <Layout>
       <div className="w-full flex items-center justify-center  2xl:px-[147px] sm:px-[80px] px-8 pt-40 flex-col bg-[#1A0143] pb-16">
@@ -106,7 +93,7 @@ const Index = ({ location }) => {
                 ))}
               </div>
               <p className="text-lg font-nunito leading-[140%] tracking-[-1%] text-[#EADDFF]  lg:block hidden max-w-[1140px]">
-                {blog.subtitle.subtitle}
+              {blog.description.description.split("\n\n").slice(1)}
               </p>
             </div>
             <div className="grid place-content-center max-w-[753px] max-h-[400px] rounded-[27px] overflow-hidden">
@@ -122,13 +109,13 @@ const Index = ({ location }) => {
           </div>
           <div className="">
             <p className="text-lg font-nunito leading-[140%] tracking-[-1%] text-[#EADDFF] block lg:hidden mt-11 max-w-[1140px]">
-              {blog.subtitle.subtitle}
+            {blog.description.description.split("\n\n").slice(1)}
             </p>
             <br />
             <p className="text-lg font-nunito leading-[140%] tracking-[-1%] text-[#EADDFF] lg:mt-11 max-w-[1140px]">
-              {blog.subtitle.subtitle}
+            {blog.description.description.split("\n\n").slice(0)}
             </p>
-            {renderRichText(blog.contentRichText, options)}
+            {renderRichText(blog.richText, options)}
             <ShareItOn location={location} blog={blog} />
           </div>
         </div>
