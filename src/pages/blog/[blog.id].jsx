@@ -1,12 +1,9 @@
 import { MainImage } from "gatsby-plugin-image";
 import React from "react";
 import Layout from "../../components/layout/layout";
-import facebookIcon from "../../images/elements/facebook.svg";
-import whatsappIcon from "../../images/elements/whatsapp.svg";
-import instagramIcon from "../../images/elements/instagram.svg";
-import linkedinIcon from "../../images/elements/linkedin.svg";
-import headerImg from "../../images/single blog header image.webp";
+import { renderRichText } from 'gatsby-source-contentful/rich-text'
 import { graphql, useStaticQuery } from "gatsby";
+import { ShareItOn } from "../../ui/share";
 
 const Index = ({ location }) => {
   const slug = location.pathname.split("/")[2];
@@ -14,7 +11,7 @@ const Index = ({ location }) => {
   const data = useStaticQuery(
     graphql`
       query {
-        allContentfulBlog {
+        allContentfulBlog(sort: {updatedAt: DESC}) {
           nodes {
             id
             tags
@@ -40,13 +37,8 @@ const Index = ({ location }) => {
     (item) => item.id === slug && item
   )[0];
 
-  const shareToWhatsapp = (
-    <>
-      {location.href} <br />*{blog.heading.heading}* <br />
-      <br />
-      {blog.subtitle.subtitle}
-    </>
-  );
+
+
 
   return (
     <Layout>
@@ -89,11 +81,7 @@ const Index = ({ location }) => {
             </p>
             <br />
             <p className="text-lg font-nunito leading-[140%] tracking-[-1%] text-[#EADDFF] lg:mt-11 max-w-[1140px]">
-              Our branding services are tried and tested, yet flexible enough to
-              accommodate your unique and optimum needs. By adopting a strong
-              brand strategy and digital marketing plan, we facilitate a strong
-              connect between your consumers and your brand, ultimately leading
-              to a better brand experience and improved brand recall.
+            {blog.subtitle.subtitle}
             </p>
             <h2 className="font-medium text-3xl leading-[110%] text-[#E0CCFF] mt-11">
               What you can expect from the team?
@@ -107,46 +95,7 @@ const Index = ({ location }) => {
               impressive creatives that are bound to captivate and stimulate
               your consumer group.
             </p>
-            <div className="inline-flex items-center justify-center text-[22px] leading-[122%] tracking-[-1%] text-white mt-12 gap-4">
-              Share it on:&nbsp;&nbsp;
-              <a
-                type="button"
-                href={`whatsapp://send?text=${location.href}`}
-                data-action="share/whatsapp/share"
-                target="_blank"
-                className="border-none w-[35px] h-[35px] grid place-content-center bg-[#9C66F0] rounded-md"
-              >
-                <MainImage src={whatsappIcon} alt="whats app" loading="lazy" />
-              </a>
-              <a
-                type="button"
-                href={`https://linkedin.com/shareArticle?${location.href}`}
-                data-action="share/whatsapp/share"
-                target="_blank"
-                className="border-none w-[35px] h-[35px] grid place-content-center bg-[#9C66F0] rounded-md"
-              >
-                <MainImage src={linkedinIcon} alt="whats app" loading="lazy" />
-              </a>
-              <a
-                type="button"
-                href={`https://www.facebook.com/sharer.php?u=${location.href}?imageurl=${blog.onePicture.file.url}`}
-                data-action="share/whatsapp/share"
-                target="_blank"
-                className="border-none w-[35px] h-[35px] grid place-content-center bg-[#9C66F0] rounded-md"
-              >
-                <MainImage src={facebookIcon} alt="whats app" loading="lazy" />
-              </a>
-              <button
-                type="button"
-                onClick={() => {
-                  window.confirm(`Copied the link: ${location.href}`) &&
-                    navigator.clipboard.writeText(location.href);
-                }}
-                className="border-none w-[35px] h-[35px] grid place-content-center bg-[#9C66F0] rounded-md"
-              >
-                <MainImage src={instagramIcon} alt="whats app" loading="lazy" />
-              </button>
-            </div>
+            <ShareItOn location={location} blog={blog}/>
           </div>
         </div>
       </div>
