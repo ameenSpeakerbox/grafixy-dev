@@ -1,7 +1,8 @@
 import { MainImage } from "gatsby-plugin-image";
 import React from "react";
 import Layout from "../../components/layout/layout";
-import { renderRichText } from 'gatsby-source-contentful/rich-text'
+import { renderRichText } from "gatsby-source-contentful/rich-text";
+import { INLINES, BLOCKS, MARKS, PARAGRAPH } from "@contentful/rich-text-types";
 import { graphql, useStaticQuery } from "gatsby";
 import { ShareItOn } from "../../ui/share";
 
@@ -11,7 +12,7 @@ const Index = ({ location }) => {
   const data = useStaticQuery(
     graphql`
       query {
-        allContentfulBlog(sort: {updatedAt: DESC}) {
+        allContentfulBlog(sort: { updatedAt: DESC }) {
           nodes {
             id
             tags
@@ -27,6 +28,9 @@ const Index = ({ location }) => {
                 url
               }
             }
+            contentRichText {
+              raw
+            }
           }
         }
       }
@@ -37,8 +41,50 @@ const Index = ({ location }) => {
     (item) => item.id === slug && item
   )[0];
 
-
-
+  const options = {
+    renderMark: {
+      [MARKS.BOLD]: (text) => <b className="font-bold">{text}</b>,
+    },
+    renderNode: {
+      [INLINES.HYPERLINK]: (node, children) => {
+        const { uri } = node.data;
+        return (
+          <a href={uri} className="underline">
+            {children}
+          </a>
+        );
+      },
+      [BLOCKS.LIST_ITEM]: (node, children) => {
+        return <li className="list-disc flex ml-3">{children}</li>;
+      },
+      [BLOCKS.HEADING_1]: (node, children) => {
+        return (
+          <h1 className="font-medium text-3xl leading-[110%] text-[#E0CCFF] mt-11">
+            {children}
+          </h1>
+        );
+      },
+      [BLOCKS.HEADING_2]: (node, children) => {
+        return (
+          <h1 className="font-medium text-3xl leading-[110%] text-[#E0CCFF] mt-11">
+            {children}
+          </h1>
+        );
+      },
+      [BLOCKS.HEADING_3]: (node, children) => {
+        return (
+          <h1 className="font-medium text-3xl leading-[110%] text-[#E0CCFF] mt-11 ">
+            {children}
+          </h1>
+        );
+      },
+      [BLOCKS.PARAGRAPH]: (node, children) => (
+        <p className="text-lg font-nunito leading-[140%] tracking-[-1%] text-[#EADDFF] mt-4 max-w-[1140px]">
+          {children}
+        </p>
+      ),
+    },
+  };
 
   return (
     <Layout>
@@ -76,26 +122,14 @@ const Index = ({ location }) => {
           </div>
           <div className="">
             <p className="text-lg font-nunito leading-[140%] tracking-[-1%] text-[#EADDFF] block lg:hidden mt-11 max-w-[1140px]">
-            
               {blog.subtitle.subtitle}
             </p>
             <br />
             <p className="text-lg font-nunito leading-[140%] tracking-[-1%] text-[#EADDFF] lg:mt-11 max-w-[1140px]">
-            {blog.subtitle.subtitle}
+              {blog.subtitle.subtitle}
             </p>
-            <h2 className="font-medium text-3xl leading-[110%] text-[#E0CCFF] mt-11">
-              What you can expect from the team?
-            </h2>
-            <p className="text-lg font-nunito leading-[140%] tracking-[-1%] text-[#EADDFF] mt-4 max-w-[1140px]">
-              Our research team will study your brand, rediscover its core
-              tenets, and reintegrate its identity. We will then repackage and
-              reposition your brand in a manner that complements your company’s
-              futuristic vision and strategic goals. Our strategic design and
-              communication team get on the job, and rake up a series of
-              impressive creatives that are bound to captivate and stimulate
-              your consumer group.
-            </p>
-            <ShareItOn location={location} blog={blog}/>
+            {renderRichText(blog.contentRichText, options)}
+            <ShareItOn location={location} blog={blog} />
           </div>
         </div>
       </div>

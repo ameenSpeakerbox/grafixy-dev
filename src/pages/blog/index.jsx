@@ -55,7 +55,7 @@ const Index = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        allContentfulBlog {
+        allContentfulBlog(sort: {updatedAt: DESC}) {
           nodes {
             id
             createdAt(formatString: "MMMM Do, yyyy")
