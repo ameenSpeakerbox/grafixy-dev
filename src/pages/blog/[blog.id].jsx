@@ -72,7 +72,6 @@ const Index = ({ location }) => {
     },
   };
 
-  console.log(blog.description.description.split("\n\n").slice(1))
   return (
     <Layout>
       <div className="w-full flex items-center justify-center  2xl:px-[147px] sm:px-[80px] px-8 pt-40 flex-col bg-[#1A0143] pb-16">
