@@ -79,10 +79,10 @@ const Index = ({ location }) => {
           <div className="grid lg:grid-cols-2 w-full items-center justify-center lg:gap-20 gap-10 ">
             <div>
               <h1 className="font-medium text-4xl leading-[110%] text-[#E0CCFF] max-w-[400px]">
-                {blog.heading.heading}
+                {blog?.heading.heading}
               </h1>
               <div className="flex items-center justify-center gap-3 w-max mt-4 mb-4">
-                {blog.tags?.map((tag, idx) => (
+                {blog?.tags?.map((tag, idx) => (
                   <span
                     key={idx}
                     className="bg-[#9C66F0] text-black text-xs px-2 py-1 rounded-md font-nunito"
@@ -92,12 +92,12 @@ const Index = ({ location }) => {
                 ))}
               </div>
               <p className="text-lg font-nunito leading-[140%] tracking-[-1%] text-[#EADDFF]  lg:block hidden max-w-[1140px]">
-              {blog.description.description.split("\n\n").slice(1)}
+                {blog?.description.description.split("\n\n").slice(1)}
               </p>
             </div>
             <div className="grid place-content-center max-w-[753px] max-h-[400px] rounded-[27px] overflow-hidden">
               <MainImage
-                src={blog.onePicture.file.url}
+                src={blog?.onePicture.file.url}
                 alt="img"
                 width={100}
                 height={100}
@@ -108,13 +108,13 @@ const Index = ({ location }) => {
           </div>
           <div className="">
             <p className="text-lg font-nunito leading-[140%] tracking-[-1%] text-[#EADDFF] block lg:hidden mt-11 max-w-[1140px]">
-            {blog.description.description.split("\n\n").slice(1)}
+              {blog?.description.description.split("\n\n").slice(1)}
             </p>
             <br />
             <p className="text-lg font-nunito leading-[140%] tracking-[-1%] text-[#EADDFF] lg:mt-11 max-w-[1140px]">
-            {blog.description.description.split("\n\n").slice(0)}
+              {blog?.description.description.split("\n\n").slice(0)}
             </p>
-            {renderRichText(blog.richText, options)}
+            {blog?.richText.raw && renderRichText(blog?.richText, options)}
             <ShareItOn location={location} blog={blog} />
           </div>
         </div>

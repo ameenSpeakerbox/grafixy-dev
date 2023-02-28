@@ -29,7 +29,7 @@ export const ShareItOn = ({ location, blog }) => {
       </a>
       <a
         type="button"
-        href={`https://www.facebook.com/sharer.php?u=${location.href}?imageurl=${blog.onePicture.file.url}`}
+        href={`https://www.facebook.com/sharer.php?u=${location.href}?imageurl=${blog?.onePicture.file.url}`}
         data-action="share/whatsapp/share"
         target="_blank"
         className="border-none w-[35px] h-[35px] grid place-content-center bg-[#9C66F0] rounded-md"
