@@ -25,7 +25,7 @@ const HomeFAQ = () => {
               key={item.id}
               onClick={() => handleToggle(item.question)}
               role="button"
-              tabIndex={1}
+              tabIndex={0}
               className="sm:px-10 px-4 2xl:py-6 lg:py-3 py-2 bg-[#1D004E] rounded-[10px] w-full duration-300 ease-in transition-all z-10"
             >
               <span className="inline-flex justify-between items-center w-full cursor-pointer">
