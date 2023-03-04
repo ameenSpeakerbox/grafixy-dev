@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import Header from "../components/layout/Header";
 import bg from "../images/not fond.svg";
 import { MainImage } from "gatsby-plugin-image";

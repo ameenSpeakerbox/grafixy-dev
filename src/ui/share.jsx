@@ -13,6 +13,7 @@ export const ShareItOn = ({ location, blog }) => {
         type="button"
         href={`whatsapp://send?text=${location.href}`}
         data-action="share/whatsapp/share"
+        rel="noreferrer"
         target="_blank"
         className="border-none w-[35px] h-[35px] grid place-content-center bg-[#9C66F0] rounded-md"
       >
@@ -22,6 +23,7 @@ export const ShareItOn = ({ location, blog }) => {
         type="button"
         href={`https://linkedin.com/shareArticle?${location.href}`}
         data-action="share/whatsapp/share"
+        rel="noreferrer"
         target="_blank"
         className="border-none w-[35px] h-[35px] grid place-content-center bg-[#9C66F0] rounded-md"
       >
@@ -31,6 +33,7 @@ export const ShareItOn = ({ location, blog }) => {
         type="button"
         href={`https://www.facebook.com/sharer.php?u=${location.href}?imageurl=${blog?.onePicture.file.url}`}
         data-action="share/whatsapp/share"
+        rel="noreferrer"
         target="_blank"
         className="border-none w-[35px] h-[35px] grid place-content-center bg-[#9C66F0] rounded-md"
       >
