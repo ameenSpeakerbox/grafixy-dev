@@ -11,6 +11,10 @@ import { Script } from 'gatsby';
 const index = () => {
   return (
     <>
+      <Script
+        src="https://js.chargebee.com/v2/chargebee.js"
+        data-cb-site="speakerbox"
+      />
       <div className="bg-[#18003F]">
         <Layout>
           <div className="flex w-full flex-col items-center justify-center bg-[#18003F] px-8 pt-10  sm:px-[80px] sm:pt-36 lg:pt-40 2xl:px-[147px]">
@@ -124,11 +128,6 @@ const index = () => {
           </div>
         </Layout>
       </div>
-
-      <Script
-        src="https://js.chargebee.com/v2/chargebee.js"
-        data-cb-site="speakerbox"
-      />
     </>
   );
 };
