@@ -55,9 +55,9 @@ const Testimonial = () => {
                     />
                   </div>
                   <div className="flex flex-col justify-center gap-1">
-                    <h4 className="sm:text-lg text-base  text-white leading-[100%] font-nunito font-semibold ">
+                    <p className="sm:text-lg text-base  text-white leading-[100%] font-nunito font-semibold ">
                       {item.userName}
-                    </h4>
+                    </p>
                     <p className="sm:text-lg text-base font-light font-nunito text-[#884CE6] sm:leading-[110%] leading-[110%]">
                       {item.position}, {item.company}
                     </p>

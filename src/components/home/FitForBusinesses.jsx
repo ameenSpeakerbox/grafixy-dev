@@ -55,9 +55,9 @@ const FitForBusinesses = () => {
                   {item.price}
                 </span>
               </h2>
-              <h5 className="mt-3 text-[rgba(32,1,83,0.80)] font-semibold 2xl:text-xl lg:text-lg text-base lg:leading-[24px] leading-[140%] group-hover:lg:text-white font-nunito">
+              <p className="mt-3 text-[rgba(32,1,83,0.80)] font-semibold 2xl:text-xl lg:text-lg text-base lg:leading-[24px] leading-[140%] group-hover:lg:text-white font-nunito">
                 {item.subtitle}
-              </h5>
+              </p>
               <ul className="grid gap-1 2xl:mt-5 lg:mt-3 mt-3">
                 {item.point.map((point) => (
                   <li

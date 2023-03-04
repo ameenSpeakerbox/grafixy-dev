@@ -48,9 +48,9 @@ const index = () => {
                       {item.price}
                     </span>
                   </h2>
-                  <h5 className="mt-3 text-[rgba(32,1,83,0.80)] font-semibold 2xl:text-xl lg:text-lg text-base lg:leading-[24px] leading-[140%] group-hover:lg:text-white font-nunito">
+                  <p className="mt-3 text-[rgba(32,1,83,0.80)] font-semibold 2xl:text-xl lg:text-lg text-base lg:leading-[24px] leading-[140%] group-hover:lg:text-white font-nunito">
                     {item.subtitle}
-                  </h5>
+                  </p>
                   <ul className="grid gap-1 2xl:mt-5 lg:mt-3 mt-3">
                     {item.point.map((point) => (
                       <li
@@ -102,11 +102,11 @@ const index = () => {
                   <h2 className="w-full  flex items-center justify-center 2xl:text-4xl lg:text-3xl sm:text-2xl text-4xl font-bold text-[#210153] lg:flex-nowrap flex-wrap group-hover:lg:text-white">
                     Enterprise
                   </h2>
-                  <h5 className="mt-3 text-[rgba(32,1,83,0.80)] font-semibold 2xl:text-xl lg:text-lg text-base lg:leading-[24px] leading-[140%] group-hover:lg:text-white font-nunito text-center">
+                  <p className="mt-3 text-[rgba(32,1,83,0.80)] font-semibold 2xl:text-xl lg:text-lg text-base lg:leading-[24px] leading-[140%] group-hover:lg:text-white font-nunito text-center">
                     Have a specific requirement? Are you a company/agency
                     looking to outsource your design team as per your custom
                     requirements?
-                  </h5>
+                  </p>
                 </div>
                 <div className="flex items-center justify-center flex-col">
                   <Button

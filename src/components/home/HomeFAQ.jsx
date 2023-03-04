@@ -29,9 +29,9 @@ const HomeFAQ = () => {
               className="sm:px-10 px-4 2xl:py-6 lg:py-3 py-2 bg-[#1D004E] rounded-[10px] w-full duration-300 ease-in transition-all z-10"
             >
               <span className="inline-flex justify-between items-center w-full cursor-pointer">
-                <h4 className="font-nunito font-semibold 2xl:text-2xl lg:text-xl text-sm text-[#E0CCFF]">
+                <p className="font-nunito font-semibold 2xl:text-2xl lg:text-xl text-sm text-[#E0CCFF]">
                   {item.question}
-                </h4>
+                </p>
                 <TickInCircleIcon
                   className={`${
                     questionToggle === item.question ? "rotate-180" : "rotate-0"
