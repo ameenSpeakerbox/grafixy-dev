@@ -32,26 +32,33 @@ module.exports = {
         theme_color: `#a2466c`,
         display: `standalone`,
         icon: `src/images/favicon.png`,
+        icon_options: {
+          purpose: `maskable`,
+        },
         icons: [
           {
             src: `/src/images/favicon.png`,
             sizes: `48x48`,
             type: `image/png`,
+            purpose: `maskable`,
           },
           {
             src: `/src/images/favicon.png`,
             sizes: `72x72`,
             type: `image/png`,
+            purpose: `maskable`,
           },
           {
             src: `/src/images/favicon.png`,
             sizes: `192x192`,
             type: `image/png`,
+            purpose: `maskable`,
           },
           {
             src: `/src/images/favicon.png`,
             sizes: `512x512`,
             type: `image/png`,
+            purpose: `maskable`,
           },
         ],
       },
