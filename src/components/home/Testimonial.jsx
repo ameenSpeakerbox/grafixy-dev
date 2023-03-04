@@ -1,28 +1,28 @@
-import { MainImage } from "gatsby-plugin-image";
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { testimonial } from "../../lib/dummyData";
-import apostropheIcon from "../../images/elements/apostrophe Icon.svg";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import { Autoplay } from "swiper";
+import { MainImage } from 'gatsby-plugin-image';
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { testimonial } from '../../lib/dummyData';
+import apostropheIcon from '../../images/elements/apostrophe Icon.svg';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import { Autoplay } from 'swiper';
 
 const Testimonial = () => {
   return (
-    <div className="grid sm:grid-cols-2 w-full ">
-      <div className="w-full bg-white 2xl:pl-24  lg:pl-20 lg:py-28 sm:pl-12 sm:py-20   pl-8 py-8 pr-4">
-        <h1 className="text-[#1D0149] font-medium 2xl:text-5xl lg:text-4xl text-3xl leading-none max-w-[420px]">
-          A <span className="text-[#6019CE]">trusted choice</span> for <br /> expanding
-          teams worldwide
+    <div className="grid w-full sm:grid-cols-2 ">
+      <div className="w-full bg-white py-8  pl-8 pr-4 sm:py-20 sm:pl-12   lg:py-28 lg:pl-20 2xl:pl-24">
+        <h1 className="max-w-[420px] text-3xl font-medium leading-none text-[#1D0149] lg:text-4xl 2xl:text-5xl">
+          A <span className="text-[#6019CE]">trusted choice</span> for <br />{' '}
+          expanding teams worldwide
         </h1>
-        <p className=" lg:text-lg text-base font-semibold font-nunito leading-[130%] text-[#1E014C] mt-6 lg:max-w-[469px] hidden sm:block max-w-[340px] ">
+        <p className=" mt-6 hidden max-w-[340px] font-nunito text-base font-semibold leading-[130%] text-[#1E014C] sm:block lg:max-w-[469px] lg:text-lg ">
           Grafixy makes it incredibly easy Grafixy makes it incredibly easy
           Grafixy makes it incredibly.
         </p>
       </div>
-      <div className="bg-[#1A0143] grid items-center justify-center overflow-hidden">
+      <div className="grid items-center justify-center overflow-hidden bg-[#1A0143]">
         <Swiper
           modules={[Autoplay]}
           spaceBetween={0}
@@ -32,33 +32,33 @@ const Testimonial = () => {
         >
           {testimonial.map((item) => (
             <SwiperSlide virtualIndex={item.id} key={item.id}>
-              <div className="flex flex-col 2xl:py-16 2xl:px-24 lg:px-20 lg:py-14 sm:px-12 px-8 py-10">
+              <div className="flex flex-col px-8 py-10 sm:px-12 lg:px-20 lg:py-14 2xl:py-16 2xl:px-24">
                 <MainImage
                   alt="icon"
                   src={apostropheIcon}
-                  className="object-contain h-12 w-min"
+                  className="h-12 w-min object-contain"
                   loading="lazy"
                   width={100}
                   height={100}
                 />
 
                 {item.text}
-                <span className="flex mt-10 gap-[27px] items-center justify-start">
+                <span className="mt-10 flex items-center justify-start gap-[27px]">
                   <div>
                     <MainImage
                       alt={item.userName}
                       src={item.image}
-                      className="object-contain w-full sm:h-10 h-14"
+                      className="h-14 w-full object-contain sm:h-10"
                       loading="lazy"
                       width={100}
                       height={100}
                     />
                   </div>
                   <div className="flex flex-col justify-center gap-1">
-                    <p className="sm:text-lg text-base  text-white leading-[100%] font-nunito font-semibold ">
+                    <p className="font-nunito text-base  font-semibold leading-[100%] text-white sm:text-lg ">
                       {item.userName}
                     </p>
-                    <p className="sm:text-lg text-base font-light font-nunito text-[#884CE6] sm:leading-[110%] leading-[110%]">
+                    <p className="font-nunito text-base font-light leading-[110%] text-[#884CE6] sm:text-lg sm:leading-[110%]">
                       {item.position}, {item.company}
                     </p>
                   </div>

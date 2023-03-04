@@ -1,21 +1,21 @@
-import React from "react";
-import { servicesData } from "../../../lib/dummyData";
+import React from 'react';
+import { servicesData } from '../../../lib/dummyData';
 
 const Service = () => {
   return (
-    <div className="2xl:px-[147px] sm:px-[80px] px-8 grid lg:grid-cols-3 sm:grid-cols-2  py-16 w-full place-items-center sm:gap-y-10 gap-y-6 gap-x-20 max-w-6xl mx-auto">
+    <div className="mx-auto grid w-full max-w-6xl place-items-center gap-y-6  gap-x-20 px-8 py-16 sm:grid-cols-2 sm:gap-y-10 sm:px-[80px] lg:grid-cols-3 2xl:px-[147px]">
       {servicesData.map((item) => (
         <ul
           key={item.id}
-          className="grid w-full place-content-start place-items-start h-full"
+          className="grid h-full w-full place-content-start place-items-start"
         >
-          <h2 className="text-[28px] tracking-[-2%] text-[#28075A] font-medium">
+          <h2 className="text-[28px] font-medium tracking-[-2%] text-[#28075A]">
             {item.title}
           </h2>
           {item.service.map((text) => (
             <li
               key={text.id}
-              className="font-nunito font-normal text-[#6E3CBC] text-lg"
+              className="font-nunito text-lg font-normal text-[#6E3CBC]"
             >
               {text.item}
             </li>

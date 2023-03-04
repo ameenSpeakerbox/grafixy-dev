@@ -1,5 +1,5 @@
-import React from "react";
-import { TickInCircleIcon } from "./Icon";
+import React from 'react';
+import { TickInCircleIcon } from './Icon';
 
 const QuotationOpener = ({
   questionToggle,
@@ -7,34 +7,34 @@ const QuotationOpener = ({
   question,
   answer,
 }) => {
-
   const handleToggle = () => {
-    if (questionToggle === question) return setQuestionToggle("");
+    if (questionToggle === question) return setQuestionToggle('');
     else return setQuestionToggle(question);
   };
 
   return (
     <div
-      onClick={handleToggle} role="button"
-      tabIndex={0} 
-      className="px-10 py-6 bg-[#1D004E] rounded-[10px] w-full duration-300 ease-in transition-all z-10"
+      onClick={handleToggle}
+      role="button"
+      tabIndex={0}
+      className="z-10 w-full rounded-[10px] bg-[#1D004E] px-10 py-6 transition-all duration-300 ease-in"
     >
-      <span className=" inline-flex justify-between items-center w-full cursor-pointer">
-        <h4 className="font-nunito font-semibold text-2xl text-[#E0CCFF]">
+      <span className=" inline-flex w-full cursor-pointer items-center justify-between">
+        <h4 className="font-nunito text-2xl font-semibold text-[#E0CCFF]">
           {question}
         </h4>
         <TickInCircleIcon
           className={`${
-            questionToggle === question ? "rotate-180" : "rotate-0"
+            questionToggle === question ? 'rotate-180' : 'rotate-0'
           }  duration-300 ease-out `}
         />
       </span>
       <p
         className={`${
           questionToggle === question
-            ? "opacity-100 h-auto "
-            : "-translate-y-9 opacity-0 h-0"
-        } duration-300 transition-all mt-[10px] text-base font-nunito text-white cursor-default -z-10`}
+            ? 'h-auto opacity-100 '
+            : 'h-0 -translate-y-9 opacity-0'
+        } -z-10 mt-[10px] cursor-default font-nunito text-base text-white transition-all duration-300`}
       >
         {answer}
       </p>

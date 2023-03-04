@@ -1,24 +1,26 @@
-import { MainImage } from "gatsby-plugin-image";
-import React from "react";
-import heroPic from "../../images/why_grafixy/why grafixy head.webp";
+import { MainImage } from 'gatsby-plugin-image';
+import React from 'react';
+import heroPic from '../../images/why_grafixy/why grafixy head.webp';
 
 const HeroSection = () => {
   return (
-    <div className=" bg-[#6E3CBC] why_grafixy--heroSection flex-col w-full relative  overflow-hidden justify-end z-0 flex items-center  2xl:px-[147px] 
-    sm:px-[80px] 
-    px-8 sm:py-14 py-6">
+    <div
+      className=" why_grafixy--heroSection relative z-0 flex w-full  flex-col items-center justify-end overflow-hidden bg-[#6E3CBC]  px-8 
+    py-6 
+    sm:px-[80px] sm:py-14 2xl:px-[147px]"
+    >
       <MainImage
         src={heroPic}
         alt="heroPic"
         loading="lazy"
-        className="object-cover origin-center h-full absolute -z-10 opacity-[25%] top-0 w-full left-0"
+        className="absolute top-0 left-0 -z-10 h-full w-full origin-center object-cover opacity-[25%]"
       />
-      <span className="bg-[#1A0143] absolute inset-0 bg-opacity-95 -z-20" />
-      <p className=" lg:leading-[134%]  sm:leading-[134%] leading-[134%] lg:text-4xl sm:text-3xl text-2xl font-semibold  text-white max-w-[867px] text-center">
+      <span className="absolute inset-0 -z-20 bg-[#1A0143] bg-opacity-95" />
+      <p className=" max-w-[867px]  text-center text-2xl font-semibold leading-[134%] text-white sm:text-3xl  sm:leading-[134%] lg:text-4xl lg:leading-[134%]">
         Accelerate your growth with a fully remote team of vetted designers.
         Unlimited design projects. Fast turnaround. All at a fixed monthly rate.
       </p>
-      <div className="flex text-[#FFE600] font-semibold 2xl:text-[28px] sm:text-xl text-lg leading-[134%] sm:gap-[47px] gap-3 sm:mt-16 mt-10 flex-wrap sm:flex-row flex-col items-center justify-center tracking-normal">
+      <div className="mt-10 flex flex-col flex-wrap items-center justify-center gap-3 text-lg font-semibold leading-[134%] tracking-normal text-[#FFE600] sm:mt-16 sm:flex-row sm:gap-[47px] sm:text-xl 2xl:text-[28px]">
         <p>NO HR</p>
         <p>NO HIRING</p>
         <p>NO HOURLY BILLING</p>

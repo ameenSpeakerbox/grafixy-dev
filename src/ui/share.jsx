@@ -1,13 +1,13 @@
-import React from "react";
-import facebookIcon from "../images/elements/facebook.svg";
-import whatsappIcon from "../images/elements/whatsapp.svg";
-import instagramIcon from "../images/elements/instagram.svg";
-import linkedinIcon from "../images/elements/linkedin.svg";
-import { MainImage } from "gatsby-plugin-image";
+import React from 'react';
+import facebookIcon from '../images/elements/facebook.svg';
+import whatsappIcon from '../images/elements/whatsapp.svg';
+import instagramIcon from '../images/elements/instagram.svg';
+import linkedinIcon from '../images/elements/linkedin.svg';
+import { MainImage } from 'gatsby-plugin-image';
 
 export const ShareItOn = ({ location, blog }) => {
   return (
-    <div className="inline-flex items-center justify-center text-[22px] leading-[122%] tracking-[-1%] text-white mt-12 gap-4">
+    <div className="mt-12 inline-flex items-center justify-center gap-4 text-[22px] leading-[122%] tracking-[-1%] text-white">
       Share it on:&nbsp;&nbsp;
       <a
         type="button"
@@ -15,7 +15,7 @@ export const ShareItOn = ({ location, blog }) => {
         data-action="share/whatsapp/share"
         rel="noreferrer"
         target="_blank"
-        className="border-none w-[35px] h-[35px] grid place-content-center bg-[#9C66F0] rounded-md"
+        className="grid h-[35px] w-[35px] place-content-center rounded-md border-none bg-[#9C66F0]"
       >
         <MainImage src={whatsappIcon} alt="whats app" loading="lazy" />
       </a>
@@ -25,7 +25,7 @@ export const ShareItOn = ({ location, blog }) => {
         data-action="share/whatsapp/share"
         rel="noreferrer"
         target="_blank"
-        className="border-none w-[35px] h-[35px] grid place-content-center bg-[#9C66F0] rounded-md"
+        className="grid h-[35px] w-[35px] place-content-center rounded-md border-none bg-[#9C66F0]"
       >
         <MainImage src={linkedinIcon} alt="whats app" loading="lazy" />
       </a>
@@ -35,7 +35,7 @@ export const ShareItOn = ({ location, blog }) => {
         data-action="share/whatsapp/share"
         rel="noreferrer"
         target="_blank"
-        className="border-none w-[35px] h-[35px] grid place-content-center bg-[#9C66F0] rounded-md"
+        className="grid h-[35px] w-[35px] place-content-center rounded-md border-none bg-[#9C66F0]"
       >
         <MainImage src={facebookIcon} alt="whats app" loading="lazy" />
       </a>
@@ -45,7 +45,7 @@ export const ShareItOn = ({ location, blog }) => {
           window.confirm(`Copied the link: ${location.href}`) &&
             navigator.clipboard.writeText(location.href);
         }}
-        className="border-none w-[35px] h-[35px] grid place-content-center bg-[#9C66F0] rounded-md"
+        className="grid h-[35px] w-[35px] place-content-center rounded-md border-none bg-[#9C66F0]"
       >
         <MainImage src={instagramIcon} alt="whats app" loading="lazy" />
       </button>

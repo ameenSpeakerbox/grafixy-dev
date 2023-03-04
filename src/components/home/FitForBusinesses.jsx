@@ -1,84 +1,84 @@
-import { Link } from "gatsby";
-import { MainImage } from "gatsby-plugin-image";
-import React from "react";
-import { trialPlan } from "../../lib/dummyData";
-import { Button } from "../../ui/Button";
-import { TickIcon } from "../../ui/Icon";
+import { Link } from 'gatsby';
+import { MainImage } from 'gatsby-plugin-image';
+import React from 'react';
+import { trialPlan } from '../../lib/dummyData';
+import { Button } from '../../ui/Button';
+import { TickIcon } from '../../ui/Icon';
 
 const FitForBusinesses = () => {
   return (
-    <div className="flex  w-full tab:flex-row flex-col">
-      <div className="bg-[#210153] xl:pl-[100px] lg:pl-[70px] md:pl-[50px] sm:pl-14 pl-8 flex flex-col items-start justify-center tab:w-[35%] pr-16 shrink-0 tab:py-0 py-11  pb-0 ">
-        <h2 className="font-medium  leading-[110%] 2xl:text-5xl sm:text-4xl text-3xl text-white shrink-0">
+    <div className="flex  w-full flex-col tab:flex-row">
+      <div className="flex shrink-0 flex-col items-start justify-center bg-[#210153] py-11 pl-8 pr-16 pb-0 sm:pl-14 md:pl-[50px] lg:pl-[70px] xl:pl-[100px] tab:w-[35%]  tab:py-0 ">
+        <h2 className="shrink-0  text-3xl font-medium leading-[110%] text-white sm:text-4xl 2xl:text-5xl">
           Fit for businesses of
           <br />
           all sizes
         </h2>
-        <p className="2xl:text-2xl lg:text-xl sm:text-lg 2xl:leading-[35px] leading-6 text-white tracking-[1px] mt-[15px] font-nunito">
+        <p className="mt-[15px] font-nunito leading-6 tracking-[1px] text-white sm:text-lg lg:text-xl 2xl:text-2xl 2xl:leading-[35px]">
           For Individuals, Small Businesses & FreelancersFor Individuals, Small
           Businesses & Freelancers
         </p>
       </div>
-      <div className="tab:py-14 tab:pb-11 pb-11 py-5  flex flex-col items-center justify-center flex-1 2xl:px-32 lg:px-20 sm:px-14 px-8 tab:bg-white bg-[#210153]">
-        <div className="flex justify-center w-full tab:mt-0">
-          <h2 className="font-semibold 2xl:text-3xl lg:text-3xl tab:text-2xl text-xl lg:leading-[42px] leading-[100%]  uppercase text-center tab:text-[#9C66F0] text-white">
+      <div className="flex flex-1 flex-col items-center  justify-center bg-[#210153] py-5 px-8 pb-11 sm:px-14 lg:px-20 2xl:px-32 tab:bg-white tab:py-14 tab:pb-11">
+        <div className="flex w-full justify-center tab:mt-0">
+          <h2 className="text-center text-xl font-semibold uppercase leading-[100%] text-white lg:text-3xl  lg:leading-[42px] 2xl:text-3xl tab:text-2xl tab:text-[#9C66F0]">
             Start Your <br />
-            <span className="tab:text-[#210153] text-[#9C66F0]">
+            <span className="text-[#9C66F0] tab:text-[#210153]">
               7 Day Free Trial
             </span>
           </h2>
         </div>
 
         <div
-          className="flex items-center sm:flex-row flex-col justify-center 2xl:gap-11 xl:gap-8 gap-7 h-full w-full lg:mt-8 sm:mt-[40px] mt-[25px] 
+          className="mt-[25px] flex h-full w-full flex-col items-center justify-center gap-7 sm:mt-[40px] sm:flex-row lg:mt-8 xl:gap-8 2xl:gap-11 
         "
         >
           {trialPlan.map((item) => (
             <div
               key={item.id}
-              className="w-full bg-[#E0CCFF] rounded-[15px] 2xl:px-[62px] 2xl:py-8 xl:px-[50px]  xl:py-7 px-[36px] py-[30px] items-center duration-500 justify-center max-w-[458px] h-full  relative overflow-hidden  group z-10 collaboration-hover grid"
+              className="collaboration-hover group relative z-10 grid h-full  w-full max-w-[458px] items-center justify-center overflow-hidden rounded-[15px] bg-[#E0CCFF] px-[36px]  py-[30px] duration-500  xl:px-[50px] xl:py-7 2xl:px-[62px] 2xl:py-8"
             >
               <div className="flex items-center justify-center">
                 <MainImage
                   alt="toy_car"
                   src={item.picture}
                   loading="lazy"
-                  className="object-cover 2xl:w-[195px] lg:w-[150px] sm:w-[110px] w-[136px]"
+                  className="w-[136px] object-cover sm:w-[110px] lg:w-[150px] 2xl:w-[195px]"
                 />
               </div>
-              <h2 className="w-full  flex items-center justify-between 2xl:text-4xl lg:text-3xl sm:text-2xl text-4xl font-bold text-[#210153] lg:flex-nowrap flex-wrap group-hover:lg:text-white">
+              <h2 className="flex  w-full flex-wrap items-center justify-between text-4xl font-bold text-[#210153] sm:text-2xl lg:flex-nowrap lg:text-3xl group-hover:lg:text-white 2xl:text-4xl">
                 <span>{item.title}</span>
                 <span className="flex items-center gap-1 font-semibold">
-                  <small className="sm:text-2xl text-xl font-extrabold">
+                  <small className="text-xl font-extrabold sm:text-2xl">
                     $
                   </small>
                   {item.price}
                 </span>
               </h2>
-              <p className="mt-3 text-[rgba(32,1,83,0.80)] font-semibold 2xl:text-xl lg:text-lg text-base lg:leading-[24px] leading-[140%] group-hover:lg:text-white font-nunito">
+              <p className="mt-3 font-nunito text-base font-semibold leading-[140%] text-[rgba(32,1,83,0.80)] lg:text-lg lg:leading-[24px] group-hover:lg:text-white 2xl:text-xl">
                 {item.subtitle}
               </p>
-              <ul className="grid gap-1 2xl:mt-5 lg:mt-3 mt-3">
+              <ul className="mt-3 grid gap-1 lg:mt-3 2xl:mt-5">
                 {item.point.map((point) => (
                   <li
                     key={point.id}
-                    className="inline-flex items-center gap-[10px] text-[#210153] lg:text-base font-nunito font-medium  text-sm group-hover:lg:text-white duration-300 ease-linear"
+                    className="inline-flex items-center gap-[10px] font-nunito text-sm font-medium text-[#210153]  duration-300 ease-linear lg:text-base group-hover:lg:text-white"
                   >
-                    <TickIcon className="lg:h-[9px] sm:h-[5px] lg:w-[9px] sm:w-[5px] h-[7px] w-[7px] group-hover:lg:fill-white duration-300 ease-linear" />{" "}
+                    <TickIcon className="h-[7px] w-[7px] duration-300 ease-linear sm:h-[5px] sm:w-[5px] lg:h-[9px] lg:w-[9px] group-hover:lg:fill-white" />{' '}
                     {point.title}
                   </li>
                 ))}
               </ul>
-              <div className="flex items-center justify-center flex-col">
+              <div className="flex flex-col items-center justify-center">
                 <Button
                   name="Start your free trial"
-                  className="bg-[#210153] rounded-full 2xl:h-16 h-12 text-white font-bold 2xl:text-lg lg:text-sm sm:text-[10px] text-sm lg:mt-8 mt-7 drop-shadow-2xl shrink-0 flex items-center justify-center lg:px-[30px] px-5 leading-3 group-hover:lg:bg-[#E0CCFF] group-hover:lg:text-[#210153] duration-300 ease-linear"
+                  className="mt-7 flex h-12 shrink-0 items-center justify-center rounded-full bg-[#210153] px-5 text-sm font-bold leading-3 text-white drop-shadow-2xl duration-300 ease-linear sm:text-[10px] lg:mt-8 lg:px-[30px] lg:text-sm group-hover:lg:bg-[#E0CCFF] group-hover:lg:text-[#210153] 2xl:h-16 2xl:text-lg"
                 />
                 <Link
                   type="button"
                   onClick={() => window !== undefined && window.scrollTo(0, 0)}
                   to="pricing"
-                  className="mt-[10px] font-nunito font-bold text-sm text-[#210153] group-hover:lg:text-white duration-300 ease-linear"
+                  className="mt-[10px] font-nunito text-sm font-bold text-[#210153] duration-300 ease-linear group-hover:lg:text-white"
                 >
                   More details
                 </Link>
@@ -86,15 +86,15 @@ const FitForBusinesses = () => {
             </div>
           ))}
         </div>
-        <p className="font-semibold text-[#6E3CBC] sm:text-2xl text-xl leading-7 uppercase block text-center w-full mt-8">
+        <p className="mt-8 block w-full text-center text-xl font-semibold uppercase leading-7 text-[#6E3CBC] sm:text-2xl">
           Do you need
-          <br className="tab:hidden block" />{" "}
-          <span className="tab:text-[#210153]  text-white">a custom plan?</span>{" "}
+          <br className="block tab:hidden" />{' '}
+          <span className="text-white  tab:text-[#210153]">a custom plan?</span>{' '}
           <br />
           <Button
             link="https://calendly.com/grafixy-demo/grafixy-demo-session"
             target="_blank"
-            className="text-white font-medium mt-[10px] leading-10 tab:bg-[#210153] bg-[#6019CE] rounded-full py-1 px-6 relative after:absolute after:w-full after:h-full after:bg-[#6E3CBC] after:-left-[100%] after:top-0 after:-z-10 z-10 overflow-hidden hover:after:left-0 after:duration-300 after:ease-in shadow-xl h-12 grid place-content-center text-sm"
+            className="relative z-10 mt-[10px] grid h-12 place-content-center overflow-hidden rounded-full bg-[#6019CE] py-1 px-6 text-sm font-medium leading-10 text-white shadow-xl after:absolute after:-left-[100%] after:top-0 after:-z-10 after:h-full after:w-full after:bg-[#6E3CBC] after:duration-300 after:ease-in hover:after:left-0 tab:bg-[#210153]"
             name="TALK TO SALES"
           />
         </p>

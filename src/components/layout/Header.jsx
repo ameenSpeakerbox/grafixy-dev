@@ -1,55 +1,55 @@
-import React, { useState } from "react";
-import { Button } from "../../ui/Button";
-import { Link, Script } from "gatsby";
-import { navLink } from "../../lib/dummyData";
-import logo from "../../images/logo.png";
-import { ArrowWithLineIcon } from "../../ui/Icon";
-import { motion } from "framer-motion";
+import React, { useState } from 'react';
+import { Button } from '../../ui/Button';
+import { Link, Script } from 'gatsby';
+import { navLink } from '../../lib/dummyData';
+import logo from '../../images/logo.png';
+import { ArrowWithLineIcon } from '../../ui/Icon';
+import { motion } from 'framer-motion';
 
 const Header = () => {
   const [isMenuClick, setIsMenuClick] = useState(false);
 
   return (
     <>
-    <Script
-    src="https://js.chargebee.com/v2/chargebee.js"
-    data-cb-site="speakerbox"
-   />
-      <nav className="relative sm:h-[.1px] h-[110px] flex items-center  w-full bg-[#1E014B] z-[500]">
-        <div className="2xl:px-[147px] sm:px-[80px] px-8  flex sm:absolute z-50 h-[67px] items-center justify-between w-full left-0 top-0 2xl:mt-[50px] sm:mt-6 overflow-hidden">
+      <Script
+        src="https://js.chargebee.com/v2/chargebee.js"
+        data-cb-site="speakerbox"
+      />
+      <nav className="relative z-[500] flex h-[110px] w-full  items-center bg-[#1E014B] sm:h-[.1px]">
+        <div className="left-0 top-0 z-50  flex h-[67px] w-full items-center justify-between overflow-hidden px-8 sm:absolute sm:mt-6 sm:px-[80px] 2xl:mt-[50px] 2xl:px-[147px]">
           <Link to="/">
             <img
               src={logo}
               alt="logo"
               loading="eager"
               layout="fullWidth"
-              className="sm:h-full h-[35px] object-contain"
+              className="h-[35px] object-contain sm:h-full"
             />
           </Link>
-          <div className="lg:flex hidden items-center justify-center w-full">
-            <div className=" lg:flex hidden items-center 2xl:gap-[50px] justify-end mr-[35px] lg:gap-10 gap-4 w-full">
+          <div className="hidden w-full items-center justify-center lg:flex">
+            <div className=" mr-[35px] hidden w-full items-center justify-end gap-4 lg:flex lg:gap-10 2xl:gap-[50px]">
               {navLink.map((nav) => (
                 <Link
                   key={nav.id}
                   to={`/${nav.slug}`}
-                  className="text-white font-bold 2xl:text-lg text-base"
+                  className="text-base font-bold text-white 2xl:text-lg"
                 >
                   {nav.name}
                 </Link>
               ))}
             </div>
-            <div className="gap-4 flex items-center justify-center">
+            <div className="flex items-center justify-center gap-4">
               <a
                 href="javascript:void(0)"
                 data-cb-type="portal"
-                className="2xl:h-[67px] xl:h-[50px] h-[40px] bg-[#6019CE] mr-[10px] drop-shadow-lg text-white 2xl:px-[31px] 2xl:py-[10px] px-5 py-3 rounded-full shrink-0 2xl:text-lg text-base grid place-content-center w-max relative after:absolute after:w-full after:h-full after:bg-white after:-left-[100%] after:top-0 after:-z-10 z-10 overflow-hidden hover:after:left-0 after:duration-300 after:ease-in shadow-xl hover:text-[#6019CE] font-bold cursor-pointer"
+                className="relative z-10 mr-[10px] grid h-[40px] w-max shrink-0 cursor-pointer place-content-center overflow-hidden rounded-full bg-[#6019CE] px-5 py-3 text-base font-bold text-white shadow-xl drop-shadow-lg after:absolute after:-left-[100%] after:top-0 after:-z-10 after:h-full after:w-full after:bg-white after:duration-300 after:ease-in hover:text-[#6019CE] hover:after:left-0 xl:h-[50px] 2xl:h-[67px] 2xl:px-[31px] 2xl:py-[10px] 2xl:text-lg"
 
                 // link="https://speakerbox.chargebeeportal.com/portal/v2/login?forward=portal_main"
               >
                 LOGIN
               </a>
               <Button
-                className="2xl:h-[67px] xl:h-[50px] h-[40px] grid place-content-center  bg-white text-[#19013F] hover:text-white drop-shadow-lg 2xl:px-[31px] 2xl:py-[10px] px-5 py-3 rounded-full shrink-0 2xl:text-lg text-base w-max relative after:absolute after:w-full after:h-full after:bg-[#19013F] after:-left-[100%] after:top-0 after:-z-10 z-10 overflow-hidden hover:after:left-0 after:duration-300 after:ease-in shadow-xl"
+                className="relative z-10 grid h-[40px] w-max  shrink-0 place-content-center overflow-hidden rounded-full bg-white px-5 py-3 text-base text-[#19013F] shadow-xl drop-shadow-lg after:absolute after:-left-[100%] after:top-0 after:-z-10 after:h-full after:w-full after:bg-[#19013F] after:duration-300 after:ease-in hover:text-white hover:after:left-0 xl:h-[50px] 2xl:h-[67px] 2xl:px-[31px] 2xl:py-[10px] 2xl:text-lg"
                 name="SCHEDULE A DEMO"
                 link="https://calendly.com/grafixy-demo/grafixy-demo-session"
                 target="_blank"
@@ -63,23 +63,23 @@ const Header = () => {
             onClick={() => setIsMenuClick(!isMenuClick)}
             role="button"
             tabIndex={0}
-            className={`w-[40px] h-[40px] border-[3px] border-[#6019CE] rounded-md lg:hidden flex flex-col justify-evenly p-1 cursor-pointer relative overflow-hidden ${
-              isMenuClick && "items-center justify-center p-2"
+            className={`relative flex h-[40px] w-[40px] cursor-pointer flex-col justify-evenly overflow-hidden rounded-md border-[3px] border-[#6019CE] p-1 lg:hidden ${
+              isMenuClick && 'items-center justify-center p-2'
             }`}
           >
             <span
-              className={`h-[0px] border border-white right-1 left-1 bg-white duration-300 absolute transition-all ${
-                isMenuClick ? "rotate-45 " : "rotate-0 top-2"
+              className={`absolute right-1 left-1 h-[0px] border border-white bg-white transition-all duration-300 ${
+                isMenuClick ? 'rotate-45 ' : 'top-2 rotate-0'
               }`}
             />
             <span
-              className={`h-[0px] border border-white duration-300 bg-white ${
-                isMenuClick ? "opacity-0" : "opacity-100"
+              className={`h-[0px] border border-white bg-white duration-300 ${
+                isMenuClick ? 'opacity-0' : 'opacity-100'
               }`}
             />
             <span
-              className={`h-[0px] border border-white  bg-white duration-300 absolute left-1 right-1 ${
-                isMenuClick ? "-rotate-45 " : "rotate-0 bottom-2"
+              className={`absolute left-1 right-1  h-[0px] border border-white bg-white duration-300 ${
+                isMenuClick ? '-rotate-45 ' : 'bottom-2 rotate-0'
               }`}
             />
           </div>
@@ -88,38 +88,38 @@ const Header = () => {
 
         <motion.nav
           initial={false}
-          animate={isMenuClick ? "true" : "false"}
+          animate={isMenuClick ? 'true' : 'false'}
           variants={{
             true: (height = 1000) => ({
               clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
               transition: {
-                type: "spring",
+                type: 'spring',
                 stiffness: 20,
                 restDelta: 2,
               },
-              display: "block",
+              display: 'block',
             }),
             false: {
-              clipPath: "circle(30px at 40px 40px)",
+              clipPath: 'circle(30px at 40px 40px)',
               transition: {
                 delay: 0.5,
-                type: "spring",
+                type: 'spring',
                 stiffness: 400,
                 damping: 40,
               },
-              display: "none",
+              display: 'none',
             },
           }}
-          className={`w-full  h-screen bg-[#1E014B] fixed top-0 z-50`}
+          className={`fixed  top-0 z-50 h-screen w-full bg-[#1E014B]`}
         >
-          <div className="h-[110px] flex items-center  w-full bg-[#1E014B] border-b border-[#5A3D85] sm:px-[80px] px-8 justify-between">
+          <div className="flex h-[110px] w-full  items-center justify-between border-b border-[#5A3D85] bg-[#1E014B] px-8 sm:px-[80px]">
             <Link to="/">
               <img
                 src={logo}
                 alt="logo"
                 loading="eager"
                 layout="fullWidth"
-                className="sm:h-full h-[35px] object-contain"
+                className="h-[35px] object-contain sm:h-full"
               />
             </Link>
 
@@ -128,41 +128,41 @@ const Header = () => {
               role="button"
               name="button"
               tabIndex={0}
-              className={`w-[40px] h-[40px] border-[3px] border-[#6019CE] rounded-md lg:hidden flex flex-col justify-evenly p-1 cursor-pointer relative ${
-                isMenuClick && "items-center justify-center p-2"
+              className={`relative flex h-[40px] w-[40px] cursor-pointer flex-col justify-evenly rounded-md border-[3px] border-[#6019CE] p-1 lg:hidden ${
+                isMenuClick && 'items-center justify-center p-2'
               }`}
             >
               <span
-                className={`h-[0px] border border-white right-1 left-1 bg-white duration-300 absolute ${
-                  isMenuClick ? "rotate-45 " : "rotate-0 top-2"
+                className={`absolute right-1 left-1 h-[0px] border border-white bg-white duration-300 ${
+                  isMenuClick ? 'rotate-45 ' : 'top-2 rotate-0'
                 }`}
               />
               <span
                 className={`h-[0px] border border-white bg-white ${
-                  isMenuClick ? "opacity-0" : "opacity-100"
+                  isMenuClick ? 'opacity-0' : 'opacity-100'
                 }`}
               />
               <span
-                className={`h-[0px] border border-white  bg-white duration-300 absolute left-1 right-1 ${
-                  isMenuClick ? "-rotate-45 " : "rotate-0 bottom-2"
+                className={`absolute left-1 right-1  h-[0px] border border-white bg-white duration-300 ${
+                  isMenuClick ? '-rotate-45 ' : 'bottom-2 rotate-0'
                 }`}
               />
             </button>
           </div>
 
-          <div className=" flex flex-col justify-center items-center">
+          <div className=" flex flex-col items-center justify-center">
             {navLink.map((nav, idx) => (
               <motion.p
                 key={nav.id}
                 initial={false}
-                animate={isMenuClick ? "true" : "false"}
+                animate={isMenuClick ? 'true' : 'false'}
                 variants={{
                   true: {
-                    y: "0%",
+                    y: '0%',
                     opacity: 1,
                   },
                   false: {
-                    y: "50%",
+                    y: '50%',
                     opacity: 0,
                   },
                 }}
@@ -175,7 +175,7 @@ const Header = () => {
               >
                 <Link
                   to={`/${nav.slug}`}
-                  className="sm:h-[110px] h-[80px] flex items-center border-b border-[#5A3D85] text-xl font-semibold text-white px-8 sm:px-[80px] w-full"
+                  className="flex h-[80px] w-full items-center border-b border-[#5A3D85] px-8 text-xl font-semibold text-white sm:h-[110px] sm:px-[80px]"
                 >
                   {nav.name}
                 </Link>
@@ -183,14 +183,14 @@ const Header = () => {
             ))}
             <motion.div
               initial={false}
-              animate={isMenuClick ? "true" : "false"}
+              animate={isMenuClick ? 'true' : 'false'}
               variants={{
                 true: {
-                  y: "0%",
+                  y: '0%',
                   opacity: 1,
                 },
                 false: {
-                  y: "50%",
+                  y: '50%',
                   opacity: 0,
                 },
               }}
@@ -199,15 +199,15 @@ const Header = () => {
                 ease: [0.16, 1, 0.3, 1],
                 delay: 0.9,
               }}
-              className="sm:px-[80px] px-8 w-full grid sm:place-content-start "
+              className="grid w-full px-8 sm:place-content-start sm:px-[80px] "
             >
               <Button
-                className="mt-10 w-full bg-[#6019CE] rounded-full text-sm text-white px-[22px] py-[9px] h-[50px]"
+                className="mt-10 h-[50px] w-full rounded-full bg-[#6019CE] px-[22px] py-[9px] text-sm text-white"
                 name="LOGIN"
                 link="https://speakerbox.chargebeeportal.com/portal/v2/login?forward=portal_main"
               />
               <Button
-                className="mt-5 w-full bg-white rounded-full text-sm text-[#6E3CBC] px-[22px] py-[9px] h-[50px]"
+                className="mt-5 h-[50px] w-full rounded-full bg-white px-[22px] py-[9px] text-sm text-[#6E3CBC]"
                 name="SCHEDULE A DEMO"
                 link="https://calendly.com/grafixy-demo/grafixy-demo-session"
                 target="_blank"
@@ -216,14 +216,14 @@ const Header = () => {
 
             <motion.button
               initial={false}
-              animate={isMenuClick ? "true" : "false"}
+              animate={isMenuClick ? 'true' : 'false'}
               variants={{
                 true: {
-                  y: "0%",
+                  y: '0%',
                   opacity: 1,
                 },
                 false: {
-                  y: "50%",
+                  y: '50%',
                   opacity: 0,
                 },
               }}
@@ -235,7 +235,7 @@ const Header = () => {
               onClick={() => setIsMenuClick(false)}
               role="button"
               tabIndex={0}
-              className="inline-flex sm:hidden items-center justify-center text-lg text-white gap-2 mt-5 "
+              className="mt-5 inline-flex items-center justify-center gap-2 text-lg text-white sm:hidden "
             >
               <Link to="/">Back to home</Link>
             </motion.button>
@@ -247,7 +247,7 @@ const Header = () => {
             }}
             role="button"
             tabIndex={0}
-            className="sm:inline-flex hidden items-center justify-center text-lg text-white gap-2 absolute bottom-12 sm:right-[80px] right-8 "
+            className="absolute bottom-12 right-8 hidden items-center justify-center gap-2 text-lg text-white sm:right-[80px] sm:inline-flex "
           >
             <Link
               to="/"

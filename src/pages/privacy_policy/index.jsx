@@ -1,15 +1,15 @@
-import React from "react";
-import Layout from "../../components/layout/layout";
+import React from 'react';
+import Layout from '../../components/layout/layout';
 
 const Index = () => {
   const styles = {
-    heading: "font-nunito font-bold text-2xl  tracking-[-2%] text-white ",
-    text: "font-nunito text-lg text-[rgba(255,255,255,0.70)] mt-5 max-w-[905px]",
+    heading: 'font-nunito font-bold text-2xl  tracking-[-2%] text-white ',
+    text: 'font-nunito text-lg text-[rgba(255,255,255,0.70)] mt-5 max-w-[905px]',
   };
   return (
     <div className="bg-[#1A0143]">
       <Layout>
-        <main className="lg:mt-80 sm:mt-40 mt-20  2xl:px-[147px] sm:px-[80px] px-8 gap-12 mb-40 grid">
+        <main className="mt-20 mb-40 grid  gap-12 px-8 sm:mt-40 sm:px-[80px] lg:mt-80 2xl:px-[147px]">
           <div>
             <h1 className={styles.heading}>Privacy Policy</h1>
             <p className={styles.text}>
@@ -40,7 +40,7 @@ const Index = () => {
             <p className={styles.text}>
               The personal information that you are asked to provide, and the
               reasons why you are asked to provide it, will be made clear to you
-              at the point we ask you to provide your personal information.{" "}
+              at the point we ask you to provide your personal information.{' '}
               <br /> <br />
               If you contact us directly, we may receive additional information
               about you such as your name, email address, phone number, the
@@ -52,7 +52,7 @@ const Index = () => {
           <div>
             <h1 className={styles.heading}>How we use your information</h1>
             <p className={styles.text}>
-              We use the information we collect in various ways, including to:{" "}
+              We use the information we collect in various ways, including to:{' '}
               <br />
               <br />
               <ul className="list-disc pl-5">
@@ -117,7 +117,7 @@ const Index = () => {
               We would like to make sure you are fully aware of all of your data
               protection rights. Every user is entitled to the following: The
               right to access – You have the right to request copies of your
-              personal data. We may charge you a small fee for this service.{" "}
+              personal data. We may charge you a small fee for this service.{' '}
               <br />
               <br />
               The right to rectification – You have the right to request that we

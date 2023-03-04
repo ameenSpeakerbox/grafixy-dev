@@ -1,30 +1,30 @@
-import React from "react";
-import Layout from "../../components/layout/layout";
-import TypoFAQ from "../../ui/TypoFAQ";
+import React from 'react';
+import Layout from '../../components/layout/layout';
+import TypoFAQ from '../../ui/TypoFAQ';
 
 const index = () => {
   const classes = {
     subHeading:
-      "font-nunito 2xl:text-[30px] lg:text-[28px] sm:text-2xl text-xl font-bold text-white 2xl:leading-10 leading-[24px] 2xl:mb-[10px] lg:mb-[9px] sm:mb-[8px] mb-[7px]",
-    ans: "2xl:text-2xl lg:text-xl sm:text-lg text-base font-semibold font-nunito text-[rgba(255,255,255,0.7)] lg:w-[60%]",
-    listMain: "list-disc ml-8 pl-8",
-    subMain: "grid gap-10",
+      'font-nunito 2xl:text-[30px] lg:text-[28px] sm:text-2xl text-xl font-bold text-white 2xl:leading-10 leading-[24px] 2xl:mb-[10px] lg:mb-[9px] sm:mb-[8px] mb-[7px]',
+    ans: '2xl:text-2xl lg:text-xl sm:text-lg text-base font-semibold font-nunito text-[rgba(255,255,255,0.7)] lg:w-[60%]',
+    listMain: 'list-disc ml-8 pl-8',
+    subMain: 'grid gap-10',
   };
   return (
     <Layout>
-      <div className="w-full lg:pt-[312px] sm:pt-36 pt-11  bg-[#1A0143] flex flex-col 2xl:pl-[147px] lg:py-[140px] sm:px-[80px] px-8   h-full py-[120px]">
-        <h1 className="font-medium 2xl:text-5xl lg:text-4xl sm:text-3xl text-2xl leading-none text-[#D5BAFF]">
+      <div className="flex h-full w-full flex-col  bg-[#1A0143] px-8 py-[120px] pt-11 sm:px-[80px] sm:pt-36 lg:py-[140px]   lg:pt-[312px] 2xl:pl-[147px]">
+        <h1 className="text-2xl font-medium leading-none text-[#D5BAFF] sm:text-3xl lg:text-4xl 2xl:text-5xl">
           A perfect fit for <br />
-          <span className="text-white">agencies</span> &{" "}
+          <span className="text-white">agencies</span> &{' '}
           <span className="text-white">brands</span>
         </h1>
-        <p className="font-semibold sm:text-2xl text-lg text-white font-nunito lg:w-[45%] mt-5 mb-16">
+        <p className="mt-5 mb-16 font-nunito text-lg font-semibold text-white sm:text-2xl lg:w-[45%]">
           Invite team members and clients to help you make and manage designs at
           no extra cost. Easy integration into slack and microsoft teams.
         </p>
-        <div className="grid w-full 2xl:gap-24 lg:gap-20 sm:gap-16 gap-14">
+        <div className="grid w-full gap-14 sm:gap-16 lg:gap-20 2xl:gap-24">
           <div className="grid gap-5">
-            <h1 className="font-bold 2xl:text-3xl lg:text-2xl sm:text-xl text-2xl leading-none text-white 2xl:mb-[30px] lg:mb-7 sm:mb-6 mb-5 uppercase ">
+            <h1 className="mb-5 text-2xl font-bold uppercase leading-none text-white sm:mb-6 sm:text-xl lg:mb-7 lg:text-2xl 2xl:mb-[30px] 2xl:text-3xl ">
               GRAFIXY FAQ’S
             </h1>
             <div className={classes.subMain}>
@@ -77,7 +77,7 @@ const index = () => {
                     Saudi Arabia: 8.30AM to 5.30PM AST <br />
                     India : 9.00AM to 06.00PM IST <br />
                     If your country isn't listed above, no worries! You will be
-                    assigned to a team which offers the best coverage for you.{" "}
+                    assigned to a team which offers the best coverage for you.{' '}
                     <br />
                     You can reach us out from every Monday to Saturday via mail
                     and chat.
@@ -119,7 +119,7 @@ const index = () => {
             revisions will be required."
               />
               <TypoFAQ
-                question={"How do I submit and manage my requests?"}
+                question={'How do I submit and manage my requests?'}
                 ans="There are two ways you can make requests - through email or through our work management software Trello."
               />
               <TypoFAQ
@@ -217,7 +217,7 @@ const index = () => {
                     If you would like to resell any of the designs, please be
                     sure to let your Project Manager know when making your
                     design request. Your team will then create your design from
-                    scratch, so that you have full rights to sell your design.{" "}
+                    scratch, so that you have full rights to sell your design.{' '}
                     <br />
                     For all of your other design requests, where you'll be the
                     end-user, and you will not be reselling your design, your
@@ -240,7 +240,7 @@ const index = () => {
                     At grafixy we aim to keep things simple. That's why we have
                     one graphic design subscription - grafixy Graphics - and one
                     video design subscription - grafixy Video. And one
-                    subscription which combines both - grafixy Graphics+Video.{" "}
+                    subscription which combines both - grafixy Graphics+Video.{' '}
                     <br />
                     Whichever subscription you choose, start with a free trial
                     and invite as many team members as you'd like to help you
@@ -289,7 +289,7 @@ const index = () => {
                     still want access to your Trello board, to remain assigned
                     to the same dedicated design team, and to lock in the
                     existing subscription price regardless of service updates?
-                    Consider{" "}
+                    Consider{' '}
                     <a
                       href="https://www.kimp.io/allfaq/can-i-pause-my-account-if-i-dont-have-a-lot-of-requests-to-make/"
                       className="underline"
@@ -305,7 +305,7 @@ const index = () => {
                   <p className="font-nunito">
                     Yes, you can! We get it. Workflows change and you don't
                     always need to have an active subscription. But at the same
-                    time, you might still need access to your Trello board.{" "}
+                    time, you might still need access to your Trello board.{' '}
                     <br />
                     And if you've gotten into a really good groove with your
                     design team, you may want to make sure that they're still
@@ -315,7 +315,7 @@ const index = () => {
                     Subscription" feature for a flat monthly fee of $18.99. This
                     allows you to pause your account as of the end of the
                     current subscription period so that there is no
-                    auto-renewal. And it allows you to enjoy these benefits:{" "}
+                    auto-renewal. And it allows you to enjoy these benefits:{' '}
                     <br />
                     <ul className={classes.listMain}>
                       <li>
@@ -335,10 +335,10 @@ const index = () => {
                         you have more design requests.
                       </li>
                     </ul>
-                    To submit a request to pause your subscription, simply{" "}
+                    To submit a request to pause your subscription, simply{' '}
                     <a href="https://www.kimp.io/my-account/">
                       log into your account
-                    </a>{" "}
+                    </a>{' '}
                     and submit a request. To request to resume your
                     subscription, log into your account and submit a request.
                   </p>
@@ -447,7 +447,7 @@ const index = () => {
                     Absolutely. If you require more than one subscription to
                     keep up with all your design needs, you can add additional
                     subscriptions at any time. And you can also cancel them at
-                    any time, which means you can scale up, or down quickly.{" "}
+                    any time, which means you can scale up, or down quickly.{' '}
                     <br />
                     With each additional subscription that you add, you'll
                     increase the number of outputs you receive, and the speed at
@@ -512,7 +512,7 @@ const index = () => {
                     priority. Requests are fulfilled on a first-come,
                     first-served basis, from the top down. So, if you’re posting
                     multiple requests at the same time, make sure the order of
-                    your cards reflects which tasks should be completed first.{" "}
+                    your cards reflects which tasks should be completed first.{' '}
                     <br /> Revision Requests <br /> Requesting revisions is a
                     simple, 2-step process.
                     <ul className={classes.listMain}>
@@ -540,7 +540,7 @@ const index = () => {
           </div>
 
           <div className="">
-            <h1 className="font-bold 2xl:text-3xl lg:text-2xl sm:text-xl text-2xl leading-none text-white 2xl:mb-[30px] lg:mb-7 sm:mb-6 mb-5 uppercase ">
+            <h1 className="mb-5 text-2xl font-bold uppercase leading-none text-white sm:mb-6 sm:text-xl lg:mb-7 lg:text-2xl 2xl:mb-[30px] 2xl:text-3xl ">
               REQUEST GUIDELINES
             </h1>
             <div className={classes.subMain}>
@@ -578,7 +578,7 @@ const index = () => {
                 question="The Basics"
                 ans={
                   <p className="font-nunito">
-                    {" "}
+                    {' '}
                     With every design request you should include the following
                     details:
                     <ul className={classes.listMain}>
@@ -588,7 +588,7 @@ const index = () => {
                       <li>Inspiration</li>
                       <li>Text copy</li>
                       <ul className={classes.listMain}>
-                        {" "}
+                        {' '}
                         Print Designs require a few additional details:
                         <li>
                           Bleed size (you can confirm this with your printer)
@@ -972,7 +972,7 @@ const index = () => {
                       Include any references for tradeshow banners you like
                     </li>
                     <li>
-                      Tell us the style you’d like, e.g.{" "}
+                      Tell us the style you’d like, e.g.{' '}
                       <ul className={classes.listMain}>
                         <li>-Traditional or Modern</li>
                         <li>-Abstract or Literal</li>
@@ -1020,7 +1020,7 @@ const index = () => {
                       for the back cover)
                     </li>
                     <li>
-                      Tell us the style you’d like, e.g.{" "}
+                      Tell us the style you’d like, e.g.{' '}
                       <ul className={classes.listMain}>
                         <li>-Traditional or Modern</li>
                         <li>-Abstract or Literal</li>
@@ -1060,7 +1060,7 @@ const index = () => {
                       etc.)
                     </li>
                     <li>
-                      Tell us the style you’d like, e.g.{" "}
+                      Tell us the style you’d like, e.g.{' '}
                       <ul className={classes.listMain}>
                         <li>-Traditional or Modern</li>
                         <li>-Abstract or Literal</li>
@@ -1105,7 +1105,7 @@ const index = () => {
                       </ul>
                     </li>
                     <li>
-                      Tell us the style you’d like, e.g.{" "}
+                      Tell us the style you’d like, e.g.{' '}
                       <ul className={classes.listMain}>
                         <li>-Traditional or Modern</li>
                         <li>-Abstract or Literal</li>
@@ -1143,7 +1143,7 @@ const index = () => {
                       for the back cover)
                     </li>
                     <li>
-                      Tell us the style you’d like, e.g.{" "}
+                      Tell us the style you’d like, e.g.{' '}
                       <ul className={classes.listMain}>
                         <li>-Traditional or Modern</li>
                         <li>-Abstract or Literal</li>
@@ -1180,7 +1180,7 @@ const index = () => {
                       Text copy (e.g. title, author’s name, tagline, etc.)
                     </li>
                     <li>
-                      Tell us the style you’d like, e.g.{" "}
+                      Tell us the style you’d like, e.g.{' '}
                       <ul className={classes.listMain}>
                         <li>-Traditional or Modern</li>
                         <li>-Abstract or Literal</li>

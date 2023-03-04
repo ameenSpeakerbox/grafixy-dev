@@ -1,28 +1,26 @@
-import { MainImage } from "gatsby-plugin-image";
-import React from "react";
-import { GradientBtn } from "../../ui/Button";
-import questionMark from "../../images/home/question mark.svg";
-import { motion } from "framer-motion";
+import { MainImage } from 'gatsby-plugin-image';
+import React from 'react';
+import { GradientBtn } from '../../ui/Button';
+import questionMark from '../../images/home/question mark.svg';
+import { motion } from 'framer-motion';
 
 const HeroSection = () => {
   const ColorLine = ({ heading, bgColor, animationDelay }) => (
     <div
-      className="w-[200%] lg:max-h-[80px] sm:max-h-[54px] max-h-[40px] h-min
-     flex items-center sm:justify-end justify-center sm:pr-[80%] text-[#1D0149] font-semibold 2xl:text-5xl sm:text-4xl
-    text-xl leading-[100%] "
+      className="flex h-min max-h-[40px] w-[200%] items-center
+     justify-center text-xl font-semibold leading-[100%] text-[#1D0149] sm:max-h-[54px] sm:justify-end sm:pr-[80%] sm:text-4xl
+    lg:max-h-[80px] 2xl:text-5xl "
       style={{ backgroundColor: bgColor }}
     >
       <span
         className={
-          "h-full bg-white px-4 grid place-items-center sm:py-3 py-2 heroSection__textShadow-homePage overflow-hidden"
+          'heroSection__textShadow-homePage grid h-full place-items-center overflow-hidden bg-white px-4 py-2 sm:py-3'
         }
       >
         <motion.p
-        initial={{ translateY : 100 }}
-        animate={{ translateY : 0  }}
-        transition={{ duration: 0.5 , delay: animationDelay}}
-        
-          
+          initial={{ translateY: 100 }}
+          animate={{ translateY: 0 }}
+          transition={{ duration: 0.5, delay: animationDelay }}
         >
           {heading}
         </motion.p>
@@ -31,45 +29,46 @@ const HeroSection = () => {
   );
 
   return (
-    <div className="heroSection__hight-homePage sm:hight1100:h-[850px]  sm:hight600:h-screen h-full  heroSection__hight-homePage bg-[#1E014B] sm:bg-gradient-to-br from-[#100028] to-[#220058] flex flex-col w-full relative  overflow-hidden items-center justify-end sm:py-14 py-8">
+    <div className="heroSection__hight-homePage heroSection__hight-homePage  relative flex  h-full w-full flex-col items-center justify-end overflow-hidden bg-[#1E014B] from-[#100028] to-[#220058]  py-8 sm:bg-gradient-to-br sm:py-14 sm:hight600:h-screen sm:hight1100:h-[850px]">
       {/* main section */}
-      <div className="lg:pt-[150px] pt-5 w-full h-full flex items-center justify-evenly flex-col">
+      <div className="flex h-full w-full flex-col items-center justify-evenly pt-5 lg:pt-[150px]">
         {/* center designs */}
-        <div className="gap-3 flex flex-col w-full -rotate-[10.22deg] sm:hight600:mb-8 mb-6 place-items-center">
+        <div className="mb-6 flex w-full -rotate-[10.22deg] flex-col place-items-center gap-3 sm:hight600:mb-8">
           <ColorLine
             heading="On Demand Graphic Design"
             bgColor="#6019CE"
             animationDelay=".3"
-            
           />
           <ColorLine
             heading="One Flat Monthly Rate"
             bgColor="#FF5E3A"
             animationDelay=".5"
-            
           />
           <ColorLine
             heading="Unlimited Requests"
             bgColor="#FFE600"
             animationDelay=".7"
-            
           />
         </div>
         {/* center designs */}
 
         <div
-          className="w-full flex sm:justify-between justify-center sm:items-end z-20 2xl:px-[147px] 
-        sm:px-[80px] 
-        px-8 gap-10 sm:flex-row flex-col sm:mt-0 mt-16"
+          className="z-20 mt-16 flex w-full flex-col justify-center gap-10 
+        px-8 
+        sm:mt-0 sm:flex-row sm:items-end sm:justify-between sm:px-[80px] 2xl:px-[147px]"
         >
-          <div className="grid sm:place-content-center place-content-start">
-            <h3 className="lg:text-xl text-lg lg:leading-[110%] leading-[110%] font-bold text-white">
+          <div className="grid place-content-start sm:place-content-center">
+            <h3 className="text-lg font-bold leading-[110%] text-white lg:text-xl lg:leading-[110%]">
               READY TO GET STARTED? <br />
               <span className="text-[#FFE600]">TRY 7 DAYS RISK FREE!</span>
             </h3>
-            <div className="flex items-center justify-center gap-5 lg:mt-5 mt-4">
+            <div className="mt-4 flex items-center justify-center gap-5 lg:mt-5">
               <GradientBtn text="SEE PRICING" link="pricing" />
-              <GradientBtn text="GET A DEMO" link='https://calendly.com/grafixy-demo/grafixy-demo-session' target="_blank" />
+              <GradientBtn
+                text="GET A DEMO"
+                link="https://calendly.com/grafixy-demo/grafixy-demo-session"
+                target="_blank"
+              />
             </div>
           </div>
 
@@ -79,9 +78,9 @@ const HeroSection = () => {
               src={questionMark}
               width={60.17}
               height={90.25}
-              className="object-contain lg:max-w-[60.17px] sm:max-w-[45.12px] max-w-[33.69px]"
+              className="max-w-[33.69px] object-contain sm:max-w-[45.12px] lg:max-w-[60.17px]"
             />
-            <p className="font-nunito lg:text-lg text-base sm:text-right leading-[140%] text-white max-w-[737px]">
+            <p className="max-w-[737px] font-nunito text-base leading-[140%] text-white sm:text-right lg:text-lg">
               Grafixy is a service that can accelerate your growth with a fully
               remote team of vetted designers. Unlimited design projects. Fast
               turnaround. No hourly billing, all at a fixed monthly rate. You

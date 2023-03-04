@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 // import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
-import Footer from "./Footer";
-import Header from "./Header";
-import { Script } from "gatsby";
-import icon from '../../images/favicon.svg'
-import { FloatingWhatsApp } from "react-floating-whatsapp";
+import Footer from './Footer';
+import Header from './Header';
+import { Script } from 'gatsby';
+import icon from '../../images/favicon.svg';
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 const Layout = ({ children }) => {
   return (
@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
       /> */}
       <FloatingWhatsApp
         phoneNumber="00 000 00 00"
-        accountName={"Grafixy"}
+        accountName={'Grafixy'}
         avatar={icon}
       />
 

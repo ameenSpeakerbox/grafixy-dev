@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 export function isMobileSafari() {
   if (!isBrowser) return;
@@ -9,7 +9,7 @@ export function isMobileSafari() {
     : false;
 }
 
-export const isBrowser = typeof window !== "undefined";
+export const isBrowser = typeof window !== 'undefined';
 
 export function useWindowSize() {
   function getSize() {
@@ -27,8 +27,8 @@ export function useWindowSize() {
       setWindowSize(getSize());
     }
 
-    window.addEventListener("resize", handleResize());
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize());
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return windowSize;

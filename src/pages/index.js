@@ -1,14 +1,19 @@
-import * as React from "react";
-import {FitForBusinesses, FreeTrail,HeroSection, HomeFAQ, Testimonial, WhyGrafixy, WorkSession
-} from "../components/home";
-import Layout from "../components/layout/layout";
-import { SEO } from "../components/seo";
-
-
+import * as React from 'react';
+import {
+  FitForBusinesses,
+  FreeTrail,
+  HeroSection,
+  HomeFAQ,
+  Testimonial,
+  WhyGrafixy,
+  WorkSession,
+} from '../components/home';
+import Layout from '../components/layout/layout';
+import { SEO } from '../components/seo';
 
 const IndexPage = () => {
   return (
-    <main className="max-w-[2560px] mx-auto grid w-full ">
+    <main className="mx-auto grid w-full max-w-[2560px] ">
       <Layout>
         <HeroSection />
         <WorkSession />
@@ -24,4 +29,6 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <SEO title='Grafixy | On-demand graphic design | Flat monthly Rate'/>;
+export const Head = () => (
+  <SEO title="Grafixy | On-demand graphic design | Flat monthly Rate" />
+);

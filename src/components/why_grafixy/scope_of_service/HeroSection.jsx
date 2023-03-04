@@ -1,26 +1,26 @@
-import { MainImage } from "gatsby-plugin-image";
-import React from "react";
-import heroPic from "../../../images/why_grafixy/scope of service hero picture.webp";
+import { MainImage } from 'gatsby-plugin-image';
+import React from 'react';
+import heroPic from '../../../images/why_grafixy/scope of service hero picture.webp';
 
 const HeroSection = () => {
   return (
     <div
-      className=" bg-[#6E3CBC] scope_of_service--heroSection flex-col w-full relative  overflow-hidden justify-end z-0 flex items-center  2xl:px-[147px] 
+      className=" scope_of_service--heroSection relative z-0 flex w-full  flex-col items-center justify-end overflow-hidden bg-[#6E3CBC]  px-8 
     sm:px-[80px] 
-    px-8  "
+    2xl:px-[147px]  "
     >
       <MainImage
         src={heroPic}
         alt="heroPic"
         width={100}
         height={100}
-        className="object-cover origin-top-left w-full h-full  absolute -z-10 opacity-[30%] left-0 "
+        className="absolute left-0 -z-10 h-full  w-full origin-top-left object-cover opacity-[30%] "
       />
-      <span className="bg-[#1A0143] absolute inset-0 bg-opacity-95 -z-20" />
-      <p className="leading-[134%] text-[30px]  font-semibold  text-white max-w-[867px] text-center">
+      <span className="absolute inset-0 -z-20 bg-[#1A0143] bg-opacity-95" />
+      <p className="max-w-[867px] text-center  text-[30px]  font-semibold leading-[134%] text-white">
         Scope of service
       </p>
-      <div className="text-white font-semibold 2xl:text-xl text-base leading-[134%] gap-[47px] mt-1 mb-10 text-center font-nunito tracking-[-2%]">
+      <div className="mt-1 mb-10 gap-[47px] text-center font-nunito text-base font-semibold leading-[134%] tracking-[-2%] text-white 2xl:text-xl">
         Over 150+ design services covered
       </div>
     </div>

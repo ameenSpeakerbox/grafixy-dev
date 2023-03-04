@@ -1,7 +1,7 @@
-import { MainImage } from "gatsby-plugin-image";
-import React, { useMemo, useState } from "react";
-import trello from "../../images/how_it_works/trello.webp";
-import slack from "../../images/how_it_works/slack.webp";
+import { MainImage } from 'gatsby-plugin-image';
+import React, { useMemo, useState } from 'react';
+import trello from '../../images/how_it_works/trello.webp';
+import slack from '../../images/how_it_works/slack.webp';
 
 const EnablingCollaboration = () => {
   const [autoChange, setAutoChange] = useState(0);
@@ -29,25 +29,25 @@ const EnablingCollaboration = () => {
   }, [autoChange, picData]);
 
   return (
-    <div className="bg-white w-screen 2xl:px-[147px] sm:px-[80px] px-8 2xl:py-20 sm:py-16 py-10">
-      <div className="max-w-[1440px] mx-auto grid sm:grid-cols-2 place-content-center gap-10">
+    <div className="w-screen bg-white px-8 py-10 sm:px-[80px] sm:py-16 2xl:px-[147px] 2xl:py-20">
+      <div className="mx-auto grid max-w-[1440px] place-content-center gap-10 sm:grid-cols-2">
         <div className="grid place-content-center justify-start">
-          <h1 className="sm:text-4xl text-[28px] font-medium leading-[120%] tracking-[-2%] text-[#381471] ">
+          <h1 className="text-[28px] font-medium leading-[120%] tracking-[-2%] text-[#381471] sm:text-4xl ">
             Enabling Easy <br /> Collaboration
           </h1>
           {/* mobile picture */}
-          <div className="w-full h-full sm:hidden flex items-center justify-center mt-7">
+          <div className="mt-7 flex h-full w-full items-center justify-center sm:hidden">
             <MainImage
               src={picData[autoChange]?.pic}
               alt="pic"
               loading="lazy"
               width={100}
               height={100}
-              className="min-h-[204px] w-auto object-contain h-full"
+              className="h-full min-h-[204px] w-auto object-contain"
             />
           </div>
           {/*  */}
-          <p className="font-nunito sm:text-lg text-base sm:leading-[150%] leading-[150%] text-[#381471] max-w-[488px] sm:mt-5 mt-10">
+          <p className="mt-10 max-w-[488px] font-nunito text-base leading-[150%] text-[#381471] sm:mt-5 sm:text-lg sm:leading-[150%]">
             With Microsoft Teams or Slack, clients can communicate with our
             designers in realtime, share files, and provide feedback on designs.
             This helps to streamline the design process and ensures that all
@@ -56,14 +56,14 @@ const EnablingCollaboration = () => {
             making it easy to reference and retrieve information as needed.
           </p>
         </div>
-        <div className="w-full h-full sm:flex hidden items-center justify-center">
+        <div className="hidden h-full w-full items-center justify-center sm:flex">
           <MainImage
             src={picData[autoChange]?.pic}
             alt="pic"
             loading="lazy"
             width={100}
             height={100}
-            className="max-h-[425px] w-auto object-contain h-full"
+            className="h-full max-h-[425px] w-auto object-contain"
           />
         </div>
       </div>

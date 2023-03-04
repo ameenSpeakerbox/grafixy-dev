@@ -1,26 +1,24 @@
-import { Link } from "gatsby";
-import React from "react";
+import { Link } from 'gatsby';
+import React from 'react';
 
 export const Button = ({ className, name, link, target }) => (
   <Link to={link} target={target} className="flex items-center justify-center">
-    <button className={`font-bold  ${className}`}>
-      {name}
-    </button>
+    <button className={`font-bold  ${className}`}>{name}</button>
   </Link>
 );
 
 export const GradientBtn = ({ text, link, target }) => (
-  <span className="py-[.7px] px-[.4px] grid w-max rounded-full gradientBtn__gradientBorder place-items-center ">
+  <span className="gradientBtn__gradientBorder grid w-max place-items-center rounded-full py-[.7px] px-[.4px] ">
     <Link
       to={link}
       target={target}
       name="button"
       type="button"
-      className="px-6 py-4 rounded-full bg-[#1B034B] w-full h-full relative overflow-hidden group z-10"
+      className="group relative z-10 h-full w-full overflow-hidden rounded-full bg-[#1B034B] px-6 py-4"
     >
-      <span className="absolute w-full h-full bg-[#6019CE] top-0 right-0 group-hover:translate-x-0 -translate-x-48 duration-300 ease-in -z-10" />
+      <span className="absolute top-0 right-0 -z-10 h-full w-full -translate-x-48 bg-[#6019CE] duration-300 ease-in group-hover:translate-x-0" />
       <p className="gradientBtn__gradientText group-hover:hidden">{text}</p>
-      <p className="hidden group-hover:flex z-20 gradientBtn__normalText">
+      <p className="gradientBtn__normalText z-20 hidden group-hover:flex">
         {text}
       </p>
     </Link>
