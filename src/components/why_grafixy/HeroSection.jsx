@@ -1,4 +1,4 @@
-import { MainImage, StaticImage } from "gatsby-plugin-image";
+import { MainImage } from "gatsby-plugin-image";
 import React from "react";
 import heroPic from "../../images/why_grafixy/why grafixy head.webp";
 

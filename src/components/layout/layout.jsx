@@ -1,5 +1,5 @@
 import React from "react";
-import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
+// import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
 import Footer from "./Footer";
 import Header from "./Header";
 import { Script } from "gatsby";
