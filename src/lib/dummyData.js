@@ -6,8 +6,8 @@ import instagram_4 from "../images/home/work_session/insta_post -4.webp";
 import instagram_5 from "../images/home/work_session/insta_post -5.webp";
 import instagram_6 from "../images/home/work_session/insta_post -6.webp";
 import instagram_7 from "../images/home/work_session/insta_post -7.webp";
-import toy_car from "../images/home/Toy car.png";
-import toy_bus from "../images/home/Toy bus.png";
+import toy_car from "../images/home/Toy car.webp";
+import toy_bus from "../images/home/Toy bus.webp";
 import avatar1 from "../images/home/avatar.webp";
 import avatar2 from "../images/home/avatar 2.webp";
 import {
