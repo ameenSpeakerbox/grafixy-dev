@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
         <div className="flex  sm:gap-[98px] gap-8  flex-1 sm:justify-around justify-between sm:flex-nowrap flex-wrap w-full">
           {footerLinks.map((link) => (
-            <ul key={link.id} className="flex flex-col sm:gap-5 gap-3">
+            <p key={link.id} className="flex flex-col sm:gap-5 gap-3">
               <h3 className="text-[#6E3CBC] font-extrabold sm:text-lg text-base font-nunito">
                 {link.title}
               </h3>
@@ -33,7 +33,7 @@ const Footer = () => {
                   </Link>
                 ))}
               </li>
-            </ul>
+            </p>
           ))}
         </div>
       </div>
