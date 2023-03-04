@@ -4,7 +4,6 @@ import { footerLinks } from "../../lib/dummyData";
 import { Link } from "gatsby";
 import logo from "../../images/logo-dark.png";
 
-
 const Footer = () => {
   return (
     <footer className="grid w-full overflow-hidden">
@@ -12,7 +11,8 @@ const Footer = () => {
         <div className=" grid place-content-start sm:place-content-center place-items-center flex-1 w-full">
           <img
             src={logo}
-            alt="logo" loading="eager"
+            alt="logo"
+            loading="eager"
             className="lg:h-[75px] sm:h-[43px] h-[37px] object-contain"
           />
         </div>
@@ -22,17 +22,17 @@ const Footer = () => {
               <h3 className="text-[#6E3CBC] font-extrabold sm:text-lg text-base font-nunito">
                 {link.title}
               </h3>
-              <li className="grid sm:gap-2 gap-1">
+              <p className="grid sm:gap-2 gap-1">
                 {link?.subtitle.map((text) => (
-                  <Link 
-                  to={`/${text?.slug}`}
+                  <Link
+                    to={`/${text?.slug}`}
                     key={text.id}
                     className="font-semibold text-base text-[#6E3CBC] cursor-pointer font-nunito"
                   >
                     {text.title}
                   </Link>
                 ))}
-              </li>
+              </p>
             </p>
           ))}
         </div>
@@ -43,12 +43,12 @@ const Footer = () => {
           href=""
           className="inline-flex items-center gap-3 text-white font-nunito font-semibold text-base"
         >
-          <MailIcon  className='shrink-0'/>
+          <MailIcon className="shrink-0" />
           hello@grafixy.io
         </a>
         <p className="inline-flex items-center font-nunito font-semibold sm:text-lg text-base text-white gap-3">
-          <LocationIcon className='shrink-0'/> 43/359 H, 2nd Floor, Sabu Plaza, Calicut Road,
-          Thurakkal, Manjeri
+          <LocationIcon className="shrink-0" /> 43/359 H, 2nd Floor, Sabu Plaza,
+          Calicut Road, Thurakkal, Manjeri
         </p>
       </div>
 
