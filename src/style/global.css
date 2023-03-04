@@ -2,17 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap');
 
 * {
-  font-family: "Jost", sans-serif;
+  font-family: 'Jost', sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 .font-nunito {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .swiper-pagination-bullet {
@@ -58,7 +58,7 @@
 
 @media (min-width: 1024px) {
   .collaboration-hover::after {
-    content: " ";
+    content: ' ';
     position: absolute;
     height: 0;
     width: 100%;
@@ -142,14 +142,14 @@
   background: linear-gradient(90deg, #ffe500 2.4%, #ff5e3a 100.82%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: rotate(-0.38deg);
   position: relative;
-  
 }
 .gradientBtn__gradientText::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 1px;
@@ -168,7 +168,7 @@
   position: relative;
 }
 .gradientBtn__normalText::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 1px;
@@ -189,7 +189,7 @@
   z-index: 2;
 }
 .gradientBtn__gradientBorder::after {
-  content: " ";
+  content: ' ';
   width: 180%;
   height: 100%;
   border-radius: 80px;
@@ -199,8 +199,6 @@
     rgba(248, 0, 59, 0.3),
     rgba(0, 56, 255, 0.3)
   );
-
-  
 
   z-index: -1;
   filter: blur(30px);
@@ -223,5 +221,10 @@
 }
 
 .notFoundPageBgGradient {
-  background: linear-gradient(294.61deg, #45108A 2.27%, #3D065F 29.57%, #10054D 101.35%);
+  background: linear-gradient(
+    294.61deg,
+    #45108a 2.27%,
+    #3d065f 29.57%,
+    #10054d 101.35%
+  );
 }

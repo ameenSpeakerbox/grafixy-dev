@@ -8,7 +8,7 @@ import { TickIcon } from '../../ui/Icon';
 const FitForBusinesses = () => {
   return (
     <>
-      <script
+    <Script
         src="https://js.chargebee.com/v2/chargebee.js"
         data-cb-site="speakerbox"
       />
@@ -84,11 +84,9 @@ const FitForBusinesses = () => {
                         : 'Grafixy-Grow-USD-Monthly'
                     }
                     data-cb-item-0-quantity="1"
+                    className="mt-7 flex h-12 shrink-0 items-center justify-center rounded-full bg-[#210153] px-5 text-sm font-bold leading-3 text-white drop-shadow-2xl duration-300 ease-linear sm:text-[10px] lg:mt-8 lg:px-[30px] lg:text-sm group-hover:lg:bg-[#E0CCFF] group-hover:lg:text-[#210153] 2xl:h-16 2xl:text-lg"
                   >
-                    <Button
-                      name="Start your free trial"
-                      className="mt-7 flex h-12 shrink-0 items-center justify-center rounded-full bg-[#210153] px-5 text-sm font-bold leading-3 text-white drop-shadow-2xl duration-300 ease-linear sm:text-[10px] lg:mt-8 lg:px-[30px] lg:text-sm group-hover:lg:bg-[#E0CCFF] group-hover:lg:text-[#210153] 2xl:h-16 2xl:text-lg"
-                    />
+                    Start your free trial
                   </a>
                   <Link
                     type="button"
@@ -96,7 +94,7 @@ const FitForBusinesses = () => {
                       window !== undefined && window.scrollTo(0, 0)
                     }
                     to="pricing"
-                    className="mt-[10px] font-nunito text-sm font-bold text-[#210153] duration-300 ease-linear group-hover:lg:text-white"
+                    className="mt-[10px] border-none bg-transparent font-nunito text-sm font-bold text-[#210153] outline-none duration-300 ease-linear group-hover:lg:text-white"
                   >
                     More details
                   </Link>
