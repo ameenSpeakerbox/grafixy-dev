@@ -49,7 +49,7 @@ const Header = () => {
                 LOGIN
               </a>
               <Button
-                className="relative z-10 grid h-[40px] w-max  shrink-0 place-content-center overflow-hidden rounded-full bg-white px-5 py-3 text-base text-[#19013F] shadow-xl drop-shadow-lg after:absolute after:-left-[100%] after:top-0 after:-z-10 after:h-full after:w-full after:bg-[#19013F] after:duration-300 after:ease-in hover:text-white hover:after:left-0 xl:h-[50px] 2xl:h-[67px] 2xl:px-[31px] 2xl:py-[10px] 2xl:text-lg"
+                className="relative z-10 grid h-[40px] w-max  shrink-0 place-content-center overflow-hidden rounded-full bg-white px-5 py-3 text-base text-[#19013F] shadow-xl drop-shadow-lg after:absolute after:-left-[100%] after:top-0 after:-z-10 after:h-full after:w-full after:bg-[#6019CE] after:duration-300 after:ease-in hover:text-white hover:after:left-0 xl:h-[50px] 2xl:h-[67px] 2xl:px-[31px] 2xl:py-[10px] 2xl:text-lg"
                 name="SCHEDULE A DEMO"
                 link="https://calendly.com/grafixy-demo/grafixy-demo-session"
                 target="_blank"
