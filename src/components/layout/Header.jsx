@@ -126,6 +126,7 @@ const Header = () => {
             <button
               onClick={() => setIsMenuClick(!isMenuClick)}
               role="button"
+              name="button"
               tabIndex={0}
               className={`w-[40px] h-[40px] border-[3px] border-[#6019CE] rounded-md lg:hidden flex flex-col justify-evenly p-1 cursor-pointer relative ${
                 isMenuClick && "items-center justify-center p-2"
