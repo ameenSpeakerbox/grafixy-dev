@@ -43,13 +43,11 @@ const Header = () => {
                 href="javascript:void(0)"
                 data-cb-type="portal"
                 className="relative z-10 mr-[10px] grid h-[40px] w-max shrink-0 cursor-pointer place-content-center overflow-hidden rounded-full bg-[#6019CE] px-5 py-3 text-base font-bold text-white shadow-xl drop-shadow-lg after:absolute after:-left-[100%] after:top-0 after:-z-10 after:h-full after:w-full after:bg-white after:duration-300 after:ease-in hover:text-[#6019CE] hover:after:left-0 xl:h-[50px] 2xl:h-[67px] 2xl:px-[31px] 2xl:py-[10px] 2xl:text-lg"
-
-                // link="https://speakerbox.chargebeeportal.com/portal/v2/login?forward=portal_main"
               >
                 LOGIN
               </a>
               <Button
-                className="relative z-10 grid h-[40px] w-max  shrink-0 place-content-center overflow-hidden rounded-full bg-white px-5 py-3 text-base text-[#19013F] shadow-xl drop-shadow-lg after:absolute after:-left-[100%] after:top-0 after:-z-10 after:h-full after:w-full after:bg-[#6019CE] after:duration-300 after:ease-in hover:text-white hover:after:left-0 xl:h-[50px] 2xl:h-[67px] 2xl:px-[31px] 2xl:py-[10px] 2xl:text-lg"
+                className="relative z-10 grid h-[40px] w-max  shrink-0 place-content-center overflow-hidden rounded-full bg-white px-5 py-3 text-base text-[#19013F] shadow-xl drop-shadow-lg after:absolute after:-left-[110%] after:top-0 after:-z-10 after:h-full after:w-[110%] after:bg-[#6019CE] after:duration-300 after:ease-in hover:text-white hover:after:-left-4 xl:h-[50px] 2xl:h-[67px] 2xl:px-[31px] 2xl:py-[10px] 2xl:text-lg"
                 name="SCHEDULE A DEMO"
                 link="https://calendly.com/grafixy-demo/grafixy-demo-session"
                 target="_blank"
