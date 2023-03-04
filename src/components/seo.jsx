@@ -30,6 +30,10 @@ export const SEO = ({ title, description, pathname, children }) => {
       <meta name="twitter:image" content={seo.image} />
       <meta name="twitter:creator" content={seo.twitterUsername} />
       <link rel="icon" href="../images/favicon.png" />
+      <link rel="icon" sizes="192x192" href="../images/favicon.png" />
+      <link rel="icon" sizes="512x512" href="../images/favicon.png" />
+      <link rel="apple-touch-icon" href="../images/favicon.png" />
+      <link rel="mask-icon" href="../images/favicon.png" color="blue" />
       {children}
     </>
   );
