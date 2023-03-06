@@ -15,10 +15,7 @@ import { SEO } from '../components/seo';
 const IndexPage = () => {
   return (
     <>
-      <Script
-        src="https://js.chargebee.com/v2/chargebee.js"
-        data-cb-site="speakerbox"
-      />
+
       <main className="mx-auto grid w-full max-w-[2560px] ">
         <Layout>
           <HeroSection />

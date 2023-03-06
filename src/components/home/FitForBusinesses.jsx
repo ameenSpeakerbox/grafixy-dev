@@ -8,7 +8,7 @@ import { TickIcon } from '../../ui/Icon';
 const FitForBusinesses = () => {
   return (
     <>
-    <Script
+      <Script
         src="https://js.chargebee.com/v2/chargebee.js"
         data-cb-site="speakerbox"
       />

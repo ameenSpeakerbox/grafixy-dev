@@ -67,28 +67,20 @@ const index = () => {
                     ))}
                   </ul>
                   <div className="flex flex-col items-center justify-center">
-                    {item.title === 'Rise' && (
-                      <a
-                        href="javascript:void(0)"
-                        data-cb-type="checkout"
-                        data-cb-item-0="Grafixy-Rise-USD-Monthly"
-                        data-cb-item-0-quantity="1"
-                        className="mt-7 flex h-12 shrink-0 items-center justify-center rounded-full bg-[#210153] px-5 text-sm font-bold leading-3 text-white drop-shadow-2xl duration-300 ease-linear sm:text-[10px] lg:mt-8 lg:px-[30px] lg:text-sm group-hover:lg:bg-[#E0CCFF] group-hover:lg:text-[#210153] 2xl:h-16 2xl:text-lg"
-                      >
-                        {item.buttonName}
-                      </a>
-                    )}
-                    {item.title === 'Grow' && (
-                      <a
-                        href="javascript:void(0)"
-                        data-cb-type="checkout"
-                        data-cb-item-0="Grafixy-Grow-USD-Monthly"
-                        data-cb-item-0-quantity="1"
-                        className="mt-7 flex h-12 shrink-0 items-center justify-center rounded-full bg-[#210153] px-5 text-sm font-bold leading-3 text-white drop-shadow-2xl duration-300 ease-linear sm:text-[10px] lg:mt-8 lg:px-[30px] lg:text-sm group-hover:lg:bg-[#E0CCFF] group-hover:lg:text-[#210153] 2xl:h-16 2xl:text-lg"
-                      >
-                        {item.buttonName}
-                      </a>
-                    )}
+                    <a
+                      href="javascript:void(0)"
+                      data-cb-type="checkout"
+                      data-cb-item-0={
+                        item.title === 'Rise'
+                          ? 'Grafixy-Rise-USD-Monthly'
+                          : 'Grafixy-Grow-USD-Monthly'
+                      }
+                      data-cb-item-0-quantity="1"
+                      
+                      className="mt-7 flex h-12 shrink-0 items-center justify-center rounded-full bg-[#210153] px-5 text-sm font-bold leading-3 text-white drop-shadow-2xl duration-300 ease-linear sm:text-[10px] lg:mt-8 lg:px-[30px] lg:text-sm group-hover:lg:bg-[#E0CCFF] group-hover:lg:text-[#210153] 2xl:h-16 2xl:text-lg"
+                    >
+                      {item.buttonName}
+                    </a>
                   </div>
                 </div>
               ))}
