@@ -30,7 +30,7 @@ const Index = () => {
 
   return (
     <Layout>
-      <div className="flex w-full flex-col items-center justify-center bg-[#18003F] px-8 pt-10  pb-20 sm:px-[80px] sm:pt-36 lg:pt-40 2xl:px-[147px]">
+      <div className="grid w-full  place-items-center bg-[#18003F] px-8 pt-10  pb-20 sm:px-[80px] sm:pt-36 lg:pt-40 2xl:px-[147px]">
         <h4 className="text-lg font-bold text-[#9C66F0]">Our Blogs</h4>
         <h1 className="mt-5 text-4xl font-medium leading-[110%] text-[#E0CCFF]">
           Our Recent Blogs

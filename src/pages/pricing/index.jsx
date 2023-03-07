@@ -13,7 +13,7 @@ const index = () => {
     <>
       <div className="bg-[#18003F]">
         <Layout>
-          <div className="flex w-full flex-col items-center justify-center bg-[#18003F] px-8 pt-10  sm:px-[80px] sm:pt-36 lg:pt-40 2xl:px-[147px]">
+          <div className="grid w-full items-center justify-center bg-[#18003F] px-8 pt-10  sm:px-[80px] sm:pt-36 lg:pt-40 2xl:px-[147px]">
             <h1 className="text-center text-3xl font-bold tracking-[-2%] text-[#E0CCFF] sm:text-4xl">
               Simple Pricing, No Hidden Costs
             </h1>
@@ -72,7 +72,6 @@ const index = () => {
                           : 'Grafixy-Grow-USD-Monthly'
                       }
                       data-cb-item-0-quantity="1"
-                      
                       className="mt-7 flex h-12 shrink-0 items-center justify-center rounded-full bg-[#210153] px-5 text-sm font-bold leading-3 text-white drop-shadow-2xl duration-300 ease-linear sm:text-[10px] lg:mt-8 lg:px-[30px] lg:text-sm group-hover:lg:bg-[#E0CCFF] group-hover:lg:text-[#210153] 2xl:h-16 2xl:text-lg"
                     >
                       {item.buttonName}

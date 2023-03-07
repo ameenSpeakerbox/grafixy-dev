@@ -24,13 +24,25 @@ const Footer = () => {
               </h3>
               <p className="grid gap-1 sm:gap-2">
                 {link?.subtitle.map((text) => (
-                  <Link
-                    to={`/${text?.slug}`}
-                    key={text.id}
-                    className="cursor-pointer font-nunito text-base font-semibold text-[#6E3CBC]"
-                  >
-                    {text.title}
-                  </Link>
+                  <>
+                    {text?.slug !== 'pricing' ? (
+                      <Link
+                        key={text.id}
+                        to={`/${text?.slug}`}
+                        className="cursor-pointer font-nunito text-base font-semibold text-[#6E3CBC]"
+                      >
+                        {text.title}
+                      </Link>
+                    ) : (
+                      <a
+                        key={text.id}
+                        href={`/${text?.slug}`}
+                        className="cursor-pointer font-nunito text-base font-semibold text-[#6E3CBC]"
+                      >
+                        {text.title}
+                      </a>
+                    )}
+                  </>
                 ))}
               </p>
             </p>
