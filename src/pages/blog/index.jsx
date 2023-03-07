@@ -57,7 +57,7 @@ const Index = () => {
               </span>
               <Link
                 to={item.id}
-                className="mt-5 text-2xl font-bold text-[#9C66F0] hover:text-[#E0CCFF]"
+                className="mt-5 text-2xl font-bold text-[#fff] hover:text-[#E0CCFF]"
               >
                 {item.heading.heading}
               </Link>
