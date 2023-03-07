@@ -13,7 +13,7 @@ const index = () => {
     <>
       <div className="bg-[#18003F]">
         <Layout>
-          <div className="grid w-full items-center justify-center bg-[#18003F] px-8 pt-10  sm:px-[80px] sm:pt-36 lg:pt-40 2xl:px-[147px]">
+          <div className="grid w-full place-items-center bg-[#18003F] px-8 pt-10  sm:px-[80px] sm:pt-36 lg:pt-40 2xl:px-[147px]">
             <h1 className="text-center text-3xl font-bold tracking-[-2%] text-[#E0CCFF] sm:text-4xl">
               Simple Pricing, No Hidden Costs
             </h1>
