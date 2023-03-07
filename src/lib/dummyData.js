@@ -30,28 +30,6 @@ import collaboration from '../images/why_grafixy/team collaboration.svg';
 import unlimited from '../images/why_grafixy/unlimited design requests.svg';
 import design from '../images/why_grafixy/you own every design.svg';
 
-export const navLink = [
-  {
-    id: 1,
-    name: 'why grafixy?',
-    slug: 'why_grafixy',
-  },
-  {
-    id: 2,
-    name: 'how it works',
-    slug: 'how_it_works',
-  },
-  {
-    id: 3,
-    name: 'pricing',
-    slug: 'pricing',
-  },
-  {
-    id: 4,
-    name: 'our work',
-    slug: 'our_works',
-  },
-];
 
 export const footerLinks = [
   {

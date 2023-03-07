@@ -85,16 +85,16 @@ const FitForBusinesses = () => {
                   >
                     Start your free trial
                   </a>
-                  <Link
+                  <a
                     type="button"
                     onClick={() =>
                       window !== undefined && window.scrollTo(0, 0)
                     }
-                    to="pricing"
+                    href="pricing"
                     className="mt-[10px] border-none bg-transparent font-nunito text-sm font-bold text-[#210153] outline-none duration-300 ease-linear group-hover:lg:text-white"
                   >
                     More details
-                  </Link>
+                  </a>
                 </div>
               </div>
             ))}

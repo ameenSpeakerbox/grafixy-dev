@@ -1,23 +1,41 @@
 import React, { useState } from 'react';
 import { Button } from '../../ui/Button';
 import { Link, Script } from 'gatsby';
-import { navLink } from '../../lib/dummyData';
 import logo from '../../images/logo.png';
 import { ArrowWithLineIcon } from '../../ui/Icon';
 import { motion } from 'framer-motion';
+
+const navLink = [
+  {
+    id: 1,
+    name: 'why grafixy?',
+    slug: 'why_grafixy',
+  },
+  {
+    id: 2,
+    name: 'how it works',
+    slug: 'how_it_works',
+  },
+  {
+    id: 3,
+    name: 'pricing',
+    slug: 'pricing',
+  },
+  {
+    id: 4,
+    name: 'our work',
+    slug: 'our_works',
+  },
+];
 
 const Header = () => {
   const [isMenuClick, setIsMenuClick] = useState(false);
 
   return (
     <>
-      <Script
-        src="https://js.chargebee.com/v2/chargebee.js"
-        data-cb-site="speakerbox"
-      />
       <nav className="relative z-[500] flex h-[110px] w-full  items-center bg-[#1E014B] sm:h-[.1px]">
         <div className="left-0 top-0 z-50  flex h-[67px] w-full items-center justify-between overflow-hidden px-8 sm:absolute sm:mt-6 sm:px-[80px] 2xl:mt-[50px] 2xl:px-[147px]">
-          <Link to="/">
+          <a href="/">
             <img
               src={logo}
               alt="logo"
@@ -25,17 +43,30 @@ const Header = () => {
               layout="fullWidth"
               className="h-[35px] object-contain sm:h-full"
             />
-          </Link>
+          </a>
           <div className="hidden w-full items-center justify-center lg:flex">
             <div className=" mr-[35px] hidden w-full items-center justify-end gap-4 lg:flex lg:gap-10 2xl:gap-[50px]">
               {navLink.map((nav) => (
-                <Link
-                  key={nav.id}
-                  to={`/${nav.slug}`}
-                  className="text-base font-bold text-white 2xl:text-lg"
-                >
-                  {nav.name}
-                </Link>
+                <>
+                  {' '}
+                  {nav.slug !== 'pricing' ? (
+                    <Link
+                      key={nav.id}
+                      to={`/${nav.slug}`}
+                      className="text-base font-bold text-white 2xl:text-lg"
+                    >
+                      {nav.name}
+                    </Link>
+                  ) : (
+                    <a
+                      key={nav.id}
+                      href={`/${nav.slug}`}
+                      className="text-base font-bold text-white 2xl:text-lg"
+                    >
+                      {nav.name}
+                    </a>
+                  )}
+                </>
               ))}
             </div>
             <div className="flex items-center justify-center gap-4">
