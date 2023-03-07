@@ -8,10 +8,7 @@ import { TickIcon } from '../../ui/Icon';
 const FitForBusinesses = () => {
   return (
     <>
-      <Script
-        src="https://js.chargebee.com/v2/chargebee.js"
-        data-cb-site="speakerbox"
-      />
+     
       <div className="flex  w-full flex-col tab:flex-row">
         <div className="flex shrink-0 flex-col items-start justify-center bg-[#210153] py-11 pl-8 pr-16 pb-0 sm:pl-14 md:pl-[50px] lg:pl-[70px] xl:pl-[100px] tab:w-[35%]  tab:py-0 ">
           <h2 className="shrink-0  text-3xl font-medium leading-[110%] text-white sm:text-4xl 2xl:text-5xl">
