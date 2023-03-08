@@ -15,8 +15,11 @@ const GetDemo = () => {
           Grafixy?
         </h1>
         <p className="relative z-20  mt-[21px] font-nunito text-lg font-semibold text-[#E0CCFF] sm:mt-[30px] sm:max-w-[60%] sm:text-xl lg:max-w-[50%]">
-          Grafixy makes it incredibly easy Grafixy makes it incredibly easy
-          Grafixy makes it incredibly. Grafixy makes it incredibly.
+          Get access to a talented team of graphic designers whenever you need
+          them. Submit design tasks, collaborate with our team, and receive
+          high-quality design work that meets your specifications. And the best
+          part? <span className='text-yellow-400'> Try it free</span> for 7 days! You are only charged after
+          the trial period.
         </p>
         <div className="relative z-50 mt-[30px] flex gap-[22px] sm:gap-[26px] ">
           <Button
