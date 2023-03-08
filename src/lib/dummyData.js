@@ -30,7 +30,6 @@ import collaboration from '../images/why_grafixy/team collaboration.svg';
 import unlimited from '../images/why_grafixy/unlimited design requests.svg';
 import design from '../images/why_grafixy/you own every design.svg';
 
-
 export const footerLinks = [
   {
     id: 1,
@@ -335,7 +334,7 @@ export const faq_home = [
     id: 1,
     question: 'How does it work?',
     answer:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.",
+      'Grafixy is a design on demand subscription service. With a subscription you get a team of graphic designers who execute your design tasks, collect your feedback and get revisions done. Just like hiring a remote designer, just better and more cost effective.',
   },
   {
     id: 2,
