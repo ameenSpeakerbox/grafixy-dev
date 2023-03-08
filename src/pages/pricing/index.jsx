@@ -23,7 +23,7 @@ const index = () => {
 
             {/* pricing */}
             <div
-              className="mt-[25px] grid  h-full max-w-[1320px] gap-7 sm:mt-[40px] sm:grid-cols-2 lg:mt-[50px] lg:grid-cols-3 xl:gap-8 2xl:gap-11
+              className="mt-[25px] grid  h-full max-w-[1320px] gap-7 sm:mt-[40px] sm:grid-cols-2 lg:mt-[50px] lg:grid-cols-3 xl:gap-8 2xl:gap-11 z-50
         "
             >
               {pricingData.map((item) => (
